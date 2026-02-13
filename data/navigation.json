@@ -1,0 +1,96 @@
+{
+  "logo": {
+    "text": "Inner Academy",
+    "href": "/"
+  },
+  "menuItems": [
+    {
+      "label": "Home",
+      "href": "/",
+      "order": 1
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "order": 2
+    },
+    {
+      "label": "Courses",
+      "href": "/courses",
+      "order": 3
+    },
+    {
+      "label": "Coaches",
+      "href": "/coaches",
+      "order": 4
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "order": 5
+    }
+  ],
+  "footerLinks": [
+    {
+      "section": "Quick Links",
+      "links": [
+        {
+          "label": "About Us",
+          "href": "/about"
+        },
+        {
+          "label": "Our Courses",
+          "href": "/courses"
+        },
+        {
+          "label": "Our Coaches",
+          "href": "/coaches"
+        }
+      ]
+    },
+    {
+      "section": "Contact",
+      "links": [
+        {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        {
+          "label": "Email Us",
+          "href": "mailto:info@inneracademy.com"
+        }
+      ]
+    },
+    {
+      "section": "Legal",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "/terms"
+        }
+      ]
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "Facebook",
+      "url": "https://facebook.com/inneracademy",
+      "icon": "facebook"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com/inneracademy",
+      "icon": "instagram"
+    },
+    {
+      "platform": "Line",
+      "url": "https://line.me/ti/p/@inneracademy",
+      "icon": "line"
+    }
+  ],
+  "copyright": "© 2026 Inner Academy. All rights reserved."
+}
