@@ -12,6 +12,9 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Inner Academy',
+      htmlAttrs: {
+        lang: 'en'
+      },
       meta: [
         { name: 'description', content: 'Transform your inner power with expert-led courses' }
       ]

@@ -8,9 +8,9 @@
           :key="section.section"
           class="footer-section"
         >
-          <h3 class="text-white font-semibold text-lg mb-4">
+          <h2 class="text-white font-semibold text-lg mb-4">
             {{ section.section }}
-          </h3>
+          </h2>
           <nav :aria-label="`${section.section} navigation`">
             <ul class="space-y-2">
             <li v-for="link in section.links" :key="link.href">
@@ -37,15 +37,15 @@
                 </svg>
               </a>
             </li>
-          </nav>
           </ul>
+          </nav>
         </div>
 
         <!-- Social Links Section -->
         <div v-if="navigationData.socialLinks.length > 0" class="footer-section">
-          <h3 class="text-white font-semibold text-lg mb-4">
+          <h2 class="text-white font-semibold text-lg mb-4">
             Follow Us
-          </h3>
+          </h2>
           <nav aria-label="Social media links" class="flex space-x-4">
             <a
               v-for="social in navigationData.socialLinks"
