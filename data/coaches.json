@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "title": "Our Coaches",
+    "intro": "Meet our expert coaching team with diverse specializations and decades of combined experience in personal development, leadership, and holistic wellness. Each coach brings unique expertise and passion to help you achieve your goals.",
+    "description": "Meet the Inner Power Academy coaching team - expert instructors with diverse backgrounds in mindfulness, leadership, and personal growth."
+  },
+  "coaches": [
+    {
+      "slug": "dr-ananya-sharma",
+      "name": "Dr. Ananya Sharma",
+      "title": "Lead Mindfulness Coach",
+      "photo": "/images/coaches/ananya-sharma.jpg",
+      "bio": "Dr. Sharma brings 15 years of experience in mindfulness-based stress reduction and meditation techniques, having trained with leading experts in India and the United States.",
+      "expertise": [
+        "Mindfulness Meditation",
+        "Stress Management",
+        "Yoga Philosophy",
+        "MBSR (Mindfulness-Based Stress Reduction)"
+      ],
+      "education": [
+        "Ph.D. in Psychology, Stanford University",
+        "M.A. in Contemplative Studies, Naropa University",
+        "B.Sc. in Neuroscience, Delhi University"
+      ],
+      "experience": [
+        "Lead Instructor, Mindfulness Based Stress Reduction Program (2015-present)",
+        "Visiting Professor, UC Berkeley (2018-2020)",
+        "Clinical Psychologist, Stanford Medical Center (2010-2015)"
+      ],
+      "socialLinks": {
+        "facebook": "https://facebook.com/drananyasharma",
+        "instagram": "https://instagram.com/drananyasharma",
+        "linkedin": "https://linkedin.com/in/ananya-sharma-phd"
+      }
+    },
+    {
+      "slug": "michael-chen",
+      "name": "Michael Chen",
+      "title": "Leadership Development Specialist",
+      "photo": "/images/coaches/michael-chen.jpg",
+      "bio": "Michael specializes in executive coaching and organizational leadership, with a track record of transforming Fortune 500 leaders and emerging entrepreneurs.",
+      "expertise": [
+        "Executive Coaching",
+        "Organizational Leadership",
+        "Team Building",
+        "Strategic Planning"
+      ],
+      "education": [
+        "MBA, Harvard Business School",
+        "B.A. in Business Administration, UCLA"
+      ],
+      "experience": [
+        "Senior Executive Coach, Fortune 500 Companies (2018-present)",
+        "Leadership Consultant, McKinsey & Company (2012-2018)",
+        "VP of Operations, Tech Startup (2008-2012)"
+      ],
+      "socialLinks": {
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "instagram": "https://instagram.com/coach_michael_chen"
+      }
+    },
+    {
+      "slug": "sarah-thompson",
+      "name": "Sarah Thompson",
+      "title": "Nutrition & Wellness Coach",
+      "photo": "/images/coaches/sarah-thompson.jpg",
+      "bio": "Sarah integrates holistic nutrition, yoga, and Ayurvedic principles to help clients achieve optimal physical and mental health through personalized wellness plans.",
+      "expertise": [
+        "Holistic Nutrition",
+        "Ayurveda",
+        "Yoga Instruction",
+        "Weight Management"
+      ],
+      "education": [
+        "Certified Nutritionist, American Nutrition Association",
+        "Yoga Teacher Training (500-hour), Kripalu Center",
+        "B.S. in Health Sciences, Boston University"
+      ],
+      "experience": [
+        "Holistic Wellness Coach, Private Practice (2016-present)",
+        "Nutrition Consultant, Whole Foods Market (2014-2016)",
+        "Yoga Instructor, Various Studios (2010-present)"
+      ],
+      "socialLinks": {
+        "instagram": "https://instagram.com/sarahwellness",
+        "tiktok": "https://tiktok.com/@sarahwellness",
+        "facebook": "https://facebook.com/sarahthompsonwellness"
+      }
+    },
+    {
+      "slug": "james-okafor",
+      "name": "James Okafor",
+      "title": "Life Transitions Coach",
+      "photo": "/images/coaches/james-okafor.jpg",
+      "bio": "James guides clients through major life transitions with compassion and practical strategies, drawing from his background in psychology and personal experience with career pivots.",
+      "expertise": [
+        "Career Transitions",
+        "Grief Counseling",
+        "Resilience Building",
+        "Goal Setting"
+      ],
+      "education": [
+        "M.S. in Counseling Psychology, Columbia University",
+        "B.A. in Sociology, Howard University"
+      ],
+      "experience": [
+        "Life Transitions Coach, Private Practice (2017-present)",
+        "Career Counselor, Columbia University Career Center (2013-2017)",
+        "HR Manager, Corporate (2008-2013)"
+      ],
+      "socialLinks": {
+        "linkedin": "https://linkedin.com/in/jamesokafor"
+      }
+    },
+    {
+      "slug": "elena-rodriguez",
+      "name": "Elena Rodriguez",
+      "title": "Emotional Intelligence Coach",
+      "photo": "/images/coaches/elena-rodriguez.jpg",
+      "bio": "Elena helps individuals and teams develop emotional intelligence skills, enhancing communication, empathy, and conflict resolution in personal and professional settings.",
+      "expertise": [
+        "Emotional Intelligence",
+        "Conflict Resolution",
+        "Communication Skills",
+        "Team Dynamics"
+      ],
+      "education": [
+        "M.A. in Organizational Psychology, NYU",
+        "B.A. in Psychology, University of Miami",
+        "Certified EQ Coach, Institute for Social & Emotional Intelligence"
+      ],
+      "experience": [
+        "EQ Coach & Consultant, Corporate Clients (2015-present)",
+        "HR Director, Tech Company (2010-2015)",
+        "Group Facilitator, Community Centers (2012-present)"
+      ],
+      "socialLinks": {
+        "facebook": "https://facebook.com/elena.rodriguez.coach",
+        "instagram": "https://instagram.com/elenacoach",
+        "linkedin": "https://linkedin.com/in/elenarodriguez-eq"
+      }
+    },
+    {
+      "slug": "david-kim",
+      "name": "David Kim",
+      "title": "Creativity & Innovation Coach",
+      "photo": "/images/coaches/david-kim.jpg",
+      "bio": "David unlocks creative potential in artists, entrepreneurs, and professionals through innovative coaching techniques that blend design thinking with mindfulness practices.",
+      "expertise": [
+        "Design Thinking",
+        "Creative Problem Solving",
+        "Innovation Workshops",
+        "Mindful Creativity"
+      ],
+      "education": [
+        "MFA in Design, Rhode Island School of Design",
+        "B.A. in Fine Arts, Yale University"
+      ],
+      "experience": [
+        "Creativity Coach & Workshop Facilitator (2014-present)",
+        "Senior Designer, IDEO (2010-2014)",
+        "Adjunct Professor, Parsons School of Design (2016-present)"
+      ],
+      "socialLinks": {
+        "instagram": "https://instagram.com/davidkim_creative",
+        "tiktok": "https://tiktok.com/@davidcreates"
+      }
+    },
+    {
+      "slug": "lisa-patel",
+      "name": "Lisa Patel",
+      "title": "Mindset & Performance Coach",
+      "photo": "/images/coaches/lisa-patel.jpg",
+      "bio": "Lisa works with athletes, executives, and high-achievers to develop a growth mindset, overcome mental barriers, and achieve peak performance in their respective fields.",
+      "expertise": [
+        "Growth Mindset",
+        "Peak Performance",
+        "Mental Toughness",
+        "Habit Formation"
+      ],
+      "education": [
+        "M.S. in Sport Psychology, University of Oregon",
+        "B.S. in Kinesiology, Penn State University",
+        "Certified Performance Coach, International Coaching Federation"
+      ],
+      "experience": [
+        "Performance Coach, Elite Athletes & Executives (2016-present)",
+        "Sports Psychologist, Olympic Training Center (2012-2016)",
+        "Mental Performance Consultant, Professional Sports Teams (2010-2012)"
+      ],
+      "socialLinks": {
+        "linkedin": "https://linkedin.com/in/lisapatel-performance",
+        "instagram": "https://instagram.com/coach_lisa_patel",
+        "facebook": "https://facebook.com/lisapatelcoaching"
+      }
+    }
+  ]
+}

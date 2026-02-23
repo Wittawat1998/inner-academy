@@ -1,13 +1,21 @@
-// Logo
+// Logo (bilingual)
 export interface Logo {
-  text: string
+  textThai: string
+  textEnglish: string
   href: string
 }
 
-// Main navigation
+// CTA Button
+export interface CTAButton {
+  text: string
+  url: string
+  external: boolean
+}
+
+// Main navigation (Thai labels)
 export interface MenuItem {
-  label: string
-  href: string
+  title: string  // Thai label
+  link: string   // Can be #anchor or /page
   order: number
 }
 
@@ -40,7 +48,9 @@ export interface SocialLink {
 // Root data structure
 export interface NavigationData {
   logo: Logo
-  menuItems: MenuItem[]
+  cta: CTAButton
+  menu: MenuItem[]
+  menuItems: MenuItem[] // Deprecated: use 'menu' instead
   footerLinks: FooterSection[]
   socialLinks: SocialLink[]
   copyright: string

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col bg-gradient-to-b from-[#000000] to-[#0a1628]">
     <!-- Header -->
     <TheHeader />
 

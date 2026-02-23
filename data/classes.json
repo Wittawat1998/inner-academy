@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "title": "Our Classes - Inner Academy",
+    "description": "Browse all 13 transformative classes designed to unlock your potential through mindfulness, leadership, and personal growth",
+    "intro": "Explore our complete catalog of expert-led courses spanning mindfulness, emotional intelligence, leadership development, and more. Each class is designed to provide practical tools for personal and professional transformation."
+  },
+  "classes": [
+    {
+      "slug": "mindfulness-foundation",
+      "title": "Mindfulness Foundation",
+      "shortDescription": "Learn core mindfulness practices to reduce stress, increase focus, and cultivate present-moment awareness in daily life.",
+      "description": "This comprehensive 6-week course introduces the fundamental principles of mindfulness meditation and practice. You'll learn evidence-based techniques for cultivating present-moment awareness, managing stress, and developing greater emotional balance. Through guided meditations, reflective exercises, and practical applications, you'll build a sustainable mindfulness practice that enhances all areas of your life. Perfect for beginners and those looking to deepen their understanding of mindfulness principles. Each week includes guided practice sessions, homework exercises, and group discussions to support your journey toward greater awareness and peace.",
+      "image": "/images/classes/mindfulness-foundation.jpg",
+      "duration": "6 weeks",
+      "level": "Beginner",
+      "instructor": "Dr. Sarah Chen",
+      "featured": true,
+      "curriculum": [
+        "Introduction to mindfulness: history and modern applications",
+        "Breath awareness and body scan techniques",
+        "Working with thoughts and emotions mindfully",
+        "Mindful movement and walking meditation",
+        "Integrating mindfulness into daily activities",
+        "Developing a sustainable personal practice"
+      ],
+      "learningOutcomes": [
+        "Establish a regular mindfulness meditation practice",
+        "Reduce stress and anxiety through present-moment awareness",
+        "Improve focus and concentration in daily tasks",
+        "Develop greater emotional regulation and resilience",
+        "Apply mindfulness principles to daily life situations"
+      ]
+    },
+    {
+      "slug": "emotional-intelligence",
+      "title": "Emotional Intelligence Mastery",
+      "shortDescription": "Develop your ability to recognize, understand, and manage emotions in yourself and others for better relationships.",
+      "description": "Emotional Intelligence (EQ) is one of the most critical skills for personal and professional success. This 8-week intensive course provides a deep dive into the four core components of EQ: self-awareness, self-management, social awareness, and relationship management. You'll learn practical strategies for recognizing and regulating your emotions, understanding others' perspectives, and building stronger connections. Through case studies, role-playing exercises, and real-world applications, you'll develop the emotional literacy needed to navigate complex social situations, resolve conflicts effectively, and inspire those around you.",
+      "image": "/images/classes/emotional-intelligence.jpg",
+      "duration": "8 weeks",
+      "level": "Intermediate",
+      "instructor": "Michael Rodriguez",
+      "featured": true,
+      "curriculum": [
+        "The four pillars of emotional intelligence",
+        "Self-awareness: recognizing your emotional patterns",
+        "Self-management: regulating emotions under pressure",
+        "Social awareness: developing empathy and perspective-taking",
+        "Relationship management: building trust and influence",
+        "Applying EQ in workplace and personal contexts",
+        "Conflict resolution through emotional intelligence",
+        "Measuring and tracking your EQ growth"
+      ],
+      "learningOutcomes": [
+        "Identify and understand your emotional triggers and patterns",
+        "Regulate emotional responses in challenging situations",
+        "Demonstrate empathy and understand diverse perspectives",
+        "Build stronger relationships through authentic communication",
+        "Apply EQ principles to resolve conflicts constructively",
+        "Enhance leadership effectiveness through emotional awareness"
+      ]
+    },
+    {
+      "slug": "leadership-essentials",
+      "title": "Leadership Essentials",
+      "shortDescription": "Build foundational leadership skills including communication, decision-making, and team motivation.",
+      "description": "Whether you're a new manager, aspiring leader, or individual contributor looking to develop leadership capabilities, this 10-week foundational course covers the essential skills for effective leadership. Learn how to communicate vision, make strategic decisions, motivate teams, and navigate organizational dynamics. Through interactive workshops, leadership simulations, and mentorship opportunities, you'll build confidence in your ability to lead with authenticity and impact. The course combines classic leadership theories with modern approaches to create a comprehensive framework for leadership development in today's complex work environments.",
+      "image": "/images/classes/leadership-essentials.jpg",
+      "duration": "10 weeks",
+      "level": "Beginner",
+      "instructor": "Jennifer Park",
+      "featured": true,
+      "curriculum": [
+        "Defining your leadership philosophy and values",
+        "Effective communication for leaders",
+        "Decision-making frameworks and critical thinking",
+        "Motivating and inspiring teams",
+        "Delegation and trust-building",
+        "Performance feedback and coaching conversations",
+        "Leading through change and uncertainty",
+        "Developing your executive presence",
+        "Building and sustaining high-performing teams",
+        "Creating a personal leadership development plan"
+      ],
+      "learningOutcomes": [
+        "Define your authentic leadership style and values",
+        "Communicate clearly and inspire action",
+        "Make effective decisions using structured frameworks",
+        "Build trust and motivate diverse teams",
+        "Provide constructive feedback and coaching",
+        "Navigate organizational politics and influence stakeholders",
+        "Lead confidently through change and ambiguity"
+      ]
+    },
+    {
+      "slug": "stress-management",
+      "title": "Stress Management Techniques",
+      "shortDescription": "Practical strategies to identify stress triggers, develop coping mechanisms, and maintain balance in high-pressure environments.",
+      "description": "Stress is unavoidable, but chronic stress doesn't have to control your life. This focused 4-week course teaches evidence-based techniques for identifying stress sources, managing physical and emotional stress responses, and building resilience. You'll learn practical tools including breathing exercises, cognitive reframing, time management strategies, and boundary-setting techniques that can be immediately applied to your daily life. The course emphasizes actionable steps and sustainable practices rather than quick fixes, helping you create lasting change in how you relate to stress.",
+      "image": "/images/classes/stress-management.jpg",
+      "duration": "4 weeks",
+      "level": "Beginner",
+      "instructor": "Dr. Sarah Chen",
+      "featured": false,
+      "curriculum": [
+        "Understanding stress: physiology and psychology",
+        "Identifying your personal stress triggers and patterns",
+        "Breathing techniques and relaxation practices",
+        "Cognitive strategies for reframing stressful situations",
+        "Time management and prioritization for stress reduction",
+        "Setting healthy boundaries in work and relationships",
+        "Building a personalized stress management toolkit"
+      ],
+      "learningOutcomes": [
+        "Recognize early signs of stress in your body and mind",
+        "Apply breathing and relaxation techniques on demand",
+        "Reframe stressful thoughts using cognitive strategies",
+        "Set effective boundaries to protect your energy",
+        "Develop a sustainable daily stress management practice"
+      ]
+    },
+    {
+      "slug": "communication-skills",
+      "title": "Advanced Communication Skills",
+      "shortDescription": "Master verbal and non-verbal communication, active listening, and persuasive speaking for professional success.",
+      "description": "Communication is the cornerstone of professional success and meaningful relationships. This 6-week intermediate course goes beyond basic communication to explore advanced techniques in persuasive speaking, active listening, non-verbal communication, and adaptive communication styles. Through video analysis, role-play scenarios, and personalized feedback, you'll refine your ability to communicate clearly, connect authentically, and influence effectively across diverse contexts. Perfect for professionals looking to enhance their presentation skills, improve team collaboration, or develop executive-level communication capabilities.",
+      "image": "/images/classes/communication-skills.jpg",
+      "duration": "6 weeks",
+      "level": "Intermediate",
+      "instructor": "Michael Rodriguez",
+      "featured": false,
+      "curriculum": [
+        "Principles of effective communication",
+        "Active listening and question techniques",
+        "Non-verbal communication and body language",
+        "Adapting communication style to different audiences",
+        "Persuasive speaking and rhetoric",
+        "Difficult conversations and feedback delivery",
+        "Cross-cultural communication competence"
+      ],
+      "learningOutcomes": [
+        "Listen actively and ask powerful questions",
+        "Read and use non-verbal cues effectively",
+        "Adapt communication style to different contexts",
+        "Deliver persuasive presentations with confidence",
+        "Navigate difficult conversations with grace",
+        "Communicate effectively across cultural differences"
+      ]
+    },
+    {
+      "slug": "time-management",
+      "title": "Time Management and Productivity",
+      "shortDescription": "Learn proven systems to prioritize tasks, eliminate time-wasters, and achieve more with less stress.",
+      "description": "Time is your most valuable resource. This practical 5-week course teaches proven systems and frameworks for managing time effectively, prioritizing what truly matters, and achieving more without burnout. You'll learn techniques from multiple productivity methodologies including Getting Things Done, time-blocking, the Eisenhower Matrix, and more. The course emphasizes finding systems that work for your unique work style and life circumstances, rather than imposing a one-size-fits-all approach. Leave with a personalized productivity system you can sustain long-term.",
+      "image": "/images/classes/time-management.jpg",
+      "duration": "5 weeks",
+      "level": "Beginner",
+      "instructor": "Jennifer Park",
+      "featured": false,
+      "curriculum": [
+        "Time audit: understanding where your time actually goes",
+        "Priority frameworks: Eisenhower Matrix and MITs",
+        "Calendar management and time-blocking strategies",
+        "Task management systems (GTD, Kanban, etc.)",
+        "Eliminating time-wasters and distractions",
+        "Energy management for peak productivity",
+        "Building sustainable productivity habits"
+      ],
+      "learningOutcomes": [
+        "Conduct a thorough time audit and identify time leaks",
+        "Prioritize tasks using structured frameworks",
+        "Implement an effective calendar and task management system",
+        "Eliminate common distractions and time-wasters",
+        "Manage energy levels for sustained productivity",
+        "Create a personalized productivity system"
+      ]
+    },
+    {
+      "slug": "conflict-resolution",
+      "title": "Conflict Resolution Strategies",
+      "shortDescription": "Navigate workplace and personal conflicts with confidence using evidence-based negotiation and mediation techniques.",
+      "description": "Conflict is inevitable in any relationship or organization, but destructive conflict is not. This 6-week intermediate course teaches you how to navigate disagreements constructively, mediate disputes between others, and turn conflict into an opportunity for growth and understanding. Drawing from negotiation theory, restorative justice practices, and conflict resolution frameworks, you'll develop skills in active listening, perspective-taking, finding common ground, and facilitating difficult conversations. Whether you're a manager, team member, or simply want to improve your personal relationships, these skills are invaluable.",
+      "image": "/images/classes/conflict-resolution.jpg",
+      "duration": "6 weeks",
+      "level": "Intermediate",
+      "instructor": "David Kim",
+      "featured": false,
+      "curriculum": [
+        "Understanding conflict: sources, types, and dynamics",
+        "Communication skills for de-escalation",
+        "Interest-based negotiation frameworks",
+        "Mediation techniques and third-party facilitation",
+        "Managing emotions in high-stakes conversations",
+        "Finding win-win solutions and creative compromises",
+        "Repairing relationships after conflict"
+      ],
+      "learningOutcomes": [
+        "Identify sources and patterns of conflict",
+        "De-escalate tense situations through effective communication",
+        "Apply interest-based negotiation strategies",
+        "Facilitate productive conversations between conflicting parties",
+        "Transform conflict into opportunities for growth",
+        "Repair and strengthen relationships post-conflict"
+      ]
+    },
+    {
+      "slug": "creative-thinking",
+      "title": "Creative Thinking and Innovation",
+      "shortDescription": "Unlock your creative potential with exercises and frameworks for generating innovative solutions to complex problems.",
+      "description": "Creativity isn't just for artists—it's a critical skill for problem-solving, innovation, and adaptation in any field. This 7-week intermediate course demystifies the creative process and provides proven techniques for generating novel ideas, breaking through mental blocks, and fostering innovative thinking. You'll explore methods including design thinking, lateral thinking, SCAMPER, mind mapping, and more. Through hands-on exercises, creative challenges, and collaborative projects, you'll build confidence in your creative abilities and learn to apply creative thinking to real-world problems in your work and life.",
+      "image": "/images/classes/creative-thinking.jpg",
+      "duration": "7 weeks",
+      "level": "Intermediate",
+      "instructor": "Amanda Zhang",
+      "featured": false,
+      "curriculum": [
+        "The science of creativity and innovation",
+        "Design thinking process and mindsets",
+        "Lateral thinking and breaking mental patterns",
+        "Brainstorming techniques and ideation methods",
+        "Overcoming creative blocks and fear of failure",
+        "Prototyping and testing ideas rapidly",
+        "Cultivating a culture of innovation"
+      ],
+      "learningOutcomes": [
+        "Apply design thinking to complex problems",
+        "Generate diverse ideas using structured techniques",
+        "Break through creative blocks and limiting beliefs",
+        "Prototype and test solutions quickly",
+        "Foster creative thinking in teams and organizations",
+        "Develop a consistent creative practice"
+      ]
+    },
+    {
+      "slug": "resilience-building",
+      "title": "Building Resilience",
+      "shortDescription": "Develop mental toughness and bounce-back ability to thrive through challenges and setbacks.",
+      "description": "Resilience is the capacity to recover quickly from difficulties and adapt in the face of adversity. This 8-week advanced course combines research from positive psychology, neuroscience, and sports psychology to help you build genuine mental toughness and adaptive capacity. You'll learn strategies for reframing setbacks, building psychological flexibility, strengthening your support systems, and developing a growth mindset. Through challenging exercises, reflective practices, and exposure to controlled stressors, you'll expand your capacity to handle whatever life throws your way. This is not about toxic positivity—it's about developing authentic resilience grounded in self-awareness and realistic optimism.",
+      "image": "/images/classes/resilience-building.jpg",
+      "duration": "8 weeks",
+      "level": "Advanced",
+      "instructor": "Dr. Sarah Chen",
+      "featured": false,
+      "curriculum": [
+        "The science of resilience and post-traumatic growth",
+        "Developing a growth mindset and learning from failure",
+        "Cognitive flexibility and adaptive thinking",
+        "Building strong support networks and seeking help",
+        "Physical practices for mental resilience",
+        "Meaning-making and values-based living",
+        "Stress inoculation and controlled exposure",
+        "Creating your personal resilience action plan"
+      ],
+      "learningOutcomes": [
+        "Reframe setbacks as opportunities for growth",
+        "Develop cognitive flexibility in challenging situations",
+        "Build and leverage strong support networks",
+        "Apply physical practices to enhance mental resilience",
+        "Connect with deeper values and meaning",
+        "Increase your capacity to handle stress and adversity"
+      ]
+    },
+    {
+      "slug": "public-speaking",
+      "title": "Public Speaking Confidence",
+      "shortDescription": "Overcome speaking anxiety and deliver compelling presentations that engage and inspire any audience.",
+      "description": "Public speaking is consistently cited as one of people's top fears, yet it's an essential skill for career advancement and personal influence. This practical 6-week course for beginners addresses both the psychological and technical aspects of effective public speaking. You'll learn techniques for managing speech anxiety, structuring compelling presentations, using your voice and body effectively, and connecting authentically with audiences of any size. Through progressive exposure exercises, video feedback, and supportive practice opportunities, you'll build genuine confidence in your ability to speak in public. By the end, you'll deliver a final presentation that showcases your newfound skills.",
+      "image": "/images/classes/public-speaking.jpg",
+      "duration": "6 weeks",
+      "level": "Beginner",
+      "instructor": "David Kim",
+      "featured": false,
+      "curriculum": [
+        "Understanding and managing speech anxiety",
+        "Crafting compelling presentation structures",
+        "Voice techniques: projection, pacing, and emphasis",
+        "Body language and stage presence",
+        "Engaging audiences and handling questions",
+        "Using visual aids effectively",
+        "Final presentation showcase"
+      ],
+      "learningOutcomes": [
+        "Manage anxiety and nervousness when speaking publicly",
+        "Structure presentations with clear beginning, middle, and end",
+        "Use voice and body language to enhance your message",
+        "Engage diverse audiences and maintain attention",
+        "Handle challenging questions with confidence",
+        "Deliver a polished 10-minute presentation"
+      ]
+    },
+    {
+      "slug": "team-collaboration",
+      "title": "Team Collaboration Excellence",
+      "shortDescription": "Foster high-performing teams through trust-building, clear roles, and effective collaboration strategies.",
+      "description": "High-performing teams don't happen by accident—they require intentional design, skilled facilitation, and continuous nurturing. This 6-week intermediate course explores what makes teams truly effective, from establishing psychological safety to managing team dynamics to fostering productive collaboration. You'll learn frameworks for defining roles, running effective meetings, making group decisions, and navigating common team challenges. Drawing from research on team effectiveness and practical tools from agile methodologies, you'll gain skills applicable whether you're leading a team, participating as a member, or facilitating cross-functional collaboration.",
+      "image": "/images/classes/team-collaboration.jpg",
+      "duration": "6 weeks",
+      "level": "Intermediate",
+      "instructor": "Jennifer Park",
+      "featured": false,
+      "curriculum": [
+        "Foundations of high-performing teams",
+        "Building psychological safety and trust",
+        "Defining clear roles, goals, and accountability",
+        "Effective meeting facilitation and decision-making",
+        "Managing team conflict and difficult dynamics",
+        "Collaboration tools and agile practices",
+        "Sustaining team performance over time"
+      ],
+      "learningOutcomes": [
+        "Create psychological safety within teams",
+        "Define clear roles and responsibilities",
+        "Facilitate effective team meetings and decisions",
+        "Navigate interpersonal dynamics and conflict",
+        "Apply agile collaboration practices",
+        "Sustain high performance through team evolution"
+      ]
+    },
+    {
+      "slug": "decision-making",
+      "title": "Strategic Decision Making",
+      "shortDescription": "Apply frameworks and mental models to make better decisions faster, even with incomplete information.",
+      "description": "Every day you make countless decisions, from trivial choices to life-changing commitments. This 5-week advanced course teaches you how to make better decisions more consistently by understanding cognitive biases, applying structured frameworks, and developing sound judgment. You'll learn mental models from various disciplines including economics, psychology, statistics, and military strategy. Through case studies, decision simulations, and analysis of real-world scenarios, you'll build your decision-making toolkit and learn when to use which approach. The course balances analytical rigor with practical wisdom, helping you make better choices even under uncertainty and time pressure.",
+      "image": "/images/classes/decision-making.jpg",
+      "duration": "5 weeks",
+      "level": "Advanced",
+      "instructor": "Amanda Zhang",
+      "featured": false,
+      "curriculum": [
+        "Cognitive biases and how they distort decisions",
+        "Decision-making frameworks: cost-benefit, decision trees, and more",
+        "Mental models for strategic thinking",
+        "Making decisions under uncertainty and risk",
+        "Group decision-making processes",
+        "Learning from past decisions and building judgment"
+      ],
+      "learningOutcomes": [
+        "Recognize and mitigate cognitive biases in your thinking",
+        "Apply structured frameworks to complex decisions",
+        "Use mental models to analyze situations from multiple angles",
+        "Make sound decisions with incomplete information",
+        "Facilitate effective group decision processes",
+        "Learn systematically from past decisions"
+      ]
+    },
+    {
+      "slug": "work-life-balance",
+      "title": "Work-Life Balance",
+      "shortDescription": "Create sustainable routines that honor your professional ambitions and personal well-being.",
+      "description": "Work-life balance isn't about perfect 50/50 time splits—it's about intentional integration of work and life in a way that aligns with your values and supports your well-being. This practical 4-week course helps you examine your current relationship with work, identify what truly matters to you, and design sustainable routines that honor both your professional ambitions and personal needs. You'll learn strategies for setting boundaries, managing energy rather than just time, and making deliberate choices about where to invest your attention. The goal is not balance as a static state, but as an ongoing practice of alignment and adjustment.",
+      "image": "/images/classes/work-life-balance.jpg",
+      "duration": "4 weeks",
+      "level": "Beginner",
+      "instructor": "Michael Rodriguez",
+      "featured": false,
+      "curriculum": [
+        "Examining your relationship with work",
+        "Clarifying values and priorities across life domains",
+        "Setting boundaries with work and technology",
+        "Energy management and sustainable routines",
+        "Creating integration rather than separation",
+        "Building a personalized balance practice"
+      ],
+      "learningOutcomes": [
+        "Clarify your values and priorities across life areas",
+        "Set effective boundaries with work demands",
+        "Manage energy levels throughout the day and week",
+        "Design routines that support your well-being",
+        "Make intentional choices about time and attention allocation",
+        "Develop an ongoing practice of work-life integration"
+      ]
+    }
+  ]
+}

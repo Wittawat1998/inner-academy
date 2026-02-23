@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', 'Prompt', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+  
+  /* English headings - Montserrat Bold */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Thai text detection - Prompt Medium for headings */
+  h1:lang(th), h2:lang(th), h3:lang(th), h4:lang(th), h5:lang(th), h6:lang(th) {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+  }
+  
+  /* Ensure focus is visible for keyboard navigation */
+  :focus-visible {
+    outline: 2px solid theme('colors.blue.500');
+    outline-offset: 2px;
+  }
+}

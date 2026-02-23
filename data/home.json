@@ -1,0 +1,466 @@
+{
+  "meta": {
+    "title": "Inner Academy - Transform Your Inner Power",
+    "description": "Discover transformative courses and unlock your potential with Inner Academy's expert-led programs in mindfulness, leadership, and personal development.",
+    "keywords": "inner academy, personal development, online courses, self-improvement, mindfulness, leadership training",
+    "ogImage": "/images/og-homepage.jpg"
+  },
+  "hero": {},
+  "logos": [
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    },
+    {
+      "nameEN": "BrandEN",
+      "nameTH": "BrandTH",
+      "logo": "/images/logos/placeholder.svg",
+      "alt": "Brand Logo"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Key Message: Clear Message",
+      "description": "ศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน",
+      "slug": "key-message-clear-message",
+      "instructors": [
+        {
+          "name": "Instructor 1",
+          "image": "/images/instructors/instructor-1.svg"
+        },
+        {
+          "name": "Instructor 2",
+          "image": "/images/instructors/instructor-1.svg"
+        }
+      ]
+    },
+    {
+      "title": "Emotional Mastery",
+      "description": "ศาสตร์เพื่อการสื่อสารอย่างฉลาด ในทุกสถานการณ์",
+      "slug": "emotional-mastery",
+      "featured": true,
+      "instructors": [
+        {
+          "name": "Instructor 3",
+          "image": "/images/instructors/instructor-1.svg"
+        },
+        {
+          "name": "Instructor 4",
+          "image": "/images/instructors/instructor-1.svg"
+        }
+      ]
+    },
+    {
+      "title": "Coaching Leadership Through Powerful Questions",
+      "description": "ภาวะผู้นำแบบโค้ช - นำใช้สถิตย์ดําถามทรงพลัง",
+      "slug": "coaching-leadership-powerful-questions",
+      "instructors": [
+        {
+          "name": "Instructor 5",
+          "image": "/images/instructors/instructor-1.svg"
+        },
+        {
+          "name": "Instructor 6",
+          "image": "/images/instructors/instructor-1.svg"
+        }
+      ]
+    },
+    {
+      "title": "Brain Hacker: Fundamental of Analytical Thinking and System Thinking",
+      "description": "ปลดล็อกศักยภาพสมอง ด้วยพลังการคิดวิเคราะห์และการคิดอย่างเป็นระบบ",
+      "slug": "brain-hacker-analytical-system-thinking",
+      "instructors": [
+        {
+          "name": "Instructor 7",
+          "image": "/images/instructors/instructor-1.svg"
+        },
+        {
+          "name": "Instructor 8",
+          "image": "/images/instructors/instructor-1.svg"
+        }
+      ]
+    }
+  ],
+  "nextProgram": {
+    "title": "Leadership Transformation Intensive",
+    "date": "Starting March 15, 2026",
+    "description": "8-week intensive program for emerging leaders ready to elevate their impact",
+    "ctaText": "Learn More",
+    "ctaUrl": "/courses/leadership-intensive"
+  },
+  "coaches": [
+    {
+      "slug": "dr-ked",
+      "nickname": "ดร.เกด",
+      "name": "สุกฤตา ปรีชาว่อง",
+      "title": "Co-Founder and Organization Coach",
+      "image": "/images/coaches/ananya-sharma.webp",
+      "socialLinks": {
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower",
+        "tiktok": "https://tiktok.com/@innerpower"
+      }
+    },
+    {
+      "slug": "kru-lookkaew",
+      "nickname": "ครูลูกแก้ว",
+      "name": "วริศรา บำรุงเวช",
+      "title": "Communication and Presentation Coach",
+      "image": "/images/coaches/sarah-thompson.webp",
+      "socialLinks": {
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower",
+        "tiktok": "https://tiktok.com/@innerpower"
+      }
+    },
+    {
+      "slug": "kru-so",
+      "nickname": "ครูซอ",
+      "name": "ดร.สทาคัย พงศ์หิรัญ",
+      "title": "Communication and Presentation Coach",
+      "image": "/images/coaches/michael-chen.webp",
+      "socialLinks": {
+        "facebook": "https://facebook.com/innerpower"
+      }
+    },
+    {
+      "slug": "coach-kitti",
+      "nickname": "โค้ชกิตติ",
+      "name": "กิตติ ไตรรัตน์",
+      "title": "Mindset, Passion and Satir Coach",
+      "image": "/images/coaches/david-kim.webp",
+      "socialLinks": {
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower"
+      }
+    },
+    {
+      "slug": "coach-5",
+      "nickname": "โค้ชที่ 5",
+      "name": "ชื่อ นามสกุล",
+      "title": "Leadership and Team Coach",
+      "image": "/images/coaches/james-okafor.webp",
+      "socialLinks": {
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower"
+      }
+    },
+    {
+      "slug": "coach-6",
+      "nickname": "โค้ชที่ 6",
+      "name": "ชื่อ นามสกุล",
+      "title": "NLP and Mindset Coach",
+      "image": "/images/coaches/elena-rodriguez.webp",
+      "socialLinks": {
+        "facebook": "https://facebook.com/innerpower",
+        "linkedin": "https://linkedin.com/in/innerpower"
+      }
+    },
+    {
+      "slug": "coach-7",
+      "nickname": "โค้ชที่ 7",
+      "name": "ชื่อ นามสกุล",
+      "title": "Performance and Wellness Coach",
+      "image": "/images/coaches/lisa-patel.webp",
+      "socialLinks": {
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower",
+        "linkedin": "https://linkedin.com/in/innerpower"
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "studentName": "คุณสนิตา จิตรมีศิลป์ (นิ)",
+      "studentTitle": "รองกรรมการผู้จัดการ บริษัท น้อมจิตด์ อินคอร์เปอเรชั่น จำกัด(มหาชน)",
+      "quoteIntro": "การได้เข้ามาเรียนในคลาสนี้ทำให้ได้เจอต้นตอ",
+      "quoteMid": "ปัญหาการสื่อสารของตัวเอง",
+      "quoteLarge": "เพราะแค่ 'ความกลัว'",
+      "keyMessage": "Key Message: Clear Message",
+      "youtubeId": "dQw4w9WgXcQ",
+      "thumbnail": "/images/testimonials/testimonial-1.webp"
+    },
+    {
+      "studentName": "คุณวิชัย ศรีสมบูรณ์",
+      "studentTitle": "ผู้จัดการฝ่ายขาย บริษัท ไทยเบเวอเรจ จำกัด",
+      "quoteIntro": "ก่อนมาเรียนผมไม่เคยรู้ว่า",
+      "quoteMid": "ทักษะการพูดต่อหน้าสาธารณะ",
+      "quoteLarge": "เปลี่ยนชีวิตได้จริง",
+      "keyMessage": "Key Message: Confident Speaker",
+      "youtubeId": "9bZkp7q19f0",
+      "thumbnail": "/images/testimonials/testimonial-2.webp"
+    },
+    {
+      "studentName": "คุณพิมพ์ชนก ลี",
+      "studentTitle": "HR Director บริษัท ดิจิทัล โซลูชั่น จำกัด",
+      "quoteIntro": "หลักสูตรนี้ทำให้ฉันเข้าใจว่า",
+      "quoteMid": "ปัญหาในทีมแทบทุกอย่าง",
+      "quoteLarge": "มาจาก 'การสื่อสาร'",
+      "keyMessage": "Key Message: Team Communication",
+      "youtubeId": "L_jWHffIx5E",
+      "thumbnail": "/images/testimonials/testimonial-3.webp"
+    },
+    {
+      "studentName": "คุณธนพล วงศ์สุวรรณ",
+      "studentTitle": "ผู้อำนวยการฝ่ายการตลาด บริษัท เอเชียแปซิฟิค จำกัด",
+      "quoteIntro": "ผมไม่เคยคิดว่าตัวเองจะ",
+      "quoteMid": "พูดต่อหน้าพันคนได้",
+      "quoteLarge": "แต่ตอนนี้ทำได้แล้ว",
+      "keyMessage": "Key Message: Leadership Presence",
+      "youtubeId": "jNQXAC9IVRw",
+      "thumbnail": "/images/testimonials/testimonial-4.webp"
+    },
+    {
+      "studentName": "คุณมณีรัตน์ สุทธิชัย",
+      "studentTitle": "ผู้ก่อตั้ง บริษัท สตาร์ทอัพไทย จำกัด",
+      "quoteIntro": "ก่อนมาเรียนฉันรู้สึกว่า",
+      "quoteMid": "ความคิดที่ดีขายไม่ได้",
+      "quoteLarge": "ถ้าพูดไม่เก่ง",
+      "keyMessage": "Key Message: Pitch to Win",
+      "youtubeId": "6stlCkUDG_s",
+      "thumbnail": "/images/testimonials/testimonial-5.webp"
+    },
+    {
+      "studentName": "คุณอภิชาต เจริญรัตน์",
+      "studentTitle": "ผู้บริหารระดับสูง ธนาคารกรุงเทพ จำกัด",
+      "quoteIntro": "ทักษะที่เรียนได้จากที่นี่",
+      "quoteMid": "นำไปใช้ได้ทันทีในชีวิตจริง",
+      "quoteLarge": "ผลลัพธ์เห็นชัดภายใน 30 วัน",
+      "keyMessage": "Key Message: Instant Results",
+      "youtubeId": "oHg5SJYRHA0",
+      "thumbnail": "/images/testimonials/testimonial-6.webp"
+    }
+  ],
+  "dualCTA": {
+    "heading": "รับแบบประเมินฟรี",
+    "description": "เพื่อประเมิน Soft-Skills หลากหลายมิติให้บุคลากรของท่าน",
+    "descriptionLine2": "( มูลค่า 5,000 บาท )",
+    "backgroundImage": "/images/hero/team-photo.jpg",
+    "primaryButtonText": "ประเมินทักษะด้าน Soft-Skills ตอนนี้",
+    "primaryButtonUrl": "/contact",
+    "secondaryButtonText": "ประเมินความฉลาดทางอารมณ์ ตอนนี้",
+    "secondaryButtonUrl": "/contact"
+  },
+  "ebook": {
+    "title": "The Inner Transformation Guide",
+    "description": "Download our comprehensive 50-page guide to starting your personal development journey",
+    "image": "/images/ebook/inner-transformation-cover.jpg",
+    "ctaText": "Download Free Guide",
+    "ctaUrl": "/downloads/inner-transformation-guide.pdf"
+  },
+  "podcast": {
+    "title": "Inner Wisdom Podcast",
+    "description": "Weekly conversations with experts on mindfulness, leadership, and personal growth",
+    "episodes": [
+      {
+        "title": "Episode 1: The Foundation of Mindfulness",
+        "url": "/podcast/episode-1-mindfulness-foundation"
+      },
+      {
+        "title": "Episode 2: Building Emotional Intelligence",
+        "url": "/podcast/episode-2-emotional-intelligence"
+      },
+      {
+        "title": "Episode 3: Leadership in Times of Change",
+        "url": "/podcast/episode-3-leadership-change"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "ติดต่อเรา",
+    "description": "สอบถามรายละเอียดหลักสูตร รูปแบบการเรียน แนบประเมินศักยภาพพนักงานฟรี หรือว่าขอเข้าเยี่ยมชม ๆ กับที่ปรึกษาการเรียนรู้ของเราได้เลย",
+    "phone": "080-265-6266",
+    "email": "info@innerpower.co.th",
+    "address": {
+      "company": "บริษัท อินเนอร์ เพาเวอร์ เทรนนิ่ง จำกัด",
+      "building": "Raintree Office Garden",
+      "floor": "อาคาร B2 ชั้น 2",
+      "street": "เลขที่ 280 ซอยสุขุมวิจัย 4 (พระราม 9 ซอย 17)",
+      "district": "บางกะปิ ห้วยขวาง กรุงเทพฯ 10310"
+    },
+    "mapImage": "/images/contact-map.png",
+    "mapEmbedUrl": "https://www.google.com/maps?q=บริษัท+อินเนอร์+เพาเวอร์+เทรนนิ่ง+จำกัด,+Raintree+Office+Garden,+280+ซอยสุขุมวิจัย+4,+บางกะปิ,+กรุงเทพฯ+10310&output=embed"
+  }
+}

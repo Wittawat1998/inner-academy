@@ -1,17 +1,46 @@
-<template>
-  <div class="container mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold mb-4">About Inner Academy</h1>
-    <p class="text-lg text-gray-700 mb-4">
-      Inner Academy is dedicated to helping individuals discover their inner potential 
-      and achieve personal transformation through mindfulness, meditation, and holistic practices.
-    </p>
-    <p class="text-lg text-gray-700">
-      This page is under construction and will be updated with more details about our mission, 
-      vision, and team.
-    </p>
-  </div>
-</template>
-
 <script setup lang="ts">
-// Layout is applied automatically
+import aboutData from '~/data/about.json'
+import type { AboutData } from '~/types/about'
+
+// Type assertion for imported JSON
+const data = aboutData as AboutData
+
+// SEO meta tags
+useHead({
+  title: 'About Us - Inner Power Academy',
+  meta: [
+    {
+      name: 'description',
+      content: data.mission.description.substring(0, 160)
+    },
+    {
+      property: 'og:title',
+      content: 'About Us - Inner Power Academy'
+    },
+    {
+      property: 'og:description',
+      content: data.mission.description.substring(0, 160)
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ]
+})
 </script>
+
+<template>
+  <main class="about-page">
+    <!-- Mission Section (User Story 1) -->
+    <AboutMission :mission="data.mission" />
+    
+    <!-- Founder Section (User Story 2) -->
+    <AboutFounder :founder="data.founder" />
+    
+    <!-- Quote Section (User Story 3 - Conditional) -->
+    <AboutQuote v-if="data.quote" :quote="data.quote" />
+    
+    <!-- Gallery Section (User Story 3 - Conditional) -->
+    <AboutGallery v-if="data.images && data.images.length > 0" :images="data.images" />
+  </main>
+</template>

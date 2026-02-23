@@ -1,0 +1,106 @@
+<template>
+  <div class="coach-card">
+    <!-- Portrait Photo -->
+    <NuxtLink :to="coach.slug ? '/coaches/' + coach.slug : '#coaches'">
+      <div class="aspect-[3/4] overflow-hidden rounded-xl bg-gray-900 border border-gray-700">
+        <NuxtImg
+          :src="coach.image || '/images/coaches/placeholder.webp'"
+          :alt="coach.nickname || coach.name"
+          class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          format="webp"
+          sizes="xs:160px sm:200px md:240px lg:280px"
+        />
+      </div>
+    </NuxtLink>
+
+    <!-- Coach Info -->
+    <div class="pt-4 pb-2">
+      <!-- Nickname (Thai display name) -->
+      <h3
+        v-if="coach.nickname"
+        class="text-2xl md:text-3xl font-bold mb-1 leading-tight"
+        style="color: #C9A961;"
+      >
+        {{ coach.nickname }}
+      </h3>
+
+      <!-- Full name -->
+      <p v-if="coach.name" class="text-sm md:text-base text-white font-medium mb-1">
+        {{ coach.name }}
+      </p>
+
+      <!-- Title -->
+      <p v-if="coach.title" class="text-xs md:text-sm text-gray-400 italic leading-snug mb-3">
+        {{ coach.title }}
+      </p>
+
+      <!-- Social Media Badges -->
+      <div v-if="coach.socialLinks" class="flex gap-2 flex-wrap">
+        <a
+          v-if="coach.socialLinks.facebook"
+          :href="coach.socialLinks.facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
+          aria-label="Facebook"
+        >
+          <span class="font-bold text-sm leading-none" style="color: #1E293B;">f</span>
+        </a>
+
+        <a
+          v-if="coach.socialLinks.instagram"
+          :href="coach.socialLinks.instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
+          aria-label="Instagram"
+        >
+          <span class="font-bold text-xs leading-none" style="color: #1E293B;">ig</span>
+        </a>
+
+        <a
+          v-if="coach.socialLinks.tiktok"
+          :href="coach.socialLinks.tiktok"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
+          aria-label="TikTok"
+        >
+          <span class="font-bold text-sm leading-none" style="color: #1E293B;">d</span>
+        </a>
+
+        <a
+          v-if="coach.socialLinks.linkedin"
+          :href="coach.socialLinks.linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
+          aria-label="LinkedIn"
+        >
+          <span class="font-bold text-xs leading-none" style="color: #1E293B;">in</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import type { Coach } from '~/types/home'
+
+/**
+ * CoachCard Component
+ * Feature: 006-coaches (Home Page Grid)
+ *
+ * Portrait card: photo (3:4) → nickname (gold) → full name → italic title → social badges
+ * Per spec: social links Facebook, Instagram, TikTok, LinkedIn (all optional)
+ */
+
+defineProps<{
+  coach: Coach
+}>()
+</script>
+
+<style scoped>
+/* No custom styles needed - using Tailwind utilities */
+</style>

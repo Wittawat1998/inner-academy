@@ -1,35 +1,48 @@
 {
   "logo": {
-    "text": "Inner Academy",
-    "href": "/"
+    "textThai": "INNER POWER",
+    "textEnglish": "ACADEMY",
+    "href": "/",
+    "imagePath": "/images/logo.png"
   },
-  "menuItems": [
+  "cta": {
+    "text": "รับแบบประเมินศักยภาพฟรี",
+    "url": "https://assessment.innerpower.co.th",
+    "external": true
+  },
+  "menu": [
     {
-      "label": "Home",
-      "href": "/",
+      "title": "หลักสูตร",
+      "link": "#classes",
       "order": 1
     },
     {
-      "label": "About",
-      "href": "/about",
+      "title": "ทีมโค้ช",
+      "link": "#coaches",
       "order": 2
     },
     {
-      "label": "Courses",
-      "href": "/courses",
+      "title": "ผลลัพธ์",
+      "link": "#testimonials",
       "order": 3
     },
     {
-      "label": "Coaches",
-      "href": "/coaches",
+      "title": "ความรู้",
+      "link": "#knowledge",
       "order": 4
     },
     {
-      "label": "Contact",
-      "href": "/contact",
+      "title": "ติดต่อ",
+      "link": "#contact",
       "order": 5
+    },
+    {
+      "title": "เกี่ยวกับ",
+      "link": "/about",
+      "order": 6
     }
   ],
+  "menuItems": [],
   "footerLinks": [
     {
       "section": "Quick Links",
@@ -39,25 +52,12 @@
           "href": "/about"
         },
         {
-          "label": "Our Courses",
-          "href": "/courses"
-        },
-        {
           "label": "Our Coaches",
           "href": "/coaches"
-        }
-      ]
-    },
-    {
-      "section": "Contact",
-      "links": [
-        {
-          "label": "Contact Us",
-          "href": "/contact"
         },
         {
-          "label": "Email Us",
-          "href": "mailto:info@inneracademy.com"
+          "label": "Contact",
+          "href": "/contact"
         }
       ]
     },
@@ -85,6 +85,16 @@
       "platform": "Instagram",
       "url": "https://instagram.com/inneracademy",
       "icon": "instagram"
+    },
+    {
+      "platform": "TikTok",
+      "url": "https://tiktok.com/@inneracademy",
+      "icon": "tiktok"
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://youtube.com/@inneracademy",
+      "icon": "youtube"
     },
     {
       "platform": "Line",
