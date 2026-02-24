@@ -43,15 +43,15 @@
             <form @submit.prevent="handleSubmit" class="space-y-6">
               <!-- Name -->
               <div>
-                <label for="name" class="block text-sm md:text-base text-gray-300 mb-2">
+                <label for="name" class="block text-sm md:text-base text-inputLabel mb-2">
                   ชื่อ - นามสกุล <span class="text-red-400">*</span>
                 </label>
                 <input
                   id="name"
                   v-model="formData.name"
                   type="text"
-                  class="w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.name && errors.name ? 'border-red-500' : 'border-gray-700'"
+                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                  :class="formState.touched.name && errors.name ? 'border-red-500' : 'border-inputBorder'"
                   placeholder="ระบุชื่อ-นามสกุล"
                   required
                   @blur="handleBlur('name')"
@@ -64,15 +64,15 @@
 
               <!-- Organization -->
               <div>
-                <label for="organization" class="block text-sm md:text-base text-gray-300 mb-2">
+                <label for="organization" class="block text-sm md:text-base text-inputLabel mb-2">
                   องค์กร
                 </label>
                 <input
                   id="organization"
                   v-model="formData.organization"
                   type="text"
-                  class="w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.organization && errors.organization ? 'border-red-500' : 'border-gray-700'"
+                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                  :class="formState.touched.organization && errors.organization ? 'border-red-500' : 'border-inputBorder'"
                   placeholder="บริษัท ออฟฟิศเดิน จำกัด"
                   @blur="handleBlur('organization')"
                   @input="clearMessages"
@@ -84,15 +84,15 @@
 
               <!-- Position -->
               <div>
-                <label for="position" class="block text-sm md:text-base text-gray-300 mb-2">
+                <label for="position" class="block text-sm md:text-base text-inputLabel mb-2">
                   ตำแหน่ง
                 </label>
                 <input
                   id="position"
                   v-model="formData.position"
                   type="text"
-                  class="w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.position && errors.position ? 'border-red-500' : 'border-gray-700'"
+                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                  :class="formState.touched.position && errors.position ? 'border-red-500' : 'border-inputBorder'"
                   placeholder="ตำแหน่ง"
                   @blur="handleBlur('position')"
                   @input="clearMessages"
@@ -104,15 +104,15 @@
 
               <!-- Email -->
               <div>
-                <label for="email" class="block text-sm md:text-base text-gray-300 mb-2">
+                <label for="email" class="block text-sm md:text-base text-inputLabel mb-2">
                   อีเมล <span class="text-red-400">*</span>
                 </label>
                 <input
                   id="email"
                   v-model="formData.email"
                   type="email"
-                  class="w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.email && errors.email ? 'border-red-500' : 'border-gray-700'"
+                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                  :class="formState.touched.email && errors.email ? 'border-red-500' : 'border-inputBorder'"
                   placeholder="example@email.com"
                   required
                   @blur="handleBlur('email')"
@@ -125,15 +125,15 @@
 
               <!-- Phone -->
               <div>
-                <label for="phone" class="block text-sm md:text-base text-gray-300 mb-2">
+                <label for="phone" class="block text-sm md:text-base text-inputLabel mb-2">
                   เบอร์ติดต่อ
                 </label>
                 <input
                   id="phone"
                   v-model="formData.phone"
                   type="tel"
-                  class="w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.phone && errors.phone ? 'border-red-500' : 'border-gray-700'"
+                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                  :class="formState.touched.phone && errors.phone ? 'border-red-500' : 'border-inputBorder'"
                   placeholder="080-xxx-xxxx"
                   @blur="handleBlur('phone')"
                   @input="clearMessages"
@@ -145,15 +145,15 @@
 
               <!-- Message -->
               <div>
-                <label for="message" class="block text-sm md:text-base text-gray-300 mb-2">
+                <label for="message" class="block text-sm md:text-base text-inputLabel mb-2">
                   ข้อความ <span class="text-red-400">*</span>
                 </label>
                 <textarea
                   id="message"
                   v-model="formData.message"
                   rows="5"
-                  class="w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent resize-none"
-                  :class="formState.touched.message && errors.message ? 'border-red-500' : 'border-gray-700'"
+                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent resize-none"
+                  :class="formState.touched.message && errors.message ? 'border-red-500' : 'border-inputBorder'"
                   placeholder="พิมพ์ข้อความของคุณที่นี่..."
                   required
                   @blur="handleBlur('message')"
@@ -180,8 +180,7 @@
               <button
                 type="submit"
                 :disabled="formState.loading || !formData.turnstileToken"
-                class="px-8 py-3 text-black font-semibold text-base rounded-full transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
-                style="background-color: #E8CD91;"
+                class="px-8 py-3 text-black font-semibold text-base rounded-full transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed bg-ctaGold"
               >
                 <span v-if="formState.loading">กำลังส่ง...</span>
                 <span v-else>ส่งข้อความ</span>
@@ -215,8 +214,7 @@
               <!-- Call Button -->
               <a
                 :href="`tel:${contact.phone.replace(/[^0-9+]/g, '')}`"
-                class="inline-flex items-center gap-3 px-8 py-3 text-black font-semibold text-base rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
-                style="background-color: #E8CD91;"
+                class="inline-flex items-center gap-3 px-8 py-3 text-black font-semibold text-base rounded-full transition-all duration-200 shadow-lg hover:shadow-xl bg-ctaGold"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

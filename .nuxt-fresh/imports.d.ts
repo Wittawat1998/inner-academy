@@ -33,6 +33,7 @@ export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useAnchorScroll } from '../composables/useAnchorScroll';
 export { useContactForm } from '../composables/useContactForm';
 export { useHomeContent } from '../composables/useHomeContent';
+export { useNavigationData } from '../composables/useNavigationData';
 export { useScrollHeader } from '../composables/useScrollHeader';
 export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
 export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';

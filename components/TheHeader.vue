@@ -1,9 +1,9 @@
 <template>
-  <header 
-    class="sticky top-0 z-50 transition-all duration-300 bg-black/90 backdrop-blur-sm"
-    :class="isScrolled ? 'shadow-lg' : ''"
-  >
-    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+  <header
+    class="sticky top-0 z-50 transition-all duration-300 backdrop-blur-sm bg-gradient-header"
+    >
+    <!-- :class="isScrolled ? 'shadow-lg' : ''" -->
+    <div v-if="navigationData" class="container mx-auto px-4 md:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Logo (Left) -->
         <NuxtLink 
@@ -11,28 +11,8 @@
           class="logo-link flex items-center gap-2"
           aria-label="Inner Power Academy homepage"
         >
-          <!-- Logo Image/Icon -->
-          <div class="w-12 h-12 flex-shrink-0">
-            <svg viewBox="0 0 50 50" class="w-full h-full text-brandGold" fill="currentColor">
-              <circle cx="25" cy="25" r="23" fill="none" stroke="currentColor" stroke-width="2"/>
-              <circle cx="25" cy="15" r="2"/>
-              <circle cx="25" cy="25" r="2"/>
-              <circle cx="25" cy="35" r="2"/>
-              <circle cx="15" cy="20" r="2"/>
-              <circle cx="35" cy="20" r="2"/>
-              <circle cx="15" cy="30" r="2"/>
-              <circle cx="35" cy="30" r="2"/>
-            </svg>
-          </div>
-          <!-- Logo Text -->
-          <div class="flex flex-col leading-tight">
-            <span class="text-base md:text-lg font-bold text-brandGold tracking-wide font-en">
-              {{ navigationData.logo.textThai }}
-            </span>
-            <span class="text-xs md:text-sm text-brandGold/80 tracking-wider font-en uppercase">
-              {{ navigationData.logo.textEnglish }}
-            </span>
-          </div>
+          <!-- Logo Image -->
+          <img src="/public/images/icon/appicon.png" alt="Inner Power Academy" class="h-24 w-auto" />
         </NuxtLink>
 
         <!-- Desktop Navigation (Center) -->
@@ -54,10 +34,10 @@
           :href="navigationData.cta.url"
           target="_blank"
           rel="noopener noreferrer"
-          class="hidden lg:inline-flex items-center px-6 py-3 text-black font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-opacity-50 font-th text-sm"
-          style="background-color: #E8CD91;"
+          class="hidden lg:inline-flex flex-col items-center px-6 py-2 text-black font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-opacity-50 font-th text-[12px] bg-ctaGold leading-tight"
         >
-          {{ navigationData.cta.text }}
+          <span>{{ navigationData.cta.text }}</span>
+          <span>{{ navigationData.cta.subtext }}</span>
         </a>
 
         <!-- Mobile Menu Button -->
@@ -107,11 +87,11 @@
               :href="navigationData.cta.url"
               target="_blank"
               rel="noopener noreferrer"
-              class="block w-full text-center px-6 py-3 text-black font-bold rounded-full shadow-lg transition-all duration-300 font-th"
-              style="background-color: #E8CD91;"
+              class="block w-full text-center px-6 py-3 text-black bg-ctaGold font-bold rounded-full shadow-lg transition-all duration-300 font-th leading-tight"
               @click="closeMenu"
             >
-              {{ navigationData.cta.text }}
+              <span class="block">{{ navigationData.cta.text }}</span>
+              <span class="block">{{ navigationData.cta.subtext }}</span>
             </a>
           </div>
 
@@ -135,20 +115,15 @@
 </template>
 
 <script setup lang="ts">
-import type { NavigationData } from '~/types/navigation'
-import navigationDataRaw from '~/data/navigation.json'
+const { navigationData } = useNavigationData()
 
-// Cast JSON import to typed structure
-const navigationData = navigationDataRaw as NavigationData
-
-// Use 'menu' field (preferred) or fall back to 'menuItems' (deprecated)
-const menuSource = navigationData.menu && navigationData.menu.length > 0 
-  ? navigationData.menu 
-  : navigationData.menuItems
-
-// Sort menu items by order field
+// Sort menu items by order field (prefer 'menu', fall back to 'menuItems')
 const sortedMenu = computed(() => {
-  return [...menuSource].sort((a, b) => a.order - b.order)
+  if (!navigationData.value) return []
+  const source = navigationData.value.menu?.length
+    ? navigationData.value.menu
+    : navigationData.value.menuItems
+  return [...source].sort((a, b) => a.order - b.order)
 })
 
 // Sticky header scroll state

@@ -37,8 +37,7 @@
           <!-- Primary Button -->
           <NuxtLink
             :to="cta.primaryButtonUrl"
-            class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center"
-            style="background-color: #E8CD91;"
+            class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center bg-ctaGold"
           >
             {{ cta.primaryButtonText }}
           </NuxtLink>
@@ -46,8 +45,7 @@
           <!-- Secondary Button -->
           <NuxtLink
             :to="cta.secondaryButtonUrl"
-            class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center"
-            style="background-color: #E8CD91;"
+            class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center bg-ctaGold"
           >
             {{ cta.secondaryButtonText }}
           </NuxtLink>

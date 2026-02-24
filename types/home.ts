@@ -9,9 +9,14 @@ export interface MetaData {
   ogImage?: string
 }
 
-// Hero section with banner image (no additional data needed)
+// Hero section banner content
 export interface HeroContent {
-  // Banner image is hardcoded in component
+  titleLine1: string
+  titleLine2: string
+  subtitle: string
+  description: string
+  badgeIcon?: string
+  bgHero?: string
 }
 
 // Trusted partner logos for horizontal slider
@@ -90,11 +95,18 @@ export interface DualCTA {
 
 // E-book promotional offer
 export interface Ebook {
-  title: string
+  headingLine1?: string
+  headingLine2Before?: string
+  headingLine2Highlight?: string
+  headingLine2After?: string
+  subheading?: string
   description: string
+  backgroundImage?: string
   image: string
   ctaText: string
   ctaUrl: string
+  // legacy
+  title?: string
 }
 
 // Podcast episode
@@ -108,7 +120,11 @@ export interface Podcast {
   title: string
   description: string
   episodes: Episode[]
+  image?: string // Podcast background image
+  titleLine1?: string
+  titleLine2?: string
 }
+
 
 // Contact information and address
 export interface Contact {
@@ -145,7 +161,6 @@ export interface AssessmentCTA {
 // Root data structure - 10 mandatory sections
 export interface HomeData {
   meta: MetaData
-  hero: HeroContent
   logos: TrustedLogo[]
   courses: Course[]
   nextProgram: NextProgram

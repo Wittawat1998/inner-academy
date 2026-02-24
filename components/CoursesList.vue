@@ -11,7 +11,7 @@
       <div class="max-w-7xl mx-auto">
         <!-- Section Heading -->
         <div class="mb-8 md:mb-12 section-header">
-          <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold pb-6 md:pb-8" style="color: #C9A961;">
+          <h2 class="text-7xl font-semibold pb-8 header-fade">
             หลักสูตร
           </h2>
         </div>
@@ -24,11 +24,11 @@
           >
           <NuxtLink 
             :to="`/courses/${course.slug}`"
-            class="course-link flex flex-col md:flex-row md:items-center gap-4 md:gap-8 p-6 md:p-8 group"
+            class="course-link flex flex-col md:flex-row md:items-center gap-4 md:gap-8 py-6 md:py-8 px-[110px] md:px-[110px] group"
           >
             <!-- Left: Title + Description -->
             <div class="flex-1 min-w-0">
-              <h3 class="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-2 md:mb-3 group-hover:text-gray-900 transition-colors">
+              <h3 class="text-3xl font-semibold text-white mb-2 group-hover:text-gray-900 transition-colors">
                 {{ course.title }}
               </h3>
               <p class="text-sm md:text-base text-gray-400 group-hover:text-gray-700 transition-colors">
@@ -54,7 +54,7 @@
 
             <!-- Right: CTA -->
             <div class="flex-shrink-0">
-              <span class="inline-flex items-center gap-2 text-gold group-hover:text-gray-900 font-semibold text-base md:text-lg transition-colors">
+              <span class="inline-flex items-center gap-2 text-gold group-hover:text-white font-semibold text-base md:text-lg transition-colors">
                 รายละเอียด
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
@@ -100,14 +100,12 @@ defineProps<{
 </script>
 
 <style scoped>
-.text-gold {
-  color: #d4af37;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
 
 .section-header {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   border-bottom: 2px solid;
   border-image: linear-gradient(90deg, 
     rgba(156, 163, 175, 0) 0%,
@@ -120,40 +118,111 @@ defineProps<{
   ) 1;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .section-header {
     padding-left: 3rem;
     padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 
 @media (min-width: 1024px) {
   .section-header {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
-}
+} */
 
 .course-link {
   border-radius: 0;
   background: transparent;
   border-bottom: 2px solid rgba(255, 255, 255, 0.15);
   transition: all 0.3s ease;
+  border-image: linear-gradient(90deg, 
+    rgba(156, 163, 175, 0) 0%,
+    rgba(156, 163, 175, 0.2) 10%,
+    rgba(156, 163, 175, 0.4) 30%,
+    rgba(156, 163, 175, 0.5) 50%,
+    rgba(156, 163, 175, 0.4) 70%,
+    rgba(156, 163, 175, 0.2) 90%,
+    rgba(156, 163, 175, 0) 100%
+  ) 1;
 }
 
 .course-link:hover {
-  background: linear-gradient(90deg, 
-    rgba(215, 185, 125, 0.75) 0%, 
-    rgba(220, 190, 130, 0.78) 10%,
-    rgba(225, 195, 135, 0.8) 20%,
-    rgba(230, 200, 140, 0.82) 30%,
-    rgba(235, 205, 145, 0.83) 40%,
-    rgba(240, 210, 150, 0.85) 50%,
-    rgba(235, 205, 145, 0.83) 60%,
-    rgba(230, 200, 140, 0.82) 70%,
-    rgba(225, 195, 135, 0.8) 80%,
-    rgba(220, 190, 130, 0.78) 90%,
-    rgba(215, 185, 125, 0.75) 100%
+  background: linear-gradient(90deg,
+    rgba(215, 185, 125, 0) 0%,
+    rgba(215, 185, 125, 0.10) 1%,
+    rgba(215, 185, 125, 0.18) 2%,
+    rgba(215, 185, 125, 0.25) 3%,
+    rgba(215, 185, 125, 0.35) 4%,
+    rgba(215, 185, 125, 0.45) 5%,
+    rgba(215, 185, 125, 0.55) 6%,
+    rgba(215, 185, 125, 0.60) 7%,
+    rgba(215, 185, 125, 0.68) 8%,
+    rgba(215, 185, 125, 0.75) 9%,
+    rgba(218, 188, 128, 1) 80%,
+    rgba(220, 190, 130, 1) 80%,
+    rgba(223, 193, 133, 1) 80%,
+    rgba(225, 195, 135, 1) 80%,
+    rgba(227, 197, 137, 1) 80%,
+    rgba(230, 200, 140, 1) 80%,
+    rgba(232, 202, 142, 1) 80%,
+    rgba(235, 205, 145, 1) 80%,
+    rgba(241, 209, 149, 1) 80%,
+    rgba(247, 198, 109, 1) 80%, /* ctaGold */
+    rgba(241, 209, 149, 1) 80%,
+    rgba(235, 205, 145, 1) 80%,
+    rgba(232, 202, 142, 1) 80%,
+    rgba(230, 200, 140, 1) 80%,
+    rgba(227, 197, 137, 1) 80%,
+    rgba(225, 195, 135, 1) 80%,
+    rgba(223, 193, 133, 1) 80%,
+    rgba(220, 190, 130, 1) 80%,
+    rgba(218, 188, 128, 1) 80%,
+    rgba(215, 185, 125, 0.75) 91%,
+    rgba(215, 185, 125, 0.68) 93%,
+    rgba(215, 185, 125, 0.60) 95%,
+    rgba(215, 185, 125, 0.45) 97%,
+    rgba(215, 185, 125, 0.25) 98%,
+    rgba(215, 185, 125, 0.10) 99%,
+    rgba(215, 185, 125, 0) 100%
   );
 }
 </style>
+
+<!-- .course-link:hover {
+  background: linear-gradient(90deg,
+    rgba(215, 185, 125, 0) 0%,
+    rgba(215, 185, 125, 0.25) 2%,
+    rgba(215, 185, 125, 0.45) 4%,
+    rgba(215, 185, 125, 0.60) 6%,
+    rgba(215, 185, 125, 0.75) 8%,
+    rgba(218, 188, 128, 0.77) 12%,
+    rgba(220, 190, 130, 0.78) 16%,
+    rgba(223, 193, 133, 0.79) 20%,
+    rgba(225, 195, 135, 0.8) 24%,
+    rgba(227, 197, 137, 0.85) 28%,
+    rgba(230, 200, 140, 0.85) 32%,
+    rgba(232, 202, 142, 0.85) 36%,
+    rgba(235, 205, 145, 0.85) 40%,
+    rgba(241, 209, 149, 0.85) 45%,
+    rgba(247, 198, 109, 0.85) 50%, /* ctaGold */
+    rgba(241, 209, 149, 0.85) 55%,
+    rgba(235, 205, 145, 0.85) 60%,
+    rgba(232, 202, 142, 0.85) 64%,
+    rgba(230, 200, 140, 0.85) 68%,
+    rgba(227, 197, 137, 0.85) 72%,
+    rgba(225, 195, 135, 0.8) 76%,
+    rgba(223, 193, 133, 0.79) 80%,
+    rgba(220, 190, 130, 0.78) 84%,
+    rgba(218, 188, 128, 0.77) 88%,
+    rgba(215, 185, 125, 0.75) 92%,
+    rgba(215, 185, 125, 0.60) 95%,
+    rgba(215, 185, 125, 0.25) 98%,
+    rgba(215, 185, 125, 0) 100%
+  );
+} -->

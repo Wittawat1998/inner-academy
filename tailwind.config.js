@@ -8,9 +8,35 @@ export default {
     "./app.vue",
     "./error.vue",
   ],
+  safelist: [
+    'text-goldText',
+  ],
   theme: {
     extend: {
       colors: {
+          // ================= Custom Semantic Colors =================
+          // Blue text
+          blueText: '#637da0',
+          // Blue border
+          blueBorder: '#3f495f',
+          // Gold text (same as CTA gold button)
+          goldText: '#f7c66d',
+          // Dark gold text
+          goldTextDark: '#a1844f',
+          // Input field border
+          inputBorder: '#637da0',
+          // Input label
+          inputLabel: '#637da0',
+          // Input field background
+          inputBg: '#121d33',
+          // Input text
+          inputText: '#ffffff',
+          // Price strikethrough text
+          priceStrike: '#c1cfe3',
+          // Font on gold button
+          goldBtnText: '#000000',
+          // General font color
+          fontDefault: '#ffffff',
         // Legacy primary color scale (preserved for backwards compatibility)
         primary: {
           50: '#eff6ff',
@@ -42,6 +68,9 @@ export default {
           light: '#F4E4B0',        // Light gold
           dark: '#B8941E',         // Dark gold
         },
+
+        // CTA Gold (new shade for CTA buttons)
+        ctaGold: '#f7c66d',
         
         // Background colors
         bgPrimary: '#0F172A',        // Main page background (dark navy) - FR-017
@@ -66,6 +95,9 @@ export default {
       backgroundImage: {
         // Dark gradient for page/section backgrounds
         'gradient-dark': 'linear-gradient(to bottom, #0F172A 0%, #1E293B 100%)',
+        
+        // Header background gradient
+        'gradient-header': 'linear-gradient(to top, #121d33 0%, #000000 75%)',
         
         // Gold gradient for primary CTA buttons
         'gradient-gold': 'linear-gradient(135deg, #D4AF37 0%, #B8941F 100%)',
@@ -99,8 +131,11 @@ export default {
         // Thai: Prompt (headings + medium)
         th: ['Prompt', 'sans-serif'],
         
-        // Sans serif fallback
-        sans: ['Montserrat', 'Prompt', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+        // Body font: Prompt-first (Thai-primary site), Montserrat covers Latin chars
+        sans: ['Prompt', 'Montserrat', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+        
+        // Heading font: Montserrat-first Bold (EN), Prompt covers Thai glyphs
+        heading: ['Montserrat', 'Prompt', 'sans-serif'],
       },
     },
   },

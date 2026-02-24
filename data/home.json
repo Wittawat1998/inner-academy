@@ -5,7 +5,6 @@
     "keywords": "inner academy, personal development, online courses, self-improvement, mindfulness, leadership training",
     "ogImage": "/images/og-homepage.jpg"
   },
-  "hero": {},
   "logos": [
     {
       "nameEN": "BrandEN",
@@ -424,11 +423,16 @@
     "secondaryButtonUrl": "/contact"
   },
   "ebook": {
-    "title": "The Inner Transformation Guide",
-    "description": "Download our comprehensive 50-page guide to starting your personal development journey",
-    "image": "/images/ebook/inner-transformation-cover.jpg",
-    "ctaText": "Download Free Guide",
-    "ctaUrl": "/downloads/inner-transformation-guide.pdf"
+    "headingLine1": "ปลดปล่อยศักยภาพ",
+    "headingLine2Before": "ด้วย",
+    "headingLine2Highlight": "ความรู้",
+    "headingLine2After": " ไปด้วยกัน",
+    "subheading": "เครื่องมืออัป Soft-Skills\nให้กับทั้งองค์กร\nที่ HR รุ่นใหม่ต้องมี",
+    "description": "Guidebook เพื่อยกระดับประสิทธิภาพการทำงานให้ชาวออฟฟิศ เรียบเรียงโดยเฉพาะสำหรับ HR ในการวัดระดับ 8 ทักษะการทำงานที่จำเป็นในยุคนี้ และ 5 เครื่องมือสำหรับติดตามพัฒนาการด้าน Soft-Skills ของบุคลากรที่ให้ผลลัพธ์เป็นข้อมูลที่จับต้องได้",
+    "backgroundImage": "/images/ebook/ebook-bg.jpg",
+    "image": "/images/ebook/softskills-guidebook-cover.jpg",
+    "ctaText": "รับ Guidebook ฟรี",
+    "ctaUrl": "/contact"
   },
   "podcast": {
     "title": "Inner Wisdom Podcast",

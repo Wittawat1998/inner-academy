@@ -2050,7 +2050,7 @@ const _3gjDLLpco8AktHw3v147Ss5rjaMUfihGDhBfQT3haE = (function(nitro) {
 
 const rootDir = "E:/work/inner/sourceCode/inner-academy";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Transform your inner power with expert-led courses"}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap"}],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Inner Academy","htmlAttrs":{"lang":"en"}};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Transform your inner power with expert-led courses"}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"}],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Inner Academy","htmlAttrs":{"lang":"th"}};
 
 const appRootTag = "div";
 
@@ -2695,11 +2695,13 @@ const _Sv3nRo = lazyEventHandler(() => {
 });
 
 const _lazy_egoV1M = () => Promise.resolve().then(function () { return contact_post$1; });
+const _lazy_ukKbUq = () => Promise.resolve().then(function () { return navigation_get$1; });
 const _lazy_jiaZgZ = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '', handler: _y4jxbn, lazy: false, middleware: true, method: undefined },
   { route: '/api/contact', handler: _lazy_egoV1M, lazy: true, middleware: false, method: "post" },
+  { route: '/api/navigation', handler: _lazy_ukKbUq, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
   { route: '/_ipx/**', handler: _Sv3nRo, lazy: false, middleware: false, method: undefined },
@@ -3199,6 +3201,131 @@ const contact_post = defineEventHandler(async (event) => {
 const contact_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: contact_post
+}, Symbol.toStringTag, { value: 'Module' }));
+
+var logo = {
+	textThai: "INNER POWER",
+	textEnglish: "ACADEMY",
+	href: "/",
+	imagePath: "/images/logo.png"
+};
+var cta = {
+	text: "รับแบบประเมิน",
+	subtext: "ศักยภาพฟรี",
+	url: "https://assessment.innerpower.co.th",
+	external: true
+};
+var menu = [
+	{
+		title: "หลักสูตร",
+		link: "#classes",
+		order: 1
+	},
+	{
+		title: "ทีมโค้ช",
+		link: "#coaches",
+		order: 2
+	},
+	{
+		title: "ผลลัพธ์",
+		link: "#testimonials",
+		order: 3
+	},
+	{
+		title: "ความรู้",
+		link: "#knowledge",
+		order: 4
+	},
+	{
+		title: "ติดต่อ",
+		link: "#contact",
+		order: 5
+	},
+	{
+		title: "เกี่ยวกับ",
+		link: "/about",
+		order: 6
+	}
+];
+var menuItems = [
+];
+var footerLinks = [
+	{
+		section: "Quick Links",
+		links: [
+			{
+				label: "About Us",
+				href: "/about"
+			},
+			{
+				label: "Our Coaches",
+				href: "/coaches"
+			},
+			{
+				label: "Contact",
+				href: "/contact"
+			}
+		]
+	},
+	{
+		section: "Legal",
+		links: [
+			{
+				label: "Privacy Policy",
+				href: "/privacy"
+			},
+			{
+				label: "Terms of Service",
+				href: "/terms"
+			}
+		]
+	}
+];
+var socialLinks = [
+	{
+		platform: "Facebook",
+		url: "https://facebook.com/inneracademy",
+		icon: "facebook"
+	},
+	{
+		platform: "Instagram",
+		url: "https://instagram.com/inneracademy",
+		icon: "instagram"
+	},
+	{
+		platform: "TikTok",
+		url: "https://tiktok.com/@inneracademy",
+		icon: "tiktok"
+	},
+	{
+		platform: "YouTube",
+		url: "https://youtube.com/@inneracademy",
+		icon: "youtube"
+	},
+	{
+		platform: "Line",
+		url: "https://line.me/ti/p/@inneracademy",
+		icon: "line"
+	}
+];
+var copyright = "© 2026 Inner Academy. All rights reserved.";
+const navigationDataRaw = {
+	logo: logo,
+	cta: cta,
+	menu: menu,
+	menuItems: menuItems,
+	footerLinks: footerLinks,
+	socialLinks: socialLinks,
+	copyright: copyright
+};
+
+const navigation_get = defineEventHandler(() => {
+  return navigationDataRaw;
+});
+
+const navigation_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: navigation_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function renderPayloadResponse(ssrContext) {

@@ -1,60 +1,45 @@
 <template>
-  <section 
+  <section
     id="knowledge"
-    v-if="podcast" 
-    class="podcast-block-section bg-transparent py-16 md:py-20"
+    v-if="podcast"
+    class="relative overflow-hidden py-24 md:py-36"
     role="region"
-    aria-label="Podcast episodes"
+    aria-label="Podcast highlight"
   >
     <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <!-- Section Heading -->
-        <div class="text-center mb-12">
-          <div class="inline-block mb-4">
-            <span class="px-4 py-2 bg-brandGold/10 text-brandGold rounded-full text-sm font-semibold border border-brandGold/30">
-              🎙️ PODCAST
-            </span>
+      <div class="max-w-7xl mx-auto relative">
+        <!-- Overlay gradient background -->
+        <div class="absolute inset-0">
+          <img
+            v-if="podcast.image"
+            :src="podcast.image"
+            alt="Podcast background"
+            class="w-full h-full object-cover"
+            style="object-position: center;"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/40 to-[#f7c66d]/30" />
+        </div>
+        <!-- Content: Bottom Left in container -->
+        <div class="relative z-10 flex flex-col items-start justify-end min-h-[520px] md:min-h-[600px] px-6 md:px-16 pb-16 md:pb-24">
+          <div class="mb-6">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-2" style="line-height: 1.15;">
+              {{ podcast.titleLine1 }}
+            </h2>
+            <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-4" style="line-height: 1.15;">
+              {{ podcast.titleLine2 }}
+            </h2>
           </div>
-
-          <h2 class="text-3xl md:text-4xl font-bold text-textPrimary mb-4">
-            {{ podcast.title }}
-          </h2>
-
-          <p class="text-lg text-textSecondary leading-relaxed">
+          <p class="text-lg md:text-xl text-white mb-8" style="line-height: 1.4; max-width: 600px;">
             {{ podcast.description }}
           </p>
-        </div>
-
-        <!-- Episode List -->
-        <div class="space-y-4">
           <NuxtLink
-            v-for="(episode, index) in podcast.episodes"
-            :key="index"
-            :to="episode.url"
-            class="block bg-surface rounded-lg p-6 hover:bg-bgSecondary transition-colors duration-200 group"
+            :to="podcast.episodes[0]?.url"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-lg bg-ctaGold text-black shadow-lg hover:shadow-xl transition-all duration-200 mt-2"
           >
-            <div class="flex items-center gap-4">
-              <!-- Episode Number Badge -->
-              <div class="flex-shrink-0 w-12 h-12 bg-brandGold/10 rounded-full flex items-center justify-center text-brandGold font-bold border border-brandGold/30">
-                {{ index + 1 }}
-              </div>
-
-              <!-- Episode Title -->
-              <h3 class="flex-1 text-lg font-semibold text-textPrimary group-hover:text-brandGold transition-colors duration-200">
-                {{ episode.title }}
-              </h3>
-
-              <!-- Arrow Icon -->
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                class="h-6 w-6 text-brandGold transform group-hover:translate-x-1 transition-transform duration-200" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <polygon points="8,6 20,12 8,18" fill="#000"/>
+            </svg>
+            <span class="text-lg font-bold">ชมรายการ</span>
           </NuxtLink>
         </div>
       </div>

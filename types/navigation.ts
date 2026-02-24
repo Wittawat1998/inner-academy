@@ -7,7 +7,9 @@ export interface Logo {
 
 // CTA Button
 export interface CTAButton {
+  [x: string]: any
   text: string
+  subtext?: string
   url: string
   external: boolean
 }

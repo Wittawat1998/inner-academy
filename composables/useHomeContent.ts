@@ -1,5 +1,6 @@
-import type { HomeData } from '~/types/home'
+import type { HomeData, HeroContent } from '~/types/home'
 import homeDataRaw from '~/data/home.json'
+import heroDataRaw from '~/data/hero.json'
 
 /**
  * Composable for loading and parsing homepage content
@@ -11,9 +12,10 @@ import homeDataRaw from '~/data/home.json'
 export const useHomeContent = () => {
   // Cast JSON import to typed structure
   const homeData = homeDataRaw as HomeData
+  const hero = heroDataRaw as HeroContent
 
   // Validate required sections exist
-  if (!homeData.meta || !homeData.hero || !homeData.logos || !homeData.courses) {
+  if (!homeData.meta || !homeData.logos || !homeData.courses) {
     throw new Error('Missing required homepage sections in home.json')
   }
 
@@ -35,7 +37,7 @@ export const useHomeContent = () => {
     homeData,
     // Convenience getters for individual sections
     meta: homeData.meta,
-    hero: homeData.hero,
+    hero,
     logos: homeData.logos,
     courses: homeData.courses,
     nextProgram: homeData.nextProgram,

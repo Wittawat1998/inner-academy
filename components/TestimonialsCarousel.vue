@@ -164,5 +164,5 @@ const next = () => {
 <style scoped>
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 .hide-scrollbar::-webkit-scrollbar { display: none; }
-.cta-btn:hover { background-color: #E8CD91; color: #000; border-color: #E8CD91; }
+.cta-btn:hover { background-color: #f7c66d; color: #000; border-color: #f7c66d; }
 </style>

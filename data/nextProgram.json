@@ -1,0 +1,54 @@
+{
+  "title": "NEXT PROGRAM",
+  "subtitle": "ตารางการอบรม",
+  "bannerImage": "/images/next-program-banner.svg",
+  "programs": [
+    {
+      "date": "12 กุมภาพันธ์ 69",
+      "title": "LISTENING INTELLIGENCE",
+      "desc": "ศาสตร์ที่ทำให้คุณฟังอย่างเข้าใจคน มากกว่าดูถูก",
+      "coach": "ครูลูกแก้ว วริศรา บำรุงเวช",
+      "image": "/images/coaches/kru-lookkaew.jpg"
+    },
+    {
+      "date": "26 กุมภาพันธ์ 69",
+      "title": "BRAIN HACKER: FUNDAMENTAL OF ANALYTICAL THINKING AND SYSTEM THINKING",
+      "desc": "ปลดล็อกศักยภาพสมอง ด้วยพลังการคิดวิเคราะห์และการคิดอย่างเป็นระบบ",
+      "coach": "โค้ชเกด ดร.สุกฤตา ปรีชาว่อง",
+      "image": "/images/coaches/dr-ked.jpg"
+    },
+    {
+      "date": "5 มีนาคม 69",
+      "title": "COACHING LEADERSHIP",
+      "desc": "ภาวะผู้นำแบบโค้ช - นำใช้สถิตย์ดําถามทรงพลัง",
+      "coach": "โค้ชยุ้ย ชวธิดา อิ่มนารา",
+      "image": "/images/coaches/coach-yui.jpg"
+    },
+    {
+      "date": "26 มีนาคม 69",
+      "title": "THE MAGIC OF INFLUENTIAL STORYTELLING",
+      "desc": "จินตนาการในการเล่าเรื่องและโน้มน้าวใจด้วยพลังเรื่องเล่า",
+      "coach": "ครูลูกแก้ว วริศรา บำรุงเวช",
+      "image": "/images/coaches/kru-lookkaew.jpg"
+    },
+    {
+      "date": "25 เมษายน 69",
+      "title": "CRITICAL THINKING",
+      "desc": "คิดอย่างมีวิจารณญาณ เปิดมุมมองใหม่ต่อการคิดที่แตกต่าง",
+      "coach": "โค้ชเกด ดร.สุกฤตา ปรีชาว่อง",
+      "image": "/images/coaches/dr-ked.jpg"
+    },
+    {
+      "date": "30 เมษายน 69",
+      "title": "KEY MESSAGE: CLEAR MESSAGE",
+      "desc": "สื่อสารอย่างชัดเจน ตรงประเด็นด้วยเทคนิคปรับเนื้อหาให้ตรงเป้าหมาย",
+      "coach": "ครูหม่อ ณัฐชา คงคศิริ",
+      "image": "/images/coaches/coach-mor.jpg"
+    }
+  ],
+  "cta": {
+    "text": "สอบถามเพิ่มเติม",
+    "phone": "080-265-6266",
+    "line": "@innerpower.academy"
+  }
+}

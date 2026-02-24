@@ -6,7 +6,8 @@
     "imagePath": "/images/logo.png"
   },
   "cta": {
-    "text": "รับแบบประเมินศักยภาพฟรี",
+    "text": "รับแบบประเมิน",
+    "subtext": "ศักยภาพฟรี",
     "url": "https://assessment.innerpower.co.th",
     "external": true
   },

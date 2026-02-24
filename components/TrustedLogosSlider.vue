@@ -1,23 +1,23 @@
 <template>
   <section 
     v-if="logos && logos.length > 0" 
-    class="trusted-logos-section bg-black py-12 md:py-16 lg:py-20"
+    class="trusted-logos-section bg-black py-12 md:py-16 lg:py-20 px-16"
     role="region"
     aria-label="Partner organizations"
   >
     <div class="container mx-auto px-4">
       <!-- Header -->
       <div class="text-center mb-[50px] md:mb-[50px]">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-[30px] md:mb-[30px] text-gold">
+        <h2 class="text-8xl  font-medium mb-[30px] first-letter: header-fade">
           มากกว่า 30 องค์กรชั้นนำ
         </h2>
-        <p class="text-base md:text-lg lg:text-xl text-white/90">
-          ที่ได้รวมเดินไปกับเรา
+        <p class="text-xl text-white">
+          ที่ได้รวมเติบโตไปกับเรา
         </p>
       </div>
 
       <!-- White rounded container for logos -->
-      <div class="logos-container bg-white py-6 md:py-8 px-0 md:px-0">
+      <div class="logos-container border border-goldText bg-white py-6  px-0 ">
         <!-- Hidden overflow wrapper -->
         <div 
           class="marquee-wrapper"
@@ -139,7 +139,7 @@ const prefersReducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
 
 .marquee-group {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.5rem;
   flex-shrink: 0;
   align-items: center;
 }
@@ -149,27 +149,27 @@ const prefersReducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 120px;
-  padding: 0.5rem;
+  min-width: 80px;
+  padding: 0.25rem;
 }
 
 @media (min-width: 768px) {
   .marquee-group {
-    gap: 2rem;
+    gap: 0.75rem;
   }
   
   .logo-item {
-    min-width: 140px;
+    min-width: 100px;
   }
 }
 
 @media (min-width: 1024px) {
   .marquee-group {
-    gap: 2.5rem;
+    gap: 1rem;
   }
   
   .logo-item {
-    min-width: 160px;
+    min-width: 110px;
   }
 }
 
