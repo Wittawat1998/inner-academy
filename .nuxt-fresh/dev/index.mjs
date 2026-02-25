@@ -6,7 +6,6 @@ import { parentPort, threadId } from 'node:worker_threads';
 import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getResponseStatus, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getResponseStatusText } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/h3/dist/index.mjs';
 import { escapeHtml } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/@vue/shared/dist/shared.cjs.js';
 import nodemailer from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/nodemailer/lib/nodemailer.js';
-import { promises, readFileSync } from 'node:fs';
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/ufo/dist/index.mjs';
 import { renderToString } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/vue/server-renderer/index.mjs';
@@ -33,6 +32,7 @@ import { SourceMapConsumer } from 'file://E:/work/inner/sourceCode/inner-academy
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { getContext } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/unctx/dist/index.mjs';
 import { captureRawStackTrace, parseRawStackTrace } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/errx/dist/index.js';
+import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname as dirname$1, resolve as resolve$1, isAbsolute } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/pathe/dist/index.mjs';
 import { walkResolver } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/unhead/dist/utils.mjs';
@@ -2154,16 +2154,16 @@ __FqZsEfjjxjm5ttXhq7HwaGCOI1aOdzesmkR7dBKXHg
 const assets = {
   "/index.mjs": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"1fc25-mLIVdPTi/8J8Lro829QhOV5xXTs\"",
-    "mtime": "2026-02-25T18:44:30.707Z",
-    "size": 130085,
+    "etag": "\"25686-61nObhBk61zFPsofOO1oC9eJoOk\"",
+    "mtime": "2026-02-25T19:50:25.724Z",
+    "size": 153222,
     "path": "index.mjs"
   },
   "/index.mjs.map": {
     "type": "application/json",
-    "etag": "\"736dc-dqP1fp1YOC5w7Ipf4YV6GNzB5Nc\"",
-    "mtime": "2026-02-25T18:44:30.707Z",
-    "size": 472796,
+    "etag": "\"7303b-EeLNeAENUBd9azHrzFBDtnqcVZg\"",
+    "mtime": "2026-02-25T19:50:25.724Z",
+    "size": 471099,
     "path": "index.mjs.map"
   }
 };
@@ -3000,8 +3000,8 @@ const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   default: styles
 }, Symbol.toStringTag, { value: 'Module' }));
 
-var heading = "ติดต่อเรา";
-var description$2 = "สอบถามรายละเอียดหลักสูตร รูปแบบการเรียน แนบประเมินศักยภาพพนักงานฟรี\nหรือว่าขอเข้าเยี่ยมชม ๆ กับที่ปรึกษาการเรียนรู้ของเราได้เลย";
+var heading$1 = "ติดต่อเรา";
+var description$3 = "สอบถามรายละเอียดหลักสูตร รูปแบบการเรียน แนบประเมินศักยภาพพนักงานฟรี\nหรือว่าขอเข้าเยี่ยมชม ๆ กับที่ปรึกษาการเรียนรู้ของเราได้เลย";
 var phone = "080-265-6266";
 var email = "info@innerpower.co.th";
 var address = {
@@ -3014,8 +3014,8 @@ var address = {
 var mapImage = "/images/contact-map.png";
 var mapEmbedUrl = "https://www.google.com/maps?q=บริษัท+อินเนอร์+เพาเวอร์+เทรนนิ่ง+จำกัด,+Raintree+Office+Garden,+280+ซอยสุขุมวิจัย+4,+บางกะปิ,+กรุงเทพฯ+10310&output=embed";
 const contactDataRaw = {
-	heading: heading,
-	description: description$2,
+	heading: heading$1,
+	description: description$3,
 	phone: phone,
 	email: email,
 	address: address,
@@ -3266,10 +3266,163 @@ const contact_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProp
   default: contact_post
 }, Symbol.toStringTag, { value: 'Module' }));
 
+var meta = {
+	title: "คอร์สเรียน - Inner Academy",
+	description: "เรียนรู้ทักษะการสื่อสาร ภาวะผู้นำ และการพัฒนาตนเอง กับทีมโค้ชผู้เชี่ยวชาญของ Inner Academy",
+	intro: "คอร์สเรียนที่ออกแบบมาเพื่อพัฒนาทักษะการสื่อสาร ภาวะผู้นำ และ Soft Skills ที่จำเป็นในยุคปัจจุบัน"
+};
+var classes = [
+	{
+		id: 1,
+		title: "Key Message: Clear Message",
+		description: "ในโลกธุรกิจที่มีการแข่งขันสูงและเต็มไปด้วยข้อมูลมากมาย การสื่อสารอย่างตรงประเด็นได้กลายเป็นทักษะที่สำคัญอย่างยิ่งสำหรับความสำเร็จขององค์กร การสื่อสารที่ชัดเจน กระชับ และตรงเป้าหมายไม่เพียงแต่ช่วยประหยัดเวลาและทรัพยากร แต่ยังช่วยลดความเข้าใจผิด เพิ่มประสิทธิภาพในการทำงาน และสร้างความได้เปรียบในการแข่งขันให้กับองค์กร\n\nการลงทุนในการพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงไม่เพียงแต่ช่วยพัฒนาความสามารถของพนักงานเท่านั้น แต่ยังช่วยสร้างสภาพแวดล้อมการทำงานที่มีประสิทธิภาพมากขึ้น ลดความขัดแย้ง และนำไปสู่การตัดสินใจที่รวดเร็วและแม่นยำมากขึ้น ซึ่งทั้งหมดนี้ช่วยเสริมสร้างความสามารถในการแข่งขันให้กับองค์กรในระยะยาว\n\nด้วยเหตุนี้ การจัดหลักสูตรพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงเป็นสิ่งจำเป็นสำหรับองค์กรที่ต้องการเติบโตอย่างยั่งยืนในยุคปัจจุบัน",
+		shortDescription: "ศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน",
+		slug: "key-message-clear-message",
+		featured: true,
+		image: "/images/classes/placeholder.webp",
+		category: "การสื่อสาร",
+		duration: "8 ชั่วโมง",
+		targetAudience: [
+			"หัวหน้างาน",
+			"พนักงานทั่วไป"
+		],
+		price: 7900,
+		originalPrice: 11900,
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		gallery: [
+			"/images/classes/placeholder.webp",
+			"/images/classes/placeholder.webp",
+			"/images/classes/placeholder.webp"
+		],
+		ctaDocumentUrl: "#",
+		ctaNextRoundUrl: "/#contact",
+		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
+		]
+	},
+	{
+		id: 2,
+		title: "Emotional Mastery",
+		description: "ในยุคที่การทำงานร่วมกับผู้คนหลากหลายและความกดดันในชีวิตประจำวันเพิ่มสูงขึ้น ความสามารถในการบริหารจัดการอารมณ์และความรู้สึกของตนเองได้อย่างชาญฉลาดจึงเป็นทักษะที่ขาดไม่ได้ Emotional Mastery ช่วยให้คุณเข้าใจกลไกของอารมณ์ในระดับลึก และเปลี่ยนอารมณ์จากอุปสรรคให้กลายเป็นพลังขับเคลื่อน\n\nหลักสูตรนี้ผสานศาสตร์ด้าน Neuroscience, Psychology และ Mindfulness เพื่อให้ผู้เรียนสามารถจัดการกับสถานการณ์ที่กดดัน ความขัดแย้ง และอารมณ์เชิงลบได้อย่างมีประสิทธิภาพ พร้อมทั้งพัฒนาทักษะการสื่อสารทางอารมณ์ที่ช่วยสร้างความสัมพันธ์ที่แข็งแกร่งทั้งในที่ทำงานและครอบครัว\n\nเมื่อคุณเชี่ยวชาญการควบคุมอารมณ์ คุณจะตัดสินใจได้ดีขึ้น นำทีมได้อย่างมีประสิทธิภาพ และใช้ชีวิตอย่างมีความสุขและสมดุลมากขึ้น",
+		shortDescription: "ศาสตร์เพื่อการสื่อสารอย่างฉลาด ในทุกสถานการณ์",
+		slug: "emotional-mastery",
+		featured: true,
+		image: "/images/classes/placeholder.webp",
+		category: "อารมณ์และการสื่อสาร",
+		duration: "8 ชั่วโมง",
+		targetAudience: [
+			"หัวหน้างาน",
+			"พนักงานทั่วไป",
+			"ผู้บริหาร"
+		],
+		price: 7900,
+		originalPrice: 11900,
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		gallery: [
+			"/images/classes/placeholder.webp",
+			"/images/classes/placeholder.webp",
+			"/images/classes/placeholder.webp"
+		],
+		ctaDocumentUrl: "#",
+		ctaNextRoundUrl: "/#contact",
+		instructors: [
+			{
+				name: "Instructor 3",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 4",
+				image: "/images/instructors/instructor-1.svg"
+			}
+		]
+	},
+	{
+		id: 3,
+		title: "Coaching Leadership Through Powerful Questions",
+		description: "ผู้นำในยุคปัจจุบันไม่ได้ถูกวัดจากการสั่งการหรือการให้คำตอบเท่านั้น แต่วัดจากความสามารถในการตั้งคำถามที่กระตุ้นให้ทีมคิดหาทางออกด้วยตนเอง ภาวะผู้นำแบบโค้ชช่วยให้ผู้นำสร้างวัฒนธรรมองค์กรที่เปิดกว้าง กระตือรือร้น และพร้อมเติบโตอยู่เสมอ\n\nหลักสูตรนี้จะสอนให้คุณเข้าใจโครงสร้างของคำถามทรงพลัง เทคนิคการฟังอย่างลึกซึ้ง และการสร้างบทสนทนาที่ช่วยพัฒนาศักยภาพของสมาชิกในทีม นอกจากนี้ยังครอบคลุมการใช้ Coaching Model ในบริบทขององค์กรจริง ทั้งในการประชุม การ Feedback และการพัฒนาคนรายบุคคล\n\nเมื่อนำ Coaching Leadership ไปใช้ คุณจะเห็นการเปลี่ยนแปลงในทีม ทั้งในด้านความมุ่งมั่น ความคิดสร้างสรรค์ และประสิทธิภาพในการทำงานที่สูงขึ้นอย่างชัดเจน",
+		shortDescription: "ภาวะผู้นำแบบโค้ช ด้วยคำถามทรงพลัง",
+		slug: "coaching-leadership-powerful-questions",
+		featured: true,
+		image: "/images/classes/placeholder.webp",
+		category: "ภาวะผู้นำ",
+		duration: "8 ชั่วโมง",
+		targetAudience: [
+			"ผู้จัดการ",
+			"หัวหน้าทีม",
+			"ผู้บริหาร"
+		],
+		price: 7900,
+		originalPrice: 11900,
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		gallery: [
+			"/images/classes/placeholder.webp",
+			"/images/classes/placeholder.webp",
+			"/images/classes/placeholder.webp"
+		],
+		ctaDocumentUrl: "#",
+		ctaNextRoundUrl: "/#contact",
+		instructors: [
+			{
+				name: "Instructor 5",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 6",
+				image: "/images/instructors/instructor-1.svg"
+			}
+		]
+	},
+	{
+		id: 4,
+		title: "Brain Hacker: Fundamental of Analytical Thinking and System Thinking",
+		description: "ในโลกที่ข้อมูลซับซ้อนและสถานการณ์เปลี่ยนแปลงอย่างรวดเร็ว ทักษะการคิดวิเคราะห์และการมองภาพรวมอย่างเป็นระบบได้กลายเป็นสิ่งที่แยกผู้ประสบความสำเร็จออกจากคนอื่น Brain Hacker จะพาคุณปลดล็อกศักยภาพสมองที่ซ่อนอยู่ และนำมาใช้ในการแก้ปัญหาอย่างมีประสิทธิภาพ\n\nหลักสูตรนี้ผสมผสานหลักการของ Analytical Thinking, System Thinking และ Mental Models เพื่อช่วยให้คุณมองเห็นความเชื่อมโยงระหว่างสิ่งต่าง ๆ ได้ชัดขึ้น ตัดสินใจได้แม่นยำขึ้น และแก้ปัญหาที่ซับซ้อนได้อย่างเป็นขั้นตอนและมีระบบ\n\nเมื่อฝึกฝนจนช่ำชอง คุณจะกลายเป็นคนที่เพื่อนร่วมงานและองค์กรไว้วางใจให้จัดการความท้าทายที่ซับซ้อน และนำพาทีมไปสู่การตัดสินใจที่ดีกว่าเดิม",
+		shortDescription: "ปลดล็อกศักยภาพสมอง ด้วยพลังการคิดวิเคราะห์และการคิดอย่างเป็นระบบ",
+		slug: "brain-hacker-analytical-system-thinking",
+		featured: true,
+		image: "/images/classes/placeholder.webp",
+		category: "การคิดเชิงวิเคราะห์",
+		duration: "8 ชั่วโมง",
+		targetAudience: [
+			"พนักงานทั่วไป",
+			"ผู้จัดการ",
+			"นักวิเคราะห์"
+		],
+		price: 7900,
+		originalPrice: 11900,
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		gallery: [
+			"/images/classes/placeholder.webp",
+			"/images/classes/placeholder.webp",
+			"/images/classes/placeholder.webp"
+		],
+		ctaDocumentUrl: "#",
+		ctaNextRoundUrl: "/#contact",
+		instructors: [
+			{
+				name: "Instructor 7",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 8",
+				image: "/images/instructors/instructor-1.svg"
+			}
+		]
+	}
+];
+const classesData = {
+	meta: meta,
+	classes: classes
+};
+
 const courses_get = defineEventHandler(() => {
-  const filePath = resolve("data/classes.json");
-  const raw = readFileSync(filePath, "utf-8");
-  return JSON.parse(raw);
+  return classesData;
 });
 
 const courses_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3277,10 +3430,27 @@ const courses_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePrope
   default: courses_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
+var heading = "รับแบบประเมินฟรี";
+var description$2 = "เพื่อประเมิน Soft-Skills หลากหลายมิติให้บุคลากรของท่าน";
+var descriptionLine2 = "( มูลค่า 5,000 บาท )";
+var backgroundImage$1 = "/images/hero/team-photo.jpg";
+var primaryButtonText = "ประเมินทักษะด้าน Soft-Skills ตอนนี้";
+var primaryButtonUrl = "/contact";
+var secondaryButtonText = "ประเมินความฉลาดทางอารมณ์ ตอนนี้";
+var secondaryButtonUrl = "/contact";
+const dualCTAData = {
+	heading: heading,
+	description: description$2,
+	descriptionLine2: descriptionLine2,
+	backgroundImage: backgroundImage$1,
+	primaryButtonText: primaryButtonText,
+	primaryButtonUrl: primaryButtonUrl,
+	secondaryButtonText: secondaryButtonText,
+	secondaryButtonUrl: secondaryButtonUrl
+};
+
 const dualcta_get = defineEventHandler(() => {
-  const filePath = resolve("data/dualCTA.json");
-  const raw = readFileSync(filePath, "utf-8");
-  return JSON.parse(raw);
+  return dualCTAData;
 });
 
 const dualcta_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3320,12 +3490,187 @@ const ebook_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
   default: ebook_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
+var coaches = [
+	{
+		slug: "dr-ked",
+		nickname: "ดร.เกด",
+		name: "สุกฤตา ปรีชาว่อง",
+		title: "Co-Founder and Organization Coach",
+		photo: "/images/coaches/ananya-sharma.webp",
+		image: "/images/coaches/ananya-sharma.webp",
+		bio: "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร",
+		expertise: [
+			"Organization Coaching",
+			"Leadership Development",
+			"Soft Skills Training"
+		],
+		education: [
+			"ปริญญาเอก สาขาจิตวิทยาองค์กร"
+		],
+		experience: [
+			"Co-Founder และ Organization Coach ที่ Inner Academy",
+			"วิทยากรและโค้ชองค์กรชั้นนำในประเทศไทย"
+		],
+		socialLinks: {
+			facebook: "https://facebook.com/innerpower",
+			instagram: "https://instagram.com/innerpower",
+			tiktok: "https://tiktok.com/@innerpower"
+		}
+	},
+	{
+		slug: "kru-lookkaew",
+		nickname: "ครูลูกแก้ว",
+		name: "วริศรา บำรุงเวช",
+		title: "Communication and Presentation Coach",
+		photo: "/images/coaches/sarah-thompson.webp",
+		image: "/images/coaches/sarah-thompson.webp",
+		bio: "ครูลูกแก้วเชี่ยวชาญด้านการสื่อสารและการนำเสนอ ช่วยพัฒนาทักษะการพูดและการสื่อสารให้กับผู้เรียนหลากหลายระดับ",
+		expertise: [
+			"Communication Coaching",
+			"Presentation Skills",
+			"Public Speaking"
+		],
+		education: [
+			"ปริญญาโท สาขานิเทศศาสตร์"
+		],
+		experience: [
+			"Communication and Presentation Coach ที่ Inner Academy",
+			"วิทยากรด้านการสื่อสารองค์กร"
+		],
+		socialLinks: {
+			facebook: "https://facebook.com/innerpower",
+			instagram: "https://instagram.com/innerpower",
+			tiktok: "https://tiktok.com/@innerpower"
+		}
+	},
+	{
+		slug: "kru-so",
+		nickname: "ครูซอ",
+		name: "ดร.สทาคัย พงศ์หิรัญ",
+		title: "Communication and Presentation Coach",
+		photo: "/images/coaches/michael-chen.webp",
+		image: "/images/coaches/michael-chen.webp",
+		bio: "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริง",
+		expertise: [
+			"Communication Coaching",
+			"Presentation Skills",
+			"Corporate Training"
+		],
+		education: [
+			"ปริญญาเอก สาขาการสื่อสาร"
+		],
+		experience: [
+			"Communication and Presentation Coach ที่ Inner Academy"
+		],
+		socialLinks: {
+			facebook: "https://facebook.com/innerpower"
+		}
+	},
+	{
+		slug: "coach-kitti",
+		nickname: "โค้ชกิตติ",
+		name: "กิตติ ไตรรัตน์",
+		title: "Mindset, Passion and Satir Coach",
+		photo: "/images/coaches/david-kim.webp",
+		image: "/images/coaches/david-kim.webp",
+		bio: "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir เพื่อเปลี่ยนแปลงชีวิตจากภายใน",
+		expertise: [
+			"Mindset Coaching",
+			"Passion Discovery",
+			"Satir Model Coaching"
+		],
+		education: [
+			"ปริญญาโท สาขาจิตวิทยา"
+		],
+		experience: [
+			"Mindset and Passion Coach ที่ Inner Academy",
+			"Certified Satir Coach"
+		],
+		socialLinks: {
+			facebook: "https://facebook.com/innerpower",
+			instagram: "https://instagram.com/innerpower"
+		}
+	},
+	{
+		slug: "coach-5",
+		nickname: "โค้ชที่ 5",
+		name: "ชื่อ นามสกุล",
+		title: "Leadership and Team Coach",
+		photo: "/images/coaches/james-okafor.webp",
+		image: "/images/coaches/james-okafor.webp",
+		bio: "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่ง",
+		expertise: [
+			"Leadership Coaching",
+			"Team Development",
+			"Organizational Change"
+		],
+		education: [
+			"ปริญญาโท สาขาบริหารธุรกิจ"
+		],
+		experience: [
+			"Leadership and Team Coach ที่ Inner Academy"
+		],
+		socialLinks: {
+			facebook: "https://facebook.com/innerpower",
+			instagram: "https://instagram.com/innerpower"
+		}
+	},
+	{
+		slug: "coach-6",
+		nickname: "โค้ชที่ 6",
+		name: "ชื่อ นามสกุล",
+		title: "NLP and Mindset Coach",
+		photo: "/images/coaches/elena-rodriguez.webp",
+		image: "/images/coaches/elena-rodriguez.webp",
+		bio: "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัด",
+		expertise: [
+			"NLP Coaching",
+			"Mindset Transformation",
+			"Behavioral Change"
+		],
+		education: [
+			"Certified NLP Practitioner และ Coach"
+		],
+		experience: [
+			"NLP and Mindset Coach ที่ Inner Academy"
+		],
+		socialLinks: {
+			facebook: "https://facebook.com/innerpower",
+			linkedin: "https://linkedin.com/in/innerpower"
+		}
+	},
+	{
+		slug: "coach-7",
+		nickname: "โค้ชที่ 7",
+		name: "ชื่อ นามสกุล",
+		title: "Performance and Wellness Coach",
+		photo: "/images/coaches/lisa-patel.webp",
+		image: "/images/coaches/lisa-patel.webp",
+		bio: "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ผสมผสานศาสตร์การโค้ชเพื่อให้บรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงาน",
+		expertise: [
+			"Performance Coaching",
+			"Wellness Coaching",
+			"Work-Life Balance"
+		],
+		education: [
+			"Certified Performance and Wellness Coach"
+		],
+		experience: [
+			"Performance and Wellness Coach ที่ Inner Academy"
+		],
+		socialLinks: {
+			facebook: "https://facebook.com/innerpower",
+			instagram: "https://instagram.com/innerpower",
+			linkedin: "https://linkedin.com/in/innerpower"
+		}
+	}
+];
+const coachesData = {
+	coaches: coaches
+};
+
 const homeCoaches_get = defineEventHandler(() => {
-  var _a;
-  const filePath = resolve("data/coaches.json");
-  const raw = readFileSync(filePath, "utf-8");
-  const data = JSON.parse(raw);
-  return (_a = data.coaches) != null ? _a : data;
+  return coachesData.coaches;
 });
 
 const homeCoaches_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3641,10 +3986,71 @@ const podcast_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePrope
   default: podcast_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
+const testimonialsData = [
+	{
+		studentName: "คุณสนิตา จิตรมีศิลป์ (นิ)",
+		studentTitle: "รองกรรมการผู้จัดการ บริษัท น้อมจิตด์ อินคอร์เปอเรชั่น จำกัด(มหาชน)",
+		quoteIntro: "การได้เข้ามาเรียนในคลาสนี้ทำให้ได้เจอต้นตอ",
+		quoteMid: "ปัญหาการสื่อสารของตัวเอง",
+		quoteLarge: "เพราะแค่ 'ความกลัว'",
+		keyMessage: "Key Message: Clear Message",
+		youtubeId: "dQw4w9WgXcQ",
+		thumbnail: "/images/testimonials/testimonial.webp"
+	},
+	{
+		studentName: "คุณวิชัย ศรีสมบูรณ์",
+		studentTitle: "ผู้จัดการฝ่ายขาย บริษัท ไทยเบเวอเรจ จำกัด",
+		quoteIntro: "ก่อนมาเรียนผมไม่เคยรู้ว่า",
+		quoteMid: "ทักษะการพูดต่อหน้าสาธารณะ",
+		quoteLarge: "เปลี่ยนชีวิตได้จริง",
+		keyMessage: "Key Message: Confident Speaker",
+		youtubeId: "9bZkp7q19f0",
+		thumbnail: "/images/testimonials/testimonial.webp"
+	},
+	{
+		studentName: "คุณพิมพ์ชนก ลี",
+		studentTitle: "HR Director บริษัท ดิจิทัล โซลูชั่น จำกัด",
+		quoteIntro: "หลักสูตรนี้ทำให้ฉันเข้าใจว่า",
+		quoteMid: "ปัญหาในทีมแทบทุกอย่าง",
+		quoteLarge: "มาจาก 'การสื่อสาร'",
+		keyMessage: "Key Message: Team Communication",
+		youtubeId: "L_jWHffIx5E",
+		thumbnail: "/images/testimonials/testimonial.webp"
+	},
+	{
+		studentName: "คุณธนพล วงศ์สุวรรณ",
+		studentTitle: "ผู้อำนวยการฝ่ายการตลาด บริษัท เอเชียแปซิฟิค จำกัด",
+		quoteIntro: "ผมไม่เคยคิดว่าตัวเองจะ",
+		quoteMid: "พูดต่อหน้าพันคนได้",
+		quoteLarge: "แต่ตอนนี้ทำได้แล้ว",
+		keyMessage: "Key Message: Leadership Presence",
+		youtubeId: "jNQXAC9IVRw",
+		thumbnail: "/images/testimonials/testimonial.webp"
+	},
+	{
+		studentName: "คุณมณีรัตน์ สุทธิชัย",
+		studentTitle: "ผู้ก่อตั้ง บริษัท สตาร์ทอัพไทย จำกัด",
+		quoteIntro: "ก่อนมาเรียนฉันรู้สึกว่า",
+		quoteMid: "ความคิดที่ดีขายไม่ได้",
+		quoteLarge: "ถ้าพูดไม่เก่ง",
+		keyMessage: "Key Message: Pitch to Win",
+		youtubeId: "6stlCkUDG_s",
+		thumbnail: "/images/testimonials/testimonial.webp"
+	},
+	{
+		studentName: "คุณอภิชาต เจริญรัตน์",
+		studentTitle: "ผู้บริหารระดับสูง ธนาคารกรุงเทพ จำกัด",
+		quoteIntro: "ทักษะที่เรียนได้จากที่นี่",
+		quoteMid: "นำไปใช้ได้ทันทีในชีวิตจริง",
+		quoteLarge: "ผลลัพธ์เห็นชัดภายใน 30 วัน",
+		keyMessage: "Key Message: Instant Results",
+		youtubeId: "oHg5SJYRHA0",
+		thumbnail: "/images/testimonials/testimonial.webp"
+	}
+];
+
 const testimonials_get = defineEventHandler(() => {
-  const filePath = resolve("data/testimonials.json");
-  const raw = readFileSync(filePath, "utf-8");
-  return JSON.parse(raw);
+  return testimonialsData;
 });
 
 const testimonials_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

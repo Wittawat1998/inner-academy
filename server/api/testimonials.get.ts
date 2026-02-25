@@ -1,8 +1,5 @@
-import { readFileSync } from 'fs'
-import { resolve } from 'path'
+import testimonialsData from '../../data/testimonials.json'
 
 export default defineEventHandler(() => {
-  const filePath = resolve('data/testimonials.json')
-  const raw = readFileSync(filePath, 'utf-8')
-  return JSON.parse(raw)
+  return testimonialsData
 })

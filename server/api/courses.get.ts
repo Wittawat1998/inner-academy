@@ -1,8 +1,5 @@
-import { readFileSync } from 'fs'
-import { resolve } from 'path'
+import classesData from '../../data/classes.json'
 
 export default defineEventHandler(() => {
-  const filePath = resolve('data/classes.json')
-  const raw = readFileSync(filePath, 'utf-8')
-  return JSON.parse(raw)
+  return classesData
 })

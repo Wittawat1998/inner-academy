@@ -1,8 +1,5 @@
-import { readFileSync } from 'fs'
-import { resolve } from 'path'
+import dualCTAData from '../../data/dualCTA.json'
 
 export default defineEventHandler(() => {
-  const filePath = resolve('data/dualCTA.json')
-  const raw = readFileSync(filePath, 'utf-8')
-  return JSON.parse(raw)
+  return dualCTAData
 })

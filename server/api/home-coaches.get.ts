@@ -1,10 +1,6 @@
-import { readFileSync } from 'fs'
-import { resolve } from 'path'
+import coachesData from '../../data/coaches.json'
 
 export default defineEventHandler(() => {
-  const filePath = resolve('data/coaches.json')
-  const raw = readFileSync(filePath, 'utf-8')
-  const data = JSON.parse(raw)
   // Return only the coaches array — CoachesGrid expects Coach[] not CoachesData
-  return data.coaches ?? data
+  return coachesData.coaches
 })
