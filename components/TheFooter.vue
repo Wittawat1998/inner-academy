@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-black text-white py-6">
     <div class="container mx-auto px-4">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <!-- Left: Copyright -->
         <div class="text-sm text-gray-400 order-3 md:order-1">
           <p>{{ navigationData.copyright }}</p>

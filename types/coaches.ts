@@ -13,6 +13,7 @@ export interface SocialLinks {
  */
 export interface Coach {
   slug: string                  // URL-safe identifier for dynamic routing (e.g., "dr-ananya-sharma")
+  nickname?: string             // Thai display name (e.g., ครูหม่อน, ดร.เกด)
   name: string                  // Full name (3-50 chars)
   title: string                 // Professional title (5-100 chars)
   image?: string                // Photo URL path (e.g., "/images/coaches/coach1.webp") - aliased from 'photo' for consistency

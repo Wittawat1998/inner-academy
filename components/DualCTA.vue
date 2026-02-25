@@ -2,6 +2,7 @@
   <section
     v-if="cta"
     class="dual-cta-section relative overflow-hidden py-20 md:py-28"
+    style="background-image: url('/images/bg/home-assessment-bg.webp'); background-size: cover; background-position: center;"
     role="region"
     aria-label="Call to action"
   >
@@ -37,7 +38,7 @@
           <!-- Primary Button -->
           <NuxtLink
             :to="cta.primaryButtonUrl"
-            class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center bg-ctaGold"
+            class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center bg-fade"
           >
             {{ cta.primaryButtonText }}
           </NuxtLink>
@@ -45,7 +46,7 @@
           <!-- Secondary Button -->
           <NuxtLink
             :to="cta.secondaryButtonUrl"
-            class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center bg-ctaGold"
+            class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center bg-fade"
           >
             {{ cta.secondaryButtonText }}
           </NuxtLink>
@@ -71,9 +72,7 @@ import type { DualCTA } from '~/types/home'
  * - FR-033: Both buttons use bg-brandGold rounded-full
  */
 
-defineProps<{
-  cta: DualCTA
-}>()
+const { data: cta } = await useFetch<DualCTA>('/api/dualcta')
 </script>
 
 <style scoped>

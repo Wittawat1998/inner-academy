@@ -1,7 +1,8 @@
 <template>
   <section
     v-if="program"
-    class="next-program-section bg-transparent py-16 md:py-20"
+    class="next-program-section pt-5 pb-20"
+    style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;"
     role="region"
     aria-label="Upcoming program"
   >
@@ -10,13 +11,13 @@
         <div class="flex flex-col md:flex-row gap-10 items-center justify-center">
         <!-- Left: Heading and subtitle -->
         <div class="flex-1 flex flex-col justify-center items-start md:items-start mb-8 md:mb-0 pl-2 md:pl-8">
-          <h2 class="text-white font-extrabold text-3xl md:text-4xl lg:text-5xl mb-2 tracking-tight leading-tight whitespace-nowrap">{{ program.title }}</h2>
-          <div class="text-base md:text-lg text-gray-200 mb-2">{{ program.subtitle }}</div>
+          <h2 class="text-white font-extrabold text-3xl md:text-4xl lg:text-5xl mb-2 tracking-tight leading-tight whitespace-nowrap">NEXT PROGRAM</h2>
+          <div class="text-base md:text-lg text-gray-200 mb-2">ตารางการอบรม</div>
           <div class="w-full h-0.5 mb-2 next-program-underline"></div>
         </div>
         <!-- Right: Program vertical card (mock) -->
         <div class="flex-1 w-full max-w-lg">
-          <img src="/images/next-program-card-mock.svg" alt="Next Program Card" class="w-full rounded-3xl shadow-2xl" />
+          <img src="/images/next-program/next-program.webp" alt="Next Program Card" class="w-full rounded-3xl shadow-2xl" />
         </div>
         </div>
       </div>
@@ -60,37 +61,4 @@ const program = nextProgramData
   background: linear-gradient(to right, #9ca3af66 0%, #9ca3af00 100%);
 }
 
-/* Placeholder for missing coach images */
-.coach-placeholder {
-  background: linear-gradient(135deg, #c9d4e0 0%, #b0bccc 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.coach-placeholder::after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%238899aa'%3E%3Cpath d='M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z'/%3E%3C/svg%3E") center/contain no-repeat;
-}
 </style>
-
-<!-- <div class="p-3 grid grid-cols-2 gap-3">
-              <div v-for="(item, idx) in program.programs" :key="'prog-'+idx" class="rounded-xl flex flex-row overflow-hidden min-h-[100px]" style="background-color: #7a93aa;">
-                <div class="w-2/5 flex-shrink-0 bg-[#d1d9e0]">
-                  <img
-                    :src="item.image"
-                    :alt="item.coach"
-                    class="w-full h-full object-cover object-top"
-                    @error="(e) => { (e.target as HTMLImageElement).style.display='none'; (e.target as HTMLImageElement).parentElement!.classList.add('coach-placeholder') }"
-                  />
-                </div>
-                <div class="flex flex-col flex-1 min-w-0 justify-between p-2">
-                  <div class="text-[10px] font-semibold text-white/80 mb-0.5">{{ item.date }}</div>
-                  <div class="text-sm font-extrabold text-goldText leading-tight mb-0.5">{{ item.title }}</div>
-                  <div class="text-[9px] text-white/70 mb-0.5 leading-tight">{{ item.desc }}</div>
-                  <div class="text-[10px] font-bold text-white leading-tight">{{ item.coach }}</div>
-                </div>
-              </div>
-            </div> -->

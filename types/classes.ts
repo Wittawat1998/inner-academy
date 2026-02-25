@@ -24,24 +24,44 @@ export interface ClassesMeta {
  * EXTENDED for Feature 004 (Class Detail Pages)
  */
 export interface Class {
+  /** Numeric ID */
+  id?: number
   /** URL-safe identifier (kebab-case) */
   slug: string
-  /** Display name of class (30-60 chars) */
+  /** Display name */
   title: string
-  /** Brief description for list view (100-150 chars) */
-  shortDescription: string
-  /** Full description for detail page (500-5000 chars) */
+  /** Short description for list view */
+  shortDescription?: string
+  /** Full description (supports \n for paragraphs) */
   description: string
-  /** Path to class image (640x384px, 16:9 aspect ratio) */
-  image: string
-  /** Human-readable class duration (e.g., "6 weeks") */
-  duration: string
+  /** Hero banner image (right column) */
+  image?: string
+  /** Duration string e.g. "8 ชั่วโมง" */
+  duration?: string
+  /** Category e.g. "การสื่อสาร" */
+  category?: string
+  /** Who is this class for */
+  targetAudience?: string[]
+  /** Current price (THB) */
+  price?: number
+  /** Original price before discount */
+  originalPrice?: number
+  /** Price note text */
+  priceNote?: string
+  /** Gallery images for the carousel */
+  gallery?: string[]
+  /** Download document URL */
+  ctaDocumentUrl?: string
+  /** Next round / enroll URL */
+  ctaNextRoundUrl?: string
   /** Difficulty level */
-  level: 'Beginner' | 'Intermediate' | 'Advanced'
-  /** Instructor name */
-  instructor: string
+  level?: 'Beginner' | 'Intermediate' | 'Advanced'
+  /** Single instructor name (legacy) */
+  instructor?: string
+  /** Multiple instructors array */
+  instructors?: { name: string; image: string }[]
   /** Whether class appears on homepage featured section */
-  featured: boolean
+  featured?: boolean
   /** Optional curriculum topics/modules */
   curriculum?: string[]
   /** Optional learning outcomes/objectives */

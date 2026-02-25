@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen flex flex-col" style="background: linear-gradient(to top, #121d33 0%, #000000 75%)">
+  <div class="min-h-screen flex flex-col bg-gradient-header">
     <!-- Header -->
     <TheHeader />
 
     <!-- Main Content -->
-    <main class="flex-1">
+    <main class="flex-1 max-w-[1440px] mx-auto w-full">
       <slot />
     </main>
 

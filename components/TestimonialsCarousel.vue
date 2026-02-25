@@ -1,15 +1,14 @@
 ﻿<template>
   <section
     id="testimonials"
-    class="py-16 md:py-20"
+    class=""
     >
     <!-- style="background: linear-gradient(180deg, #0F172A 0%, #0c1525 100%);" -->
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-5xl mx-auto px-4">
 
       <!-- Section Heading -->
       <h2
-        class="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-12 md:mb-16"
-        style="color: #C9A961;"
+        class="text-7xl font-medium text-center mb-10 header-fade"
       >
         ผลลัพธ์ผู้เรียน
       </h2>
@@ -54,52 +53,6 @@
                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
-
-                  <!-- Gradient Overlay -->
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent" />
-
-                  <!-- IP Badge top-right -->
-                  <!-- <div
-                    class="absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold"
-                    style="background-color: rgba(15,23,42,0.85); border: 1px solid #94A3B8; color: #fff;"
-                  >
-                    <span class="text-[9px] font-semibold leading-tight text-center">INNER<br>POWER</span>
-                  </div> -->
-
-                  <!-- Text Overlay (bottom) -->
-                  <div class="absolute bottom-0 left-0 right-0 p-4">
-                    <!-- Quote lines -->
-                    <!-- <p v-if="t.quoteIntro" class="text-xs text-gray-300 leading-snug mb-0.5">
-                      {{ t.quoteIntro }}
-                    </p>
-                    <p v-if="t.quoteMid" class="text-sm text-white font-semibold leading-snug mb-1">
-                      {{ t.quoteMid }}
-                    </p>
-                    <p
-                      v-if="t.quoteLarge"
-                      class="text-xl font-bold leading-snug mb-3"
-                      style="color: #E8B84B;"
-                    >
-                      {{ t.quoteLarge }}
-                    </p> -->
-
-                    <!-- Divider + Name -->
-                    <!-- <div class="border-t border-gray-500 pt-2 mb-2">
-                      <p class="text-sm font-bold text-white">{{ t.studentName }}</p>
-                      <p v-if="t.studentTitle" class="text-xs text-gray-400 leading-snug mt-0.5">
-                        {{ t.studentTitle }}
-                      </p>
-                    </div> -->
-
-                    <!-- Key Message Tag -->
-                    <!-- <div
-                      v-if="t.keyMessage"
-                      class="inline-block px-2 py-1 rounded text-xs text-gray-300"
-                      style="background-color: rgba(0,0,0,0.65);"
-                    >
-                      {{ t.keyMessage }}
-                    </div> -->
-                  </div>
                 </div>
               </a>
 
@@ -109,7 +62,7 @@
                   :href="'https://www.youtube.com/watch?v=' + t.youtubeId"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="cta-btn flex items-center gap-2 px-7 py-3 text-[#E8CD91] border border-[#E8CD91] rounded-full font-semibold text-sm transition-colors duration-200"
+                  class="cta-btn flex items-center gap-2 px-5 py-2 text-goldText border border-goldText rounded-full font-semibold text-sm transition-colors duration-200"
                 >
                   <span>&#9654;</span>
                   <span>ดูคลิปเต็ม</span>
@@ -138,9 +91,7 @@
 <script setup lang="ts">
 import type { Testimonial } from '~/types/home'
 
-const props = defineProps<{
-  testimonials: Testimonial[]
-}>()
+const { data: testimonials } = await useFetch<Testimonial[]>('/api/testimonials')
 
 const track = ref<HTMLElement | null>(null)
 

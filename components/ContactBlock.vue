@@ -2,24 +2,25 @@
   <section 
     id="contact"
     v-if="contact" 
-    class="contact-block-section py-16 md:py-24"
+    class="contact-block-section pb-20"
+    style="background-image: url('/images/bg/home-contact-bg.webp'); background-size: contain; background-position: top; background-repeat: no-repeat;"
     role="region"
     aria-label="Contact information"
   >
     <div class="container mx-auto px-4">
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-5xl mx-auto">
         <!-- Section Heading -->
-        <div class="mb-12 md:mb-16 text-start">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-2" style="color: #C9A961;">
+        <div class=" text-start">
+          <h2 class="text-7xl font-medium mb-2 header-fade" >
             {{ contact.heading }}
           </h2>
-          <p class="text-base md:text-lg text-gray-300">
+          <p class="text-base md:text-lg text-gray-300 whitespace-pre-line">
             {{ contact.description }}
           </p>
         </div>
 
         <!-- Single Column Layout -->
-        <div class="space-y-12 md:space-y-16">
+        <div class="space-y-6">
           <!-- Contact Form -->
           <div class="max-w-xl bg-transparent rounded-2xl pt-8 md:pt-10">
             <!-- Success Message -->
@@ -40,12 +41,12 @@
               <p class="text-sm mt-1">{{ formState.error }}</p>
             </div>
 
-            <form @submit.prevent="handleSubmit" class="space-y-6">
+            <form @submit.prevent="handleSubmit" class="space-y-2">
               <!-- Name -->
               <div>
-                <label for="name" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="name" class="block text-sm md:text-base text-inputLabel mb-2">
                   ชื่อ - นามสกุล <span class="text-red-400">*</span>
-                </label>
+                </label> -->
                 <input
                   id="name"
                   v-model="formData.name"
@@ -64,9 +65,9 @@
 
               <!-- Organization -->
               <div>
-                <label for="organization" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="organization" class="block text-sm md:text-base text-inputLabel mb-2">
                   องค์กร
-                </label>
+                </label> -->
                 <input
                   id="organization"
                   v-model="formData.organization"
@@ -84,9 +85,9 @@
 
               <!-- Position -->
               <div>
-                <label for="position" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="position" class="block text-sm md:text-base text-inputLabel mb-2">
                   ตำแหน่ง
-                </label>
+                </label> -->
                 <input
                   id="position"
                   v-model="formData.position"
@@ -104,9 +105,9 @@
 
               <!-- Email -->
               <div>
-                <label for="email" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="email" class="block text-sm md:text-base text-inputLabel mb-2">
                   อีเมล <span class="text-red-400">*</span>
-                </label>
+                </label> -->
                 <input
                   id="email"
                   v-model="formData.email"
@@ -125,9 +126,9 @@
 
               <!-- Phone -->
               <div>
-                <label for="phone" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="phone" class="block text-sm md:text-base text-inputLabel mb-2">
                   เบอร์ติดต่อ
-                </label>
+                </label> -->
                 <input
                   id="phone"
                   v-model="formData.phone"
@@ -145,9 +146,9 @@
 
               <!-- Message -->
               <div>
-                <label for="message" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="message" class="block text-sm md:text-base text-inputLabel mb-2">
                   ข้อความ <span class="text-red-400">*</span>
-                </label>
+                </label> -->
                 <textarea
                   id="message"
                   v-model="formData.message"
@@ -189,13 +190,13 @@
           </div>
 
           <!-- Contact Information -->
-          <div class="space-y-10">
+          <div class="space-y-6">
             <!-- Email -->
             <div>
-              <p class="text-sm md:text-base text-gray-400 mb-2">อีเมล</p>
+              <p class="text-base text-gray-400 mb-1">อีเมล</p>
               <a 
                 :href="`mailto:${contact.email}`" 
-                class="text-2xl md:text-3xl lg:text-4xl font-bold text-white hover:text-brandGold transition-colors"
+                class="text-2xl font-semibold text-white hover:text-brandGold transition-colors"
               >
                 {{ contact.email }}
               </a>
@@ -203,10 +204,10 @@
 
             <!-- Phone -->
             <div>
-              <p class="text-sm md:text-base text-gray-400 mb-2">โทรศัพท์</p>
+              <p class="text-base text-gray-400 mb-1">โทรศัพท์</p>
               <a 
                 :href="`tel:${contact.phone.replace(/[^0-9+]/g, '')}`" 
-                class="text-2xl md:text-3xl lg:text-4xl font-bold text-white hover:text-brandGold transition-colors block mb-6"
+                class="text-2xl font-semibold text-white hover:text-brandGold transition-colors block mb-2"
               >
                 {{ contact.phone }}
               </a>
@@ -214,9 +215,9 @@
               <!-- Call Button -->
               <a
                 :href="`tel:${contact.phone.replace(/[^0-9+]/g, '')}`"
-                class="inline-flex items-center gap-3 px-8 py-3 text-black font-semibold text-base rounded-full transition-all duration-200 shadow-lg hover:shadow-xl bg-ctaGold"
+                class="inline-flex items-center gap-2 px-4 py-2 text-black font-semibold text-base rounded-full transition-all duration-200 shadow-lg hover:shadow-xl bg-ctaGold"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="none" fill="#000000">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 โทร.ติดต่อตอนนี้
@@ -274,9 +275,7 @@ import { useContactForm } from '~/composables/useContactForm'
  * - FR-042: Grid layout (form left, info+map right on desktop)
  */
 
-defineProps<{
-  contact: Contact
-}>()
+const { data: contact } = await useFetch<Contact>('/api/contact')
 
 const { formData, formState, errors, submitForm, validateField, clearMessages } = useContactForm()
 const turnstileWidget = ref<{ reset: () => void } | null>(null)

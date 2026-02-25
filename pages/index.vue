@@ -1,34 +1,52 @@
 <template>
   <div class="homepage">
     <!-- Section 1: Hero banner -->
-    <HeroSection />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <HeroSection />
+    </div>
 
-    <!-- Section 2: Trusted Logos horizontal slider -->
-    <TrustedLogosSlider v-if="logos && logos.length > 0" :logos="logos" />
+    <!-- Section 2: Trusted Logos horizontal slider (full width) -->
+    <TrustedLogosSlider />
 
     <!-- Section 3: Courses row-based list -->
-    <CoursesList v-if="courses && courses.length > 0" :courses="courses" />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <CoursesList />
+    </div>
 
     <!-- Section 4: Next Program promotional banner -->
-    <NextProgramPromo v-if="nextProgram" :program="nextProgram" />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <NextProgramPromo v-if="nextProgram" :program="nextProgram" />
+    </div>
 
     <!-- Section 5: Coaches grid (ทีมโค้ช) -->
-    <CoachesGrid v-if="coaches && coaches.length > 0" :coaches="coaches" />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <CoachesGrid />
+    </div>
 
     <!-- Section 6: Testimonials 3-item carousel -->
-    <TestimonialsCarousel v-if="testimonials && testimonials.length > 0" :testimonials="testimonials" />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <TestimonialsCarousel />
+    </div>
 
     <!-- Section 7: Dual CTA with two gold pill buttons -->
-    <DualCTA v-if="dualCTA" :cta="dualCTA" />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <DualCTA />
+    </div>
 
     <!-- Section 8: E-book offer with split layout -->
-    <EbookOffer v-if="ebook" :ebook="ebook" />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <EbookOffer />
+    </div>
 
     <!-- Section 9: Podcast/Knowledge block (optional) -->
-    <PodcastBlock v-if="podcast" :podcast="podcast" />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <PodcastBlock />
+    </div>
 
     <!-- Section 10: Contact block with form and info -->
-    <ContactBlock v-if="contact" :contact="contact" />
+    <div class="max-w-[1280px] mx-auto w-full">
+      <ContactBlock />
+    </div>
   </div>
 </template>
 
@@ -36,7 +54,7 @@
 // Feature: 002-home-page
 // Homepage with 10 mandatory sections in dark+gold theme
 
-const { homeData, meta, hero, logos, courses, nextProgram, coaches, testimonials, dualCTA, ebook, podcast, contact } = useHomeContent()
+const { homeData, meta, hero, nextProgram } = useHomeContent()
 
 // SEO meta tags
 useHead({

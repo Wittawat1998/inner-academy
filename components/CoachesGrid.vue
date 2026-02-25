@@ -6,12 +6,12 @@
     role="region"
     aria-label="ทีมโค้ช"
   >
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-5xl mx-auto px-4">
       <!-- Section Heading – right-aligned, gold, inside same container as grid -->
-      <div class="mb-8 md:mb-10 text-center" style="padding-left: 50%;">
+      <div class="mb-8 md:mb-10 text-center pl-[50%]">
         <h2
-          class="text-5xl md:text-6xl lg:text-7xl font-bold"
-          style="color: #C9A961;"
+          class="text-7xl font-medium header-fade"
+         
         >
           ทีมโค้ช
         </h2>
@@ -32,17 +32,9 @@
 <script setup lang="ts">
 import type { Coach } from '~/types/home'
 
-/**
- * CoachesGrid Component
- * Feature: 006-coaches (Home Page Section 5)
- *
- * Thai-style grid: heading "ทีมโค้ช" right-aligned gold, 4-column portrait card grid
- * Per spec: anchor #coaches, links to /coaches/[slug] detail pages
- */
 
-defineProps<{
-  coaches: Coach[]
-}>()
+
+const { data: coaches } = await useFetch<Coach[]>('/api/home-coaches')
 </script>
 
 <style scoped>

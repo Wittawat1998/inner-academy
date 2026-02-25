@@ -14,15 +14,8 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
-  AboutFounder: typeof import("../../components/AboutFounder.vue")['default']
-  AboutGallery: typeof import("../../components/AboutGallery.vue")['default']
-  AboutMission: typeof import("../../components/AboutMission.vue")['default']
-  AboutQuote: typeof import("../../components/AboutQuote.vue")['default']
-  AssessmentCTA: typeof import("../../components/AssessmentCTA.vue")['default']
-  ClassCard: typeof import("../../components/ClassCard.vue")['default']
   ClassHero: typeof import("../../components/ClassHero.vue")['default']
   ClassMetadata: typeof import("../../components/ClassMetadata.vue")['default']
-  ClientLogos: typeof import("../../components/ClientLogos.vue")['default']
   CoachBreadcrumb: typeof import("../../components/CoachBreadcrumb.vue")['default']
   CoachCard: typeof import("../../components/CoachCard.vue")['default']
   CoachesGrid: typeof import("../../components/CoachesGrid.vue")['default']
@@ -31,14 +24,11 @@ interface _GlobalComponents {
   CurriculumList: typeof import("../../components/CurriculumList.vue")['default']
   DualCTA: typeof import("../../components/DualCTA.vue")['default']
   EbookOffer: typeof import("../../components/EbookOffer.vue")['default']
-  FeaturedClasses: typeof import("../../components/FeaturedClasses.vue")['default']
   HeroSection: typeof import("../../components/HeroSection.vue")['default']
   NextProgramPromo: typeof import("../../components/NextProgramPromo.vue")['default']
   OutcomesList: typeof import("../../components/OutcomesList.vue")['default']
   PageHeader: typeof import("../../components/PageHeader.vue")['default']
   PodcastBlock: typeof import("../../components/PodcastBlock.vue")['default']
-  ReviewEmbed: typeof import("../../components/ReviewEmbed.vue")['default']
-  ReviewsSection: typeof import("../../components/ReviewsSection.vue")['default']
   TestimonialsCarousel: typeof import("../../components/TestimonialsCarousel.vue")['default']
   TheFooter: typeof import("../../components/TheFooter.vue")['default']
   TheHeader: typeof import("../../components/TheHeader.vue")['default']
@@ -82,15 +72,8 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
-  LazyAboutFounder: LazyComponent<typeof import("../../components/AboutFounder.vue")['default']>
-  LazyAboutGallery: LazyComponent<typeof import("../../components/AboutGallery.vue")['default']>
-  LazyAboutMission: LazyComponent<typeof import("../../components/AboutMission.vue")['default']>
-  LazyAboutQuote: LazyComponent<typeof import("../../components/AboutQuote.vue")['default']>
-  LazyAssessmentCTA: LazyComponent<typeof import("../../components/AssessmentCTA.vue")['default']>
-  LazyClassCard: LazyComponent<typeof import("../../components/ClassCard.vue")['default']>
   LazyClassHero: LazyComponent<typeof import("../../components/ClassHero.vue")['default']>
   LazyClassMetadata: LazyComponent<typeof import("../../components/ClassMetadata.vue")['default']>
-  LazyClientLogos: LazyComponent<typeof import("../../components/ClientLogos.vue")['default']>
   LazyCoachBreadcrumb: LazyComponent<typeof import("../../components/CoachBreadcrumb.vue")['default']>
   LazyCoachCard: LazyComponent<typeof import("../../components/CoachCard.vue")['default']>
   LazyCoachesGrid: LazyComponent<typeof import("../../components/CoachesGrid.vue")['default']>
@@ -99,14 +82,11 @@ interface _GlobalComponents {
   LazyCurriculumList: LazyComponent<typeof import("../../components/CurriculumList.vue")['default']>
   LazyDualCTA: LazyComponent<typeof import("../../components/DualCTA.vue")['default']>
   LazyEbookOffer: LazyComponent<typeof import("../../components/EbookOffer.vue")['default']>
-  LazyFeaturedClasses: LazyComponent<typeof import("../../components/FeaturedClasses.vue")['default']>
   LazyHeroSection: LazyComponent<typeof import("../../components/HeroSection.vue")['default']>
   LazyNextProgramPromo: LazyComponent<typeof import("../../components/NextProgramPromo.vue")['default']>
   LazyOutcomesList: LazyComponent<typeof import("../../components/OutcomesList.vue")['default']>
   LazyPageHeader: LazyComponent<typeof import("../../components/PageHeader.vue")['default']>
   LazyPodcastBlock: LazyComponent<typeof import("../../components/PodcastBlock.vue")['default']>
-  LazyReviewEmbed: LazyComponent<typeof import("../../components/ReviewEmbed.vue")['default']>
-  LazyReviewsSection: LazyComponent<typeof import("../../components/ReviewsSection.vue")['default']>
   LazyTestimonialsCarousel: LazyComponent<typeof import("../../components/TestimonialsCarousel.vue")['default']>
   LazyTheFooter: LazyComponent<typeof import("../../components/TheFooter.vue")['default']>
   LazyTheHeader: LazyComponent<typeof import("../../components/TheHeader.vue")['default']>

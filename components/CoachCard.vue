@@ -19,19 +19,18 @@
       <!-- Nickname (Thai display name) -->
       <h3
         v-if="coach.nickname"
-        class="text-2xl md:text-3xl font-bold mb-1 leading-tight"
-        style="color: #C9A961;"
+        class="text-2xl font-medium mb-1 leading-tight header-fade"
       >
         {{ coach.nickname }}
       </h3>
 
       <!-- Full name -->
-      <p v-if="coach.name" class="text-sm md:text-base text-white font-medium mb-1">
+      <p v-if="coach.name" class="text-sm font-medium mb-1 text-goldTextDark">
         {{ coach.name }}
       </p>
 
       <!-- Title -->
-      <p v-if="coach.title" class="text-xs md:text-sm text-gray-400 italic leading-snug mb-3">
+      <p v-if="coach.title" class="text-xs text-gray-400 italic leading-snug mb-3 line-clamp-2 min-h-[2.5em]">
         {{ coach.title }}
       </p>
 

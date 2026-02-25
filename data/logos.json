@@ -1,0 +1,146 @@
+[
+  {
+    "order": 1,
+    "nameEn": "KING POWER",
+    "nameTh": "บริษัท คิง เพาเวอร์ อินเตอร์เนชันแนล",
+    "logo": "/images/clients/client-01.webp"
+  },
+  {
+    "order": 2,
+    "nameEn": "THAILIFE",
+    "nameTh": "ไทยประกันชีวิต",
+    "logo": "/images/clients/client-02.webp"
+  },
+  {
+    "order": 3,
+    "nameEn": "AIA",
+    "nameTh": "เอไอเอ กรุ๊ป ลิมิเต็ด",
+    "logo": "/images/clients/client-03.webp"
+  },
+  {
+    "order": 4,
+    "nameEn": "SULWHASOO",
+    "nameTh": "บริษัท อมอร์แปซิฟิค (ไทยแลนด์) จำกัด",
+    "logo": "/images/clients/client-04.webp"
+  },
+  {
+    "order": 5,
+    "nameEn": "LANCÔME",
+    "nameTh": "บริษัท ลอรีอัล (ประเทศไทย) จำกัด",
+    "logo": "/images/clients/client-05.webp"
+  },
+  {
+    "order": 6,
+    "nameEn": "LOUIS VUITTON",
+    "nameTh": "หลุยส์ วิตตอง",
+    "logo": "/images/clients/client-06.webp"
+  },
+  {
+    "order": 7,
+    "nameEn": "DIOR",
+    "nameTh": "ดิออร์",
+    "logo": "/images/clients/client-07.webp"
+  },
+  {
+    "order": 8,
+    "nameEn": "VOW GROUP",
+    "nameTh": "บริษัท วาว กรุ๊ป โฮลดิ้ง จำกัด",
+    "logo": "/images/clients/client-08.webp"
+  },
+  {
+    "order": 9,
+    "nameEn": "CPN",
+    "nameTh": "บริษัท เซ็นทรัลพัฒนา จำกัด",
+    "logo": "/images/clients/client-09.webp"
+  },
+  {
+    "order": 10,
+    "nameEn": "SINGHA",
+    "nameTh": "บริษัท สิงห์ คอร์เปอเรชั่น จำกัด",
+    "logo": "/images/clients/client-10.webp"
+  },
+  {
+    "order": 11,
+    "nameEn": "SCG",
+    "nameTh": "ปูนซิเมนต์ไทย",
+    "logo": "/images/clients/client-11.webp"
+  },
+  {
+    "order": 12,
+    "nameEn": "HÄFELE",
+    "nameTh": "เฮเฟเล่ ดีไซน์ สตูดิโอ",
+    "logo": "/images/clients/client-12.webp"
+  },
+  {
+    "order": 13,
+    "nameEn": "DUTCH MILL",
+    "nameTh": "ดัชมิลล์",
+    "logo": "/images/clients/client-13.webp"
+  },
+  {
+    "order": 14,
+    "nameEn": "TOYOTA",
+    "nameTh": "บริษัท โตโยต้า มอเตอร์ ประเทศไทย จำกัด",
+    "logo": "/images/clients/client-14.webp"
+  },
+  {
+    "order": 15,
+    "nameEn": "HONDA",
+    "nameTh": "ฮอนด้า",
+    "logo": "/images/clients/client-15.webp"
+  },
+  {
+    "order": 16,
+    "nameEn": "BMW",
+    "nameTh": "บมจ. ยนตรกิจบาวาเรีย",
+    "logo": "/images/clients/client-16.webp"
+  },
+  {
+    "order": 17,
+    "nameEn": "AIS",
+    "nameTh": "เอไอเอส",
+    "logo": "/images/clients/client-17.webp"
+  },
+  {
+    "order": 18,
+    "nameEn": "DTAC",
+    "nameTh": "บริษัท โทเทิ่ล แอ็คเซ็ส คอมมูนิเคชั่น จำกัด",
+    "logo": "/images/clients/client-18.webp"
+  },
+  {
+    "order": 19,
+    "nameEn": "KBANK",
+    "nameTh": "ธนาคารกสิกรไทย จำกัด (มหาชน)",
+    "logo": "/images/clients/client-19.webp"
+  },
+  {
+    "order": 20,
+    "nameEn": "SCB",
+    "nameTh": "ไทยพาณิชย์",
+    "logo": "/images/clients/client-20.webp"
+  },
+  {
+    "order": 21,
+    "nameEn": "TTB",
+    "nameTh": "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
+    "logo": "/images/clients/client-21.webp"
+  },
+  {
+    "order": 22,
+    "nameEn": "LAND & HOUSES",
+    "nameTh": "แลนด์ แอนด์ เฮ้าส์",
+    "logo": "/images/clients/client-22.webp"
+  },
+  {
+    "order": 23,
+    "nameEn": "BANGKOK HOSPITAL",
+    "nameTh": "โรงพยาบาลกรุงเทพ",
+    "logo": "/images/clients/client-23.webp"
+  },
+  {
+    "order": 24,
+    "nameEn": "BANPU",
+    "nameTh": "บริษัท บ้านปู จำกัด",
+    "logo": "/images/clients/client-24.webp"
+  }
+]

@@ -17,7 +17,7 @@
       </div>
 
       <!-- White rounded container for logos -->
-      <div class="logos-container border border-goldText bg-white py-6  px-0 ">
+      <div class="logos-container border border-goldText bg-white py-6  px-2 ">
         <!-- Hidden overflow wrapper -->
         <div 
           class="marquee-wrapper"
@@ -35,22 +35,22 @@
             <div class="marquee-group">
               <div
                 v-for="logo in logos"
-                :key="`first-${logo.nameEN}`"
+                :key="`first-${logo.nameEn}`"
                 class="logo-item"
               >
                 <img
                   :src="logo.logo"
                   :alt="logo.alt"
-                  :title="logo.nameEN"
-                  class="h-16 md:h-24 lg:h-32 w-auto object-contain hover:scale-110 transition-transform duration-300"
+                  :title="logo.nameEn"
+                  class="h-24 w-auto object-contain hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
                 <div class="logo-label mt-2 text-center">
                   <p class="text-xs md:text-sm font-semibold text-gray-800 leading-tight">
-                    {{ logo.nameEN }}
+                    {{ logo.nameEn }}
                   </p>
-                  <p v-if="logo.nameTH" class="text-xs text-gray-600 leading-tight mt-0.5">
-                    {{ logo.nameTH }}
+                  <p v-if="logo.nameTh" class="text-xs text-gray-600 leading-tight mt-0.5">
+                    {{ logo.nameTh }}
                   </p>
                 </div>
               </div>
@@ -60,22 +60,22 @@
             <div class="marquee-group">
               <div
                 v-for="logo in logos"
-                :key="`second-${logo.nameEN}`"
+                :key="`second-${logo.nameEn}`"
                 class="logo-item"
               >
                 <img
                   :src="logo.logo"
                   :alt="logo.alt"
-                  :title="logo.nameEN"
-                  class="h-16 md:h-24 lg:h-32 w-auto object-contain hover:scale-110 transition-transform duration-300"
+                  :title="logo.nameEn"
+                  class="h-24 w-auto object-contain hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
                 <div class="logo-label mt-2 text-center">
                   <p class="text-xs md:text-sm font-semibold text-gray-800 leading-tight">
-                    {{ logo.nameEN }}
+                    {{ logo.nameEn }}
                   </p>
-                  <p v-if="logo.nameTH" class="text-xs text-gray-600 leading-tight mt-0.5">
-                    {{ logo.nameTH }}
+                  <p v-if="logo.nameTh" class="text-xs text-gray-600 leading-tight mt-0.5">
+                    {{ logo.nameTh }}
                   </p>
                 </div>
               </div>
@@ -104,9 +104,7 @@ import { useMediaQuery } from '@vueuse/core'
  * - FR-008: Dark background (bgSecondary)
  */
 
-defineProps<{
-  logos: TrustedLogo[]
-}>()
+const { data: logos } = await useFetch<TrustedLogo[]>('/api/logos')
 
 const isPaused = ref(false)
 const prefersReducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')

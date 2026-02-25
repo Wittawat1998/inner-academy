@@ -14,15 +14,8 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
-export const AboutFounder: typeof import("../components/AboutFounder.vue")['default']
-export const AboutGallery: typeof import("../components/AboutGallery.vue")['default']
-export const AboutMission: typeof import("../components/AboutMission.vue")['default']
-export const AboutQuote: typeof import("../components/AboutQuote.vue")['default']
-export const AssessmentCTA: typeof import("../components/AssessmentCTA.vue")['default']
-export const ClassCard: typeof import("../components/ClassCard.vue")['default']
 export const ClassHero: typeof import("../components/ClassHero.vue")['default']
 export const ClassMetadata: typeof import("../components/ClassMetadata.vue")['default']
-export const ClientLogos: typeof import("../components/ClientLogos.vue")['default']
 export const CoachBreadcrumb: typeof import("../components/CoachBreadcrumb.vue")['default']
 export const CoachCard: typeof import("../components/CoachCard.vue")['default']
 export const CoachesGrid: typeof import("../components/CoachesGrid.vue")['default']
@@ -31,14 +24,11 @@ export const CoursesList: typeof import("../components/CoursesList.vue")['defaul
 export const CurriculumList: typeof import("../components/CurriculumList.vue")['default']
 export const DualCTA: typeof import("../components/DualCTA.vue")['default']
 export const EbookOffer: typeof import("../components/EbookOffer.vue")['default']
-export const FeaturedClasses: typeof import("../components/FeaturedClasses.vue")['default']
 export const HeroSection: typeof import("../components/HeroSection.vue")['default']
 export const NextProgramPromo: typeof import("../components/NextProgramPromo.vue")['default']
 export const OutcomesList: typeof import("../components/OutcomesList.vue")['default']
 export const PageHeader: typeof import("../components/PageHeader.vue")['default']
 export const PodcastBlock: typeof import("../components/PodcastBlock.vue")['default']
-export const ReviewEmbed: typeof import("../components/ReviewEmbed.vue")['default']
-export const ReviewsSection: typeof import("../components/ReviewsSection.vue")['default']
 export const TestimonialsCarousel: typeof import("../components/TestimonialsCarousel.vue")['default']
 export const TheFooter: typeof import("../components/TheFooter.vue")['default']
 export const TheHeader: typeof import("../components/TheHeader.vue")['default']
@@ -82,15 +72,8 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
-export const LazyAboutFounder: LazyComponent<typeof import("../components/AboutFounder.vue")['default']>
-export const LazyAboutGallery: LazyComponent<typeof import("../components/AboutGallery.vue")['default']>
-export const LazyAboutMission: LazyComponent<typeof import("../components/AboutMission.vue")['default']>
-export const LazyAboutQuote: LazyComponent<typeof import("../components/AboutQuote.vue")['default']>
-export const LazyAssessmentCTA: LazyComponent<typeof import("../components/AssessmentCTA.vue")['default']>
-export const LazyClassCard: LazyComponent<typeof import("../components/ClassCard.vue")['default']>
 export const LazyClassHero: LazyComponent<typeof import("../components/ClassHero.vue")['default']>
 export const LazyClassMetadata: LazyComponent<typeof import("../components/ClassMetadata.vue")['default']>
-export const LazyClientLogos: LazyComponent<typeof import("../components/ClientLogos.vue")['default']>
 export const LazyCoachBreadcrumb: LazyComponent<typeof import("../components/CoachBreadcrumb.vue")['default']>
 export const LazyCoachCard: LazyComponent<typeof import("../components/CoachCard.vue")['default']>
 export const LazyCoachesGrid: LazyComponent<typeof import("../components/CoachesGrid.vue")['default']>
@@ -99,14 +82,11 @@ export const LazyCoursesList: LazyComponent<typeof import("../components/Courses
 export const LazyCurriculumList: LazyComponent<typeof import("../components/CurriculumList.vue")['default']>
 export const LazyDualCTA: LazyComponent<typeof import("../components/DualCTA.vue")['default']>
 export const LazyEbookOffer: LazyComponent<typeof import("../components/EbookOffer.vue")['default']>
-export const LazyFeaturedClasses: LazyComponent<typeof import("../components/FeaturedClasses.vue")['default']>
 export const LazyHeroSection: LazyComponent<typeof import("../components/HeroSection.vue")['default']>
 export const LazyNextProgramPromo: LazyComponent<typeof import("../components/NextProgramPromo.vue")['default']>
 export const LazyOutcomesList: LazyComponent<typeof import("../components/OutcomesList.vue")['default']>
 export const LazyPageHeader: LazyComponent<typeof import("../components/PageHeader.vue")['default']>
 export const LazyPodcastBlock: LazyComponent<typeof import("../components/PodcastBlock.vue")['default']>
-export const LazyReviewEmbed: LazyComponent<typeof import("../components/ReviewEmbed.vue")['default']>
-export const LazyReviewsSection: LazyComponent<typeof import("../components/ReviewsSection.vue")['default']>
 export const LazyTestimonialsCarousel: LazyComponent<typeof import("../components/TestimonialsCarousel.vue")['default']>
 export const LazyTheFooter: LazyComponent<typeof import("../components/TheFooter.vue")['default']>
 export const LazyTheHeader: LazyComponent<typeof import("../components/TheHeader.vue")['default']>

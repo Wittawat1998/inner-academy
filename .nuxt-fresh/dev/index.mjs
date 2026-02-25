@@ -6,6 +6,7 @@ import { parentPort, threadId } from 'node:worker_threads';
 import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, getResponseStatus, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getResponseStatusText } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/h3/dist/index.mjs';
 import { escapeHtml } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/@vue/shared/dist/shared.cjs.js';
 import nodemailer from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/nodemailer/lib/nodemailer.js';
+import { promises, readFileSync } from 'node:fs';
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/ufo/dist/index.mjs';
 import { renderToString } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/vue/server-renderer/index.mjs';
@@ -32,7 +33,6 @@ import { SourceMapConsumer } from 'file://E:/work/inner/sourceCode/inner-academy
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { getContext } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/unctx/dist/index.mjs';
 import { captureRawStackTrace, parseRawStackTrace } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/errx/dist/index.js';
-import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname as dirname$1, resolve as resolve$1, isAbsolute } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/pathe/dist/index.mjs';
 import { walkResolver } from 'file://E:/work/inner/sourceCode/inner-academy/node_modules/unhead/dist/utils.mjs';
@@ -2151,7 +2151,22 @@ const plugins = [
 __FqZsEfjjxjm5ttXhq7HwaGCOI1aOdzesmkR7dBKXHg
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"1fc25-mLIVdPTi/8J8Lro829QhOV5xXTs\"",
+    "mtime": "2026-02-25T18:44:30.707Z",
+    "size": 130085,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"736dc-dqP1fp1YOC5w7Ipf4YV6GNzB5Nc\"",
+    "mtime": "2026-02-25T18:44:30.707Z",
+    "size": 472796,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -2694,14 +2709,30 @@ const _Sv3nRo = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
+const _lazy_6r8yDm = () => Promise.resolve().then(function () { return contact_get$1; });
 const _lazy_egoV1M = () => Promise.resolve().then(function () { return contact_post$1; });
+const _lazy_lkDsoW = () => Promise.resolve().then(function () { return courses_get$1; });
+const _lazy_ZQLK2m = () => Promise.resolve().then(function () { return dualcta_get$1; });
+const _lazy_lqqtEz = () => Promise.resolve().then(function () { return ebook_get$1; });
+const _lazy_CWuX6W = () => Promise.resolve().then(function () { return homeCoaches_get$1; });
+const _lazy_p79CqZ = () => Promise.resolve().then(function () { return logos_get$1; });
 const _lazy_ukKbUq = () => Promise.resolve().then(function () { return navigation_get$1; });
+const _lazy_57KfM1 = () => Promise.resolve().then(function () { return podcast_get$1; });
+const _lazy_LmuNs7 = () => Promise.resolve().then(function () { return testimonials_get$1; });
 const _lazy_jiaZgZ = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '', handler: _y4jxbn, lazy: false, middleware: true, method: undefined },
+  { route: '/api/contact', handler: _lazy_6r8yDm, lazy: true, middleware: false, method: "get" },
   { route: '/api/contact', handler: _lazy_egoV1M, lazy: true, middleware: false, method: "post" },
+  { route: '/api/courses', handler: _lazy_lkDsoW, lazy: true, middleware: false, method: "get" },
+  { route: '/api/dualcta', handler: _lazy_ZQLK2m, lazy: true, middleware: false, method: "get" },
+  { route: '/api/ebook', handler: _lazy_lqqtEz, lazy: true, middleware: false, method: "get" },
+  { route: '/api/home-coaches', handler: _lazy_CWuX6W, lazy: true, middleware: false, method: "get" },
+  { route: '/api/logos', handler: _lazy_p79CqZ, lazy: true, middleware: false, method: "get" },
   { route: '/api/navigation', handler: _lazy_ukKbUq, lazy: true, middleware: false, method: "get" },
+  { route: '/api/podcast', handler: _lazy_57KfM1, lazy: true, middleware: false, method: "get" },
+  { route: '/api/testimonials', handler: _lazy_LmuNs7, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
   { route: '/_ipx/**', handler: _Sv3nRo, lazy: false, middleware: false, method: undefined },
@@ -2969,6 +3000,38 @@ const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   default: styles
 }, Symbol.toStringTag, { value: 'Module' }));
 
+var heading = "ติดต่อเรา";
+var description$2 = "สอบถามรายละเอียดหลักสูตร รูปแบบการเรียน แนบประเมินศักยภาพพนักงานฟรี\nหรือว่าขอเข้าเยี่ยมชม ๆ กับที่ปรึกษาการเรียนรู้ของเราได้เลย";
+var phone = "080-265-6266";
+var email = "info@innerpower.co.th";
+var address = {
+	company: "บริษัท อินเนอร์ เพาเวอร์ เทรนนิ่ง จำกัด",
+	building: "Raintree Office Garden",
+	floor: "อาคาร B2 ชั้น 2",
+	street: "เลขที่ 280 ซอยศูนย์วิจัย 4 (พระราม 9 ซอย 17)",
+	district: "บางกะปิ ห้วยขวาง กรุงเทพฯ 10310"
+};
+var mapImage = "/images/contact-map.png";
+var mapEmbedUrl = "https://www.google.com/maps?q=บริษัท+อินเนอร์+เพาเวอร์+เทรนนิ่ง+จำกัด,+Raintree+Office+Garden,+280+ซอยสุขุมวิจัย+4,+บางกะปิ,+กรุงเทพฯ+10310&output=embed";
+const contactDataRaw = {
+	heading: heading,
+	description: description$2,
+	phone: phone,
+	email: email,
+	address: address,
+	mapImage: mapImage,
+	mapEmbedUrl: mapEmbedUrl
+};
+
+const contact_get = defineEventHandler(() => {
+  return contactDataRaw;
+});
+
+const contact_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: contact_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
 async function verifyTurnstile(token, secretKey) {
   const verifyUrl = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
   try {
@@ -3203,6 +3266,229 @@ const contact_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProp
   default: contact_post
 }, Symbol.toStringTag, { value: 'Module' }));
 
+const courses_get = defineEventHandler(() => {
+  const filePath = resolve("data/classes.json");
+  const raw = readFileSync(filePath, "utf-8");
+  return JSON.parse(raw);
+});
+
+const courses_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: courses_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const dualcta_get = defineEventHandler(() => {
+  const filePath = resolve("data/dualCTA.json");
+  const raw = readFileSync(filePath, "utf-8");
+  return JSON.parse(raw);
+});
+
+const dualcta_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: dualcta_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+var headingLine1 = "ปลดปล่อยศักยภาพ";
+var headingLine2Before = "ด้วย";
+var headingLine2Highlight = "ความรู้";
+var headingLine2After = " ไปด้วยกัน";
+var subheading = "เครื่องมืออัป Soft-Skills\nให้กับทั้งองค์กร\nที่ HR รุ่นใหม่ต้องมี";
+var description$1 = "Guidebook เพื่อยกระดับประสิทธิภาพการทำงานให้ชาวออฟฟิศ เรียบเรียงโดยเฉพาะสำหรับ HR ในการวัดระดับ 8 ทักษะการทำงานที่จำเป็นในยุคนี้ และ 5 เครื่องมือสำหรับติดตามพัฒนาการด้าน Soft-Skills ของบุคลากรที่ให้ผลลัพธ์เป็นข้อมูลที่จับต้องได้";
+var backgroundImage = "/images/ebook/ebook-bg.jpg";
+var image$1 = "/images/ebook/ebook.webp";
+var ctaText = "รับ Guidebook ฟรี";
+var ctaUrl = "/contact";
+const ebookDataRaw = {
+	headingLine1: headingLine1,
+	headingLine2Before: headingLine2Before,
+	headingLine2Highlight: headingLine2Highlight,
+	headingLine2After: headingLine2After,
+	subheading: subheading,
+	description: description$1,
+	backgroundImage: backgroundImage,
+	image: image$1,
+	ctaText: ctaText,
+	ctaUrl: ctaUrl
+};
+
+const ebook_get = defineEventHandler(() => {
+  return ebookDataRaw;
+});
+
+const ebook_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: ebook_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const homeCoaches_get = defineEventHandler(() => {
+  var _a;
+  const filePath = resolve("data/coaches.json");
+  const raw = readFileSync(filePath, "utf-8");
+  const data = JSON.parse(raw);
+  return (_a = data.coaches) != null ? _a : data;
+});
+
+const homeCoaches_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: homeCoaches_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const logosDataRaw = [
+	{
+		order: 1,
+		nameEn: "KING POWER",
+		nameTh: "บริษัท คิง เพาเวอร์ อินเตอร์เนชันแนล",
+		logo: "/images/clients/client-01.webp"
+	},
+	{
+		order: 2,
+		nameEn: "THAILIFE",
+		nameTh: "ไทยประกันชีวิต",
+		logo: "/images/clients/client-02.webp"
+	},
+	{
+		order: 3,
+		nameEn: "AIA",
+		nameTh: "เอไอเอ กรุ๊ป ลิมิเต็ด",
+		logo: "/images/clients/client-03.webp"
+	},
+	{
+		order: 4,
+		nameEn: "SULWHASOO",
+		nameTh: "บริษัท อมอร์แปซิฟิค (ไทยแลนด์) จำกัด",
+		logo: "/images/clients/client-04.webp"
+	},
+	{
+		order: 5,
+		nameEn: "LANCÔME",
+		nameTh: "บริษัท ลอรีอัล (ประเทศไทย) จำกัด",
+		logo: "/images/clients/client-05.webp"
+	},
+	{
+		order: 6,
+		nameEn: "LOUIS VUITTON",
+		nameTh: "หลุยส์ วิตตอง",
+		logo: "/images/clients/client-06.webp"
+	},
+	{
+		order: 7,
+		nameEn: "DIOR",
+		nameTh: "ดิออร์",
+		logo: "/images/clients/client-07.webp"
+	},
+	{
+		order: 8,
+		nameEn: "VOW GROUP",
+		nameTh: "บริษัท วาว กรุ๊ป โฮลดิ้ง จำกัด",
+		logo: "/images/clients/client-08.webp"
+	},
+	{
+		order: 9,
+		nameEn: "CPN",
+		nameTh: "บริษัท เซ็นทรัลพัฒนา จำกัด",
+		logo: "/images/clients/client-09.webp"
+	},
+	{
+		order: 10,
+		nameEn: "SINGHA",
+		nameTh: "บริษัท สิงห์ คอร์เปอเรชั่น จำกัด",
+		logo: "/images/clients/client-10.webp"
+	},
+	{
+		order: 11,
+		nameEn: "SCG",
+		nameTh: "ปูนซิเมนต์ไทย",
+		logo: "/images/clients/client-11.webp"
+	},
+	{
+		order: 12,
+		nameEn: "HÄFELE",
+		nameTh: "เฮเฟเล่ ดีไซน์ สตูดิโอ",
+		logo: "/images/clients/client-12.webp"
+	},
+	{
+		order: 13,
+		nameEn: "DUTCH MILL",
+		nameTh: "ดัชมิลล์",
+		logo: "/images/clients/client-13.webp"
+	},
+	{
+		order: 14,
+		nameEn: "TOYOTA",
+		nameTh: "บริษัท โตโยต้า มอเตอร์ ประเทศไทย จำกัด",
+		logo: "/images/clients/client-14.webp"
+	},
+	{
+		order: 15,
+		nameEn: "HONDA",
+		nameTh: "ฮอนด้า",
+		logo: "/images/clients/client-15.webp"
+	},
+	{
+		order: 16,
+		nameEn: "BMW",
+		nameTh: "บมจ. ยนตรกิจบาวาเรีย",
+		logo: "/images/clients/client-16.webp"
+	},
+	{
+		order: 17,
+		nameEn: "AIS",
+		nameTh: "เอไอเอส",
+		logo: "/images/clients/client-17.webp"
+	},
+	{
+		order: 18,
+		nameEn: "DTAC",
+		nameTh: "บริษัท โทเทิ่ล แอ็คเซ็ส คอมมูนิเคชั่น จำกัด",
+		logo: "/images/clients/client-18.webp"
+	},
+	{
+		order: 19,
+		nameEn: "KBANK",
+		nameTh: "ธนาคารกสิกรไทย จำกัด (มหาชน)",
+		logo: "/images/clients/client-19.webp"
+	},
+	{
+		order: 20,
+		nameEn: "SCB",
+		nameTh: "ไทยพาณิชย์",
+		logo: "/images/clients/client-20.webp"
+	},
+	{
+		order: 21,
+		nameEn: "TTB",
+		nameTh: "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
+		logo: "/images/clients/client-21.webp"
+	},
+	{
+		order: 22,
+		nameEn: "LAND & HOUSES",
+		nameTh: "แลนด์ แอนด์ เฮ้าส์",
+		logo: "/images/clients/client-22.webp"
+	},
+	{
+		order: 23,
+		nameEn: "BANGKOK HOSPITAL",
+		nameTh: "โรงพยาบาลกรุงเทพ",
+		logo: "/images/clients/client-23.webp"
+	},
+	{
+		order: 24,
+		nameEn: "BANPU",
+		nameTh: "บริษัท บ้านปู จำกัด",
+		logo: "/images/clients/client-24.webp"
+	}
+];
+
+const logos_get = defineEventHandler(() => {
+  return logosDataRaw;
+});
+
+const logos_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: logos_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
 var logo = {
 	textThai: "INNER POWER",
 	textEnglish: "ACADEMY",
@@ -3326,6 +3612,44 @@ const navigation_get = defineEventHandler(() => {
 const navigation_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: navigation_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+var image = "/path/to/podcast-image.jpg";
+var titleLine1 = "เรื่องที่พนักงานอยากรู้";
+var titleLine2 = "แต่ “เสียดาย...เจ้านายไม่เคยบอก”";
+var description = "พอดแคสต์ ที่จะพาทุกคนมาเข้าใจมุมมองในการทำงาน แนวทางการพัฒนาทักษะสำคัญ และเทคนิคการสื่อสาร ที่น้อยคนเท่านั้นที่เคยรู้";
+var episodes = [
+	{
+		url: "/podcast/episode-1",
+		title: "Episode 1"
+	}
+];
+const podcastDataRaw = {
+	image: image,
+	titleLine1: titleLine1,
+	titleLine2: titleLine2,
+	description: description,
+	episodes: episodes
+};
+
+const podcast_get = defineEventHandler(() => {
+  return podcastDataRaw;
+});
+
+const podcast_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: podcast_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const testimonials_get = defineEventHandler(() => {
+  const filePath = resolve("data/testimonials.json");
+  const raw = readFileSync(filePath, "utf-8");
+  return JSON.parse(raw);
+});
+
+const testimonials_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: testimonials_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function renderPayloadResponse(ssrContext) {

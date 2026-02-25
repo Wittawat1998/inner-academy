@@ -53,4 +53,13 @@
       0 1px 2px rgba(161, 132, 79, 0.6),
       0 -1px 2px rgba(247, 198, 109, 0.4);
   }
+
+  /* Header fade background helper for sections that need the same vibe */
+  .bg-fade {
+    background: linear-gradient(180deg, rgba(161, 132, 79, 0.96) 0%, rgba(247, 198, 109, 0.9) 100%);
+    color: #0f1014;
+    box-shadow:
+      inset 0 1px 3px rgba(255, 235, 200, 0.45),
+      inset 0 -1px 4px rgba(0, 0, 0, 0.18);
+  }
 }

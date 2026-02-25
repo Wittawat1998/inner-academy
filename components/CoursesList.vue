@@ -2,21 +2,21 @@
   <section 
     id="classes"
     v-if="courses && courses.length > 0" 
-    class="courses-list-section bg-transparent py-12 md:py-16 lg:py-20"
+    class="courses-list-section bg-transparent pb-5"
     role="region"
     aria-label="หลักสูตร"
   >
     <div class="container mx-auto px-4">
       <!-- Courses List (Full-width rows) -->
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-5xl mx-auto">
         <!-- Section Heading -->
-        <div class="mb-8 md:mb-12 section-header">
-          <h2 class="text-7xl font-semibold pb-8 header-fade">
+        <div class=" section-header">
+          <h2 class="text-7xl font-medium pb-8 header-fade">
             หลักสูตร
           </h2>
         </div>
 
-        <div class="space-y-1">
+        <div class="space-y-0">
           <article
             v-for="(course, index) in courses"
             :key="course.slug"
@@ -24,15 +24,15 @@
           >
           <NuxtLink 
             :to="`/courses/${course.slug}`"
-            class="course-link flex flex-col md:flex-row md:items-center gap-4 md:gap-8 py-6 md:py-8 px-[110px] md:px-[110px] group"
+            class="course-link flex flex-col md:flex-row md:items-center gap-4 md:gap-8 py-6 px-[80px]  group"
           >
             <!-- Left: Title + Description -->
             <div class="flex-1 min-w-0">
-              <h3 class="text-3xl font-semibold text-white mb-2 group-hover:text-gray-900 transition-colors">
+              <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-gray-900 transition-colors">
                 {{ course.title }}
               </h3>
-              <p class="text-sm md:text-base text-gray-400 group-hover:text-gray-700 transition-colors">
-                {{ course.description }}
+              <p class="text-sm text-gray-400 group-hover:text-gray-700 transition-colors">
+                {{ course.shortDescription }}
               </p>
             </div>
 
@@ -45,7 +45,7 @@
                   :key="idx"
                   :src="instructor.image"
                   :alt="instructor.name"
-                  class="w-20 h-20 md:w-24 md:h-24 rounded-full border-3 border-white object-cover shadow-lg"
+                  class="w-16 h-16 rounded-full border-3 border-white object-cover shadow-lg"
                   loading="lazy"
                   format="webp"
                 />
@@ -54,7 +54,7 @@
 
             <!-- Right: CTA -->
             <div class="flex-shrink-0">
-              <span class="inline-flex items-center gap-2 text-gold group-hover:text-white font-semibold text-base md:text-lg transition-colors">
+              <span class="inline-flex items-center gap-2 text-goldText group-hover:text-white font-semibold text-sm transition-colors">
                 รายละเอียด
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
@@ -77,7 +77,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Course } from '~/types/home'
+import type { ClassesData } from '~/types/classes'
 
 /**
  * CoursesList Component
@@ -90,20 +90,19 @@ import type { Course } from '~/types/home'
  * - FR-009: Full-width row layout (not grid)
  * - FR-010: Title, description, instructors on left; CTA on right
  * - FR-011: Thai "รายละเอียด →" link in gold with right arrow
- * - FR-012: Links to /courses/[slug] route
+ * - FR-012: Links to /courses/[id] route
  * - FR-013: Featured course with gold gradient background
  */
 
-defineProps<{
-  courses: Course[]
-}>()
+const { data: classesData } = await useFetch<ClassesData>('/api/courses')
+const courses = computed(() => classesData.value?.classes ?? [])
 </script>
 
 <style scoped>
 
 .section-header {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-left: 5rem;
   margin-right: 5rem;
   border-bottom: 2px solid;

@@ -1,33 +1,15 @@
 {
-  "heading": "ติดต่อเรา",
-  "description": "สอบถามรายละเอียดหลักสูตร รูปแบบการเรียน แนบประเมินศักยภาพพนักงานฟรี หรือว่าขอเข้าเยี่ยมชม ๆ กับที่ปรึกษาการเรียนรู้ของเราได้เลย",
-  "phone": "080-265-6266",
-  "email": "info@innerpower.co.th",
-  "address": {
-    "company": "บริษัท อินเนอร์ เพาเวอร์ เทรนนิ่ง จำกัด",
-    "building": "Raintree Office Garden",
-    "floor": "อาคาร B2 ชั้น 2",
-    "street": "เลขที่ 280 ซอยสุขุมวิจัย 4 (พระราม 9 ซอย 17)",
-    "district": "บางกะปิ ห้วยขวาง กรุงเทพฯ 10310"
-  },
-  "mapImage": "/images/contact-map.png",
-  "mapEmbedUrl": "https://www.google.com/maps?q=บริษัท+อินเนอร์+เพาเวอร์+เทรนนิ่ง+จำกัด,+Raintree+Office+Garden,+280+ซอยสุขุมวิจัย+4,+บางกะปิ,+กรุงเทพฯ+10310&output=embed",
-  "socialLinks": [
-    {
-      "platform": "facebook",
-      "url": "https://facebook.com/inneracademy"
+    "heading": "ติดต่อเรา",
+    "description": "สอบถามรายละเอียดหลักสูตร รูปแบบการเรียน แนบประเมินศักยภาพพนักงานฟรี\nหรือว่าขอเข้าเยี่ยมชม ๆ กับที่ปรึกษาการเรียนรู้ของเราได้เลย",
+    "phone": "080-265-6266",
+    "email": "info@innerpower.co.th",
+    "address": {
+      "company": "บริษัท อินเนอร์ เพาเวอร์ เทรนนิ่ง จำกัด",
+      "building": "Raintree Office Garden",
+      "floor": "อาคาร B2 ชั้น 2",
+      "street": "เลขที่ 280 ซอยศูนย์วิจัย 4 (พระราม 9 ซอย 17)",
+      "district": "บางกะปิ ห้วยขวาง กรุงเทพฯ 10310"
     },
-    {
-      "platform": "instagram",
-      "url": "https://instagram.com/inneracademy"
-    },
-    {
-      "platform": "line",
-      "url": "https://line.me/ti/p/@inneracademy"
-    },
-    {
-      "platform": "youtube",
-      "url": "https://youtube.com/@inneracademy"
-    }
-  ]
-}
+    "mapImage": "/images/contact-map.png",
+    "mapEmbedUrl": "https://www.google.com/maps?q=บริษัท+อินเนอร์+เพาเวอร์+เทรนนิ่ง+จำกัด,+Raintree+Office+Garden,+280+ซอยสุขุมวิจัย+4,+บางกะปิ,+กรุงเทพฯ+10310&output=embed"
+  }

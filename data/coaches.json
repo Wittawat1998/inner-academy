@@ -1,197 +1,122 @@
 {
   "meta": {
     "title": "Our Coaches",
-    "intro": "Meet our expert coaching team with diverse specializations and decades of combined experience in personal development, leadership, and holistic wellness. Each coach brings unique expertise and passion to help you achieve your goals.",
-    "description": "Meet the Inner Power Academy coaching team - expert instructors with diverse backgrounds in mindfulness, leadership, and personal growth."
+    "intro": "พบกับทีมโค้ชผู้เชี่ยวชาญของ Inner Academy ที่มีความเชี่ยวชาญหลากหลายด้านและประสบการณ์รวมกว่าหลายสิบปีในด้านการพัฒนาตนเอง ภาวะผู้นำ และการสื่อสาร",
+    "description": "พบกับทีมโค้ชของ Inner Academy - ผู้เชี่ยวชาญที่มีพื้นฐานหลากหลายด้านการสื่อสาร ภาวะผู้นำ และการพัฒนาตนเอง"
   },
   "coaches": [
     {
-      "slug": "dr-ananya-sharma",
-      "name": "Dr. Ananya Sharma",
-      "title": "Lead Mindfulness Coach",
-      "photo": "/images/coaches/ananya-sharma.jpg",
-      "bio": "Dr. Sharma brings 15 years of experience in mindfulness-based stress reduction and meditation techniques, having trained with leading experts in India and the United States.",
-      "expertise": [
-        "Mindfulness Meditation",
-        "Stress Management",
-        "Yoga Philosophy",
-        "MBSR (Mindfulness-Based Stress Reduction)"
-      ],
-      "education": [
-        "Ph.D. in Psychology, Stanford University",
-        "M.A. in Contemplative Studies, Naropa University",
-        "B.Sc. in Neuroscience, Delhi University"
-      ],
-      "experience": [
-        "Lead Instructor, Mindfulness Based Stress Reduction Program (2015-present)",
-        "Visiting Professor, UC Berkeley (2018-2020)",
-        "Clinical Psychologist, Stanford Medical Center (2010-2015)"
-      ],
+      "slug": "dr-ked",
+      "nickname": "ดร.เกด",
+      "name": "สุกฤตา ปรีชาว่อง",
+      "title": "Co-Founder and Organization Coach",
+      "photo": "/images/coaches/ananya-sharma.webp",
+      "image": "/images/coaches/ananya-sharma.webp",
+      "bio": "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร",
+      "expertise": ["Organization Coaching", "Leadership Development", "Soft Skills Training"],
+      "education": ["ปริญญาเอก สาขาจิตวิทยาองค์กร"],
+      "experience": ["Co-Founder และ Organization Coach ที่ Inner Academy", "วิทยากรและโค้ชองค์กรชั้นนำในประเทศไทย"],
       "socialLinks": {
-        "facebook": "https://facebook.com/drananyasharma",
-        "instagram": "https://instagram.com/drananyasharma",
-        "linkedin": "https://linkedin.com/in/ananya-sharma-phd"
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower",
+        "tiktok": "https://tiktok.com/@innerpower"
       }
     },
     {
-      "slug": "michael-chen",
-      "name": "Michael Chen",
-      "title": "Leadership Development Specialist",
-      "photo": "/images/coaches/michael-chen.jpg",
-      "bio": "Michael specializes in executive coaching and organizational leadership, with a track record of transforming Fortune 500 leaders and emerging entrepreneurs.",
-      "expertise": [
-        "Executive Coaching",
-        "Organizational Leadership",
-        "Team Building",
-        "Strategic Planning"
-      ],
-      "education": [
-        "MBA, Harvard Business School",
-        "B.A. in Business Administration, UCLA"
-      ],
-      "experience": [
-        "Senior Executive Coach, Fortune 500 Companies (2018-present)",
-        "Leadership Consultant, McKinsey & Company (2012-2018)",
-        "VP of Operations, Tech Startup (2008-2012)"
-      ],
+      "slug": "kru-lookkaew",
+      "nickname": "ครูลูกแก้ว",
+      "name": "วริศรา บำรุงเวช",
+      "title": "Communication and Presentation Coach",
+      "photo": "/images/coaches/sarah-thompson.webp",
+      "image": "/images/coaches/sarah-thompson.webp",
+      "bio": "ครูลูกแก้วเชี่ยวชาญด้านการสื่อสารและการนำเสนอ ช่วยพัฒนาทักษะการพูดและการสื่อสารให้กับผู้เรียนหลากหลายระดับ",
+      "expertise": ["Communication Coaching", "Presentation Skills", "Public Speaking"],
+      "education": ["ปริญญาโท สาขานิเทศศาสตร์"],
+      "experience": ["Communication and Presentation Coach ที่ Inner Academy", "วิทยากรด้านการสื่อสารองค์กร"],
       "socialLinks": {
-        "linkedin": "https://linkedin.com/in/michaelchen",
-        "instagram": "https://instagram.com/coach_michael_chen"
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower",
+        "tiktok": "https://tiktok.com/@innerpower"
       }
     },
     {
-      "slug": "sarah-thompson",
-      "name": "Sarah Thompson",
-      "title": "Nutrition & Wellness Coach",
-      "photo": "/images/coaches/sarah-thompson.jpg",
-      "bio": "Sarah integrates holistic nutrition, yoga, and Ayurvedic principles to help clients achieve optimal physical and mental health through personalized wellness plans.",
-      "expertise": [
-        "Holistic Nutrition",
-        "Ayurveda",
-        "Yoga Instruction",
-        "Weight Management"
-      ],
-      "education": [
-        "Certified Nutritionist, American Nutrition Association",
-        "Yoga Teacher Training (500-hour), Kripalu Center",
-        "B.S. in Health Sciences, Boston University"
-      ],
-      "experience": [
-        "Holistic Wellness Coach, Private Practice (2016-present)",
-        "Nutrition Consultant, Whole Foods Market (2014-2016)",
-        "Yoga Instructor, Various Studios (2010-present)"
-      ],
+      "slug": "kru-so",
+      "nickname": "ครูซอ",
+      "name": "ดร.สทาคัย พงศ์หิรัญ",
+      "title": "Communication and Presentation Coach",
+      "photo": "/images/coaches/michael-chen.webp",
+      "image": "/images/coaches/michael-chen.webp",
+      "bio": "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริง",
+      "expertise": ["Communication Coaching", "Presentation Skills", "Corporate Training"],
+      "education": ["ปริญญาเอก สาขาการสื่อสาร"],
+      "experience": ["Communication and Presentation Coach ที่ Inner Academy"],
       "socialLinks": {
-        "instagram": "https://instagram.com/sarahwellness",
-        "tiktok": "https://tiktok.com/@sarahwellness",
-        "facebook": "https://facebook.com/sarahthompsonwellness"
+        "facebook": "https://facebook.com/innerpower"
       }
     },
     {
-      "slug": "james-okafor",
-      "name": "James Okafor",
-      "title": "Life Transitions Coach",
-      "photo": "/images/coaches/james-okafor.jpg",
-      "bio": "James guides clients through major life transitions with compassion and practical strategies, drawing from his background in psychology and personal experience with career pivots.",
-      "expertise": [
-        "Career Transitions",
-        "Grief Counseling",
-        "Resilience Building",
-        "Goal Setting"
-      ],
-      "education": [
-        "M.S. in Counseling Psychology, Columbia University",
-        "B.A. in Sociology, Howard University"
-      ],
-      "experience": [
-        "Life Transitions Coach, Private Practice (2017-present)",
-        "Career Counselor, Columbia University Career Center (2013-2017)",
-        "HR Manager, Corporate (2008-2013)"
-      ],
+      "slug": "coach-kitti",
+      "nickname": "โค้ชกิตติ",
+      "name": "กิตติ ไตรรัตน์",
+      "title": "Mindset, Passion and Satir Coach",
+      "photo": "/images/coaches/david-kim.webp",
+      "image": "/images/coaches/david-kim.webp",
+      "bio": "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir เพื่อเปลี่ยนแปลงชีวิตจากภายใน",
+      "expertise": ["Mindset Coaching", "Passion Discovery", "Satir Model Coaching"],
+      "education": ["ปริญญาโท สาขาจิตวิทยา"],
+      "experience": ["Mindset and Passion Coach ที่ Inner Academy", "Certified Satir Coach"],
       "socialLinks": {
-        "linkedin": "https://linkedin.com/in/jamesokafor"
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower"
       }
     },
     {
-      "slug": "elena-rodriguez",
-      "name": "Elena Rodriguez",
-      "title": "Emotional Intelligence Coach",
-      "photo": "/images/coaches/elena-rodriguez.jpg",
-      "bio": "Elena helps individuals and teams develop emotional intelligence skills, enhancing communication, empathy, and conflict resolution in personal and professional settings.",
-      "expertise": [
-        "Emotional Intelligence",
-        "Conflict Resolution",
-        "Communication Skills",
-        "Team Dynamics"
-      ],
-      "education": [
-        "M.A. in Organizational Psychology, NYU",
-        "B.A. in Psychology, University of Miami",
-        "Certified EQ Coach, Institute for Social & Emotional Intelligence"
-      ],
-      "experience": [
-        "EQ Coach & Consultant, Corporate Clients (2015-present)",
-        "HR Director, Tech Company (2010-2015)",
-        "Group Facilitator, Community Centers (2012-present)"
-      ],
+      "slug": "coach-5",
+      "nickname": "โค้ชที่ 5",
+      "name": "ชื่อ นามสกุล",
+      "title": "Leadership and Team Coach",
+      "photo": "/images/coaches/james-okafor.webp",
+      "image": "/images/coaches/james-okafor.webp",
+      "bio": "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่ง",
+      "expertise": ["Leadership Coaching", "Team Development", "Organizational Change"],
+      "education": ["ปริญญาโท สาขาบริหารธุรกิจ"],
+      "experience": ["Leadership and Team Coach ที่ Inner Academy"],
       "socialLinks": {
-        "facebook": "https://facebook.com/elena.rodriguez.coach",
-        "instagram": "https://instagram.com/elenacoach",
-        "linkedin": "https://linkedin.com/in/elenarodriguez-eq"
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower"
       }
     },
     {
-      "slug": "david-kim",
-      "name": "David Kim",
-      "title": "Creativity & Innovation Coach",
-      "photo": "/images/coaches/david-kim.jpg",
-      "bio": "David unlocks creative potential in artists, entrepreneurs, and professionals through innovative coaching techniques that blend design thinking with mindfulness practices.",
-      "expertise": [
-        "Design Thinking",
-        "Creative Problem Solving",
-        "Innovation Workshops",
-        "Mindful Creativity"
-      ],
-      "education": [
-        "MFA in Design, Rhode Island School of Design",
-        "B.A. in Fine Arts, Yale University"
-      ],
-      "experience": [
-        "Creativity Coach & Workshop Facilitator (2014-present)",
-        "Senior Designer, IDEO (2010-2014)",
-        "Adjunct Professor, Parsons School of Design (2016-present)"
-      ],
+      "slug": "coach-6",
+      "nickname": "โค้ชที่ 6",
+      "name": "ชื่อ นามสกุล",
+      "title": "NLP and Mindset Coach",
+      "photo": "/images/coaches/elena-rodriguez.webp",
+      "image": "/images/coaches/elena-rodriguez.webp",
+      "bio": "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัด",
+      "expertise": ["NLP Coaching", "Mindset Transformation", "Behavioral Change"],
+      "education": ["Certified NLP Practitioner และ Coach"],
+      "experience": ["NLP and Mindset Coach ที่ Inner Academy"],
       "socialLinks": {
-        "instagram": "https://instagram.com/davidkim_creative",
-        "tiktok": "https://tiktok.com/@davidcreates"
+        "facebook": "https://facebook.com/innerpower",
+        "linkedin": "https://linkedin.com/in/innerpower"
       }
     },
     {
-      "slug": "lisa-patel",
-      "name": "Lisa Patel",
-      "title": "Mindset & Performance Coach",
-      "photo": "/images/coaches/lisa-patel.jpg",
-      "bio": "Lisa works with athletes, executives, and high-achievers to develop a growth mindset, overcome mental barriers, and achieve peak performance in their respective fields.",
-      "expertise": [
-        "Growth Mindset",
-        "Peak Performance",
-        "Mental Toughness",
-        "Habit Formation"
-      ],
-      "education": [
-        "M.S. in Sport Psychology, University of Oregon",
-        "B.S. in Kinesiology, Penn State University",
-        "Certified Performance Coach, International Coaching Federation"
-      ],
-      "experience": [
-        "Performance Coach, Elite Athletes & Executives (2016-present)",
-        "Sports Psychologist, Olympic Training Center (2012-2016)",
-        "Mental Performance Consultant, Professional Sports Teams (2010-2012)"
-      ],
+      "slug": "coach-7",
+      "nickname": "โค้ชที่ 7",
+      "name": "ชื่อ นามสกุล",
+      "title": "Performance and Wellness Coach",
+      "photo": "/images/coaches/lisa-patel.webp",
+      "image": "/images/coaches/lisa-patel.webp",
+      "bio": "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ผสมผสานศาสตร์การโค้ชเพื่อให้บรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงาน",
+      "expertise": ["Performance Coaching", "Wellness Coaching", "Work-Life Balance"],
+      "education": ["Certified Performance and Wellness Coach"],
+      "experience": ["Performance and Wellness Coach ที่ Inner Academy"],
       "socialLinks": {
-        "linkedin": "https://linkedin.com/in/lisapatel-performance",
-        "instagram": "https://instagram.com/coach_lisa_patel",
-        "facebook": "https://facebook.com/lisapatelcoaching"
+        "facebook": "https://facebook.com/innerpower",
+        "instagram": "https://instagram.com/innerpower",
+        "linkedin": "https://linkedin.com/in/innerpower"
       }
     }
   ]

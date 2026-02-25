@@ -21,14 +21,16 @@ export interface HeroContent {
 
 // Trusted partner logos for horizontal slider
 export interface TrustedLogo {
-  nameEN: string
-  nameTH?: string
+  order: number
+  nameEn?: string
+  nameTh?: string
   logo: string
-  alt: string
+  alt?: string
 }
 
 // Course preview for row-based list
 export interface Course {
+  [x: string]: any
   title: string
   description: string
   image?: string
@@ -161,13 +163,11 @@ export interface AssessmentCTA {
 // Root data structure - 10 mandatory sections
 export interface HomeData {
   meta: MetaData
-  logos: TrustedLogo[]
-  courses: Course[]
+  logos?: TrustedLogo[]  // Moved to /api/logos
+  courses?: Course[]
   nextProgram: NextProgram
-  coaches: Coach[]
-  testimonials: Testimonial[]
-  dualCTA: DualCTA
-  ebook: Ebook
-  podcast?: Podcast
-  contact: Contact
+  coaches?: Coach[]  // Moved to data/home-coaches.json + /api/home-coaches
+  testimonials?: Testimonial[]  // Moved to data/testimonials.json + /api/testimonials
+  dualCTA?: DualCTA  // Moved to data/dualCTA.json + /api/dualcta
+  contact?: Contact  // Moved to data/contact.json + /api/contact
 }
