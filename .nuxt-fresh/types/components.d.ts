@@ -14,19 +14,14 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
-  ClassHero: typeof import("../../components/ClassHero.vue")['default']
-  ClassMetadata: typeof import("../../components/ClassMetadata.vue")['default']
-  CoachBreadcrumb: typeof import("../../components/CoachBreadcrumb.vue")['default']
   CoachCard: typeof import("../../components/CoachCard.vue")['default']
   CoachesGrid: typeof import("../../components/CoachesGrid.vue")['default']
   ContactBlock: typeof import("../../components/ContactBlock.vue")['default']
   CoursesList: typeof import("../../components/CoursesList.vue")['default']
-  CurriculumList: typeof import("../../components/CurriculumList.vue")['default']
   DualCTA: typeof import("../../components/DualCTA.vue")['default']
   EbookOffer: typeof import("../../components/EbookOffer.vue")['default']
   HeroSection: typeof import("../../components/HeroSection.vue")['default']
   NextProgramPromo: typeof import("../../components/NextProgramPromo.vue")['default']
-  OutcomesList: typeof import("../../components/OutcomesList.vue")['default']
   PageHeader: typeof import("../../components/PageHeader.vue")['default']
   PodcastBlock: typeof import("../../components/PodcastBlock.vue")['default']
   SocialIconsList: typeof import("../../components/SocialIconsList.vue")['default']
@@ -35,21 +30,6 @@ interface _GlobalComponents {
   TheHeader: typeof import("../../components/TheHeader.vue")['default']
   TrustedLogosSlider: typeof import("../../components/TrustedLogosSlider.vue")['default']
   TurnstileWidget: typeof import("../../components/TurnstileWidget.vue")['default']
-  ContactForm: typeof import("../../components/contact/ContactForm.vue")['default']
-  ContactInfo: typeof import("../../components/contact/ContactInfo.vue")['default']
-  ContactMap: typeof import("../../components/contact/ContactMap.vue")['default']
-  ContactSocialLinks: typeof import("../../components/contact/SocialLinks.vue")['default']
-  IconsIconFacebook: typeof import("../../components/icons/IconFacebook.vue")['default']
-  IconsIconInstagram: typeof import("../../components/icons/IconInstagram.vue")['default']
-  IconsIconLinkedIn: typeof import("../../components/icons/IconLinkedIn.vue")['default']
-  IconsIconTikTok: typeof import("../../components/icons/IconTikTok.vue")['default']
-  UiBadge: typeof import("../../components/ui/Badge.vue")['default']
-  UiButtonPrimary: typeof import("../../components/ui/ButtonPrimary.vue")['default']
-  UiButtonSecondary: typeof import("../../components/ui/ButtonSecondary.vue")['default']
-  UiCard: typeof import("../../components/ui/Card.vue")['default']
-  UiFormInput: typeof import("../../components/ui/FormInput.vue")['default']
-  UiSectionWrapper: typeof import("../../components/ui/SectionWrapper.vue")['default']
-  UiSliderRow: typeof import("../../components/ui/SliderRow.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -73,19 +53,14 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
-  LazyClassHero: LazyComponent<typeof import("../../components/ClassHero.vue")['default']>
-  LazyClassMetadata: LazyComponent<typeof import("../../components/ClassMetadata.vue")['default']>
-  LazyCoachBreadcrumb: LazyComponent<typeof import("../../components/CoachBreadcrumb.vue")['default']>
   LazyCoachCard: LazyComponent<typeof import("../../components/CoachCard.vue")['default']>
   LazyCoachesGrid: LazyComponent<typeof import("../../components/CoachesGrid.vue")['default']>
   LazyContactBlock: LazyComponent<typeof import("../../components/ContactBlock.vue")['default']>
   LazyCoursesList: LazyComponent<typeof import("../../components/CoursesList.vue")['default']>
-  LazyCurriculumList: LazyComponent<typeof import("../../components/CurriculumList.vue")['default']>
   LazyDualCTA: LazyComponent<typeof import("../../components/DualCTA.vue")['default']>
   LazyEbookOffer: LazyComponent<typeof import("../../components/EbookOffer.vue")['default']>
   LazyHeroSection: LazyComponent<typeof import("../../components/HeroSection.vue")['default']>
   LazyNextProgramPromo: LazyComponent<typeof import("../../components/NextProgramPromo.vue")['default']>
-  LazyOutcomesList: LazyComponent<typeof import("../../components/OutcomesList.vue")['default']>
   LazyPageHeader: LazyComponent<typeof import("../../components/PageHeader.vue")['default']>
   LazyPodcastBlock: LazyComponent<typeof import("../../components/PodcastBlock.vue")['default']>
   LazySocialIconsList: LazyComponent<typeof import("../../components/SocialIconsList.vue")['default']>
@@ -94,21 +69,6 @@ interface _GlobalComponents {
   LazyTheHeader: LazyComponent<typeof import("../../components/TheHeader.vue")['default']>
   LazyTrustedLogosSlider: LazyComponent<typeof import("../../components/TrustedLogosSlider.vue")['default']>
   LazyTurnstileWidget: LazyComponent<typeof import("../../components/TurnstileWidget.vue")['default']>
-  LazyContactForm: LazyComponent<typeof import("../../components/contact/ContactForm.vue")['default']>
-  LazyContactInfo: LazyComponent<typeof import("../../components/contact/ContactInfo.vue")['default']>
-  LazyContactMap: LazyComponent<typeof import("../../components/contact/ContactMap.vue")['default']>
-  LazyContactSocialLinks: LazyComponent<typeof import("../../components/contact/SocialLinks.vue")['default']>
-  LazyIconsIconFacebook: LazyComponent<typeof import("../../components/icons/IconFacebook.vue")['default']>
-  LazyIconsIconInstagram: LazyComponent<typeof import("../../components/icons/IconInstagram.vue")['default']>
-  LazyIconsIconLinkedIn: LazyComponent<typeof import("../../components/icons/IconLinkedIn.vue")['default']>
-  LazyIconsIconTikTok: LazyComponent<typeof import("../../components/icons/IconTikTok.vue")['default']>
-  LazyUiBadge: LazyComponent<typeof import("../../components/ui/Badge.vue")['default']>
-  LazyUiButtonPrimary: LazyComponent<typeof import("../../components/ui/ButtonPrimary.vue")['default']>
-  LazyUiButtonSecondary: LazyComponent<typeof import("../../components/ui/ButtonSecondary.vue")['default']>
-  LazyUiCard: LazyComponent<typeof import("../../components/ui/Card.vue")['default']>
-  LazyUiFormInput: LazyComponent<typeof import("../../components/ui/FormInput.vue")['default']>
-  LazyUiSectionWrapper: LazyComponent<typeof import("../../components/ui/SectionWrapper.vue")['default']>
-  LazyUiSliderRow: LazyComponent<typeof import("../../components/ui/SliderRow.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

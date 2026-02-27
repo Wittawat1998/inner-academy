@@ -23,15 +23,17 @@
           <p class="text-md font-light text-white mb-8 leading-[1.4] max-w-[600px]">
             {{ podcast.description }}
           </p>
-          <NuxtLink
-            :to="podcast.episodes[0]?.url"
+          <a
+            :href="podcast.episodes[0]?.url"
+            target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-lg bg-ctaGold text-black shadow-lg hover:shadow-xl transition-all duration-200 mt-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <polygon points="8,6 20,12 8,18" fill="#000"/>
             </svg>
             <span class="text-xl font-semibold">ชมรายการ</span>
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-50 transition-all duration-300 bg-transparent" "
+    class="sticky top-0 z-50 transition-all duration-300 bg-transparent"
     :class="isScrolled ? 'bg-gradient-header shadow-lg' : ''"
     >
     <!-- backdrop-blur-sm -->

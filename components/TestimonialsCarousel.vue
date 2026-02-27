@@ -4,7 +4,7 @@
     class=""
     >
     <!-- style="background: linear-gradient(180deg, #0F172A 0%, #0c1525 100%);" -->
-    <div class="max-w-5xl mx-auto px-4">
+    <div class="max-w-5xl mx-auto px-4 pb-16">
 
       <!-- Section Heading -->
       <h2
