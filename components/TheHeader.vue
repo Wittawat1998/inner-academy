@@ -1,7 +1,9 @@
 <template>
   <header
-    class="sticky top-0 z-50 transition-all duration-300 backdrop-blur-sm bg-gradient-header"
+    class="sticky top-0 z-50 transition-all duration-300 bg-transparent" "
+    :class="isScrolled ? 'bg-gradient-header shadow-lg' : ''"
     >
+    <!-- backdrop-blur-sm -->
     <!-- :class="isScrolled ? 'shadow-lg' : ''" -->
     <div v-if="navigationData" class="container mx-auto px-4 md:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
@@ -32,7 +34,6 @@
         <!-- Desktop CTA Button (Right) -->
         <a
           :href="navigationData.cta.url"
-          target="_blank"
           rel="noopener noreferrer"
           class="hidden lg:inline-flex flex-col items-center px-6 py-2 text-black font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-opacity-50 font-th text-[12px] bg-ctaGold leading-tight"
         >
@@ -85,7 +86,6 @@
           <div class="px-4 pt-4 pb-2">
             <a
               :href="navigationData.cta.url"
-              target="_blank"
               rel="noopener noreferrer"
               class="block w-full text-center px-6 py-3 text-black bg-ctaGold font-bold rounded-full shadow-lg transition-all duration-300 font-th leading-tight"
               @click="closeMenu"

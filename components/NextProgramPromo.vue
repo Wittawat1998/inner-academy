@@ -11,7 +11,7 @@
         <div class="flex flex-col md:flex-row gap-10 items-center justify-center">
         <!-- Left: Heading and subtitle -->
         <div class="flex-1 flex flex-col justify-center items-start md:items-start mb-8 md:mb-0 pl-2 md:pl-8">
-          <h2 class="text-white font-extrabold text-3xl md:text-4xl lg:text-5xl mb-2 tracking-tight leading-tight whitespace-nowrap">NEXT PROGRAM</h2>
+          <h2 class="text-white font-semibold text-3xl md:text-4xl lg:text-5xl mb-2 tracking-tight leading-tight whitespace-nowrap">NEXT PROGRAM</h2>
           <div class="text-base md:text-lg text-gray-200 mb-2">ตารางการอบรม</div>
           <div class="w-full h-0.5 mb-2 next-program-underline"></div>
         </div>

@@ -7,10 +7,11 @@
       <div class="relative z-10 flex flex-col justify-center h-full w-full">
         <div class="container max-w-screen-lg mx-auto px-4">
           <h1
-            class="text-left text-7xl md:text-8xl font-extrabold mb-8 header-fade drop-shadow-lg">
+            class="text-left text-7xl md:text-8xl font-semibold mb-8 header-fade drop-shadow-lg">
             เกี่ยวกับเรา
           </h1>
-          <div class="max-w-3xl text-white text-lg md:text-xl font-medium text-right ml-auto mt-2 md:mt-4">
+          <!-- ml-auto -->
+          <div class="max-w-3xl text-white text-lg md:text-xl font-medium  mt-2 md:mt-4">
             <span class="font-bold text-goldText">Inner Power Academy</span> คือ สถาบันที่ก่อตั้งโดย ครูเจาะ รสสุคนธ์
             กองเกตุ โดยเล็งเห็นว่า การเปลี่ยนแปลงที่ได้ผลลัพธ์ที่แท้จริง คือการเปลี่ยนจาก “อินเนอร์” หรือภายในจิตใจ
             ตั้งแต่ความเชื่อ ความกลัว และความต้องการ ซึ่งผลลัพธ์ของการเปลี่ยนแปลงจากภายในโดย Soft Skill

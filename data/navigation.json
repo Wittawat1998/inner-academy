@@ -8,8 +8,8 @@
   "cta": {
     "text": "รับแบบประเมิน",
     "subtext": "ศักยภาพฟรี",
-    "url": "https://assessment.innerpower.co.th",
-    "external": true
+    "url": "/#assessments",
+    "external":false
   },
   "menu": [
     {
@@ -44,38 +44,6 @@
     }
   ],
   "menuItems": [],
-  "footerLinks": [
-    {
-      "section": "Quick Links",
-      "links": [
-        {
-          "label": "About Us",
-          "href": "/about"
-        },
-        {
-          "label": "Our Coaches",
-          "href": "/coaches"
-        },
-        {
-          "label": "Contact",
-          "href": "/contact"
-        }
-      ]
-    },
-    {
-      "section": "Legal",
-      "links": [
-        {
-          "label": "Privacy Policy",
-          "href": "/privacy"
-        },
-        {
-          "label": "Terms of Service",
-          "href": "/terms"
-        }
-      ]
-    }
-  ],
   "socialLinks": [
     {
       "platform": "Facebook",

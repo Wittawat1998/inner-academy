@@ -1,5 +1,6 @@
 <template>
-  <section
+  <section 
+    id="assessments"
     v-if="cta"
     class="dual-cta-section relative overflow-hidden py-20 md:py-28"
     style="background-image: url('/images/bg/home-assessment-bg.webp'); background-size: cover; background-position: center;"
@@ -20,7 +21,7 @@
     <div class="relative z-10 container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
         <!-- Heading -->
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-textPrimary mb-5 leading-tight">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-textPrimary mb-5 leading-tight">
           {{ cta.heading }}
         </h2>
 
@@ -36,20 +37,24 @@
         <!-- Two Gold Pill Buttons – stacked vertically, centered -->
         <div class="flex flex-col items-center gap-4">
           <!-- Primary Button -->
-          <NuxtLink
-            :to="cta.primaryButtonUrl"
+          <a
+            :href="cta.primaryButtonUrl"
+            target="_blank"
+            rel="noopener noreferrer"
             class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center bg-fade"
           >
             {{ cta.primaryButtonText }}
-          </NuxtLink>
+          </a>
 
           <!-- Secondary Button -->
-          <NuxtLink
-            :to="cta.secondaryButtonUrl"
+          <a
+            :href="cta.secondaryButtonUrl"
+            target="_blank"
+            rel="noopener noreferrer"
             class="px-10 py-4 text-black font-semibold text-lg md:text-xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full max-w-md text-center bg-fade"
           >
             {{ cta.secondaryButtonText }}
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>

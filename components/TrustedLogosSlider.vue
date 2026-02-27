@@ -8,7 +8,7 @@
     <div class="container mx-auto px-4">
       <!-- Header -->
       <div class="text-center mb-[50px] md:mb-[50px]">
-        <h2 class="text-8xl  font-medium mb-[30px] first-letter: header-fade">
+        <h2 class="text-8xl font-semibold mb-[30px] first-letter: header-fade">
           มากกว่า 30 องค์กรชั้นนำ
         </h2>
         <p class="text-xl text-white">
@@ -137,7 +137,7 @@ const prefersReducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
 
 .marquee-group {
   display: flex;
-  gap: 0.5rem;
+  gap: 2rem;
   flex-shrink: 0;
   align-items: center;
 }
@@ -146,29 +146,22 @@ const prefersReducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-width: 80px;
+  justify-content: flex-start;
+  width: 120px;
+  flex-shrink: 0;
   padding: 0.25rem;
 }
 
-@media (min-width: 768px) {
-  .marquee-group {
-    gap: 0.75rem;
-  }
-  
-  .logo-item {
-    min-width: 100px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .marquee-group {
-    gap: 1rem;
-  }
-  
-  .logo-item {
-    min-width: 110px;
-  }
+.logo-label {
+  min-height: 2.75rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 @keyframes scroll-horizontal {

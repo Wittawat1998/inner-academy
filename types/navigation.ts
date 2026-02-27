@@ -53,7 +53,6 @@ export interface NavigationData {
   cta: CTAButton
   menu: MenuItem[]
   menuItems: MenuItem[] // Deprecated: use 'menu' instead
-  footerLinks: FooterSection[]
   socialLinks: SocialLink[]
   copyright: string
 }

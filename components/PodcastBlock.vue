@@ -12,7 +12,7 @@
 
         <!-- Content: Bottom Left in container -->
         <div class="relative z-10 flex flex-col items-start justify-end min-h-[800px] pb-24">
-          <div class=" text-[40px] font-light text-white leading-[1.15]">
+          <div class=" text-[40px] font-semibold text-white leading-[1.15]">
             <h2 class=" mb-2 ">
               {{ podcast.titleLine1 }}
             </h2>

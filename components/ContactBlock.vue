@@ -11,7 +11,7 @@
       <div class="max-w-5xl mx-auto">
         <!-- Section Heading -->
         <div class=" text-start">
-          <h2 class="text-7xl font-medium mb-2 header-fade" >
+          <h2 class="text-7xl font-semibold mb-2 header-fade" >
             {{ contact.heading }}
           </h2>
           <p class="text-base md:text-lg text-gray-300 whitespace-pre-line">

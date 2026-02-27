@@ -2,7 +2,7 @@
   <section
     id="coaches"
     v-if="coaches && coaches.length > 0"
-    class="coaches-section bg-transparent py-16 md:py-20"
+    class="coaches-section bg-transparent py-20"
     role="region"
     aria-label="ทีมโค้ช"
   >
@@ -10,7 +10,7 @@
       <!-- Section Heading – right-aligned, gold, inside same container as grid -->
       <div class="mb-8 md:mb-10 text-center pl-[50%]">
         <h2
-          class="text-7xl font-medium header-fade"
+          class="text-7xl font-semibold header-fade"
          
         >
           ทีมโค้ช
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Coach } from '~/types/home'
+import type { Coach } from '~/types/coaches'
 
 
 

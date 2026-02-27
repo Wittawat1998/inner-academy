@@ -16,67 +16,53 @@
 
     <!-- Coach Info -->
     <div class="pt-4 pb-2">
-      <!-- Nickname (Thai display name) -->
+      <!-- Display name (nickname) -->
       <h3
-        v-if="coach.nickname"
+        v-if="coach.name || coach.nickname"
         class="text-2xl font-medium mb-1 leading-tight header-fade"
       >
-        {{ coach.nickname }}
+        {{ coach.name || coach.nickname }}
       </h3>
 
       <!-- Full name -->
-      <p v-if="coach.name" class="text-sm font-medium mb-1 text-goldTextDark">
-        {{ coach.name }}
+      <p v-if="coach.nameTh" class="text-sm font-medium mb-1 text-goldTextDark">
+        {{ coach.nameTh }}
       </p>
 
-      <!-- Title -->
-      <p v-if="coach.title" class="text-xs text-gray-400 italic leading-snug mb-3 line-clamp-2 min-h-[2.5em]">
-        {{ coach.title }}
+      <!-- Title / Career -->
+      <p class="text-xs text-gray-400 italic leading-snug mb-3 line-clamp-2 h-[2.5em]">
+        {{ coach.career || coach.title }}
       </p>
 
-      <!-- Social Media Badges -->
-      <div v-if="coach.socialLinks" class="flex gap-2 flex-wrap">
+      <!-- Social Media Badges (new array format) -->
+      <div v-if="coach.socialMedia?.length" class="flex gap-2 flex-wrap">
         <a
-          v-if="coach.socialLinks.facebook"
-          :href="coach.socialLinks.facebook"
+          v-for="social in coach.socialMedia"
+          :key="social.channel"
+          :href="social.link"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
-          aria-label="Facebook"
+          :aria-label="social.channel"
         >
+          <span class="font-bold text-sm leading-none" style="color: #1E293B;">
+            {{ social.channel === 'facebook' ? 'f' : social.channel === 'instagram' ? 'ig' : social.channel === 'tiktok' ? 'd' : 'in' }}
+          </span>
+        </a>
+      </div>
+
+      <!-- Social Media Badges (legacy object format) -->
+      <div v-else-if="coach.socialLinks" class="flex gap-2 flex-wrap">
+        <a v-if="coach.socialLinks.facebook" :href="coach.socialLinks.facebook" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200" aria-label="Facebook">
           <span class="font-bold text-sm leading-none" style="color: #1E293B;">f</span>
         </a>
-
-        <a
-          v-if="coach.socialLinks.instagram"
-          :href="coach.socialLinks.instagram"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
-          aria-label="Instagram"
-        >
+        <a v-if="coach.socialLinks.instagram" :href="coach.socialLinks.instagram" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200" aria-label="Instagram">
           <span class="font-bold text-xs leading-none" style="color: #1E293B;">ig</span>
         </a>
-
-        <a
-          v-if="coach.socialLinks.tiktok"
-          :href="coach.socialLinks.tiktok"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
-          aria-label="TikTok"
-        >
+        <a v-if="coach.socialLinks.tiktok" :href="coach.socialLinks.tiktok" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200" aria-label="TikTok">
           <span class="font-bold text-sm leading-none" style="color: #1E293B;">d</span>
         </a>
-
-        <a
-          v-if="coach.socialLinks.linkedin"
-          :href="coach.socialLinks.linkedin"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
-          aria-label="LinkedIn"
-        >
+        <a v-if="coach.socialLinks.linkedin" :href="coach.socialLinks.linkedin" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200" aria-label="LinkedIn">
           <span class="font-bold text-xs leading-none" style="color: #1E293B;">in</span>
         </a>
       </div>
@@ -85,7 +71,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Coach } from '~/types/home'
+import type { Coach } from '~/types/coaches'
 
 /**
  * CoachCard Component

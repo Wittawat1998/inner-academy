@@ -11,7 +11,7 @@
       <div class="max-w-5xl mx-auto">
         <!-- Section Heading -->
         <div class=" section-header">
-          <h2 class="text-7xl font-medium pb-8 header-fade">
+          <h2 class="text-7xl font-semibold pb-8 header-fade">
             หลักสูตร
           </h2>
         </div>

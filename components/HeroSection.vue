@@ -42,27 +42,6 @@ const { hero } = useHomeContent()
 </script>
 
 <style scoped>
-/* .hero-banner {
-  background: linear-gradient(135deg, 
-    #1e3a5f 0%,
-    #2c5282 25%,
-    #1a365d 50%,
-    #2c5282 75%,
-    #1e3a5f 100%
-  );
-  position: relative;
-}
-
-.hero-banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(ellipse at center, rgba(255,255,255,0.1) 0%, transparent 70%);
-  pointer-events: none;
-} */
 
 .hero-title {
   color: #d4af37;

@@ -1,29 +1,50 @@
 /**
- * Social media links for a coach (all optional)
+ * Social media links for a coach (all optional) - legacy format
  */
 export interface SocialLinks {
-  facebook?: string     // Facebook profile URL (e.g., "https://facebook.com/coach")
-  instagram?: string    // Instagram profile URL (e.g., "https://instagram.com/coach")
-  tiktok?: string       // TikTok profile URL (e.g., "https://tiktok.com/@coach")
-  linkedin?: string     // LinkedIn profile URL (e.g., "https://linkedin.com/in/coach")
+  facebook?: string
+  instagram?: string
+  tiktok?: string
+  linkedin?: string
+}
+
+/**
+ * Social media entry - new array format
+ */
+export interface SocialMediaEntry {
+  channel: 'facebook' | 'instagram' | 'tiktok' | 'linkedin' | string
+  link: string
+}
+
+/**
+ * Experience entry - can be a string (legacy) or structured object (new)
+ */
+export interface ExperienceEntry {
+  title: string
+  items?: string[]
 }
 
 /**
  * Individual coach profile data
  */
 export interface Coach {
-  slug: string                  // URL-safe identifier for dynamic routing (e.g., "dr-ananya-sharma")
-  nickname?: string             // Thai display name (e.g., ครูหม่อน, ดร.เกด)
-  name: string                  // Full name (3-50 chars)
-  title: string                 // Professional title (5-100 chars)
-  image?: string                // Photo URL path (e.g., "/images/coaches/coach1.webp") - aliased from 'photo' for consistency
-  photo?: string                // Photo URL path (backwards compatibility)
-  bio: string                   // Short biography (50-300 chars)
-  expertise: string[]           // Areas of expertise (3-8 items, 5-50 chars each)
-  education: string[]           // Educational qualifications (1-5 items, 10-200 chars each)
-  experience: string[]          // Professional experience (1-8 items, 10-200 chars each)
-  philosophy?: string           // Optional teaching philosophy for detail pages
-  socialLinks?: SocialLinks     // Optional social media links
+  slug: string
+  // New field names
+  name?: string                   // Thai display name / nickname (e.g., ครูลูกแก้ว)
+  nameTh?: string                 // Full Thai name
+  career?: string                 // Professional title (new)
+  // Legacy field names (kept for backward compatibility)
+  nickname?: string               // Legacy: Thai display name
+  title?: string                  // Legacy: Professional title
+  image?: string
+  photo?: string
+  bio: string
+  expertise: string | string[]    // Can be a string (new) or array (legacy)
+  education: string[]
+  experience: (string | ExperienceEntry)[]  // Can be string array (legacy) or object array (new)
+  philosophy?: string
+  socialMedia?: SocialMediaEntry[] // New: array format
+  socialLinks?: SocialLinks        // Legacy: object format
 }
 
 /**

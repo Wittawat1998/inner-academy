@@ -4,7 +4,7 @@
   "descriptionLine2": "( มูลค่า 5,000 บาท )",
   "backgroundImage": "/images/hero/team-photo.jpg",
   "primaryButtonText": "ประเมินทักษะด้าน Soft-Skills ตอนนี้",
-  "primaryButtonUrl": "/contact",
+  "primaryButtonUrl": "https://assessment.innerpower.co.th/p/self-assessment",
   "secondaryButtonText": "ประเมินความฉลาดทางอารมณ์ ตอนนี้",
-  "secondaryButtonUrl": "/contact"
+  "secondaryButtonUrl": "https://assessment.innerpower.co.th/p/self-assessment-ei"
 }

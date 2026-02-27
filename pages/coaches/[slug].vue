@@ -6,50 +6,46 @@
       <div class="max-w-[1280px] mx-auto px-8 lg:px-16">
         <div class="flex flex-col lg:flex-row items-center gap-12">
 
-          <!-- Left: nickname, name, title, social -->
+          <!-- Left: name, title, social -->
           <div class="flex-1 min-w-0 z-10">
             <h1 class="text-[clamp(3.5rem,8vw,7rem)] font-bold leading-[1.05] text-brandGold mb-4">
-              {{ coach?.nickname || coach?.name }}
+              {{ coach?.name || coach?.nickname }}
             </h1>
             <p class="text-[clamp(1.2rem,2.5vw,1.8rem)] text-brandGold font-medium mb-1">
-              {{ coach?.name }}
+              {{ coach?.nameTh }}
             </p>
             <p class="text-[clamp(1rem,1.8vw,1.3rem)] text-textSecondary italic mb-8">
-              {{ coach?.title }}
+              {{ coach?.career || coach?.title }}
             </p>
 
-            <!-- Social icons -->
-            <div class="flex gap-3">
+            <!-- Social icons (new array format) -->
+            <div v-if="coach?.socialMedia?.length" class="flex gap-3">
               <a
-                v-if="coach?.socialLinks?.facebook"
-                :href="coach.socialLinks.facebook"
+                v-for="social in coach.socialMedia"
+                :key="social.channel"
+                :href="social.link"
                 target="_blank" rel="noopener noreferrer"
                 class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition"
               >
+                <IconFacebook v-if="social.channel === 'facebook'" class="w-5 h-5 text-white" />
+                <IconInstagram v-else-if="social.channel === 'instagram'" class="w-5 h-5 text-white" />
+                <IconTikTok v-else-if="social.channel === 'tiktok'" class="w-5 h-5 text-white" />
+                <IconLinkedIn v-else-if="social.channel === 'linkedin'" class="w-5 h-5 text-white" />
+              </a>
+            </div>
+
+            <!-- Social icons (legacy object format) -->
+            <div v-else class="flex gap-3">
+              <a v-if="coach?.socialLinks?.facebook" :href="coach.socialLinks.facebook" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
                 <IconFacebook class="w-5 h-5 text-white" />
               </a>
-              <a
-                v-if="coach?.socialLinks?.instagram"
-                :href="coach.socialLinks.instagram"
-                target="_blank" rel="noopener noreferrer"
-                class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition"
-              >
+              <a v-if="coach?.socialLinks?.instagram" :href="coach.socialLinks.instagram" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
                 <IconInstagram class="w-5 h-5 text-white" />
               </a>
-              <a
-                v-if="coach?.socialLinks?.tiktok"
-                :href="coach.socialLinks.tiktok"
-                target="_blank" rel="noopener noreferrer"
-                class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition"
-              >
+              <a v-if="coach?.socialLinks?.tiktok" :href="coach.socialLinks.tiktok" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
                 <IconTikTok class="w-5 h-5 text-white" />
               </a>
-              <a
-                v-if="coach?.socialLinks?.linkedin"
-                :href="coach.socialLinks.linkedin"
-                target="_blank" rel="noopener noreferrer"
-                class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition"
-              >
+              <a v-if="coach?.socialLinks?.linkedin" :href="coach.socialLinks.linkedin" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
                 <IconLinkedIn class="w-5 h-5 text-white" />
               </a>
             </div>
@@ -96,10 +92,10 @@
           <div class="flex-1 space-y-10">
 
             <!-- ความเชี่ยวชาญ -->
-            <div v-if="coach?.expertise?.length">
+            <div v-if="coach?.expertise">
               <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-brandGold mb-3">ความเชี่ยวชาญ</h2>
               <p class="text-textPrimary text-lg leading-relaxed">
-                {{ coach.expertise.join('\n') }}
+                {{ Array.isArray(coach.expertise) ? coach.expertise.join(' · ') : coach.expertise }}
               </p>
             </div>
 
@@ -121,16 +117,29 @@
             <!-- ประสบการณ์ -->
             <div v-if="coach?.experience?.length">
               <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-brandGold mb-4">ประสบการณ์</h2>
-              <ul class="space-y-2">
-                <li
-                  v-for="(exp, i) in coach.experience"
-                  :key="i"
-                  class="flex items-start gap-3 text-textPrimary"
-                >
-                  <span class="mt-2 w-2.5 h-2.5 rounded-full bg-brandGold flex-shrink-0" />
-                  {{ exp }}
-                </li>
-              </ul>
+              <div class="space-y-4">
+                <template v-for="(exp, i) in coach.experience" :key="i">
+                  <!-- New object format -->
+                  <div v-if="typeof exp === 'object'">
+                    <p class="text-textPrimary font-medium mb-1">{{ exp.title }}</p>
+                    <ul v-if="exp.items?.length" class="ml-4 space-y-1">
+                      <li
+                        v-for="(item, j) in exp.items"
+                        :key="j"
+                        class="flex items-start gap-2 text-textSecondary text-sm"
+                      >
+                        <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-brandGold/60 flex-shrink-0" />
+                        {{ item }}
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Legacy string format -->
+                  <div v-else class="flex items-start gap-3 text-textPrimary">
+                    <span class="mt-2 w-2.5 h-2.5 rounded-full bg-brandGold flex-shrink-0" />
+                    {{ exp }}
+                  </div>
+                </template>
+              </div>
             </div>
 
           </div>
@@ -176,11 +185,11 @@ if (!coach.value) {
 
 useHead({
   title: coach.value
-    ? `${coach.value.nickname || coach.value.name} - ${coach.value.title} | Inner Academy`
+    ? `${coach.value.name || coach.value.nickname} - ${coach.value.career || coach.value.title} | Inner Academy`
     : 'Coach Not Found | Inner Academy',
   meta: [
     { name: 'description', content: coach.value?.bio?.substring(0, 155) ?? '' },
-    { property: 'og:title', content: `${coach.value?.nickname || coach.value?.name} | Inner Academy` },
+    { property: 'og:title', content: `${coach.value?.name || coach.value?.nickname} | Inner Academy` },
     { property: 'og:description', content: coach.value?.bio?.substring(0, 155) ?? '' },
     { property: 'og:image', content: coach.value?.photo || coach.value?.image || '' },
     { property: 'og:type', content: 'profile' }

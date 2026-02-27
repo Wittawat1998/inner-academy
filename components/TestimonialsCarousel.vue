@@ -8,7 +8,7 @@
 
       <!-- Section Heading -->
       <h2
-        class="text-7xl font-medium text-center mb-10 header-fade"
+        class="text-7xl font-semibold text-center mb-10 header-fade"
       >
         ผลลัพธ์ผู้เรียน
       </h2>
