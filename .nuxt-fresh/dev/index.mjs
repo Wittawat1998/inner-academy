@@ -2154,16 +2154,16 @@ __FqZsEfjjxjm5ttXhq7HwaGCOI1aOdzesmkR7dBKXHg
 const assets = {
   "/index.mjs": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"27f4f-9wvG9N+WRM4ItrQJrI+YH4OtIHE\"",
-    "mtime": "2026-02-27T15:07:02.908Z",
-    "size": 163663,
+    "etag": "\"29fcf-tA6mcFcAKdAfajxpFymYu9Z/Urk\"",
+    "mtime": "2026-02-27T17:18:03.604Z",
+    "size": 171983,
     "path": "index.mjs"
   },
   "/index.mjs.map": {
     "type": "application/json",
-    "etag": "\"73156-XiJcBxnknY/6aFUfDKa+F5rfKzk\"",
-    "mtime": "2026-02-27T15:07:02.908Z",
-    "size": 471382,
+    "etag": "\"731d4-ydth2ob/gR+sI8eJ/RLLcIfcArE\"",
+    "mtime": "2026-02-27T17:18:03.604Z",
+    "size": 471508,
     "path": "index.mjs.map"
   }
 };
@@ -3279,7 +3279,7 @@ var classes = [
 		shortDescription: "ศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน",
 		slug: "key-message-clear-message",
 		featured: true,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-1/km.jpg",
 		category: "การสื่อสาร",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3290,9 +3290,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-1/silde-image/km-agenda.jpg",
+			"/images/classes/class-1/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-1/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3314,7 +3314,7 @@ var classes = [
 		shortDescription: "ศาสตร์เพื่อการสื่อสารอย่างฉลาด ในทุกสถานการณ์",
 		slug: "emotional-mastery",
 		featured: true,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-2/km.jpg",
 		category: "อารมณ์และการสื่อสาร",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3326,9 +3326,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-2/silde-image/km-agenda.jpg",
+			"/images/classes/class-2/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-2/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3350,7 +3350,7 @@ var classes = [
 		shortDescription: "ภาวะผู้นำแบบโค้ช - นำให้ลึกด้วยคำถามทรงพลัง",
 		slug: "coaching-leadership-powerful-questions",
 		featured: true,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-3/km.jpg",
 		category: "ภาวะผู้นำ",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3362,9 +3362,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-3/silde-image/km-agenda.jpg",
+			"/images/classes/class-3/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-3/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3386,7 +3386,7 @@ var classes = [
 		shortDescription: "ปลดล็อกศักยภาพสมอง ด้วยพลังแห่งการคิดวิเคราะห์และการคิดอย่างเป็นระบบ",
 		slug: "brain-hacker-analytical-system-thinking",
 		featured: true,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-4/km.jpg",
 		category: "การคิดเชิงวิเคราะห์",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3398,9 +3398,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-4/silde-image/km-agenda.jpg",
+			"/images/classes/class-4/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-4/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3422,7 +3422,7 @@ var classes = [
 		shortDescription: "ศาสตร์ที่จะทำให้คุณได้ยิน มากกว่าพูด",
 		slug: "listening-intelligence",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-5/km.jpg",
 		category: "การสื่อสาร",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3433,9 +3433,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-5/silde-image/km-agenda.jpg",
+			"/images/classes/class-5/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-5/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3449,7 +3449,7 @@ var classes = [
 		shortDescription: "ปลุกพลังบุคลิกภาพเพื่อศักยภาพที่เติบโต",
 		slug: "personality-power-awaken-your-potential",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-6/km.jpg",
 		category: "การพัฒนาตนเอง",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3460,9 +3460,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-6/silde-image/km-agenda.jpg",
+			"/images/classes/class-6/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-6/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3476,7 +3476,7 @@ var classes = [
 		shortDescription: "เทคนิคการเปลี่ยนแปลงตัวเองสู่การทำงานเป็นทีม",
 		slug: "self-transform-to-team-collaboration",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-7/km.jpg",
 		category: "การทำงานเป็นทีม",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3487,9 +3487,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-7/silde-image/km-agenda.jpg",
+			"/images/classes/class-7/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-7/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3503,7 +3503,7 @@ var classes = [
 		shortDescription: "ศาสตร์แห่งการก้าวข้ามขีดจำกัด สู่ศักยภาพสูงสุด",
 		slug: "transform-deep-belief-unlock-your-potential",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-8/km.jpg",
 		category: "การพัฒนาตนเอง",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3514,9 +3514,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-8/silde-image/km-agenda.jpg",
+			"/images/classes/class-8/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-8/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3530,7 +3530,7 @@ var classes = [
 		shortDescription: "เทคนิคการตั้งเป้า เพื่อความสำเร็จร่วมในทีม",
 		slug: "goal-setting-for-team-alignment",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-9/km.jpg",
 		category: "ภาวะผู้นำ",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3541,9 +3541,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-9/silde-image/km-agenda.jpg",
+			"/images/classes/class-9/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-9/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3557,7 +3557,7 @@ var classes = [
 		shortDescription: "ศาสตร์แห่งการนำเสนอและขาย ที่ชนะใจทุกเกม",
 		slug: "influencing-presentation-for-sale",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-10/km.jpg",
 		category: "การนำเสนอ",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3569,9 +3569,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-10/silde-image/km-agenda.jpg",
+			"/images/classes/class-10/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-10/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3585,7 +3585,7 @@ var classes = [
 		shortDescription: "ขับเคลื่อนการเปลี่ยนแปลง ด้วยพลังเรื่องเล่า",
 		slug: "the-magic-of-influential-storytelling",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-11/km.jpg",
 		category: "การสื่อสาร",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3597,9 +3597,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-11/silde-image/km-agenda.jpg",
+			"/images/classes/class-11/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-11/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3613,7 +3613,7 @@ var classes = [
 		shortDescription: "6 เครื่องมือวิเคราะห์ธุรกิจที่ใช้ได้จริง",
 		slug: "strategic-business-analysis-toolkit-6-powerful-frameworks",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-12/km.jpg",
 		category: "การคิดเชิงวิเคราะห์",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3625,9 +3625,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-12/silde-image/km-agenda.jpg",
+			"/images/classes/class-12/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-12/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3641,7 +3641,7 @@ var classes = [
 		shortDescription: "คิดอย่างลึกซึ้งเฉียบคม ตัดสินใจอย่างมีหลักการ",
 		slug: "critical-thinking",
 		featured: false,
-		image: "/images/classes/placeholder.webp",
+		image: "/images/classes/class-13/km.jpg",
 		category: "การคิดเชิงวิเคราะห์",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
@@ -3653,9 +3653,9 @@ var classes = [
 		originalPrice: 11900,
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp",
-			"/images/classes/placeholder.webp"
+			"/images/classes/class-13/silde-image/km-agenda.jpg",
+			"/images/classes/class-13/silde-image/km-gallery-1.jpg",
+			"/images/classes/class-13/silde-image/km-gallery-2.jpg"
 		],
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
@@ -3743,19 +3743,35 @@ var coaches = [
 		name: "ดร.เกด",
 		nameTh: "สุกฤตา ปรีชาว่อง",
 		career: "Co-Founder and Organization Coach",
-		photo: "/images/coaches/ananya-sharma.webp",
-		image: "/images/coaches/ananya-sharma.webp",
-		bio: "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร",
+		photo: "/images/coaches/coach-1/m.webp",
+		image: "/images/coaches/coach-1/m.webp",
+		gallery: [
+			"/images/coaches/coach-1/gallery/km-gallery-1.jpg",
+			"/images/coaches/coach-1/gallery/km-gallery-2.jpg"
+		],
+		bio: "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร ด้วยความเชี่ยวชาญด้านจิตวิทยาองค์กรและภาวะผู้นำ เธอได้ช่วยพัฒนาองค์กรชั้นนำในประเทศไทยมาแล้วมากมาย",
 		expertise: "Organization Coaching, Leadership Development, Soft Skills Training",
 		education: [
-			"ปริญญาเอก สาขาจิตวิทยาองค์กร"
+			"ปริญญาเอก สาขาจิตวิทยาองค์กร",
+			"ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
+			"ประกาศนียบัตรหลักสูตร Organization and Systems Coaching"
 		],
 		experience: [
 			{
-				title: "Co-Founder และ Organization Coach ที่ Inner Academy"
+				title: "Co-Founder และ Organization Coach ที่ Inner Academy",
+				items: [
+					"ออกแบบและพัฒนาหลักสูตรโค้ชองค์กร",
+					"วิทยากรและโค้ชให้กับองค์กรชั้นนำในประเทศไทย"
+				]
 			},
 			{
-				title: "วิทยากรและโค้ชองค์กรชั้นนำในประเทศไทย"
+				title: "ที่ปรึกษาและโค้ชองค์กรอิสระ",
+				items: [
+					"PTT",
+					"SCG",
+					"กระทรวงสาธารณสุข",
+					"และองค์กรชั้นนำอื่นๆ"
+				]
 			}
 		],
 		socialMedia: [
@@ -3778,8 +3794,12 @@ var coaches = [
 		name: "ครูลูกแก้ว",
 		nameTh: "วริศรา บำรุงเวช",
 		career: "Communication and Presentation Coach",
-		photo: "/images/coaches/sarah-thompson.webp",
-		image: "/images/coaches/sarah-thompson.webp",
+		photo: "/images/coaches/coach-2/m.webp",
+		image: "/images/coaches/coach-2/m.webp",
+		gallery: [
+			"/images/coaches/coach-2/gallery/km-gallery-1.jpg",
+			"/images/coaches/coach-2/gallery/km-gallery-2.jpg"
+		],
 		bio: "ครูลูกแก้วเชี่ยวชาญด้านการสื่อสารและการนำเสนอ ช่วยพัฒนาทักษะการพูดและการสื่อสารให้กับผู้เรียนหลากหลายระดับ",
 		expertise: "เพิ่มประสิทธิภาพการสื่อสาร สร้างแรงบันดาลใจด้วยทัศนคติเชิงบวก",
 		education: [
@@ -3842,22 +3862,45 @@ var coaches = [
 		name: "ครูซอ",
 		nameTh: "ดร.สทาคัย พงศ์หิรัญ",
 		career: "Communication and Presentation Coach",
-		photo: "/images/coaches/michael-chen.webp",
-		image: "/images/coaches/michael-chen.webp",
-		bio: "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริง",
+		photo: "/images/coaches/coach-3/m.webp",
+		image: "/images/coaches/coach-3/m.webp",
+		gallery: [
+			"/images/coaches/coach-3/gallery/km-gallery-1.jpg",
+			"/images/coaches/coach-3/gallery/km-gallery-2.jpg"
+		],
+		bio: "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร ด้วยประสบการณ์กว่า 15 ปี เขาได้ช่วยพัฒนาทักษะการสื่อสารให้กับผู้บริหารและบุคลากรในองค์กรชั้นนำ มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริงในชีวิตและการทำงาน",
 		expertise: "Communication Coaching, Presentation Skills, Corporate Training",
 		education: [
-			"ปริญญาเอก สาขาการสื่อสาร"
+			"ปริญญาเอก สาขาการสื่อสาร",
+			"ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
+			"ประกาศนียบัตรหลักสูตร License Practitioner Neuro-Linguistic Programming"
 		],
 		experience: [
 			{
-				title: "Communication and Presentation Coach ที่ Inner Academy"
+				title: "Communication and Presentation Coach ที่ Inner Academy",
+				items: [
+					"ออกแบบหลักสูตรพัฒนาทักษะการสื่อสารสำหรับองค์กร",
+					"วิทยากรฝึกอบรมการนำเสนอระดับองค์กร"
+				]
+			},
+			{
+				title: "วิทยากรให้มหาวิทยาลัยและองค์กรชั้นนำ อาทิ",
+				items: [
+					"SCG",
+					"PTT",
+					"กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม",
+					"และองค์กรชั้นนำอื่นๆ"
+				]
 			}
 		],
 		socialMedia: [
 			{
 				channel: "facebook",
 				link: "https://facebook.com/innerpower"
+			},
+			{
+				channel: "instagram",
+				link: "https://instagram.com/innerpower"
 			}
 		]
 	},
@@ -3866,19 +3909,36 @@ var coaches = [
 		name: "โค้ชกิตติ",
 		nameTh: "กิตติ ไตรรัตน์",
 		career: "Mindset, Passion and Satir Coach",
-		photo: "/images/coaches/david-kim.webp",
-		image: "/images/coaches/david-kim.webp",
-		bio: "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir เพื่อเปลี่ยนแปลงชีวิตจากภายใน",
+		photo: "/images/coaches/coach-4/m.webp",
+		image: "/images/coaches/coach-4/m.webp",
+		gallery: [
+			"/images/coaches/coach-4/gallery/km-gallery-1.jpg",
+			"/images/coaches/coach-4/gallery/km-gallery-2.jpg"
+		],
+		bio: "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir Model เพื่อเปลี่ยนแปลงชีวิตจากภายใน เขาช่วยให้ผู้คนค้นพบตัวเองและสร้างชีวิตที่มีความหมายผ่านกระบวนการโค้ชเชิงลึก",
 		expertise: "Mindset Coaching, Passion Discovery, Satir Model Coaching",
 		education: [
-			"ปริญญาโท สาขาจิตวิทยา"
+			"ปริญญาโท สาขาจิตวิทยา",
+			"Certified Satir Coach โดย Virginia Satir Network",
+			"ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
+			"ผ่านการอบรมหลักสูตร Unleash The Power Within โดย Tony Robbins"
 		],
 		experience: [
 			{
-				title: "Mindset and Passion Coach ที่ Inner Academy"
+				title: "Mindset, Passion and Satir Coach ที่ Inner Academy",
+				items: [
+					"ออกแบบและดำเนินหลักสูตร Mindset Transformation",
+					"โค้ชส่วนตัวและกลุ่มด้านการค้นพบตัวเองและ Passion"
+				]
 			},
 			{
-				title: "Certified Satir Coach"
+				title: "วิทยากรและโค้ชอิสระให้องค์กรและบุคคล อาทิ",
+				items: [
+					"ธนาคารกสิกรไทย",
+					"บริษัทเอกชนชั้นนำ",
+					"สถาบันการศึกษา",
+					"และองค์กรอื่นๆ"
+				]
 			}
 		],
 		socialMedia: [
@@ -3889,6 +3949,10 @@ var coaches = [
 			{
 				channel: "instagram",
 				link: "https://instagram.com/innerpower"
+			},
+			{
+				channel: "tiktok",
+				link: "https://tiktok.com/@innerpower"
 			}
 		]
 	},
@@ -3897,16 +3961,34 @@ var coaches = [
 		name: "โค้ชที่ 5",
 		nameTh: "ชื่อ นามสกุล",
 		career: "Leadership and Team Coach",
-		photo: "/images/coaches/james-okafor.webp",
-		image: "/images/coaches/james-okafor.webp",
-		bio: "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่ง",
+		photo: "/images/coaches/coach-5/m.webp",
+		image: "/images/coaches/coach-5/m.webp",
+		gallery: [
+			"/images/coaches/coach-5/gallery/km-gallery-1.jpg",
+			"/images/coaches/coach-5/gallery/km-gallery-2.jpg"
+		],
+		bio: "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ด้วยประสบการณ์ในการทำงานร่วมกับผู้บริหารระดับสูง เขาช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่งและพัฒนาภาวะผู้นำอย่างยั่งยืน",
 		expertise: "Leadership Coaching, Team Development, Organizational Change",
 		education: [
-			"ปริญญาโท สาขาบริหารธุรกิจ"
+			"ปริญญาโท สาขาบริหารธุรกิจ",
+			"ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
+			"ประกาศนียบัตรหลักสูตร Team Coaching"
 		],
 		experience: [
 			{
-				title: "Leadership and Team Coach ที่ Inner Academy"
+				title: "Leadership and Team Coach ที่ Inner Academy",
+				items: [
+					"ออกแบบหลักสูตรพัฒนาภาวะผู้นำสำหรับองค์กร",
+					"โค้ชทีมผู้บริหารระดับสูง"
+				]
+			},
+			{
+				title: "วิทยากรและโค้ชองค์กรให้บริษัทชั้นนำ อาทิ",
+				items: [
+					"ธนาคารไทยพาณิชย์",
+					"เซ็นทรัล กรุ๊ป",
+					"และองค์กรอื่นๆ"
+				]
 			}
 		],
 		socialMedia: [
@@ -3917,6 +3999,10 @@ var coaches = [
 			{
 				channel: "instagram",
 				link: "https://instagram.com/innerpower"
+			},
+			{
+				channel: "linkedin",
+				link: "https://linkedin.com/in/innerpower"
 			}
 		]
 	},
@@ -3925,22 +4011,43 @@ var coaches = [
 		name: "โค้ชที่ 6",
 		nameTh: "ชื่อ นามสกุล",
 		career: "NLP and Mindset Coach",
-		photo: "/images/coaches/elena-rodriguez.webp",
-		image: "/images/coaches/elena-rodriguez.webp",
-		bio: "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัด",
+		photo: "/images/coaches/coach-6/m.webp",
+		image: "/images/coaches/coach-6/m.webp",
+		gallery: [
+			"/images/coaches/coach-6/gallery/km-gallery-1.jpg",
+			"/images/coaches/coach-6/gallery/km-gallery-2.jpg"
+		],
+		bio: "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ด้วยเครื่องมือและเทคนิคจาก Neuro-Linguistic Programming เขาช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัดเพื่อสร้างชีวิตและอาชีพที่ต้องการ",
 		expertise: "NLP Coaching, Mindset Transformation, Behavioral Change",
 		education: [
-			"Certified NLP Practitioner และ Coach"
+			"Certified NLP Practitioner and Master Practitioner",
+			"ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
+			"ประกาศนียบัตรหลักสูตร Enneagram Coaching"
 		],
 		experience: [
 			{
-				title: "NLP and Mindset Coach ที่ Inner Academy"
+				title: "NLP and Mindset Coach ที่ Inner Academy",
+				items: [
+					"ออกแบบหลักสูตร NLP สำหรับการพัฒนาตนเองและองค์กร",
+					"โค้ชรายบุคคลด้านการปรับ Mindset"
+				]
+			},
+			{
+				title: "Certified NLP Trainer และวิทยากรอิสระ",
+				items: [
+					"ฝึกอบรม NLP ให้กับบุคคลทั่วไปและองค์กร",
+					"วิทยากรในงานสัมมนาพัฒนาตนเองชั้นนำ"
+				]
 			}
 		],
 		socialMedia: [
 			{
 				channel: "facebook",
 				link: "https://facebook.com/innerpower"
+			},
+			{
+				channel: "instagram",
+				link: "https://instagram.com/innerpower"
 			},
 			{
 				channel: "linkedin",
@@ -3953,16 +4060,35 @@ var coaches = [
 		name: "โค้ชที่ 7",
 		nameTh: "ชื่อ นามสกุล",
 		career: "Performance and Wellness Coach",
-		photo: "/images/coaches/lisa-patel.webp",
-		image: "/images/coaches/lisa-patel.webp",
-		bio: "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ผสมผสานศาสตร์การโค้ชเพื่อให้บรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงาน",
+		photo: "/images/coaches/coach-7/m.webp",
+		image: "/images/coaches/coach-7/m.webp",
+		gallery: [
+			"/images/coaches/coach-7/gallery/km-gallery-1.jpg",
+			"/images/coaches/coach-7/gallery/km-gallery-2.jpg"
+		],
+		bio: "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ด้วยการผสมผสานศาสตร์การโค้ชและความรู้ด้านสุขภาพ เขาช่วยให้ผู้คนบรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงานอย่างสมดุล",
 		expertise: "Performance Coaching, Wellness Coaching, Work-Life Balance",
 		education: [
-			"Certified Performance and Wellness Coach"
+			"Certified Performance and Wellness Coach",
+			"ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
+			"ประกาศนียบัตรหลักสูตร Positive Psychology Coaching"
 		],
 		experience: [
 			{
-				title: "Performance and Wellness Coach ที่ Inner Academy"
+				title: "Performance and Wellness Coach ที่ Inner Academy",
+				items: [
+					"ออกแบบหลักสูตร Work-Life Balance และ Stress Management",
+					"โค้ชรายบุคคลด้านสุขภาพและประสิทธิภาพการทำงาน"
+				]
+			},
+			{
+				title: "วิทยากรและโค้ชด้าน Wellness ให้กับองค์กรชั้นนำ อาทิ",
+				items: [
+					"โรงพยาบาลชั้นนำ",
+					"บริษัทเทคโนโลยี",
+					"สถาบันการเงิน",
+					"และองค์กรอื่นๆ"
+				]
 			}
 		],
 		socialMedia: [

@@ -10,14 +10,28 @@
       "name": "ดร.เกด",
       "nameTh": "สุกฤตา ปรีชาว่อง",
       "career": "Co-Founder and Organization Coach",
-      "photo": "/images/coaches/ananya-sharma.webp",
-      "image": "/images/coaches/ananya-sharma.webp",
-      "bio": "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร",
+      "photo": "/images/coaches/coach-1/m.webp",
+      "image": "/images/coaches/coach-1/m.webp",
+      "gallery": [
+        "/images/coaches/coach-1/gallery/km-gallery-1.jpg",
+        "/images/coaches/coach-1/gallery/km-gallery-2.jpg"
+      ],
+      "bio": "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร ด้วยความเชี่ยวชาญด้านจิตวิทยาองค์กรและภาวะผู้นำ เธอได้ช่วยพัฒนาองค์กรชั้นนำในประเทศไทยมาแล้วมากมาย",
       "expertise": "Organization Coaching, Leadership Development, Soft Skills Training",
-      "education": ["ปริญญาเอก สาขาจิตวิทยาองค์กร"],
+      "education": [
+        "ปริญญาเอก สาขาจิตวิทยาองค์กร",
+        "ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
+        "ประกาศนียบัตรหลักสูตร Organization and Systems Coaching"
+      ],
       "experience": [
-        { "title": "Co-Founder และ Organization Coach ที่ Inner Academy" },
-        { "title": "วิทยากรและโค้ชองค์กรชั้นนำในประเทศไทย" }
+        {
+          "title": "Co-Founder และ Organization Coach ที่ Inner Academy",
+          "items": ["ออกแบบและพัฒนาหลักสูตรโค้ชองค์กร", "วิทยากรและโค้ชให้กับองค์กรชั้นนำในประเทศไทย"]
+        },
+        {
+          "title": "ที่ปรึกษาและโค้ชองค์กรอิสระ",
+          "items": ["PTT", "SCG", "กระทรวงสาธารณสุข", "และองค์กรชั้นนำอื่นๆ"]
+        }
       ],
       "socialMedia": [
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
@@ -30,8 +44,12 @@
       "name": "ครูลูกแก้ว",
       "nameTh": "วริศรา บำรุงเวช",
       "career": "Communication and Presentation Coach",
-      "photo": "/images/coaches/sarah-thompson.webp",
-      "image": "/images/coaches/sarah-thompson.webp",
+      "photo": "/images/coaches/coach-2/m.webp",
+      "image": "/images/coaches/coach-2/m.webp",
+      "gallery": [
+        "/images/coaches/coach-2/gallery/km-gallery-1.jpg",
+        "/images/coaches/coach-2/gallery/km-gallery-2.jpg"
+      ],
       "bio": "ครูลูกแก้วเชี่ยวชาญด้านการสื่อสารและการนำเสนอ ช่วยพัฒนาทักษะการพูดและการสื่อสารให้กับผู้เรียนหลากหลายระดับ",
       "expertise": "เพิ่มประสิทธิภาพการสื่อสาร สร้างแรงบันดาลใจด้วยทัศนคติเชิงบวก",
       "education": [
@@ -67,16 +85,32 @@
       "name": "ครูซอ",
       "nameTh": "ดร.สทาคัย พงศ์หิรัญ",
       "career": "Communication and Presentation Coach",
-      "photo": "/images/coaches/michael-chen.webp",
-      "image": "/images/coaches/michael-chen.webp",
-      "bio": "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริง",
+      "photo": "/images/coaches/coach-3/m.webp",
+      "image": "/images/coaches/coach-3/m.webp",
+      "gallery": [
+        "/images/coaches/coach-3/gallery/km-gallery-1.jpg",
+        "/images/coaches/coach-3/gallery/km-gallery-2.jpg"
+      ],
+      "bio": "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร ด้วยประสบการณ์กว่า 15 ปี เขาได้ช่วยพัฒนาทักษะการสื่อสารให้กับผู้บริหารและบุคลากรในองค์กรชั้นนำ มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริงในชีวิตและการทำงาน",
       "expertise": "Communication Coaching, Presentation Skills, Corporate Training",
-      "education": ["ปริญญาเอก สาขาการสื่อสาร"],
+      "education": [
+        "ปริญญาเอก สาขาการสื่อสาร",
+        "ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
+        "ประกาศนียบัตรหลักสูตร License Practitioner Neuro-Linguistic Programming"
+      ],
       "experience": [
-        { "title": "Communication and Presentation Coach ที่ Inner Academy" }
+        {
+          "title": "Communication and Presentation Coach ที่ Inner Academy",
+          "items": ["ออกแบบหลักสูตรพัฒนาทักษะการสื่อสารสำหรับองค์กร", "วิทยากรฝึกอบรมการนำเสนอระดับองค์กร"]
+        },
+        {
+          "title": "วิทยากรให้มหาวิทยาลัยและองค์กรชั้นนำ อาทิ",
+          "items": ["SCG", "PTT", "กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม", "และองค์กรชั้นนำอื่นๆ"]
+        }
       ],
       "socialMedia": [
-        { "channel": "facebook", "link": "https://facebook.com/innerpower" }
+        { "channel": "facebook", "link": "https://facebook.com/innerpower" },
+        { "channel": "instagram", "link": "https://instagram.com/innerpower" }
       ]
     },
     {
@@ -84,18 +118,34 @@
       "name": "โค้ชกิตติ",
       "nameTh": "กิตติ ไตรรัตน์",
       "career": "Mindset, Passion and Satir Coach",
-      "photo": "/images/coaches/david-kim.webp",
-      "image": "/images/coaches/david-kim.webp",
-      "bio": "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir เพื่อเปลี่ยนแปลงชีวิตจากภายใน",
+      "photo": "/images/coaches/coach-4/m.webp",
+      "image": "/images/coaches/coach-4/m.webp",
+      "gallery": [
+        "/images/coaches/coach-4/gallery/km-gallery-1.jpg",
+        "/images/coaches/coach-4/gallery/km-gallery-2.jpg"
+      ],
+      "bio": "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir Model เพื่อเปลี่ยนแปลงชีวิตจากภายใน เขาช่วยให้ผู้คนค้นพบตัวเองและสร้างชีวิตที่มีความหมายผ่านกระบวนการโค้ชเชิงลึก",
       "expertise": "Mindset Coaching, Passion Discovery, Satir Model Coaching",
-      "education": ["ปริญญาโท สาขาจิตวิทยา"],
+      "education": [
+        "ปริญญาโท สาขาจิตวิทยา",
+        "Certified Satir Coach โดย Virginia Satir Network",
+        "ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
+        "ผ่านการอบรมหลักสูตร Unleash The Power Within โดย Tony Robbins"
+      ],
       "experience": [
-        { "title": "Mindset and Passion Coach ที่ Inner Academy" },
-        { "title": "Certified Satir Coach" }
+        {
+          "title": "Mindset, Passion and Satir Coach ที่ Inner Academy",
+          "items": ["ออกแบบและดำเนินหลักสูตร Mindset Transformation", "โค้ชส่วนตัวและกลุ่มด้านการค้นพบตัวเองและ Passion"]
+        },
+        {
+          "title": "วิทยากรและโค้ชอิสระให้องค์กรและบุคคล อาทิ",
+          "items": ["ธนาคารกสิกรไทย", "บริษัทเอกชนชั้นนำ", "สถาบันการศึกษา", "และองค์กรอื่นๆ"]
+        }
       ],
       "socialMedia": [
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
-        { "channel": "instagram", "link": "https://instagram.com/innerpower" }
+        { "channel": "instagram", "link": "https://instagram.com/innerpower" },
+        { "channel": "tiktok", "link": "https://tiktok.com/@innerpower" }
       ]
     },
     {
@@ -103,17 +153,33 @@
       "name": "โค้ชที่ 5",
       "nameTh": "ชื่อ นามสกุล",
       "career": "Leadership and Team Coach",
-      "photo": "/images/coaches/james-okafor.webp",
-      "image": "/images/coaches/james-okafor.webp",
-      "bio": "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่ง",
+      "photo": "/images/coaches/coach-5/m.webp",
+      "image": "/images/coaches/coach-5/m.webp",
+      "gallery": [
+        "/images/coaches/coach-5/gallery/km-gallery-1.jpg",
+        "/images/coaches/coach-5/gallery/km-gallery-2.jpg"
+      ],
+      "bio": "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ด้วยประสบการณ์ในการทำงานร่วมกับผู้บริหารระดับสูง เขาช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่งและพัฒนาภาวะผู้นำอย่างยั่งยืน",
       "expertise": "Leadership Coaching, Team Development, Organizational Change",
-      "education": ["ปริญญาโท สาขาบริหารธุรกิจ"],
+      "education": [
+        "ปริญญาโท สาขาบริหารธุรกิจ",
+        "ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
+        "ประกาศนียบัตรหลักสูตร Team Coaching"
+      ],
       "experience": [
-        { "title": "Leadership and Team Coach ที่ Inner Academy" }
+        {
+          "title": "Leadership and Team Coach ที่ Inner Academy",
+          "items": ["ออกแบบหลักสูตรพัฒนาภาวะผู้นำสำหรับองค์กร", "โค้ชทีมผู้บริหารระดับสูง"]
+        },
+        {
+          "title": "วิทยากรและโค้ชองค์กรให้บริษัทชั้นนำ อาทิ",
+          "items": ["ธนาคารไทยพาณิชย์", "เซ็นทรัล กรุ๊ป", "และองค์กรอื่นๆ"]
+        }
       ],
       "socialMedia": [
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
-        { "channel": "instagram", "link": "https://instagram.com/innerpower" }
+        { "channel": "instagram", "link": "https://instagram.com/innerpower" },
+        { "channel": "linkedin", "link": "https://linkedin.com/in/innerpower" }
       ]
     },
     {
@@ -121,16 +187,32 @@
       "name": "โค้ชที่ 6",
       "nameTh": "ชื่อ นามสกุล",
       "career": "NLP and Mindset Coach",
-      "photo": "/images/coaches/elena-rodriguez.webp",
-      "image": "/images/coaches/elena-rodriguez.webp",
-      "bio": "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัด",
+      "photo": "/images/coaches/coach-6/m.webp",
+      "image": "/images/coaches/coach-6/m.webp",
+      "gallery": [
+        "/images/coaches/coach-6/gallery/km-gallery-1.jpg",
+        "/images/coaches/coach-6/gallery/km-gallery-2.jpg"
+      ],
+      "bio": "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ด้วยเครื่องมือและเทคนิคจาก Neuro-Linguistic Programming เขาช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัดเพื่อสร้างชีวิตและอาชีพที่ต้องการ",
       "expertise": "NLP Coaching, Mindset Transformation, Behavioral Change",
-      "education": ["Certified NLP Practitioner และ Coach"],
+      "education": [
+        "Certified NLP Practitioner and Master Practitioner",
+        "ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
+        "ประกาศนียบัตรหลักสูตร Enneagram Coaching"
+      ],
       "experience": [
-        { "title": "NLP and Mindset Coach ที่ Inner Academy" }
+        {
+          "title": "NLP and Mindset Coach ที่ Inner Academy",
+          "items": ["ออกแบบหลักสูตร NLP สำหรับการพัฒนาตนเองและองค์กร", "โค้ชรายบุคคลด้านการปรับ Mindset"]
+        },
+        {
+          "title": "Certified NLP Trainer และวิทยากรอิสระ",
+          "items": ["ฝึกอบรม NLP ให้กับบุคคลทั่วไปและองค์กร", "วิทยากรในงานสัมมนาพัฒนาตนเองชั้นนำ"]
+        }
       ],
       "socialMedia": [
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
+        { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "linkedin", "link": "https://linkedin.com/in/innerpower" }
       ]
     },
@@ -139,13 +221,28 @@
       "name": "โค้ชที่ 7",
       "nameTh": "ชื่อ นามสกุล",
       "career": "Performance and Wellness Coach",
-      "photo": "/images/coaches/lisa-patel.webp",
-      "image": "/images/coaches/lisa-patel.webp",
-      "bio": "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ผสมผสานศาสตร์การโค้ชเพื่อให้บรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงาน",
+      "photo": "/images/coaches/coach-7/m.webp",
+      "image": "/images/coaches/coach-7/m.webp",
+      "gallery": [
+        "/images/coaches/coach-7/gallery/km-gallery-1.jpg",
+        "/images/coaches/coach-7/gallery/km-gallery-2.jpg"
+      ],
+      "bio": "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ด้วยการผสมผสานศาสตร์การโค้ชและความรู้ด้านสุขภาพ เขาช่วยให้ผู้คนบรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงานอย่างสมดุล",
       "expertise": "Performance Coaching, Wellness Coaching, Work-Life Balance",
-      "education": ["Certified Performance and Wellness Coach"],
+      "education": [
+        "Certified Performance and Wellness Coach",
+        "ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
+        "ประกาศนียบัตรหลักสูตร Positive Psychology Coaching"
+      ],
       "experience": [
-        { "title": "Performance and Wellness Coach ที่ Inner Academy" }
+        {
+          "title": "Performance and Wellness Coach ที่ Inner Academy",
+          "items": ["ออกแบบหลักสูตร Work-Life Balance และ Stress Management", "โค้ชรายบุคคลด้านสุขภาพและประสิทธิภาพการทำงาน"]
+        },
+        {
+          "title": "วิทยากรและโค้ชด้าน Wellness ให้กับองค์กรชั้นนำ อาทิ",
+          "items": ["โรงพยาบาลชั้นนำ", "บริษัทเทคโนโลยี", "สถาบันการเงิน", "และองค์กรอื่นๆ"]
+        }
       ],
       "socialMedia": [
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },

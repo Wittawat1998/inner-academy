@@ -29,6 +29,7 @@ interface _GlobalComponents {
   OutcomesList: typeof import("../../components/OutcomesList.vue")['default']
   PageHeader: typeof import("../../components/PageHeader.vue")['default']
   PodcastBlock: typeof import("../../components/PodcastBlock.vue")['default']
+  SocialIconsList: typeof import("../../components/SocialIconsList.vue")['default']
   TestimonialsCarousel: typeof import("../../components/TestimonialsCarousel.vue")['default']
   TheFooter: typeof import("../../components/TheFooter.vue")['default']
   TheHeader: typeof import("../../components/TheHeader.vue")['default']
@@ -87,6 +88,7 @@ interface _GlobalComponents {
   LazyOutcomesList: LazyComponent<typeof import("../../components/OutcomesList.vue")['default']>
   LazyPageHeader: LazyComponent<typeof import("../../components/PageHeader.vue")['default']>
   LazyPodcastBlock: LazyComponent<typeof import("../../components/PodcastBlock.vue")['default']>
+  LazySocialIconsList: LazyComponent<typeof import("../../components/SocialIconsList.vue")['default']>
   LazyTestimonialsCarousel: LazyComponent<typeof import("../../components/TestimonialsCarousel.vue")['default']>
   LazyTheFooter: LazyComponent<typeof import("../../components/TheFooter.vue")['default']>
   LazyTheHeader: LazyComponent<typeof import("../../components/TheHeader.vue")['default']>

@@ -1,17 +1,17 @@
 <template>
-  <main v-if="classData" class="class-detail-page bg-bgPrimary min-h-screen">
+  <main v-if="classData" class="class-detail-page bg-gradient-header min-h-screen">
 
     <!-- ─── Hero ────────────────────────────────────────────────────── -->
-    <section class="relative py-16 md:py-24 overflow-hidden">
-      <div class="container mx-auto px-6 lg:px-16">
-        <div class="flex flex-col lg:flex-row items-center gap-12">
+    <section class="relative pt-24 overflow-hidden" style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
+        <div class="max-w-[1024px] flex flex-col lg:flex-row items-center gap-12">
 
           <!-- Left: title, description, instructors -->
           <div class="flex-1 min-w-0">
-            <h1 class="text-[clamp(2.4rem,5vw,4.2rem)] font-bold leading-[1.1] text-brandGold mb-4">
+            <h1 class="text-6xl font-semibold leading-[1.1] header-fade mb-4">
               {{ classData.title }}
             </h1>
-            <p class="text-[clamp(1.1rem,2vw,1.4rem)] text-textSecondary mb-10 leading-relaxed">
+            <p class="text-4xl text-white mb-10 leading-relaxed">
               {{ classData.shortDescription || classData.description.split('\n')[0] }}
             </p>
 
@@ -27,7 +27,7 @@
                   <img
                     :src="ins.image"
                     :alt="ins.name"
-                    class="w-16 h-16 rounded-full object-cover border-2 border-brandGold bg-[#1a1a2e]"
+                    class="w-20 h-20 rounded-full object-cover border-2 border-brandGold bg-[#1a1a2e]"
                   />
                 </div>
               </div>
@@ -49,8 +49,8 @@
 
     <!-- ─── Details ────────────────────────────────────────────────── -->
     <section class="py-12 md:py-16">
-      <div class="container mx-auto px-6 lg:px-16">
-        <div class="flex flex-col lg:flex-row gap-10">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
+        <div class="max-w-[1024px] flex flex-col lg:flex-row gap-10">
 
           <!-- Left: metadata card -->
           <aside class="lg:w-72 flex-shrink-0">
@@ -74,7 +74,7 @@
                     :key="i"
                     class="flex items-center gap-2 text-textPrimary"
                   >
-                    <span class="w-2 h-2 rounded-full bg-brandGold flex-shrink-0" />
+                    <span class="w-2 h-2 rounded-full bg-goldTextDark flex-shrink-0" />
                     {{ a }}
                   </li>
                 </ul>
@@ -85,10 +85,10 @@
                 <p v-if="classData.originalPrice" class="text-sm line-through text-textSecondary">
                   {{ classData.originalPrice.toLocaleString() }} บาท
                 </p>
-                <p class="text-3xl font-extrabold text-brandGold">
+                <p class="text-3xl font-extrabold text-goldText">
                   {{ classData.price.toLocaleString() }} <span class="text-lg font-normal">บาท</span>
                 </p>
-                <p v-if="classData.priceNote" class="text-xs text-textSecondary mt-1">
+                <p v-if="classData.priceNote" class="text-xs text-goldText mt-1">
                   ({{ classData.priceNote }})
                 </p>
               </div>
@@ -108,36 +108,63 @@
     </section>
 
     <!-- ─── Gallery ────────────────────────────────────────────────── -->
-    <section v-if="classData.gallery?.length" class="py-8 overflow-hidden">
-      <div class="container mx-auto px-6 lg:px-16">
-        <div class="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory hide-scrollbar">
-          <div
-            v-for="(img, i) in classData.gallery"
-            :key="i"
-            class="snap-center flex-shrink-0 w-[320px] md:w-[420px] rounded-xl overflow-hidden"
+    <section v-if="classData.gallery?.length" class="py-8">
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
+        <div class="relative">
+          <!-- Left arrow -->
+          <button
+            @click="scrollGallery(-1)"
+            class="absolute left-0 top-0 z-10 w-16 h-full flex items-center justify-start pl-2 bg-gradient-to-r from-black/80 to-transparent text-white transition"
+            aria-label="Previous"
           >
-            <img :src="img" :alt="`Gallery ${i + 1}`" class="w-full h-56 object-cover" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <!-- Scroll track -->
+          <div ref="galleryRef" class="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory hide-scrollbar">
+            <div
+              v-for="(img, i) in classData.gallery"
+              :key="i"
+              class="snap-center flex-shrink-0 w-[320px] md:w-[420px] rounded-xl overflow-hidden"
+            >
+              <img :src="img" :alt="`Gallery ${i + 1}`" class="w-full h-56 object-cover" />
+            </div>
           </div>
+
+          <!-- Right arrow -->
+          <button
+            @click="scrollGallery(1)"
+            class="absolute right-0 top-0 z-10 w-16 h-full flex items-center justify-end pr-2 bg-gradient-to-l from-black/80 to-transparent text-white transition"
+            aria-label="Next"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
 
     <!-- ─── CTA Buttons ──────────────────────────────────────────── -->
     <section class="py-10 md:py-14">
-      <div class="container mx-auto px-6 lg:px-16 flex flex-col gap-4 max-w-xl">
-        <a
-          v-if="classData.ctaDocumentUrl"
-          :href="classData.ctaDocumentUrl"
-          class="block w-full text-center text-[1.2rem] font-bold py-5 rounded-full bg-brandGold text-bgPrimary hover:brightness-110 transition"
-        >
-          ดาวน์โหลดเอกสาร
-        </a>
-        <NuxtLink
-          :to="classData.ctaNextRoundUrl || '/contact'"
-          class="block w-full text-center text-[1.2rem] font-bold py-5 rounded-full bg-brandGold text-bgPrimary hover:brightness-110 transition"
-        >
-          คลาสรอบถัดไป
-        </NuxtLink>
+      <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
+        <div class="flex flex-col gap-4 max-w-xl mx-auto">
+          <a
+            v-if="classData.ctaDocumentUrl"
+            :href="classData.ctaDocumentUrl"
+            class="block w-full text-center text-4xl font-semibold py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
+          >
+            ดาวน์โหลดเอกสาร
+          </a>
+          <NuxtLink
+            :to="classData.ctaNextRoundUrl || '/contact'"
+            class="block w-full text-center text-4xl font-semibold py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
+          >
+            คลาสรอบถัดไป
+          </NuxtLink>
+        </div>
       </div>
     </section>
 
@@ -158,6 +185,15 @@ const classData = isNaN(id)
 
 if (!classData) {
   throw showError({ statusCode: 404, message: 'Class not found.' })
+}
+
+const galleryRef = ref<HTMLElement | null>(null)
+
+function scrollGallery(direction: 1 | -1) {
+  const el = galleryRef.value
+  if (!el) return
+  const itemWidth = el.querySelector('div')?.offsetWidth ?? 340
+  el.scrollBy({ left: direction * (itemWidth + 16), behavior: 'smooth' })
 }
 
 const descriptionParagraphs = computed(() =>

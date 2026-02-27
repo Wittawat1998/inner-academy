@@ -29,6 +29,7 @@ export const NextProgramPromo: typeof import("../components/NextProgramPromo.vue
 export const OutcomesList: typeof import("../components/OutcomesList.vue")['default']
 export const PageHeader: typeof import("../components/PageHeader.vue")['default']
 export const PodcastBlock: typeof import("../components/PodcastBlock.vue")['default']
+export const SocialIconsList: typeof import("../components/SocialIconsList.vue")['default']
 export const TestimonialsCarousel: typeof import("../components/TestimonialsCarousel.vue")['default']
 export const TheFooter: typeof import("../components/TheFooter.vue")['default']
 export const TheHeader: typeof import("../components/TheHeader.vue")['default']
@@ -87,6 +88,7 @@ export const LazyNextProgramPromo: LazyComponent<typeof import("../components/Ne
 export const LazyOutcomesList: LazyComponent<typeof import("../components/OutcomesList.vue")['default']>
 export const LazyPageHeader: LazyComponent<typeof import("../components/PageHeader.vue")['default']>
 export const LazyPodcastBlock: LazyComponent<typeof import("../components/PodcastBlock.vue")['default']>
+export const LazySocialIconsList: LazyComponent<typeof import("../components/SocialIconsList.vue")['default']>
 export const LazyTestimonialsCarousel: LazyComponent<typeof import("../components/TestimonialsCarousel.vue")['default']>
 export const LazyTheFooter: LazyComponent<typeof import("../components/TheFooter.vue")['default']>
 export const LazyTheHeader: LazyComponent<typeof import("../components/TheHeader.vue")['default']>
