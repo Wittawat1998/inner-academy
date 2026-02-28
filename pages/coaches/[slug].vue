@@ -3,8 +3,8 @@
 
     <!-- ─── Hero ────────────────────────────────────────────────────── -->
     <section class="relative overflow-hidden" style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;">
-      <div class="max-w-[1024px] mx-auto px-8 lg:px-16 pt-20 md:pt-28 items-center flex flex-col">
-        <div class="max-w-[960px] flex flex-col lg:flex-row items-center gap-0">
+      <div class="max-w-[1024px] mx-auto px-4 md:px-8 lg:px-16 pt-20 md:pt-24 lg:pt-28 items-center flex flex-col">
+        <div class="max-w-[960px] flex flex-col md:flex-row items-center gap-0">
 
           <!-- Left: name, title, social -->
           <div class="flex-1 min-w-0 z-10 pb-10 lg:pb-0">
@@ -30,7 +30,7 @@
           </div>
 
           <!-- Right: coach photo with left-fade gradient -->
-          <div class="relative flex-shrink-0 w-full lg:w-[480px]">
+          <div class="relative flex-shrink-0 w-full md:w-[360px] lg:w-[480px]">
             <!-- gradient fade blending into background on the left -->
             <div class="absolute inset-y-0 left-0 w-32 z-10 bg-transparent pointer-events-none" />
             <img
@@ -44,14 +44,14 @@
       </div>
 
       <!-- Divider line -->
-      <div class="mx-20 px-8">
+      <div class="mx-4 md:mx-20 px-4 md:px-8">
         <div style="height: 2px; background: linear-gradient(90deg, rgba(247,198,109,0) 0%, rgba(247,198,109,0.2) 10%, rgba(247,198,109,0.4) 30%, rgba(247,198,109,0.5) 50%, rgba(247,198,109,0.4) 70%, rgba(247,198,109,0.2) 90%, rgba(247,198,109,0) 100%);"></div>
       </div>
     </section>
 
     <!-- ─── Details ─────────────────────────────────────────────────── -->
-    <section class="py-12 md:py-16">
-      <div class="max-w-[1280px] mx-auto px-8 lg:px-16">
+    <section class="py-16">
+      <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-16">
         <div class="max-w-[1024px] flex flex-col lg:flex-row gap-12 lg:gap-20">
 
           <!-- Left: gallery images -->
@@ -125,7 +125,7 @@
     </section>
 
     <!-- ─── CTA Buttons ──────────────────────────────────────────────── -->
-    <section class="py-12 md:py-16">
+    <section class="py-16">
       <div class="max-w-[680px] mx-auto px-8 flex flex-col gap-5">
         <a
           href="#"

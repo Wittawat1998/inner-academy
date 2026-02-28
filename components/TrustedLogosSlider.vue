@@ -1,17 +1,17 @@
 <template>
   <section 
     v-if="logos && logos.length > 0" 
-    class="trusted-logos-section bg-black py-12 md:py-16 lg:py-20 px-16"
+    class="trusted-logos-section bg-black py-8 px-4 md:py-12 md:px-8 lg:py-16 lg:px-16"
     role="region"
     aria-label="Partner organizations"
   >
     <div class="container mx-auto px-4">
       <!-- Header -->
-      <div class="text-center mb-[50px] md:mb-[50px]">
-        <h2 class="text-8xl font-semibold mb-[30px] first-letter: header-fade">
+      <div class="text-center mb-[50px]">
+        <h2 class="text-3xl md:text-6xl lg:text-6xl xl:text-8xl font-semibold mb-[15px] md:mb-[30px] first-letter: header-fade">
           มากกว่า 30 องค์กรชั้นนำ
         </h2>
-        <p class="text-xl text-white">
+        <p class="text-base md:text-xl text-white">
           ที่ได้รวมเติบโตไปกับเรา
         </p>
       </div>
@@ -46,7 +46,7 @@
                   loading="lazy"
                 />
                 <div class="logo-label mt-2 text-center">
-                  <p class="text-xs md:text-sm font-semibold text-gray-800 leading-tight">
+                  <p class="text-sm font-semibold text-gray-800 leading-tight">
                     {{ logo.nameEn }}
                   </p>
                   <p v-if="logo.nameTh" class="text-xs text-gray-600 leading-tight mt-0.5">
@@ -71,7 +71,7 @@
                   loading="lazy"
                 />
                 <div class="logo-label mt-2 text-center">
-                  <p class="text-xs md:text-sm font-semibold text-gray-800 leading-tight">
+                  <p class="text-sm font-semibold text-gray-800 leading-tight">
                     {{ logo.nameEn }}
                   </p>
                   <p v-if="logo.nameTh" class="text-xs text-gray-600 leading-tight mt-0.5">

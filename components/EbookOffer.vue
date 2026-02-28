@@ -9,10 +9,10 @@
     <!-- Background Image + dark overlay -->
 
     <!-- Content -->
-    <div class="relative z-10 max-w-5xl mx-auto px-8 md:px-14 py-14 md:py-20">
+    <div class="relative z-10 max-w-5xl mx-auto px-4 md:px-8 lg:px-14 py-10 md:py-16 lg:py-20">
 
       <!-- Heading: full-width centered on top -->
-      <div class="text-center mb-3 text-[70px] leading-[1.15]">
+      <div class="text-center mb-3 text-[clamp(2rem,6vw,70px)] leading-[1.15]">
         <p class=" text-white  ">
           {{ ebook.headingLine1 }}
         </p>
@@ -21,15 +21,15 @@
         </p>
       </div>
 
-      <!-- Bottom: 2 columns -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <!-- Bottom: 2 columns on md+, stacked on mobile -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
 
         <!-- Left: Book cover -->
         <div class="flex justify-center">
           <img
             :src="ebook.image"
             :alt="ebook.headingLine1 || 'Guidebook'"
-            class="w-[380px] h-auto drop-shadow-2xl ml-[1rem]"
+            class="w-[240px] sm:w-[300px] md:w-[380px] h-auto drop-shadow-2xl"
             loading="lazy"
           />
         </div>
@@ -43,7 +43,7 @@
             {{ ebook.subheading }}
           </h3>
 
-          <p class="text-sm md:text-base text-gray-300 leading-relaxed max-w-sm">
+          <p class="text-base text-gray-300 leading-relaxed max-w-sm">
             {{ ebook.description }}
           </p>
 

@@ -2,7 +2,7 @@
   <section 
     id="contact"
     v-if="contact" 
-    class="contact-block-section pb-20"
+    class="contact-block-section pb-10 md:pb-16 lg:pb-20"
     style="background-image: url('/images/bg/home-contact-bg.webp'); background-size: contain; background-position: top; background-repeat: no-repeat;"
     role="region"
     aria-label="Contact information"
@@ -11,10 +11,10 @@
       <div class="max-w-5xl mx-auto">
         <!-- Section Heading -->
         <div class=" text-start">
-          <h2 class="text-7xl font-semibold mb-2 header-fade" >
+          <h2 class="text-4xl md:text-5xl lg:text-7xl font-semibold mb-2 header-fade" >
             {{ contact.heading }}
           </h2>
-          <p class="text-base md:text-lg text-gray-300 whitespace-pre-line">
+          <p class="text-lg text-gray-300 whitespace-pre-line">
             {{ contact.description }}
           </p>
         </div>
@@ -22,7 +22,7 @@
         <!-- Single Column Layout -->
         <div class="space-y-6">
           <!-- Contact Form -->
-          <div class="max-w-xl bg-transparent rounded-2xl pt-8 md:pt-10">
+          <div class="max-w-xl bg-transparent rounded-2xl pt-10">
             <!-- Success Message -->
             <div 
               v-if="formState.success" 
@@ -44,7 +44,7 @@
             <form @submit.prevent="handleSubmit" class="space-y-2">
               <!-- Name -->
               <div>
-                <!-- <label for="name" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="name" class="block text-base text-inputLabel mb-2">
                   ชื่อ - นามสกุล <span class="text-red-400">*</span>
                 </label> -->
                 <input
@@ -65,7 +65,7 @@
 
               <!-- Organization -->
               <div>
-                <!-- <label for="organization" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="organization" class="block text-base text-inputLabel mb-2">
                   องค์กร
                 </label> -->
                 <input
@@ -85,7 +85,7 @@
 
               <!-- Position -->
               <div>
-                <!-- <label for="position" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="position" class="block text-base text-inputLabel mb-2">
                   ตำแหน่ง
                 </label> -->
                 <input
@@ -105,7 +105,7 @@
 
               <!-- Email -->
               <div>
-                <!-- <label for="email" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="email" class="block text-base text-inputLabel mb-2">
                   อีเมล <span class="text-red-400">*</span>
                 </label> -->
                 <input
@@ -126,7 +126,7 @@
 
               <!-- Phone -->
               <div>
-                <!-- <label for="phone" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="phone" class="block text-base text-inputLabel mb-2">
                   เบอร์ติดต่อ
                 </label> -->
                 <input
@@ -146,7 +146,7 @@
 
               <!-- Message -->
               <div>
-                <!-- <label for="message" class="block text-sm md:text-base text-inputLabel mb-2">
+                <!-- <label for="message" class="block text-base text-inputLabel mb-2">
                   ข้อความ <span class="text-red-400">*</span>
                 </label> -->
                 <textarea
@@ -226,8 +226,8 @@
 
             <!-- Address -->
             <div>
-              <p class="text-sm md:text-base text-gray-400 mb-3">แผนที่</p>
-              <div class="text-white space-y-1 text-base md:text-lg mb-6">
+              <p class="text-base text-gray-400 mb-3">แผนที่</p>
+              <div class="text-white space-y-1 text-lg mb-6">
                 <p class="font-semibold">{{ contact.address.company }}</p>
                 <p>{{ contact.address.building }}</p>
                 <p>{{ contact.address.floor }}</p>
@@ -236,7 +236,7 @@
               </div>
 
               <!-- Map Image/Embed -->
-              <div class="relative w-[75%] h-[300px] md:h-[400px] rounded-2xl overflow-hidden">
+              <div class="relative w-[75%] h-[400px] rounded-2xl overflow-hidden">
                 <iframe
                   v-if="contact.mapEmbedUrl"
                   :src="contact.mapEmbedUrl"

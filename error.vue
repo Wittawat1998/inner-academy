@@ -9,7 +9,7 @@
       </div>
 
       <!-- Error Title -->
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      <h1 class="text-5xl font-bold text-gray-900 mb-4">
         {{ errorTitle }}
       </h1>
 

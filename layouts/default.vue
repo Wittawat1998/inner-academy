@@ -4,7 +4,7 @@
     <TheHeader />
 
     <!-- Main Content -->
-    <main class="flex-1 max-w-[1440px] mx-auto w-full -mt-20">
+    <main class="flex-1 max-w-[1920px] mx-auto w-full -mt-20">
       <slot />
     </main>
 

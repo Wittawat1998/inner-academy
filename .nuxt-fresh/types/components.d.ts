@@ -22,7 +22,6 @@ interface _GlobalComponents {
   EbookOffer: typeof import("../../components/EbookOffer.vue")['default']
   HeroSection: typeof import("../../components/HeroSection.vue")['default']
   NextProgramPromo: typeof import("../../components/NextProgramPromo.vue")['default']
-  PageHeader: typeof import("../../components/PageHeader.vue")['default']
   PodcastBlock: typeof import("../../components/PodcastBlock.vue")['default']
   SocialIconsList: typeof import("../../components/SocialIconsList.vue")['default']
   TestimonialsCarousel: typeof import("../../components/TestimonialsCarousel.vue")['default']
@@ -61,7 +60,6 @@ interface _GlobalComponents {
   LazyEbookOffer: LazyComponent<typeof import("../../components/EbookOffer.vue")['default']>
   LazyHeroSection: LazyComponent<typeof import("../../components/HeroSection.vue")['default']>
   LazyNextProgramPromo: LazyComponent<typeof import("../../components/NextProgramPromo.vue")['default']>
-  LazyPageHeader: LazyComponent<typeof import("../../components/PageHeader.vue")['default']>
   LazyPodcastBlock: LazyComponent<typeof import("../../components/PodcastBlock.vue")['default']>
   LazySocialIconsList: LazyComponent<typeof import("../../components/SocialIconsList.vue")['default']>
   LazyTestimonialsCarousel: LazyComponent<typeof import("../../components/TestimonialsCarousel.vue")['default']>

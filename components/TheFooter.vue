@@ -1,19 +1,19 @@
 <template>
   <footer class="bg-black text-white py-6">
     <div class="max-w-[1920px] mx-auto px-4">
-      <div class="w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-        <!-- Left: Copyright -->
-        <div class="text-sm text-gray-400 order-3 md:order-1">
-          <p>{{ navigationData.copyright }}</p>
-        </div>
-
-        <!-- Center: Social Icons -->
+      <div class="w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
+        <!-- Center: Social Icons (top on mobile) -->
         <div class="order-1 md:order-2">
           <SocialIconsList :links="navigationData.socialLinks.map(s => ({ icon: s.icon, url: s.url }))" />
         </div>
 
+        <!-- Left: Copyright -->
+        <div class="text-sm text-gray-400 order-2 md:order-1 text-center md:text-left">
+          <p>{{ navigationData.copyright }}</p>
+        </div>
+
         <!-- Right: Policy Links -->
-        <div class="flex items-center gap-6 text-sm order-2 md:order-3">
+        <div class="flex items-center gap-4 md:gap-6 text-sm order-3 flex-wrap justify-center">
           <NuxtLink 
             to="/privacy" 
             class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded"

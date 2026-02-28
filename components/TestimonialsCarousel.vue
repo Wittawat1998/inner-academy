@@ -8,13 +8,13 @@
 
       <!-- Section Heading -->
       <h2
-        class="text-7xl font-semibold text-center mb-10 header-fade"
+        class="text-4xl md:text-5xl lg:text-7xl font-semibold text-center mb-10 header-fade"
       >
         ผลลัพธ์ผู้เรียน
       </h2>
 
       <!-- Carousel Wrapper -->
-      <div class="relative px-10 md:px-14">
+      <div class="relative px-14">
         <!-- Left Arrow -->
         <button
           @click="prev"
@@ -31,12 +31,11 @@
           ref="track"
           class="overflow-x-auto snap-x snap-mandatory hide-scrollbar"
         >
-          <div class="flex gap-4 md:gap-6" style="min-width: 100%;">
+          <div class="flex gap-6" style="min-width: 100%;">
             <div
               v-for="(t, i) in testimonials"
               :key="t.youtubeId"
-              class="snap-center flex-shrink-0 flex flex-col"
-              :style="`width: calc((100% - 2 * 24px) / 3); max-width: 360px`"
+              class="snap-center flex-shrink-0 flex flex-col w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[360px]"
             >
               <!-- Card -->
               <a
@@ -110,6 +109,8 @@ const next = () => {
   const cardWidth = (items[0] as HTMLElement).offsetWidth
   track.value.scrollBy({ left: cardWidth + 24, behavior: 'smooth' })
 }
+
+// Responsive card width handled via Tailwind classes directly on the element
 </script>
 
 <style scoped>

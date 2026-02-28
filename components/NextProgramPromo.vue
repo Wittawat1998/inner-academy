@@ -1,22 +1,22 @@
 <template>
   <section
     v-if="program"
-    class="next-program-section pt-5 pb-20"
+    class="next-program-section pt-5 pb-10 md:pb-16 lg:pb-20"
     style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;"
     role="region"
     aria-label="Upcoming program"
   >
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
-        <div class="flex flex-col md:flex-row gap-10 items-center justify-center">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-center justify-center">
         <!-- Left: Heading and subtitle -->
-        <div class="flex-1 flex flex-col justify-center items-start md:items-start mb-8 md:mb-0 pl-2 md:pl-8">
-          <h2 class="text-white font-semibold text-3xl md:text-4xl lg:text-5xl mb-2 tracking-tight leading-tight whitespace-nowrap">NEXT PROGRAM</h2>
+        <div class="flex-1 flex flex-col justify-center items-center md:items-start mb-0 md:pl-8 text-center md:text-left">
+          <h2 class="text-white font-semibold text-3xl md:text-4xl lg:text-5xl mb-2 tracking-tight leading-tight">NEXT PROGRAM</h2>
           <div class="text-base md:text-lg text-gray-200 mb-2">ตารางการอบรม</div>
           <div class="w-full h-0.5 mb-2 next-program-underline"></div>
         </div>
         <!-- Right: Program vertical card (mock) -->
-        <div class="flex-1 w-full max-w-lg">
+        <div class="flex-1 w-full max-w-xs md:max-w-lg">
           <img src="/images/next-program/next-program.webp" alt="Next Program Card" class="w-full rounded-3xl shadow-2xl" />
         </div>
         </div>

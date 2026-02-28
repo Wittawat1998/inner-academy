@@ -2,16 +2,16 @@
   <main v-if="classData" class="class-detail-page bg-gradient-header min-h-screen">
 
     <!-- ─── Hero ────────────────────────────────────────────────────── -->
-    <section class="relative pt-24 overflow-hidden" style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;">
-      <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
-        <div class="max-w-[1024px] flex flex-col lg:flex-row items-center gap-12">
+    <section class="relative pt-20 md:pt-24 overflow-hidden" style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;">
+      <div class="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-16">
+        <div class="max-w-[1024px] flex flex-col lg:flex-row items-center gap-8 md:gap-12">
 
           <!-- Left: title, description, instructors -->
           <div class="flex-1 min-w-0">
-            <h1 class="text-6xl font-semibold leading-[1.1] header-fade mb-4">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] header-fade mb-4">
               {{ classData.title }}
             </h1>
-            <p class="text-4xl text-white mb-10 leading-relaxed">
+            <p class="text-xl md:text-2xl lg:text-4xl text-white mb-6 md:mb-10 leading-relaxed">
               {{ classData.shortDescription || classData.description.split('\n')[0] }}
             </p>
 
@@ -48,7 +48,7 @@
     </section>
 
     <!-- ─── Details ────────────────────────────────────────────────── -->
-    <section class="py-12 md:py-16">
+    <section class="py-16">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
         <div class="max-w-[1024px] flex flex-col lg:flex-row gap-10">
 
@@ -127,7 +127,7 @@
             <div
               v-for="(img, i) in classData.gallery"
               :key="i"
-              class="snap-center flex-shrink-0 w-[320px] md:w-[420px] rounded-xl overflow-hidden"
+              class="snap-center flex-shrink-0 w-[420px] rounded-xl overflow-hidden"
             >
               <img :src="img" :alt="`Gallery ${i + 1}`" class="w-full h-56 object-cover" />
             </div>
@@ -148,19 +148,19 @@
     </section>
 
     <!-- ─── CTA Buttons ──────────────────────────────────────────── -->
-    <section class="py-10 md:py-14">
+    <section class="py-14">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
         <div class="flex flex-col gap-4 max-w-xl mx-auto">
           <a
             v-if="classData.ctaDocumentUrl"
             :href="classData.ctaDocumentUrl"
-            class="block w-full text-center text-4xl font-semibold py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
+            class="block w-full text-center text-xl md:text-3xl lg:text-4xl font-semibold py-4 md:py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
           >
             ดาวน์โหลดเอกสาร
           </a>
           <NuxtLink
             :to="classData.ctaNextRoundUrl || '/contact'"
-            class="block w-full text-center text-4xl font-semibold py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
+            class="block w-full text-center text-xl md:text-3xl lg:text-4xl font-semibold py-4 md:py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
           >
             คลาสรอบถัดไป
           </NuxtLink>

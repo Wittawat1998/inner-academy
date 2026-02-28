@@ -11,7 +11,7 @@
       <div class="max-w-5xl mx-auto">
         <!-- Section Heading -->
         <div class=" section-header">
-          <h2 class="text-7xl font-semibold pb-8 header-fade">
+          <h2 class="text-4xl md:text-5xl lg:text-7xl font-semibold pb-8 header-fade">
             หลักสูตร
           </h2>
         </div>
@@ -24,11 +24,11 @@
           >
           <NuxtLink 
             :to="`/courses/${course.slug}`"
-            class="course-link flex flex-col md:flex-row md:items-center gap-4 md:gap-8 py-6 px-[80px]  group"
+            class="course-link flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 py-4 sm:py-6 px-4 md:px-10 lg:px-[80px] group"
           >
             <!-- Left: Title + Description -->
             <div class="flex-1 min-w-0">
-              <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-gray-900 transition-colors">
+              <h3 class="text-base sm:text-xl font-semibold text-white mb-1 sm:mb-2 group-hover:text-gray-900 transition-colors">
                 {{ course.title }}
               </h3>
               <p class="text-sm text-gray-400 group-hover:text-gray-700 transition-colors">
@@ -36,8 +36,8 @@
               </p>
             </div>
 
-            <!-- Center: Instructors -->
-            <div v-if="course.instructors && course.instructors.length > 0" class="flex items-center gap-3 flex-shrink-0">
+            <!-- Center: Instructors (hidden on mobile) -->
+            <div v-if="course.instructors && course.instructors.length > 0" class="hidden md:flex items-center gap-3 flex-shrink-0">
               <span class="text-sm text-gray-400 group-hover:text-gray-700 transition-colors whitespace-nowrap">ถ่ายทอดโดย</span>
               <div class="flex gap-2">
                 <NuxtImg
@@ -45,7 +45,7 @@
                   :key="idx"
                   :src="instructor.image"
                   :alt="instructor.name"
-                  class="w-16 h-16 rounded-full border-3 border-white object-cover shadow-lg"
+                  class="w-12 h-12 md:w-16 md:h-16 rounded-full border-3 border-white object-cover shadow-lg"
                   loading="lazy"
                   format="webp"
                 />
@@ -58,7 +58,7 @@
                 รายละเอียด
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
-                  class="h-5 w-5 md:h-6 md:w-6 transform group-hover:translate-x-1 transition-transform duration-200" 
+                  class="h-6 w-6 transform group-hover:translate-x-1 transition-transform duration-200" 
                   fill="none" 
                   viewBox="0 0 24 24" 
                   stroke="currentColor"
@@ -101,10 +101,10 @@ const courses = computed(() => classesData.value?.classes ?? [])
 <style scoped>
 
 .section-header {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0;
+  margin-right: 0;
   border-bottom: 2px solid;
   border-image: linear-gradient(90deg, 
     rgba(156, 163, 175, 0) 0%,

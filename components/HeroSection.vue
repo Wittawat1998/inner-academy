@@ -1,21 +1,21 @@
 <template>
   <section class="hero-section relative overflow-hidden">
     <div class="">
-      <div class="w-full h-[1000px] relative ">
+      <div class="w-full h-[360px] sm:h-[450px] md:h-[540px] lg:h-[680px] xl:h-[800px] relative">
         <!-- Hero Banner -->
-        <img :src="hero.bgHero" alt="Inner Power Academy" class=" w-full" />
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
-          <h2 class="hero-subtitle text-white text-xl md:text-3xl lg:text-4xl font-medium mb-3 md:mb-4">
+        <img :src="hero.bgHero" alt="Inner Power Academy" class="w-full h-full object-contain object-top" />
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center px-4 w-full">
+          <h2 class="hero-subtitle text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium mb-2 md:mb-4 text-center">
             {{ hero.subtitle }}
           </h2>
 
           <!-- Description -->
-          <p class="hero-description text-white text-sm md:text-base lg:text-lg max-w-3xl mx-auto mb-4">
+          <p class="hero-description text-white text-sm md:text-base max-w-3xl mx-auto mb-2 md:mb-4 text-center">
             {{ hero.description }}
           </p>
 
           <!-- Certification Badge -->
-          <img :src="hero.badgeIcon" alt="Certified Badge" class="w-18 h-18 md:w-22 md:h-22 lg:w-26 lg:h-26" />
+          <img :src="hero.badgeIcon" alt="Certified Badge" class="w-auto h-16 md:h-22  lg:h-28 xl:h-32" />
 
         </div>
       </div>
@@ -27,7 +27,7 @@
 /**
  * HeroSection Component
  * Feature: 002-home-page - User Story 1
- * 
+ *
  * Hero section with designed banner
  * Theme: Dark gradient background with gold accents
  * 

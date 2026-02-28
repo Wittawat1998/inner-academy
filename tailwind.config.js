@@ -10,6 +10,8 @@ export default {
   ],
   safelist: [
     'text-goldText',
+    'w-[calc(50%-12px)]',
+    'w-[calc(33.333%-16px)]',
   ],
   theme: {
     extend: {
@@ -136,6 +138,11 @@ export default {
         
         // Heading font: Montserrat-first Bold (EN), Prompt covers Thai glyphs
         heading: ['Montserrat', 'Prompt', 'sans-serif'],
+      },
+
+      // Max screen width cap: 1920px
+      screens: {
+        '3xl': '1920px',
       },
     },
   },

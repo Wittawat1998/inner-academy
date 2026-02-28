@@ -2,7 +2,7 @@
   <section
     id="knowledge"
     v-if="podcast"
-    class="relative overflow-hidden pt-30"
+    class="relative overflow-hidden pt-10 md:pt-20 lg:pt-30"
     style="background-image: url('/images/bg/home-podcast-bg.webp'); background-size: contain; background-position: center; background-repeat: no-repeat;"
     role="region"
     aria-label="Podcast highlight"
@@ -11,8 +11,8 @@
       <div class="xl:max-w-5xl mx-auto relative">
 
         <!-- Content: Bottom Left in container -->
-        <div class="relative z-10 flex flex-col items-start justify-end min-h-[800px] pb-24">
-          <div class=" text-[40px] font-semibold text-white leading-[1.15]">
+        <div class="relative z-10 flex flex-col items-start justify-end min-h-[400px] md:min-h-[600px] lg:min-h-[800px] pb-12 md:pb-20 lg:pb-24">
+          <div class="text-[clamp(1.5rem,4vw,2.5rem)] font-semibold text-white leading-[1.15]">
             <h2 class=" mb-2 ">
               {{ podcast.titleLine1 }}
             </h2>
@@ -20,7 +20,7 @@
               {{ podcast.titleLine2 }}
             </h2>
           </div>
-          <p class="text-md font-light text-white mb-8 leading-[1.4] max-w-[600px]">
+          <p class="text-sm md:text-base font-light text-white mb-6 md:mb-8 leading-[1.4] max-w-[90%] md:max-w-[600px]">
             {{ podcast.description }}
           </p>
           <a

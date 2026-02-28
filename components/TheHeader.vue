@@ -5,7 +5,7 @@
     >
     <!-- backdrop-blur-sm -->
     <!-- :class="isScrolled ? 'shadow-lg' : ''" -->
-    <div v-if="navigationData" class="max-w-[1920px] mx-auto px-4 md:px-6 lg:px-8">
+    <div v-if="navigationData" class="max-w-[1920px] mx-auto px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Logo (Left) -->
         <NuxtLink 

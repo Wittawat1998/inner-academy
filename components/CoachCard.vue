@@ -9,7 +9,7 @@
           class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
           loading="lazy"
           format="webp"
-          sizes="xs:160px sm:200px md:240px lg:280px"
+          sizes="240px"
         />
       </div>
     </NuxtLink>
