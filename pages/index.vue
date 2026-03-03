@@ -1,52 +1,34 @@
 <template>
   <div class="homepage">
     <!-- Section 1: Hero banner -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <HeroSection />
-    </div>
+    <HeroSection />
 
     <!-- Section 2: Trusted Logos horizontal slider (full width) -->
     <TrustedLogosSlider />
 
     <!-- Section 3: Courses row-based list -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <CoursesList />
-    </div>
+    <CoursesList />
 
     <!-- Section 4: Next Program promotional banner -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <NextProgramPromo v-if="nextProgram" :program="nextProgram" />
-    </div>
+    <NextProgramPromo v-if="nextProgram" :program="nextProgram" />
 
     <!-- Section 5: Coaches grid (ทีมโค้ช) -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <CoachesGrid />
-    </div>
+    <CoachesGrid />
 
     <!-- Section 6: Testimonials 3-item carousel -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <TestimonialsCarousel />
-    </div>
+    <TestimonialsCarousel />
 
     <!-- Section 7: Dual CTA with two gold pill buttons -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <DualCTA />
-    </div>
+    <DualCTA />
 
     <!-- Section 8: E-book offer with split layout -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <EbookOffer />
-    </div>
+    <EbookOffer />
 
     <!-- Section 9: Podcast/Knowledge block (optional) -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <PodcastBlock />
-    </div>
+    <PodcastBlock />
 
     <!-- Section 10: Contact block with form and info -->
-    <div class="max-w-[1280px] mx-auto w-full">
-      <ContactBlock />
-    </div>
+    <ContactBlock />
   </div>
 </template>
 

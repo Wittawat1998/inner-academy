@@ -3,12 +3,12 @@
     id="contact"
     v-if="contact" 
     class="contact-block-section pb-10 md:pb-16 lg:pb-20"
-    style="background-image: url('/images/bg/home-contact-bg.webp'); background-size: contain; background-position: top; background-repeat: no-repeat;"
+    style="background-image: url('/images/bg/home-contact-bg.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;"
     role="region"
     aria-label="Contact information"
   >
     <div class="container mx-auto px-4">
-      <div class="max-w-5xl mx-auto">
+      <div class="max-w-[1280px] mx-auto">
         <!-- Section Heading -->
         <div class=" text-start">
           <h2 class="text-4xl md:text-5xl lg:text-7xl font-semibold mb-2 header-fade" >
@@ -41,23 +41,28 @@
               <p class="text-sm mt-1">{{ formState.error }}</p>
             </div>
 
-            <form @submit.prevent="handleSubmit" class="space-y-2">
+            <form @submit.prevent="handleSubmit" class="space-y-3">
               <!-- Name -->
               <div>
-                <!-- <label for="name" class="block text-base text-inputLabel mb-2">
-                  ชื่อ - นามสกุล <span class="text-red-400">*</span>
-                </label> -->
-                <input
-                  id="name"
-                  v-model="formData.name"
-                  type="text"
-                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.name && errors.name ? 'border-red-500' : 'border-inputBorder'"
-                  placeholder="ระบุชื่อ-นามสกุล"
-                  required
-                  @blur="handleBlur('name')"
-                  @input="clearMessages"
-                />
+                <div class="relative">
+                  <input
+                    id="name"
+                    v-model="formData.name"
+                    type="text"
+                    class="peer w-full px-4 pt-6 pb-2 bg-inputBg border rounded-lg text-inputText placeholder-transparent focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                    :class="formState.touched.name && errors.name ? 'border-red-500' : 'border-inputBorder'"
+                    placeholder="ระบุชื่อ-นามสกุล"
+                    required
+                    @blur="handleBlur('name')"
+                    @input="clearMessages"
+                  />
+                  <label
+                    for="name"
+                    class="absolute left-4 top-1.5 text-xs text-inputLabel transition-all duration-200
+                           peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base
+                           peer-focus:top-1.5 peer-focus:translate-y-0 peer-focus:text-xs"
+                  >ชื่อ-นามสกุล <span class="text-red-400">*</span></label>
+                </div>
                 <p v-if="formState.touched.name && errors.name" class="mt-1 text-sm text-red-400">
                   {{ errors.name }}
                 </p>
@@ -65,19 +70,24 @@
 
               <!-- Organization -->
               <div>
-                <!-- <label for="organization" class="block text-base text-inputLabel mb-2">
-                  องค์กร
-                </label> -->
-                <input
-                  id="organization"
-                  v-model="formData.organization"
-                  type="text"
-                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.organization && errors.organization ? 'border-red-500' : 'border-inputBorder'"
-                  placeholder="บริษัท ออฟฟิศเดิน จำกัด"
-                  @blur="handleBlur('organization')"
-                  @input="clearMessages"
-                />
+                <div class="relative">
+                  <input
+                    id="organization"
+                    v-model="formData.organization"
+                    type="text"
+                    class="peer w-full px-4 pt-6 pb-2 bg-inputBg border rounded-lg text-inputText placeholder-transparent focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                    :class="formState.touched.organization && errors.organization ? 'border-red-500' : 'border-inputBorder'"
+                    placeholder="บริษัท / องค์กร"
+                    @blur="handleBlur('organization')"
+                    @input="clearMessages"
+                  />
+                  <label
+                    for="organization"
+                    class="absolute left-4 top-1.5 text-xs text-inputLabel transition-all duration-200
+                           peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base
+                           peer-focus:top-1.5 peer-focus:translate-y-0 peer-focus:text-xs"
+                  >บริษัท / องค์กร</label>
+                </div>
                 <p v-if="formState.touched.organization && errors.organization" class="mt-1 text-sm text-red-400">
                   {{ errors.organization }}
                 </p>
@@ -85,19 +95,24 @@
 
               <!-- Position -->
               <div>
-                <!-- <label for="position" class="block text-base text-inputLabel mb-2">
-                  ตำแหน่ง
-                </label> -->
-                <input
-                  id="position"
-                  v-model="formData.position"
-                  type="text"
-                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.position && errors.position ? 'border-red-500' : 'border-inputBorder'"
-                  placeholder="ตำแหน่ง"
-                  @blur="handleBlur('position')"
-                  @input="clearMessages"
-                />
+                <div class="relative">
+                  <input
+                    id="position"
+                    v-model="formData.position"
+                    type="text"
+                    class="peer w-full px-4 pt-6 pb-2 bg-inputBg border rounded-lg text-inputText placeholder-transparent focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                    :class="formState.touched.position && errors.position ? 'border-red-500' : 'border-inputBorder'"
+                    placeholder="ตำแหน่ง"
+                    @blur="handleBlur('position')"
+                    @input="clearMessages"
+                  />
+                  <label
+                    for="position"
+                    class="absolute left-4 top-1.5 text-xs text-inputLabel transition-all duration-200
+                           peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base
+                           peer-focus:top-1.5 peer-focus:translate-y-0 peer-focus:text-xs"
+                  >ตำแหน่ง</label>
+                </div>
                 <p v-if="formState.touched.position && errors.position" class="mt-1 text-sm text-red-400">
                   {{ errors.position }}
                 </p>
@@ -105,20 +120,25 @@
 
               <!-- Email -->
               <div>
-                <!-- <label for="email" class="block text-base text-inputLabel mb-2">
-                  อีเมล <span class="text-red-400">*</span>
-                </label> -->
-                <input
-                  id="email"
-                  v-model="formData.email"
-                  type="email"
-                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.email && errors.email ? 'border-red-500' : 'border-inputBorder'"
-                  placeholder="example@email.com"
-                  required
-                  @blur="handleBlur('email')"
-                  @input="clearMessages"
-                />
+                <div class="relative">
+                  <input
+                    id="email"
+                    v-model="formData.email"
+                    type="email"
+                    class="peer w-full px-4 pt-6 pb-2 bg-inputBg border rounded-lg text-inputText placeholder-transparent focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                    :class="formState.touched.email && errors.email ? 'border-red-500' : 'border-inputBorder'"
+                    placeholder="อีเมล"
+                    required
+                    @blur="handleBlur('email')"
+                    @input="clearMessages"
+                  />
+                  <label
+                    for="email"
+                    class="absolute left-4 top-1.5 text-xs text-inputLabel transition-all duration-200
+                           peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base
+                           peer-focus:top-1.5 peer-focus:translate-y-0 peer-focus:text-xs"
+                  >อีเมล <span class="text-red-400">*</span></label>
+                </div>
                 <p v-if="formState.touched.email && errors.email" class="mt-1 text-sm text-red-400">
                   {{ errors.email }}
                 </p>
@@ -126,19 +146,24 @@
 
               <!-- Phone -->
               <div>
-                <!-- <label for="phone" class="block text-base text-inputLabel mb-2">
-                  เบอร์ติดต่อ
-                </label> -->
-                <input
-                  id="phone"
-                  v-model="formData.phone"
-                  type="tel"
-                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
-                  :class="formState.touched.phone && errors.phone ? 'border-red-500' : 'border-inputBorder'"
-                  placeholder="080-xxx-xxxx"
-                  @blur="handleBlur('phone')"
-                  @input="clearMessages"
-                />
+                <div class="relative">
+                  <input
+                    id="phone"
+                    v-model="formData.phone"
+                    type="tel"
+                    class="peer w-full px-4 pt-6 pb-2 bg-inputBg border rounded-lg text-inputText placeholder-transparent focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent"
+                    :class="formState.touched.phone && errors.phone ? 'border-red-500' : 'border-inputBorder'"
+                    placeholder="เบอร์ติดต่อ"
+                    @blur="handleBlur('phone')"
+                    @input="clearMessages"
+                  />
+                  <label
+                    for="phone"
+                    class="absolute left-4 top-1.5 text-xs text-inputLabel transition-all duration-200
+                           peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base
+                           peer-focus:top-1.5 peer-focus:translate-y-0 peer-focus:text-xs"
+                  >เบอร์ติดต่อ</label>
+                </div>
                 <p v-if="formState.touched.phone && errors.phone" class="mt-1 text-sm text-red-400">
                   {{ errors.phone }}
                 </p>
@@ -146,20 +171,25 @@
 
               <!-- Message -->
               <div>
-                <!-- <label for="message" class="block text-base text-inputLabel mb-2">
-                  ข้อความ <span class="text-red-400">*</span>
-                </label> -->
-                <textarea
-                  id="message"
-                  v-model="formData.message"
-                  rows="5"
-                  class="w-full px-4 py-3 bg-inputBg border rounded-lg text-inputText placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent resize-none"
-                  :class="formState.touched.message && errors.message ? 'border-red-500' : 'border-inputBorder'"
-                  placeholder="พิมพ์ข้อความของคุณที่นี่..."
-                  required
-                  @blur="handleBlur('message')"
-                  @input="clearMessages"
-                ></textarea>
+                <div class="relative">
+                  <textarea
+                    id="message"
+                    v-model="formData.message"
+                    rows="5"
+                    class="peer w-full px-4 pt-6 pb-2 bg-inputBg border rounded-lg text-inputText placeholder-transparent focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent resize-none"
+                    :class="formState.touched.message && errors.message ? 'border-red-500' : 'border-inputBorder'"
+                    placeholder="ข้อความ"
+                    required
+                    @blur="handleBlur('message')"
+                    @input="clearMessages"
+                  ></textarea>
+                  <label
+                    for="message"
+                    class="absolute left-4 top-1.5 text-xs text-inputLabel transition-all duration-200
+                           peer-placeholder-shown:top-3 peer-placeholder-shown:text-base
+                           peer-focus:top-1.5 peer-focus:text-xs"
+                  >ข้อความ <span class="text-red-400">*</span></label>
+                </div>
                 <p v-if="formState.touched.message && errors.message" class="mt-1 text-sm text-red-400">
                   {{ errors.message }}
                 </p>

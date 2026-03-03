@@ -1,18 +1,18 @@
 <template>
   <section
     v-if="ebook"
-    class="relative overflow-hidden"
-    style="min-height: 520px; background-image: url('/images/bg/home-ebook-bg.webp'); background-size: cover; background-position: center;"
+    class="relative overflow-hidden flex items-center justify-center"
+    style="min-height: min(56.25vw, 1080px); background-image: url('/images/bg/home-ebook-bg.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;"
     role="region"
     aria-label="Free e-book offer"
   >
     <!-- Background Image + dark overlay -->
 
     <!-- Content -->
-    <div class="relative z-10 max-w-5xl mx-auto px-4 md:px-8 lg:px-14 py-10 md:py-16 lg:py-20">
+    <div class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8 lg:px-14 py-10 md:py-16 lg:py-20">
 
       <!-- Heading: full-width centered on top -->
-      <div class="text-center mb-3 text-[clamp(2rem,6vw,70px)] leading-[1.15]">
+      <div class="text-center mb-3 text-[clamp(6rem,6vw,70px)] font-semibold leading-[1.15]">
         <p class=" text-white  ">
           {{ ebook.headingLine1 }}
         </p>
@@ -29,7 +29,7 @@
           <img
             :src="ebook.image"
             :alt="ebook.headingLine1 || 'Guidebook'"
-            class="w-[240px] sm:w-[300px] md:w-[380px] h-auto drop-shadow-2xl"
+            class="w-[240px] sm:w-[300px] md:w-[400px] h-auto drop-shadow-2xl"
             loading="lazy"
           />
         </div>
@@ -49,7 +49,7 @@
 
           <a
             :href="ebook.ctaUrl"
-            class="inline-flex items-center gap-3 px-8 py-4 text-black font-semibold text-base rounded-full transition-all duration-200 shadow-lg hover:shadow-xl mt-2 bg-ctaGold"
+            class="inline-flex items-center gap-3 px-8 py-4 text-black font-semibold text-2xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl mt-2 bg-ctaGold"
           >
             <span>⬇</span>
             <span>{{ ebook.ctaText }}</span>

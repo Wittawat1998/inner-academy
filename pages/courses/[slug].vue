@@ -1,8 +1,8 @@
 <template>
-  <main v-if="classData" class="class-detail-page bg-gradient-header min-h-screen">
+  <main v-if="classData" class="class-detail-page bg-gradient-header min-h-screen" style="background-image: url('/images/bg/hero-bg.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;">
 
     <!-- ─── Hero ────────────────────────────────────────────────────── -->
-    <section class="relative pt-20 md:pt-24 overflow-hidden" style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;">
+    <section class="relative pt-20 md:pt-24 overflow-hidden">
       <div class="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-16">
         <div class="max-w-[1024px] flex flex-col lg:flex-row items-center gap-8 md:gap-12">
 
@@ -27,7 +27,7 @@
                   <img
                     :src="ins.image"
                     :alt="ins.name"
-                    class="w-20 h-20 rounded-full object-cover border-2 border-brandGold bg-[#1a1a2e]"
+                    class="w-20 h-20 rounded-full object-cover border-0 bg-[#1a1a2e]"
                   />
                 </div>
               </div>
@@ -54,20 +54,20 @@
 
           <!-- Left: metadata card -->
           <aside class="lg:w-72 flex-shrink-0">
-            <div class="sticky top-24 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-7 space-y-6">
+            <div class="sticky top-24 rounded-2xl border border-[#4a5e77] bg-[#121d33] p-7 space-y-6">
 
               <div v-if="classData.category">
-                <p class="text-xs text-textSecondary tracking-widest uppercase mb-1">หมวดหมู่</p>
+                <p class="text-xs text-textSecondary tracking-widest uppercase mb-1">{{ classLabels.category }}</p>
                 <p class="text-lg font-semibold text-textPrimary">{{ classData.category }}</p>
               </div>
 
               <div v-if="classData.duration">
-                <p class="text-xs text-textSecondary tracking-widest uppercase mb-1">ระยะเวลา</p>
+                <p class="text-xs text-textSecondary tracking-widest uppercase mb-1">{{ classLabels.duration }}</p>
                 <p class="text-2xl font-bold text-textPrimary">{{ classData.duration }}</p>
               </div>
 
               <div v-if="classData.targetAudience?.length">
-                <p class="text-xs text-textSecondary tracking-widest uppercase mb-2">เหมาะกับ</p>
+                <p class="text-xs text-textSecondary tracking-widest uppercase mb-2">{{ classLabels.audience }}</p>
                 <ul class="space-y-1">
                   <li
                     v-for="(a, i) in classData.targetAudience"
@@ -81,15 +81,15 @@
               </div>
 
               <div v-if="classData.price">
-                <p class="text-xs text-textSecondary tracking-widest uppercase mb-1">ราคา</p>
+                <p class="text-xs text-textSecondary tracking-widest uppercase mb-1">{{ classLabels.price }}</p>
                 <p v-if="classData.originalPrice" class="text-sm line-through text-textSecondary">
                   {{ classData.originalPrice.toLocaleString() }} บาท
                 </p>
                 <p class="text-3xl font-extrabold text-goldText">
                   {{ classData.price.toLocaleString() }} <span class="text-lg font-normal">บาท</span>
                 </p>
-                <p v-if="classData.priceNote" class="text-xs text-goldText mt-1">
-                  ({{ classData.priceNote }})
+                <p class="text-xs text-goldText mt-1">
+                  {{ classData.priceNote || classLabels.priceRemark }}
                 </p>
               </div>
 
@@ -110,20 +110,22 @@
     <!-- ─── Gallery ────────────────────────────────────────────────── -->
     <section v-if="classData.gallery?.length" class="py-8">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
-        <div class="relative">
+        <div class="relative px-14">
           <!-- Left arrow -->
           <button
             @click="scrollGallery(-1)"
-            class="absolute left-0 top-0 z-10 w-16 h-full flex items-center justify-start pl-2 bg-gradient-to-r from-black/80 to-transparent text-white transition"
+            :disabled="!galleryCanScrollLeft"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 flex items-center justify-center transition-all duration-300"
+            :class="galleryCanScrollLeft ? 'text-white hover:text-yellow-300' : 'text-white/25 cursor-default'"
             aria-label="Previous"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
           <!-- Scroll track -->
-          <div ref="galleryRef" class="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory hide-scrollbar">
+          <div ref="galleryRef" class="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory hide-scrollbar" @scroll="updateGalleryScroll">
             <div
               v-for="(img, i) in classData.gallery"
               :key="i"
@@ -136,10 +138,12 @@
           <!-- Right arrow -->
           <button
             @click="scrollGallery(1)"
-            class="absolute right-0 top-0 z-10 w-16 h-full flex items-center justify-end pr-2 bg-gradient-to-l from-black/80 to-transparent text-white transition"
+            :disabled="!galleryCanScrollRight"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 flex items-center justify-center transition-all duration-300"
+            :class="galleryCanScrollRight ? 'text-white hover:text-yellow-300' : 'text-white/25 cursor-default'"
             aria-label="Next"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </button>
@@ -156,13 +160,13 @@
             :href="classData.ctaDocumentUrl"
             class="block w-full text-center text-xl md:text-3xl lg:text-4xl font-semibold py-4 md:py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
           >
-            ดาวน์โหลดเอกสาร
+            {{ classLabels.downloads }}
           </a>
           <NuxtLink
             :to="classData.ctaNextRoundUrl || '/contact'"
             class="block w-full text-center text-xl md:text-3xl lg:text-4xl font-semibold py-4 md:py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
           >
-            คลาสรอบถัดไป
+            {{ classLabels.nextClass }}
           </NuxtLink>
         </div>
       </div>
@@ -174,6 +178,7 @@
 <script setup lang="ts">
 import type { ClassesData } from '~/types/classes'
 import classesDataRaw from '~/data/classes.json'
+import classLabels from '~/data/json/class.json'
 
 const route = useRoute()
 const id = Number(route.params.slug)
@@ -188,6 +193,15 @@ if (!classData) {
 }
 
 const galleryRef = ref<HTMLElement | null>(null)
+const galleryCanScrollLeft = ref(false)
+const galleryCanScrollRight = ref(true)
+
+function updateGalleryScroll() {
+  const el = galleryRef.value
+  if (!el) return
+  galleryCanScrollLeft.value = el.scrollLeft > 1
+  galleryCanScrollRight.value = el.scrollLeft + el.clientWidth < el.scrollWidth - 1
+}
 
 function scrollGallery(direction: 1 | -1) {
   const el = galleryRef.value
@@ -195,6 +209,10 @@ function scrollGallery(direction: 1 | -1) {
   const itemWidth = el.querySelector('div')?.offsetWidth ?? 340
   el.scrollBy({ left: direction * (itemWidth + 16), behavior: 'smooth' })
 }
+
+onMounted(() => {
+  updateGalleryScroll()
+})
 
 const descriptionParagraphs = computed(() =>
   (classData.description || '').split('\n').filter(Boolean)

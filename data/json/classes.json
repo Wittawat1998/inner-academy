@@ -1,0 +1,336 @@
+{
+    "classes": [
+        {
+            "id": "SC",
+            "order": 1,
+            "nameEn": "Self-Transform to Team Collaboration",
+            "nameTh": "พัฒนาการทำงานร่วมกันเป็นทีม",
+            "coachIds": [
+                "LK",
+                "M"
+            ],
+            "category": "selfDevelopment",
+            "duration": "8h",
+            "logo": "",
+            "audience": [],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Self-Transform to Team Collaboration.pdf"
+            }
+        },
+        {
+            "id": "TD",
+            "order": 2,
+            "nameEn": "Transform Deep Belief – Unlock Your Potential",
+            "nameTh": "ปลดล็อคศักยภาพจากภายในเพื่อประสิทธิภาพในการทำงาน",
+            "coachIds": [
+                "KT",
+                "NF"
+            ],
+            "category": "selfDevelopment",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "เจ้าของกิจการ",
+                "พนักงานองค์กร",
+                "ทุกคนที่ต้องการปลดล็อกความเชื่อที่ขัดขวางศักยภาพในตัวเอง"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Transform Deep Belief.pdf"
+            }
+        },
+        {
+            "id": "GM",
+            "order": 3,
+            "nameEn": "Goal Setting for Team Alignment",
+            "nameTh": "ตั้งเป้าหมายชีวิตสอดคล้องกับองค์กร",
+            "coachIds": [
+                "KT",
+                "NU"
+            ],
+            "category": "selfDevelopment",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "เจ้าของกิจการ",
+                "ผู้บริหาร",
+                "หัวหน้างาน",
+                "พนักงานทัวไป",
+                "ทุกคนที่ต้องการค้นหาเป้าหมายที่แท้จริงของชีวิต"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Goal Setting for Team Alignment.pdf"
+            }
+        },
+        {
+            "id": "BH",
+            "order": 4,
+            "nameEn": "Brain Hacker: Fundamental of Analytical Thinking & System Thinking",
+            "nameTh": "พัฒนาทักษะการคิดอย่างเป็นระบบ จัดการงานได้อย่างมีประสิทธิภาพ",
+            "coachIds": [
+                "KD"
+            ],
+            "category": "selfDevelopment",
+            "duration": "4h",
+            "logo": "",
+            "audience": [
+                "พนักงานองค์กร",
+                "หัวหน้างาน",
+                "HR",
+                "ทุกคนที่ต้องการพัฒนาทักษะการคิดเพื่อทำงานอย่างมีประสิทธิภาพ"
+            ],
+            "price": "3900",
+            "priceFull": "9900",
+            "currency": "บาท",
+            "prices": [
+                {
+                    "enrollmentType": "onSite",
+                    "price": "3900",
+                    "priceFull": "9900",
+                    "currency": "บาท"
+                },
+                {
+                    "enrollmentType": "online",
+                    "price": "2900",
+                    "priceFull": "8900",
+                    "currency": "บาท"
+                }
+            ],
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Brain Hacker.pdf"
+            }
+        },
+        {
+            "id": "CRT",
+            "order": 5,
+            "nameEn": "Critical Thinking",
+            "nameTh": "พัฒนากระบวนการคิด ประเมินข้อมูลอย่างรอบด้าน",
+            "coachIds": [
+                "KD"
+            ],
+            "category": "selfDevelopment",
+            "duration": "8h",
+            "logo": "",
+            "audience": [],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/Critical Thinking.pdf"
+            }
+        },
+        {
+            "id": "EM",
+            "order": 6,
+            "nameEn": "Emotional Mastery",
+            "nameTh": "บริหารอารมณ์และการรับมือกับสถานการณ์ต่าง ๆ อย่างมืออาชีพ",
+            "coachIds": [
+                "NF",
+                "KT"
+            ],
+            "category": "communication",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "พนักงานองค์กร",
+                "หัวหน้างาน",
+                "HR",
+                "ทุกคนที่ต้องการพัฒนาทักษะการบริหารจัดการอารมณ์เพื่อทำงานอย่างมีประสิทธิภาพ"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Emotional Mastery.pdf"
+            }
+        },
+        {
+            "id": "LI",
+            "order": 7,
+            "nameEn": "Listening Intelligence",
+            "nameTh": "ฟังให้ลึกซึ้งถึงความต้องการ และเจตนาของคู่สนทนาเพื่อความเข้าใจในองค์กร",
+            "coachIds": [
+                "LK",
+                "M"
+            ],
+            "category": "communication",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "เจ้าของกิจการ",
+                "ผู้บริหาร",
+                "หัวหน้างาน",
+                "พนักงานทั่วไป",
+                "ทุกคนที่ต้องการเสริมสร้างทักษะการฟังเพื่อการทำงาน"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Listening Intelligence.pdf"
+            }
+        },
+        {
+            "id": "KM",
+            "order": 8,
+            "nameEn": "Key Message: Clear Message",
+            "nameTh": "สื่อสารข้อมูลชัดเจน ตรงประเด็น เพื่อให้ผู้ฟังเข้าใจทันที",
+            "coachIds": [
+                "M",
+                "LK"
+            ],
+            "category": "communication",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "เจ้าของกิจการ",
+                "ผู้บริหาร",
+                "หัวหน้างาน",
+                "พนักงานองค์กร",
+                "ทุกคนที่ต้องการพัฒนาทักษะการสื่อสารให้ตรงประเด็น"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "ในโลกธุรกิจที่มีการแข่งขันสูงและเต็มไปด้วยข้อมูลมากมาย การสื่อสารอย่างตรงประเด็นได้กลายเป็นทักษะที่สำคัญอย่างยิ่งสำหรับความสำเร็จขององค์กร การสื่อสารที่ชัดเจน กระชับ และตรงเป้าหมายไม่เพียงแต่ช่วยประหยัดเวลาและทรัพยากร แต่ยังช่วยลดความเข้าใจผิด เพิ่มประสิทธิภาพในการทำงาน และสร้างความได้เปรียบในการแข่งขันให้กับองค์กร\r\rการลงทุนในการพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงไม่เพียงแต่ช่วยพัฒนาความสามารถของพนักงานเท่านั้น แต่ยังช่วยสร้างสภาพแวดล้อมการทำงานที่มีประสิทธิภาพมากขึ้น ลดความขัดแย้ง และนำไปสู่การตัดสินใจที่รวดเร็วและแม่นยำมากขึ้น ซึ่งทั้งหมดนี้จะช่วยเสริมสร้างความสามารถในการแข่งขันให้กับองค์กรในระยะยาว\r\rด้วยเหตุนี้ การจัดหลักสูตรพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงเป็นสิ่งจำเป็นสำหรับองค์กรที่ต้องการเติบโตอย่างยั่งยืนในยุคปัจจุบัน\r\rKey Message: Clear Message\r\rศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน\r\rหลักสูตรนี้จะช่วยให้บุคลากรทุกระดับสามารถพัฒนาความสามารถในการสื่อสารที่ชัดเจน กระชับ และมีประสิทธิภาพ ซึ่งจะนำไปสู่การทำงานร่วมกันที่ดีขึ้น การแก้ปัญหาที่รวดเร็วขึ้น และการสร้างความสัมพันธ์ที่แน่นแฟ้นทั้งกับลูกค้าและพันธมิตรทางธุรกิจ ทำให้องค์กรสามารถรับมือกับความท้าทายในอนาคตได้อย่างมั่นใจและประสบความสำเร็จในระยะยาว\r\rทำไมต้องคลาสนี้? ทำไมต้องสื่อสารให้กระชับ:\r- เพื่อพัฒนาพนักงานให้มีทักษะการสื่อสารที่ดี มีประสิทธิภาพมากขึ้น ลดการทำงานซ้ำ (Rework) หรือการเข้าใจผิดในคำสั่งงาน\r- ให้พนักงานรู้จักการวิเคราะห์คู่สนทนาซึ่งสามารถนำไปปรับใช้ในหลายบริบทของการทำงาน เช่น การพูดคุยกับบุคคลทั้งภายในและภายนอกองค์กร\r- พนักงานสามารถให้ feedback ที่มีโครงสร้างเพื่อการปรับปรุงและพัฒนาองค์กรได้\r\rผลลัพธ์ในการลงทุนกับการเรียน ไม่ใช่แค่การฝึกพูดแต่คือ :\r- คุณจะกลายเป็นคนที่ \"น่าเชื่อถือ\" มากขึ้น (Professional Credibility)\r- ประหยัดเวลาในการทำงานจากการสื่อสารที่ชัดเจนมีประสิทธิภาพ (Time Saving)\r- เพิ่มโอกาสในการ \"ได้รับความไว้วางใจ\" (Higher Approval Rate)\r- เน้นการลงมือทำ (Workshop-based) 80% เพื่อให้มั่นใจว่าจบการอบรมแล้ว ทีมงานจะสามารถ \"ใช้งานได้ทันที\" พร้อมความเปลี่ยนแปลงที่เห็นชัดเจนตั้งแต่วันแรก\r\rหยุดความสับสน เพิ่มประสิทธิภาพให้องค์กรด้วยการสื่อสารที่ตรงเป้าหมาย ยกระดับทักษะการสกัด Key Message ของทีมงานให้ก้าวล้ำไปพร้อมกับโลกธุรกิจ\r\rสอบถามรายละเอียดหลักสูตร หรือนัดหมายปรึกษาเพื่อออกแบบเวิร์กชอปที่ใช่สำหรับองค์กรคุณ กับเราวันนี้",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Key Message Clear Message.pdf"
+            }
+        },
+        {
+            "id": "QA",
+            "order": 9,
+            "nameEn": "Coaching Leadership Through Powerful Questions",
+            "nameTh": "การโค้ชด้วยคำถาม เพื่อกระตุ้นความคิดและพัฒนาศักยภาพให้กับทีมงาน",
+            "coachIds": [
+                "NU",
+                "KT"
+            ],
+            "category": "communication",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "เจ้าของกิจการ",
+                "ผู้บริหาร",
+                "หัวหน้างาน",
+                "ผู้นำทีม",
+                "ทุกคนที่ต้องการเสริมสร้างทักษะการโค้ชและการตั้งคำถาม"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Coaching Leadership Through Powerful Questions.pdf"
+            }
+        },
+        {
+            "id": "IPS",
+            "order": 10,
+            "nameEn": "Influencing Presentation for Sale",
+            "nameTh": "การนำเสนอที่ทรงพลังเพื่อปิดการขายด้วยคุณค่า",
+            "coachIds": [
+                "S",
+                "LK"
+            ],
+            "category": "presentation",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "เจ้าของกิจการ",
+                "นักขาย",
+                "AE",
+                "พนักงานองค์กร",
+                "ทุกคนที่ต้องการพัฒนาทักษะการขายอย่างมืออาชีพ"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Influencing Presentation for Sale.pdf"
+            }
+        },
+        {
+            "id": "PPA",
+            "order": 11,
+            "nameEn": "Personality Power: Awaken Your Potential",
+            "nameTh": "ยกระดับบุคลิกภาพให้น่าเชื่อถือ และสร้างความประทับใจ",
+            "coachIds": [
+                "S",
+                "M"
+            ],
+            "category": "presentation",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "ผู้บริหาร",
+                "หัวหน้างาน",
+                "พนักงานองค์กร",
+                "นักขาย",
+                "และทุกคนที่ต้องการพัฒนาบุคลิกภาพให้เป็นมืออาชีพ"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/Personality Power.pdf"
+            }
+        },
+        {
+            "id": "STR",
+            "order": 12,
+            "nameEn": "The Magic of Influential Storytelling",
+            "nameTh": "พัฒนาเทคนิคการเล่าเรื่องเพื่อสร้างแรงจูงใจ",
+            "coachIds": [
+                "LK",
+                "M",
+                "S"
+            ],
+            "category": "presentation",
+            "duration": "8h",
+            "logo": "",
+            "audience": [
+                "พนักงานองค์กร",
+                "หัวหน้างาน",
+                "นักสร้างแบรนด์",
+                "และทุกคนที่ต้องการพัฒนาทักษะการเล่าเรื่องเพื่อทำงานอย่างมีประสิทธิภาพ"
+            ],
+            "price": "8900",
+            "priceFull": "11900",
+            "currency": "บาท",
+            "description": "",
+            "images": [],
+            "downloads": {
+                "proposal": "/downloads/classes/The Magic of Influential Storytelling.pdf"
+            }
+        }
+    ]
+}

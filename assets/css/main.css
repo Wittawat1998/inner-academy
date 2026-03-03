@@ -48,10 +48,12 @@
 @layer components {
   /* Gold gradient for section headings — Thai-safe (no background-clip:text) */
   .header-fade {
-    color: #c9a55e;
-    text-shadow:
-      0 1px 2px rgba(161, 132, 79, 0.6),
-      0 -1px 2px rgba(247, 198, 109, 0.4);
+    background: linear-gradient(180deg, #5c3d10 0%, #a1844f 35%, #f7c66d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-top: 0.35em;
+    margin-top: -0.35em;
   }
 
   /* Header fade background helper for sections that need the same vibe */

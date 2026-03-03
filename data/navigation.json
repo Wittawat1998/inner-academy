@@ -28,7 +28,7 @@
       "order": 3
     },
     {
-      "title": "ความรู้",
+      "title": "คลังความรู้",
       "link": "#knowledge",
       "order": 4
     },
@@ -38,7 +38,7 @@
       "order": 5
     },
     {
-      "title": "เกี่ยวกับ",
+      "title": "เกี่ยวกับ IPA",
       "link": "/about",
       "order": 6
     }

@@ -2151,7 +2151,22 @@ const plugins = [
 __FqZsEfjjxjm5ttXhq7HwaGCOI1aOdzesmkR7dBKXHg
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"2ba9c-LJ6k7AJTg0GG1GWr52cnrjmG2bM\"",
+    "mtime": "2026-03-03T14:15:41.247Z",
+    "size": 178844,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"73275-cNSPD5Qp1m2fab+lHTuq4AEH9V0\"",
+    "mtime": "2026-03-03T14:15:41.248Z",
+    "size": 471669,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -3259,7 +3274,13 @@ var meta = {
 var classes = [
 	{
 		id: 1,
+		classId: "KM",
 		title: "Key Message: Clear Message",
+		nameTh: "สื่อสารข้อมูลชัดเจน ตรงประเด็น เพื่อให้ผู้ฟังเข้าใจทันที",
+		coachIds: [
+			"M",
+			"LK"
+		],
 		description: "ในโลกธุรกิจที่มีการแข่งขันสูงและเต็มไปด้วยข้อมูลมากมาย การสื่อสารอย่างตรงประเด็นได้กลายเป็นทักษะที่สำคัญอย่างยิ่งสำหรับความสำเร็จขององค์กร การสื่อสารที่ชัดเจน กระชับ และตรงเป้าหมายไม่เพียงแต่ช่วยประหยัดเวลาและทรัพยากร แต่ยังช่วยลดความเข้าใจผิด เพิ่มประสิทธิภาพในการทำงาน และสร้างความได้เปรียบในการแข่งขันให้กับองค์กร\n\nการลงทุนในการพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงไม่เพียงแต่ช่วยพัฒนาความสามารถของพนักงานเท่านั้น แต่ยังช่วยสร้างสภาพแวดล้อมการทำงานที่มีประสิทธิภาพมากขึ้น ลดความขัดแย้ง และนำไปสู่การตัดสินใจที่รวดเร็วและแม่นยำมากขึ้น ซึ่งทั้งหมดนี้ช่วยเสริมสร้างความสามารถในการแข่งขันให้กับองค์กรในระยะยาว\n\nด้วยเหตุนี้ การจัดหลักสูตรพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงเป็นสิ่งจำเป็นสำหรับองค์กรที่ต้องการเติบโตอย่างยั่งยืนในยุคปัจจุบัน",
 		shortDescription: "ศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน",
 		slug: "key-message-clear-message",
@@ -3268,18 +3289,25 @@ var classes = [
 		category: "การสื่อสาร",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
+			"เจ้าของกิจการ",
+			"ผู้บริหาร",
 			"หัวหน้างาน",
-			"พนักงานทั่วไป"
+			"พนักงานองค์กร",
+			"ทุกคนที่ต้องการพัฒนาทักษะการสื่อสารให้ตรงประเด็น"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-1/silde-image/km-agenda.jpg",
 			"/images/classes/class-1/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-1/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Key Message Clear Message.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Key Message Clear Message.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
 			{
@@ -3294,7 +3322,13 @@ var classes = [
 	},
 	{
 		id: 2,
+		classId: "EM",
 		title: "Emotional Mastery",
+		nameTh: "บริหารอารมณ์และการรับมือกับสถานการณ์ต่าง ๆ อย่างมืออาชีพ",
+		coachIds: [
+			"NF",
+			"KT"
+		],
 		description: "ในยุคที่การทำงานร่วมกับผู้คนหลากหลายและความกดดันในชีวิตประจำวันเพิ่มสูงขึ้น ความสามารถในการบริหารจัดการอารมณ์และความรู้สึกของตนเองได้อย่างชาญฉลาดจึงเป็นทักษะที่ขาดไม่ได้ Emotional Mastery ช่วยให้คุณเข้าใจกลไกของอารมณ์ในระดับลึก และเปลี่ยนอารมณ์จากอุปสรรคให้กลายเป็นพลังขับเคลื่อน\n\nหลักสูตรนี้ผสานศาสตร์ด้าน Neuroscience, Psychology และ Mindfulness เพื่อให้ผู้เรียนสามารถจัดการกับสถานการณ์ที่กดดัน ความขัดแย้ง และอารมณ์เชิงลบได้อย่างมีประสิทธิภาพ พร้อมทั้งพัฒนาทักษะการสื่อสารทางอารมณ์ที่ช่วยสร้างความสัมพันธ์ที่แข็งแกร่งทั้งในที่ทำงานและครอบครัว\n\nเมื่อคุณเชี่ยวชาญการควบคุมอารมณ์ คุณจะตัดสินใจได้ดีขึ้น นำทีมได้อย่างมีประสิทธิภาพ และใช้ชีวิตอย่างมีความสุขและสมดุลมากขึ้น",
 		shortDescription: "ศาสตร์เพื่อการสื่อสารอย่างฉลาด ในทุกสถานการณ์",
 		slug: "emotional-mastery",
@@ -3303,19 +3337,24 @@ var classes = [
 		category: "อารมณ์และการสื่อสาร",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
+			"พนักงานองค์กร",
 			"หัวหน้างาน",
-			"พนักงานทั่วไป",
-			"ผู้บริหาร"
+			"HR",
+			"ทุกคนที่ต้องการพัฒนาทักษะการบริหารจัดการอารมณ์เพื่อทำงานอย่างมีประสิทธิภาพ"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-2/silde-image/km-agenda.jpg",
 			"/images/classes/class-2/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-2/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Emotional Mastery.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Emotional Mastery.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
 			{
@@ -3330,7 +3369,13 @@ var classes = [
 	},
 	{
 		id: 3,
+		classId: "QA",
 		title: "Coaching Leadership Through Powerful Questions",
+		nameTh: "การโค้ชด้วยคำถาม เพื่อกระตุ้นความคิดและพัฒนาศักยภาพให้กับทีมงาน",
+		coachIds: [
+			"NU",
+			"KT"
+		],
 		description: "ผู้นำในยุคปัจจุบันไม่ได้ถูกวัดจากการสั่งการหรือการให้คำตอบเท่านั้น แต่วัดจากความสามารถในการตั้งคำถามที่กระตุ้นให้ทีมคิดหาทางออกด้วยตนเอง ภาวะผู้นำแบบโค้ชช่วยให้ผู้นำสร้างวัฒนธรรมองค์กรที่เปิดกว้าง กระตือรือร้น และพร้อมเติบโตอยู่เสมอ\n\nหลักสูตรนี้จะสอนให้คุณเข้าใจโครงสร้างของคำถามทรงพลัง เทคนิคการฟังอย่างลึกซึ้ง และการสร้างบทสนทนาที่ช่วยพัฒนาศักยภาพของสมาชิกในทีม นอกจากนี้ยังครอบคลุมการใช้ Coaching Model ในบริบทขององค์กรจริง ทั้งในการประชุม การ Feedback และการพัฒนาคนรายบุคคล\n\nเมื่อนำ Coaching Leadership ไปใช้ คุณจะเห็นการเปลี่ยนแปลงในทีม ทั้งในด้านความมุ่งมั่น ความคิดสร้างสรรค์ และประสิทธิภาพในการทำงานที่สูงขึ้นอย่างชัดเจน",
 		shortDescription: "ภาวะผู้นำแบบโค้ช - นำให้ลึกด้วยคำถามทรงพลัง",
 		slug: "coaching-leadership-powerful-questions",
@@ -3339,19 +3384,25 @@ var classes = [
 		category: "ภาวะผู้นำ",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
-			"ผู้จัดการ",
-			"หัวหน้าทีม",
-			"ผู้บริหาร"
+			"เจ้าของกิจการ",
+			"ผู้บริหาร",
+			"หัวหน้างาน",
+			"ผู้นำทีม",
+			"ทุกคนที่ต้องการเสริมสร้างทักษะการโค้ชและการตั้งคำถาม"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-3/silde-image/km-agenda.jpg",
 			"/images/classes/class-3/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-3/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Coaching Leadership Through Powerful Questions.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Coaching Leadership Through Powerful Questions.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
 			{
@@ -3366,28 +3417,52 @@ var classes = [
 	},
 	{
 		id: 4,
+		classId: "BH",
 		title: "Brain Hacker: Fundamental of Analytical Thinking and System Thinking",
+		nameTh: "พัฒนาทักษะการคิดอย่างเป็นระบบ จัดการงานได้อย่างมีประสิทธิภาพ",
+		coachIds: [
+			"KD"
+		],
 		description: "ในโลกที่ข้อมูลซับซ้อนและสถานการณ์เปลี่ยนแปลงอย่างรวดเร็ว ทักษะการคิดวิเคราะห์และการมองภาพรวมอย่างเป็นระบบได้กลายเป็นสิ่งที่แยกผู้ประสบความสำเร็จออกจากคนอื่น Brain Hacker จะพาคุณปลดล็อกศักยภาพสมองที่ซ่อนอยู่ และนำมาใช้ในการแก้ปัญหาอย่างมีประสิทธิภาพ\n\nหลักสูตรนี้ผสมผสานหลักการของ Analytical Thinking, System Thinking และ Mental Models เพื่อช่วยให้คุณมองเห็นความเชื่อมโยงระหว่างสิ่งต่าง ๆ ได้ชัดขึ้น ตัดสินใจได้แม่นยำขึ้น และแก้ปัญหาที่ซับซ้อนได้อย่างเป็นขั้นตอนและมีระบบ\n\nเมื่อฝึกฝนจนช่ำชอง คุณจะกลายเป็นคนที่เพื่อนร่วมงานและองค์กรไว้วางใจให้จัดการความท้าทายที่ซับซ้อน และนำพาทีมไปสู่การตัดสินใจที่ดีกว่าเดิม",
 		shortDescription: "ปลดล็อกศักยภาพสมอง ด้วยพลังแห่งการคิดวิเคราะห์และการคิดอย่างเป็นระบบ",
 		slug: "brain-hacker-analytical-system-thinking",
 		featured: true,
 		image: "/images/classes/class-4/km.jpg",
 		category: "การคิดเชิงวิเคราะห์",
-		duration: "8 ชั่วโมง",
+		duration: "4 ชั่วโมง",
 		targetAudience: [
-			"พนักงานทั่วไป",
-			"ผู้จัดการ",
-			"นักวิเคราะห์"
+			"พนักงานองค์กร",
+			"หัวหน้างาน",
+			"HR",
+			"ทุกคนที่ต้องการพัฒนาทักษะการคิดเพื่อทำงานอย่างมีประสิทธิภาพ"
 		],
-		price: 7900,
-		originalPrice: 11900,
+		price: 3900,
+		originalPrice: 9900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		prices: [
+			{
+				enrollmentType: "onSite",
+				price: 3900,
+				originalPrice: 9900,
+				currency: "บาท"
+			},
+			{
+				enrollmentType: "online",
+				price: 2900,
+				originalPrice: 8900,
+				currency: "บาท"
+			}
+		],
 		gallery: [
 			"/images/classes/class-4/silde-image/km-agenda.jpg",
 			"/images/classes/class-4/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-4/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Brain Hacker.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Brain Hacker.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
 			{
@@ -3402,7 +3477,13 @@ var classes = [
 	},
 	{
 		id: 5,
+		classId: "LI",
 		title: "Listening Intelligence",
+		nameTh: "ฟังให้ลึกซึ้งถึงความต้องการ และเจตนาของคู่สนทนาเพื่อความเข้าใจในองค์กร",
+		coachIds: [
+			"LK",
+			"M"
+		],
 		description: "",
 		shortDescription: "ศาสตร์ที่จะทำให้คุณได้ยิน มากกว่าพูด",
 		slug: "listening-intelligence",
@@ -3411,25 +3492,46 @@ var classes = [
 		category: "การสื่อสาร",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
+			"เจ้าของกิจการ",
+			"ผู้บริหาร",
 			"หัวหน้างาน",
-			"พนักงานทั่วไป"
+			"พนักงานทั่วไป",
+			"ทุกคนที่ต้องการเสริมสร้างทักษะการฟังเพื่อการทำงาน"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-5/silde-image/km-agenda.jpg",
 			"/images/classes/class-5/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-5/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Listening Intelligence.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Listening Intelligence.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	},
 	{
 		id: 6,
+		classId: "PPA",
 		title: "Personality Power: Awaken Your Potential",
+		nameTh: "ยกระดับบุคลิกภาพให้น่าเชื่อถือ และสร้างความประทับใจ",
+		coachIds: [
+			"S",
+			"M"
+		],
 		description: "",
 		shortDescription: "ปลุกพลังบุคลิกภาพเพื่อศักยภาพที่เติบโต",
 		slug: "personality-power-awaken-your-potential",
@@ -3438,25 +3540,46 @@ var classes = [
 		category: "การพัฒนาตนเอง",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
-			"พนักงานทั่วไป",
-			"หัวหน้างาน"
+			"ผู้บริหาร",
+			"หัวหน้างาน",
+			"พนักงานองค์กร",
+			"นักขาย",
+			"และทุกคนที่ต้องการพัฒนาบุคลิกภาพให้เป็นมืออาชีพ"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-6/silde-image/km-agenda.jpg",
 			"/images/classes/class-6/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-6/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Personality Power.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Personality Power.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	},
 	{
 		id: 7,
+		classId: "SC",
 		title: "Self Transform To Team Collaboration",
+		nameTh: "พัฒนาการทำงานร่วมกันเป็นทีม",
+		coachIds: [
+			"LK",
+			"M"
+		],
 		description: "",
 		shortDescription: "เทคนิคการเปลี่ยนแปลงตัวเองสู่การทำงานเป็นทีม",
 		slug: "self-transform-to-team-collaboration",
@@ -3465,25 +3588,43 @@ var classes = [
 		category: "การทำงานเป็นทีม",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
-			"พนักงานทั่วไป",
-			"หัวหน้างาน"
+			"หัวหน้างาน",
+			"พนักงานทั่วไป"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-7/silde-image/km-agenda.jpg",
 			"/images/classes/class-7/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-7/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Self-Transform to Team Collaboration.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Self-Transform to Team Collaboration.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	},
 	{
 		id: 8,
+		classId: "TD",
 		title: "Transform Deep Belief: Unlock your potential",
+		nameTh: "ปลดล็อคศักยภาพจากภายในเพื่อประสิทธิภาพในการทำงาน",
+		coachIds: [
+			"KT",
+			"NF"
+		],
 		description: "",
 		shortDescription: "ศาสตร์แห่งการก้าวข้ามขีดจำกัด สู่ศักยภาพสูงสุด",
 		slug: "transform-deep-belief-unlock-your-potential",
@@ -3492,25 +3633,44 @@ var classes = [
 		category: "การพัฒนาตนเอง",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
-			"พนักงานทั่วไป",
-			"หัวหน้างาน"
+			"เจ้าของกิจการ",
+			"พนักงานองค์กร",
+			"ทุกคนที่ต้องการปลดล็อกความเชื่อที่ขัดขวางศักยภาพในตัวเอง"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-8/silde-image/km-agenda.jpg",
 			"/images/classes/class-8/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-8/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Transform Deep Belief.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Transform Deep Belief.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	},
 	{
 		id: 9,
+		classId: "GM",
 		title: "Goal Setting for Team Alignment",
+		nameTh: "ตั้งเป้าหมายชีวิตสอดคล้องกับองค์กร",
+		coachIds: [
+			"KT",
+			"NU"
+		],
 		description: "",
 		shortDescription: "เทคนิคการตั้งเป้า เพื่อความสำเร็จร่วมในทีม",
 		slug: "goal-setting-for-team-alignment",
@@ -3519,25 +3679,46 @@ var classes = [
 		category: "ภาวะผู้นำ",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
-			"ผู้จัดการ",
-			"หัวหน้าทีม"
+			"เจ้าของกิจการ",
+			"ผู้บริหาร",
+			"หัวหน้างาน",
+			"พนักงานทั่วไป",
+			"ทุกคนที่ต้องการค้นหาเป้าหมายที่แท้จริงของชีวิต"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-9/silde-image/km-agenda.jpg",
 			"/images/classes/class-9/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-9/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Goal Setting for Team Alignment.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Goal Setting for Team Alignment.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	},
 	{
 		id: 10,
+		classId: "IPS",
 		title: "Influencing Presentation for Sale",
+		nameTh: "การนำเสนอที่ทรงพลังเพื่อปิดการขายด้วยคุณค่า",
+		coachIds: [
+			"S",
+			"LK"
+		],
 		description: "",
 		shortDescription: "ศาสตร์แห่งการนำเสนอและขาย ที่ชนะใจทุกเกม",
 		slug: "influencing-presentation-for-sale",
@@ -3546,26 +3727,47 @@ var classes = [
 		category: "การนำเสนอ",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
+			"เจ้าของกิจการ",
 			"นักขาย",
-			"พนักงานทั่วไป",
-			"ผู้จัดการ"
+			"AE",
+			"พนักงานองค์กร",
+			"ทุกคนที่ต้องการพัฒนาทักษะการขายอย่างมืออาชีพ"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-10/silde-image/km-agenda.jpg",
 			"/images/classes/class-10/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-10/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/Influencing Presentation for Sale.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/Influencing Presentation for Sale.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	},
 	{
 		id: 11,
+		classId: "STR",
 		title: "The Magic of Influential Storytelling",
+		nameTh: "พัฒนาเทคนิคการเล่าเรื่องเพื่อสร้างแรงจูงใจ",
+		coachIds: [
+			"LK",
+			"M",
+			"S"
+		],
 		description: "",
 		shortDescription: "ขับเคลื่อนการเปลี่ยนแปลง ด้วยพลังเรื่องเล่า",
 		slug: "the-magic-of-influential-storytelling",
@@ -3574,26 +3776,43 @@ var classes = [
 		category: "การสื่อสาร",
 		duration: "8 ชั่วโมง",
 		targetAudience: [
-			"พนักงานทั่วไป",
+			"พนักงานองค์กร",
 			"หัวหน้างาน",
-			"ผู้บริหาร"
+			"นักสร้างแบรนด์",
+			"และทุกคนที่ต้องการพัฒนาทักษะการเล่าเรื่องเพื่อทำงานอย่างมีประสิทธิภาพ"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-11/silde-image/km-agenda.jpg",
 			"/images/classes/class-11/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-11/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/classes/The Magic of Influential Storytelling.pdf"
+		},
+		ctaDocumentUrl: "/downloads/classes/The Magic of Influential Storytelling.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	},
 	{
 		id: 12,
+		classId: "SBA",
 		title: "Strategic Business Analysis Toolkit: 6 Powerful Frameworks",
+		nameTh: "",
+		coachIds: [
+		],
 		description: "",
 		shortDescription: "6 เครื่องมือวิเคราะห์ธุรกิจที่ใช้ได้จริง",
 		slug: "strategic-business-analysis-toolkit-6-powerful-frameworks",
@@ -3606,22 +3825,39 @@ var classes = [
 			"ผู้บริหาร",
 			"นักวิเคราะห์"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-12/silde-image/km-agenda.jpg",
 			"/images/classes/class-12/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-12/silde-image/km-gallery-2.jpg"
 		],
+		downloads: {
+			proposal: ""
+		},
 		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	},
 	{
 		id: 13,
+		classId: "CRT",
 		title: "Critical Thinking",
+		nameTh: "พัฒนากระบวนการคิด ประเมินข้อมูลอย่างรอบด้าน",
+		coachIds: [
+			"KD"
+		],
 		description: "",
 		shortDescription: "คิดอย่างลึกซึ้งเฉียบคม ตัดสินใจอย่างมีหลักการ",
 		slug: "critical-thinking",
@@ -3634,17 +3870,29 @@ var classes = [
 			"ผู้จัดการ",
 			"ผู้บริหาร"
 		],
-		price: 7900,
+		price: 8900,
 		originalPrice: 11900,
+		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		gallery: [
 			"/images/classes/class-13/silde-image/km-agenda.jpg",
 			"/images/classes/class-13/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-13/silde-image/km-gallery-2.jpg"
 		],
-		ctaDocumentUrl: "#",
+		downloads: {
+			proposal: "/downloads/Critical Thinking.pdf"
+		},
+		ctaDocumentUrl: "/downloads/Critical Thinking.pdf",
 		ctaNextRoundUrl: "/#contact",
 		instructors: [
+			{
+				name: "Instructor 1",
+				image: "/images/instructors/instructor-1.svg"
+			},
+			{
+				name: "Instructor 2",
+				image: "/images/instructors/instructor-2.svg"
+			}
 		]
 	}
 ];
@@ -4290,7 +4538,7 @@ var menu = [
 		order: 3
 	},
 	{
-		title: "ความรู้",
+		title: "คลังความรู้",
 		link: "#knowledge",
 		order: 4
 	},
@@ -4300,7 +4548,7 @@ var menu = [
 		order: 5
 	},
 	{
-		title: "เกี่ยวกับ",
+		title: "เกี่ยวกับ IPA",
 		link: "/about",
 		order: 6
 	}

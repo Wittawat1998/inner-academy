@@ -6,7 +6,7 @@
     role="region"
     aria-label="ทีมโค้ช"
   >
-    <div class="max-w-5xl mx-auto px-4">
+    <div class="max-w-[1280px] mx-auto px-4">
       <!-- Section Heading – right-aligned, gold, inside same container as grid -->
       <div class="mb-10 text-center md:pl-[50%]">
         <h2

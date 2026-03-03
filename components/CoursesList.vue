@@ -8,7 +8,7 @@
   >
     <div class="container mx-auto px-4">
       <!-- Courses List (Full-width rows) -->
-      <div class="max-w-5xl mx-auto">
+      <div class="max-w-[1280px] mx-auto">
         <!-- Section Heading -->
         <div class=" section-header">
           <h2 class="text-4xl md:text-5xl lg:text-7xl font-semibold pb-8 header-fade">

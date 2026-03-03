@@ -18,7 +18,7 @@
         </NuxtLink>
 
         <!-- Desktop Navigation (Center) -->
-        <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8" aria-label="Main navigation">
+        <nav class="hidden lg:flex items-center space-x-14 xl:space-x-20" aria-label="Main navigation">
           <NuxtLink
             v-for="item in sortedMenu"
             :key="item.link"

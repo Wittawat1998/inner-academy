@@ -5,10 +5,10 @@
     role="region"
     aria-label="Partner organizations"
   >
-    <div class="container mx-auto px-4">
+    <div class="w-full px-4">
       <!-- Header -->
       <div class="text-center mb-[50px]">
-        <h2 class="text-3xl md:text-6xl lg:text-6xl xl:text-8xl font-semibold mb-[15px] md:mb-[30px] first-letter: header-fade">
+        <h2 class="text-3xl md:text-6xl lg:text-6xl xl:text-8xl font-semibold mb-[15px] md:mb-[30px]  header-fade">
           มากกว่า 30 องค์กรชั้นนำ
         </h2>
         <p class="text-base md:text-xl text-white">

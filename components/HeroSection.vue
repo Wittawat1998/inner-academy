@@ -1,24 +1,23 @@
 <template>
-  <section class="hero-section relative overflow-hidden">
-    <div class="">
-      <div class="w-full h-[360px] sm:h-[450px] md:h-[540px] lg:h-[680px] xl:h-[800px] relative">
-        <!-- Hero Banner -->
-        <img :src="hero.bgHero" alt="Inner Power Academy" class="w-full h-full object-contain object-top" />
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center px-4 w-full">
-          <h2 class="hero-subtitle text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium mb-2 md:mb-4 text-center">
-            {{ hero.subtitle }}
-          </h2>
+  <section class="hero-section">
+    <div class="w-full">
+      <!-- Hero Banner -->
+      <img :src="hero.bgHero" alt="Inner Power Academy" class="w-full h-auto object-contain object-top" />
+    </div>
 
-          <!-- Description -->
-          <p class="hero-description text-white text-sm md:text-base max-w-3xl mx-auto mb-2 md:mb-4 text-center">
-            {{ hero.description }}
-          </p>
+    <!-- Text block: pulls up slightly over the bottom of the image -->
+    <div class="-mt-6 sm:-mt-10 md:-mt-14 lg:-mt-20 flex flex-col items-center justify-center px-4 w-full max-w-[1280px] mx-auto pb-6 md:pb-10">
+      <h2 class="hero-subtitle text-white text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-medium mb-2 md:mb-4 text-center">
+        {{ hero.subtitle }}
+      </h2>
 
-          <!-- Certification Badge -->
-          <img :src="hero.badgeIcon" alt="Certified Badge" class="w-auto h-16 md:h-22  lg:h-28 xl:h-32" />
+      <!-- Description -->
+      <p class="hero-description text-white text-sm md:text-base lg:text-lg xl:text-3xl max-w-5xl mx-auto mb-2 md:mb-4 text-center">
+        {{ hero.description }}
+      </p>
 
-        </div>
-      </div>
+      <!-- Certification Badge -->
+      <img :src="hero.badgeIcon" alt="Certified Badge" class="w-auto h-16 md:h-22 lg:h-28 xl:h-48" />
     </div>
   </section>
 </template>
@@ -42,17 +41,6 @@ const { hero } = useHomeContent()
 </script>
 
 <style scoped>
-
-.hero-title {
-  color: #d4af37;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  letter-spacing: 0.05em;
-  line-height: 1.2;
-  background: linear-gradient(135deg, #f4e5c3 0%, #d4af37 50%, #c9a961 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
 .hero-subtitle {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -114,13 +102,5 @@ const { hero } = useHomeContent()
   }
 }
 
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2rem;
-  }
 
-  .team-member {
-    width: 3rem;
-  }
-}
 </style>

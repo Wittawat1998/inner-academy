@@ -4,7 +4,7 @@
     class=""
     >
     <!-- style="background: linear-gradient(180deg, #0F172A 0%, #0c1525 100%);" -->
-    <div class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="max-w-[1280px] mx-auto px-4 pb-16">
 
       <!-- Section Heading -->
       <h2
@@ -18,7 +18,9 @@
         <!-- Left Arrow -->
         <button
           @click="prev"
-          class="absolute left-0 top-1/2 -translate-y-12 z-10 w-9 h-9 flex items-center justify-center text-white hover:text-yellow-300 transition-colors duration-200"
+          :disabled="!canScrollLeft"
+          class="absolute left-0 top-1/2 -translate-y-12 z-10 w-9 h-9 flex items-center justify-center transition-all duration-300"
+          :class="canScrollLeft ? 'text-white hover:text-yellow-300' : 'text-white/25 cursor-default'"
           aria-label="Previous"
         >
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
@@ -30,6 +32,7 @@
         <div
           ref="track"
           class="overflow-x-auto snap-x snap-mandatory hide-scrollbar"
+          @scroll="updateScroll"
         >
           <div class="flex gap-6" style="min-width: 100%;">
             <div
@@ -74,7 +77,9 @@
         <!-- Right Arrow -->
         <button
           @click="next"
-          class="absolute right-0 top-1/2 -translate-y-12 z-10 w-9 h-9 flex items-center justify-center text-white hover:text-yellow-300 transition-colors duration-200"
+          :disabled="!canScrollRight"
+          class="absolute right-0 top-1/2 -translate-y-12 z-10 w-9 h-9 flex items-center justify-center transition-all duration-300"
+          :class="canScrollRight ? 'text-white hover:text-yellow-300' : 'text-white/25 cursor-default'"
           aria-label="Next"
         >
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
@@ -93,6 +98,15 @@ import type { Testimonial } from '~/types/home'
 const { data: testimonials } = await useFetch<Testimonial[]>('/api/testimonials')
 
 const track = ref<HTMLElement | null>(null)
+const canScrollLeft = ref(false)
+const canScrollRight = ref(true)
+
+function updateScroll() {
+  const el = track.value
+  if (!el) return
+  canScrollLeft.value = el.scrollLeft > 1
+  canScrollRight.value = el.scrollLeft + el.clientWidth < el.scrollWidth - 1
+}
 
 const prev = () => {
   if (!track.value) return
@@ -109,6 +123,10 @@ const next = () => {
   const cardWidth = (items[0] as HTMLElement).offsetWidth
   track.value.scrollBy({ left: cardWidth + 24, behavior: 'smooth' })
 }
+
+onMounted(() => {
+  updateScroll()
+})
 
 // Responsive card width handled via Tailwind classes directly on the element
 </script>

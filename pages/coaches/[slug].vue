@@ -1,9 +1,9 @@
 <template>
-  <main class="coach-detail-page bg-bgPrimary min-h-screen">
+  <main class="coach-detail-page bg-gradient-header min-h-screen" style="background-image: url('/images/bg/hero-bg.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;">
 
     <!-- ─── Hero ────────────────────────────────────────────────────── -->
-    <section class="relative overflow-hidden" style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;">
-      <div class="max-w-[1024px] mx-auto px-4 md:px-8 lg:px-16 pt-20 md:pt-24 lg:pt-28 items-center flex flex-col">
+    <section class="relative overflow-hidden">
+      <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-16 pt-20 md:pt-24 lg:pt-28 items-center flex flex-col">
         <div class="max-w-[960px] flex flex-col md:flex-row items-center gap-0">
 
           <!-- Left: name, title, social -->
@@ -44,7 +44,7 @@
       </div>
 
       <!-- Divider line -->
-      <div class="mx-4 md:mx-20 px-4 md:px-8">
+      <div class="mx-4 md:mx-20 px-4 md:px-10 lg:px-16 xl:px-40" style="height: 2px; background: linear-gradient(90deg, rgba(247,198,109,0) 0%, rgba(247,198,109,0.2) 10%, rgba(247,198,109,0.4) 30%, rgba(247,198,109,0.5) 50%, rgba(247,198,109,0.4) 70%, rgba(247,198,109,0.2) 90%, rgba(247,198,109,0) 100%);">
         <div style="height: 2px; background: linear-gradient(90deg, rgba(247,198,109,0) 0%, rgba(247,198,109,0.2) 10%, rgba(247,198,109,0.4) 30%, rgba(247,198,109,0.5) 50%, rgba(247,198,109,0.4) 70%, rgba(247,198,109,0.2) 90%, rgba(247,198,109,0) 100%);"></div>
       </div>
     </section>

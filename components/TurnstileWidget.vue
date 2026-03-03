@@ -56,7 +56,7 @@ function renderWidget() {
   try {
     turnstileId.value = turnstile.render(widgetContainer.value, {
       sitekey: config.public.turnstileSiteKey,
-      theme: 'light',
+      theme: 'dark',
       size: 'normal',
       callback: (token: string) => {
         emit('verified', token);

@@ -1,0 +1,29 @@
+{
+    "reviewsByClass": [
+        {
+            "classId": "KM",
+            "cover": "",
+            "link": "https://youtube.com/playlist?list=PLNLzZqcSkCiSroP0O6GHi2F6KgZrDj9r6&si=h31JEkBX6mjJVtm0"
+        },
+        {
+            "classId": "SC",
+            "cover": "",
+            "link": "https://youtube.com/playlist?list=PLNLzZqcSkCiR-fA-jrLGiZkPeNKYOpptG&si=3lxSm23Tm3csrSQF"
+        },
+        {
+            "classId": "IPS",
+            "cover": "",
+            "link": "https://youtube.com/playlist?list=PLNLzZqcSkCiSzef8C6e4jkBYmCu5OhDBe&si=a0TPXK4EHVQGalsI"
+        },
+        {
+            "classId": "EM",
+            "cover": "",
+            "link": "https://youtube.com/playlist?list=PLNLzZqcSkCiSxCEV7g4bm4LAdHweU8Lka&si=H02hmlykWXMYPhcC"
+        },
+        {
+            "classId": "LI",
+            "cover": "",
+            "link": "https://youtube.com/playlist?list=PLNLzZqcSkCiSYXTwU5ZoNHI73q9qTLD1t&si=oDK0cs27WWryJzeo"
+        }
+    ]
+}

@@ -1,30 +1,8 @@
 {
-  "mission": {
-    "title": "Our Mission",
-    "description": "At Inner Power Academy, we believe in unlocking the potential within every individual through transformative personal development and empowerment training. Our mission is to provide accessible, high-quality educational programs that help people discover their inner strength, overcome limitations, and achieve their fullest potential. We combine time-tested wisdom with modern coaching techniques to create a supportive learning environment where every student can thrive and make lasting positive changes in their lives."
-  },
-  "founder": {
-    "name": "Dr. Sarah Johnson",
-    "photo": "/images/about/founder.jpg",
-    "background": "Dr. Johnson holds a Ph.D. in Psychology from Stanford University and has over 20 years of experience in personal development coaching and training. She has worked with thousands of individuals worldwide, helping them break through mental barriers and achieve extraordinary results. Her research focuses on the intersection of mindfulness, neuroscience, and performance optimization, bringing evidence-based approaches to personal transformation.",
-    "vision": "My vision is to create a world where everyone has access to the tools and knowledge they need to unlock their inner power and live their fullest life. I believe education is the key to transformation, and Inner Power Academy exists to make that transformation possible for all."
-  },
-  "quote": {
-    "text": "The only limits that exist are the ones you place on yourself. Break free, and discover what you're truly capable of.",
-    "author": "Dr. Sarah Johnson"
-  },
-  "images": [
-    {
-      "url": "/images/about/gallery/academy-main-hall.jpg",
-      "alt": "Inner Power Academy main hall with comfortable seating and natural lighting"
-    },
-    {
-      "url": "/images/about/gallery/workshop-session.jpg",
-      "alt": "Students engaged in an interactive workshop session"
-    },
-    {
-      "url": "/images/about/gallery/meditation-space.jpg",
-      "alt": "Peaceful meditation and reflection space"
-    }
-  ]
+    "title": "เกี่ยวกับ IPA",
+    "description":"Inner Power Academy คือ สถาบันที่ก่อตั้งโดย ครูเงาะ รสสุคนธ์ กองเกตุ โดยเล็งเห็นว่า การเปลี่ยนแปลงที่ได้ผลลัพธ์ที่แท้จริง คือการเปลี่ยนจาก “อินเนอร์” หรือภายในจิตใจ ตั้งแต่ความเชื่อ ความกลัว และความต้องการ ซึ่งผลลัพธ์ของการเปลี่ยนแปลงจากภายในโดย Soft Skill จะส่งผลให้ภายนอกของเราเห็นมุมมองต่อการจัดการปัญหาได้อย่างมีประสิทธิภาพ และมีความเข้าใจในตัวเอง และเพื่อนร่วมงานที่ดีมากขึ้น ซึ่งสถาบัน Inner Power Academy จะมาเป็นตัวช่วยในการดึงศักยภาพของทีมในองค์กรของคุณพาธุรกิจเติบโตไปข้างหน้า",
+    "quote":"เมื่อเรามี อินเนอร์ ที่แข็งแกร่ง เท่ากับการสร้าง ผลลัพธ์ ที่ดี",
+    "quoteHighlights": ["อินเนอร์", "ผลลัพธ์"],
+    "subquote":"การเปลี่ยนแปลงจากข้างในตัวเอง จะส่งผลให้เกิดการเปลี่ยนแปลงกับคนรอบข้าง ขยายออกไปสู่องค์กร และสังคม",
+    "author":"ครูเงาะ รสสุคนธ์ กองเกตุ"
 }

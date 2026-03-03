@@ -1,0 +1,154 @@
+{
+    "title": "Inner Power Academy",
+    "description": "ปลดปล่อยศักยภาพให้ทีมคุณ",
+    "keywords": "เทรนนิ่งองค์กร, HR, Leadership, Personal Development, พัฒนาทีม, พัฒนาศักยภาพ",
+    "company": {
+        "nameEn": "Inner Power Training Co., Ltd.",
+        "email": "info@innerpower.co.th",
+        "tel": "080-265-6266",
+        "address": "บริษัท อินเนอร์ เพาเวอร์ เทรนนิ่ง จำกัด Raintree Office Garden อาคาร B2 ชั้น 2 เลขที่ 280 ซอยศูนย์วิจัย 4 (พระราม 9 ซอย 17) บางกะปิ ห้วยขวาง กรุงเทพฯ 10310",
+        "maps": [
+            {
+                "channel": "googleMaps",
+                "link": "https://maps.app.goo.gl/ZtGpauc7dCUiDQ4G8"
+            }
+        ],
+        "socialMedia": [
+            {
+                "channel": "facebook",
+                "link": "https://www.facebook.com/InnerPowerAcademyIPA"
+            },
+            {
+                "channel": "instagram",
+                "link": "https://www.instagram.com/innerpower.academy"
+            },
+            {
+                "channel": "tiktok",
+                "link": "https://www.tiktok.com/@inner.power.academy"
+            },
+            {
+                "channel": "youtube",
+                "link": "https://www.youtube.com/@InnerPowerAcademy"
+            },
+            {
+                "channel": "lineOA",
+                "link": "https://www.line.me/R/ti/p/@innerpoweracademy"
+            }
+        ]
+    },
+    "copyright": "© 2026 Inner Power Training Co., Ltd. All rights reserved.",
+    "sections": {
+        "hero": {
+            "title": "Inner Power Academy",
+            "subtitle": "ปลดปล่อยศักยภาพให้ทีมคุณ",
+            "description": "ด้วยหลักสูตรลิขสิทธิ์ รับรองคุณภาพโดย ครูเงาะ รสสุคนธ์ กองเกตุ"
+        },
+        "clients": {
+            "title": "มากกว่า 30 องค์กรชั้นนำ",
+            "subtitle": "ที่ให้ความไว้วางใจเราในการจัดอบรมเพื่อดึงศักยภาพด้าน Soft-Skills ให้กับบุคลากร เพื่อขับเคลื่อนการทำงานอย่างมีประสิทธิภาพ"
+        },
+        "classes": {
+            "title": "หลักสูตร",
+            "providedBy": "สอนโดย",
+            "learnMore": "รายละเอียด"
+        },
+        "classPrograms": {
+            "title": "NEXT PROGRAM",
+            "subtitle": "ตารางการอบรม",
+            "image": "/public/ipa_next_program.jpg"
+        },
+        "coaches": {
+            "title": "ทีมโค้ช"
+        },
+        "reviews": {
+            "title": "ผลลัพธ์ผู้เรียน",
+            "submit": "ดูคลิปเต็ม"
+        },
+        "assessments": {
+            "title": "รับแบบประเมินฟรี",
+            "subtitle": "เพื่อประเมิน Soft-Skills หลากหลายมิติให้บุคลากรของท่าน\r( มูลค่า 5,000 บาท )",
+            "items": [
+                {
+                    "submit": "ประเมินทักษะด้าน Soft-Skills ตอนนี้",
+                    "link": "https://assessment.innerpower.co.th/p/self-assessment"
+                },
+                {
+                    "submit": "ประเมินความฉลาดทางอารมณ์ ตอนนี้",
+                    "link": "https://assessment.innerpower.co.th/p/self-assessment-ei"
+                }
+            ]
+        },
+        "knowledge": {
+            "title": "ปลดปล่อยศักยภาพด้วยความรู้ ไปด้วยกัน"
+        },
+        "ebook": {
+            "title": "เครื่องมืออัป Soft-Skills ให้กับทั้งองค์กร ที่ HR รุ่นใหม่ต้องมี",
+            "subtitle": "Guidebook เพื่อยกระดับประสิทธิภาพการทำงานให้ชาวออฟฟิศ เรียบเรียงโดยเฉพาะสำหรับ HR ในการวัดระดับ 8 ทักษะการทำงานที่จำเป็นในยุคนี้ และ 5 เครื่องมือสำหรับติดตามพัฒนาการด้าน Soft-Skills ของบุคลากรที่ให้ผลลัพธ์เป็นข้อมูลที่จับต้องได้",
+            "image": "/public/ebook.webp",
+            "submit": "รับ Guidebook ฟรี",
+            "link": "https://line.me/ti/p/%40innerpoweracademy"
+        },
+        "podcast": {
+            "title": "เรื่องที่พนักงานอยากรู้ แต่ “เสียดาย...เจ้านายไม่เคยบอก”",
+            "subtitle": "พอดแคสต์ ที่จะพาทุกคนมาเข้าใจมุมมองในการทำงาน แนวทางการพัฒนาทักษะสำคัญ และเทคนิคการสื่อสาร ที่น้อยคนเท่านั้นที่เคยรู้",
+            "submit": "ชมรายการ",
+            "link": "https://www.youtube.com/playlist?list=PLNLzZqcSkCiSrC2MjzjBzyCjL9BXDrto9"
+        },
+        "contact": {
+            "title": "ติดต่อเรา",
+            "subtitle": "สอบถามรายละเอียดหลักสูตร รูปแบบการเรียน แบบประเมินศักยภาพทีม หรือรายละเอียดอื่น ๆ กับทีมดูแลการเรียนรู้มืออาชีพได้ที่นี่",
+            "form": [
+                {
+                    "name": "name",
+                    "type": "text",
+                    "required": true,
+                    "label": "ชื่อ - นามสกุล"
+                },
+                {
+                    "name": "company",
+                    "type": "text",
+                    "label": "องค์กร"
+                },
+                {
+                    "name": "position",
+                    "type": "text",
+                    "label": "ตำแหน่ง"
+                },
+                {
+                    "name": "email",
+                    "type": "email",
+                    "required": true,
+                    "label": "อีเมล"
+                },
+                {
+                    "name": "tel",
+                    "type": "tel",
+                    "required": true,
+                    "label": "เบอร์ติดต่อ"
+                },
+                {
+                    "name": "message",
+                    "required": true,
+                    "type": "textarea",
+                    "label": "ข้อความ"
+                }
+            ],
+            "submit": "ส่งข้อความ",
+            "mailSubmitTo": "info@innerpower.co.th",
+            "mailSubject": "ข้อความจากเว็บไซต์ IPA",
+            "mailSent": "ขอบคุณที่ให้ความสนใจติดต่อเข้ามา ทางทีม IPA จะติดต่อกลับหาท่านโดยเร็วที่สุด",
+            "email": "อีเมล",
+            "tel": "โทรศัพท์",
+            "callNow": "โทร.ติดต่อตอนนี้",
+            "address": "แผนที่"
+        }
+    },
+    "privacyPolicies": {
+        "title": "นโยบายความเป็นส่วนตัว",
+        "link": "/privacy-policies"
+    },
+    "termsAndConditions": {
+        "title": "ข้อกำหนดและเงื่อนไข",
+        "link": "/terms-and-conditions"
+    }
+}
