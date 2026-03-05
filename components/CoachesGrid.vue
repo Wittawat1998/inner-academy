@@ -4,7 +4,7 @@
     v-if="coaches && coaches.length > 0"
     class="coaches-section bg-transparent py-10 md:py-16 lg:py-20"
     role="region"
-    aria-label="ทีมโค้ช"
+    :aria-label="sections?.coaches?.title ?? 'ทีมโค้ช'"
   >
     <div class="max-w-[1280px] mx-auto px-4">
       <!-- Section Heading – right-aligned, gold, inside same container as grid -->
@@ -12,7 +12,7 @@
         <h2
           class="text-4xl md:text-5xl lg:text-7xl font-semibold header-fade"
         >
-          ทีมโค้ช
+          {{ sections?.coaches?.title ?? 'ทีมโค้ช' }}
         </h2>
       </div>
 
@@ -33,6 +33,7 @@ import type { Coach } from '~/types/coaches'
 
 
 
+const { sections } = useHomeContent()
 const { data: coaches } = await useFetch<Coach[]>('/api/home-coaches')
 </script>
 

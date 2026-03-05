@@ -1,5 +1,5 @@
-import testimonialsData from '../../data/testimonials.json'
+import testimonialsData from '../../data/reviews.json'
 
 export default defineEventHandler(() => {
-  return testimonialsData
+  return testimonialsData.reviews
 })

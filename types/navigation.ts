@@ -8,9 +8,8 @@ export interface Logo {
 // CTA Button
 export interface CTAButton {
   [x: string]: any
-  text: string
-  subtext?: string
-  url: string
+  submit: string
+  link: string
   external: boolean
 }
 
@@ -50,7 +49,7 @@ export interface SocialLink {
 // Root data structure
 export interface NavigationData {
   logo: Logo
-  cta: CTAButton
+  btnActionNow: CTAButton
   menu: MenuItem[]
   menuItems: MenuItem[] // Deprecated: use 'menu' instead
   socialLinks: SocialLink[]

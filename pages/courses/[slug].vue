@@ -15,21 +15,23 @@
               {{ classData.shortDescription || classData.description.split('\n')[0] }}
             </p>
 
-            <!-- Instructors -->
-            <div v-if="classData.instructors?.length">
-              <p class="text-sm text-textSecondary mb-3 tracking-widest uppercase">ถ่ายทอดโดย</p>
+            <!-- Coaches -->
+            <div v-if="classCoaches.length">
+              <p class="text-sm text-textSecondary mb-3 tracking-widest uppercase">{{ sections?.classes?.providedBy ?? 'ถ่ายทอดโดย' }}</p>
               <div class="flex gap-4">
-                <div
-                  v-for="(ins, i) in classData.instructors"
-                  :key="i"
-                  class="flex flex-col items-center gap-2"
+                <NuxtLink
+                  v-for="coach in classCoaches"
+                  :key="coach.id ?? coach.slug"
+                  :to="`/coaches/${coach.slug}`"
+                  class="flex flex-col items-center gap-2 group"
                 >
                   <img
-                    :src="ins.image"
-                    :alt="ins.name"
-                    class="w-20 h-20 rounded-full object-cover border-0 bg-[#1a1a2e]"
+                    :src="coach.avatar"
+                    :alt="coach.name ?? ''"
+                    class="w-20 h-20 rounded-full object-cover border-0 bg-[#1a1a2e] group-hover:ring-2 group-hover:ring-goldText"
                   />
-                </div>
+                  <span class="text-xs text-textSecondary group-hover:text-goldText">{{ coach.name }}</span>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -158,6 +160,8 @@
           <a
             v-if="classData.ctaDocumentUrl"
             :href="classData.ctaDocumentUrl"
+            download
+            target="_blank"
             class="block w-full text-center text-xl md:text-3xl lg:text-4xl font-semibold py-4 md:py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
           >
             {{ classLabels.downloads }}
@@ -177,9 +181,12 @@
 
 <script setup lang="ts">
 import type { ClassesData } from '~/types/classes'
+import type { Coach } from '~/types/coaches'
 import classesDataRaw from '~/data/classes.json'
+import coachesDataRaw from '~/data/coaches.json'
 import classLabels from '~/data/json/class.json'
 
+const { sections } = useHomeContent()
 const route = useRoute()
 const id = Number(route.params.slug)
 
@@ -191,6 +198,12 @@ const classData = isNaN(id)
 if (!classData) {
   throw showError({ statusCode: 404, message: 'Class not found.' })
 }
+
+const coaches = (coachesDataRaw as any).coaches as Coach[]
+const classCoaches = computed(() => {
+  const ids = (classData as any).coachIds as string[] ?? []
+  return ids.map(id => coaches.find(c => c.id === id)).filter(Boolean) as Coach[]
+})
 
 const galleryRef = ref<HTMLElement | null>(null)
 const galleryCanScrollLeft = ref(false)

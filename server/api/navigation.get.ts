@@ -6,7 +6,7 @@
  * Used by useNavigationData composable for SSR-safe data fetching.
  */
 
-import navigationDataRaw from '../../data/navigation.json'
+import navigationDataRaw from '../../data/menu.json'
 
 export default defineEventHandler(() => {
   return navigationDataRaw

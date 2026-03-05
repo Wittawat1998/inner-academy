@@ -3,30 +3,20 @@ import type { Serialize, Simplify } from "nitropack/types";
 declare module "nitropack/types" {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
+    '/api/clients': {
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/clients.get').default>>>>
+    }
     '/api/contact': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/contact.get').default>>>>
       'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/contact.post').default>>>>
     }
     '/api/courses': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/courses.get').default>>>>
     }
-    '/api/dualcta': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/dualcta.get').default>>>>
-    }
-    '/api/ebook': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/ebook.get').default>>>>
-    }
     '/api/home-coaches': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/home-coaches.get').default>>>>
     }
-    '/api/logos': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/logos.get').default>>>>
-    }
     '/api/navigation': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/navigation.get').default>>>>
-    }
-    '/api/podcast': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/podcast.get').default>>>>
     }
     '/api/testimonials': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/testimonials.get').default>>>>

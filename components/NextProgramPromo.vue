@@ -1,8 +1,8 @@
 <template>
   <section
-    v-if="program"
+    v-if="sections.classPrograms"
     class="next-program-section pt-5 pb-10 md:pb-16 lg:pb-20"
-    style="background-image: url('/images/bg/hero-bg.webp'); background-size: cover; background-position: center;"
+    :style="sections?.classPrograms?.bg ? `background-image: url('${sections.classPrograms.bg}'); background-size: cover; background-position: center;` : 'background-image: url(/images/bg/hero-bg.webp); background-size: cover; background-position: center;'"
     role="region"
     aria-label="Upcoming program"
   >
@@ -11,13 +11,13 @@
         <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-center justify-center">
         <!-- Left: Heading and subtitle -->
         <div class="flex-1 flex flex-col justify-center items-center md:items-start mb-0 md:pl-8 text-center md:text-left">
-          <h2 class="text-white font-semibold text-3xl md:text-4xl lg:text-7xl mb-2 tracking-tight leading-tight">NEXT PROGRAM</h2>
-          <div class="text-base md:text-lg lg:text-3xl text-gray-200 mb-2">ตารางการอบรม</div>
+          <h2 class="text-white font-semibold text-3xl md:text-4xl lg:text-7xl mb-2 tracking-tight leading-tight">{{ sections?.classPrograms?.title ?? 'NEXT PROGRAM' }}</h2>
+          <div class="text-base md:text-lg lg:text-3xl text-gray-200 mb-2">{{ sections?.classPrograms?.subtitle ?? 'ตารางการอบรม' }}</div>
           <div class="w-full h-0.5 mb-2 next-program-underline"></div>
         </div>
         <!-- Right: Program vertical card (mock) -->
         <div class="flex-1 w-full max-w-xs md:max-w-lg">
-          <img src="/images/next-program/next-program.webp" alt="Next Program Card" class="w-full rounded-3xl shadow-2xl" />
+          <img :src="sections?.classPrograms?.image ?? '/images/next-program/next-program.webp'" alt="Next Program Card" class="w-full rounded-3xl shadow-2xl" />
         </div>
         </div>
       </div>
@@ -27,22 +27,8 @@
 
 <script setup lang="ts">
 
-import nextProgramData from '~/data/nextProgram.json'
+const { sections } = useHomeContent()
 
-/**
- * NextProgramPromo Component
- * Feature: 002-home-page - User Story 2
- * 
- * Promotional banner for upcoming program
- * Theme: Dark surface background, gradient card, gold accents
- * 
- * @requirements
- * - FR-013: Dark surface background (bg-surface)
- * - FR-014: Program card with title, date, description
- * - FR-015: Optional gold pill CTA button (rounded-full)
- */
-
-const program = nextProgramData
 </script>
 
 <style scoped>

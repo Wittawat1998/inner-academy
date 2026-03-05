@@ -2154,16 +2154,16 @@ __FqZsEfjjxjm5ttXhq7HwaGCOI1aOdzesmkR7dBKXHg
 const assets = {
   "/index.mjs": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"2ba9c-LJ6k7AJTg0GG1GWr52cnrjmG2bM\"",
-    "mtime": "2026-03-03T14:15:41.247Z",
-    "size": 178844,
+    "etag": "\"2a213-ZbeqrDWIDUaMSenuZxXC/T0kfto\"",
+    "mtime": "2026-03-05T15:00:03.248Z",
+    "size": 172563,
     "path": "index.mjs"
   },
   "/index.mjs.map": {
     "type": "application/json",
-    "etag": "\"73275-cNSPD5Qp1m2fab+lHTuq4AEH9V0\"",
-    "mtime": "2026-03-03T14:15:41.248Z",
-    "size": 471669,
+    "etag": "\"72faf-XeF8AJCclgsGJZfpyY9xkt9ciFU\"",
+    "mtime": "2026-03-05T15:00:03.248Z",
+    "size": 470959,
     "path": "index.mjs.map"
   }
 };
@@ -2709,29 +2709,21 @@ const _Sv3nRo = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_6r8yDm = () => Promise.resolve().then(function () { return contact_get$1; });
+const _lazy_Zq77up = () => Promise.resolve().then(function () { return clients_get$1; });
 const _lazy_egoV1M = () => Promise.resolve().then(function () { return contact_post$1; });
 const _lazy_lkDsoW = () => Promise.resolve().then(function () { return courses_get$1; });
-const _lazy_ZQLK2m = () => Promise.resolve().then(function () { return dualcta_get$1; });
-const _lazy_lqqtEz = () => Promise.resolve().then(function () { return ebook_get$1; });
 const _lazy_CWuX6W = () => Promise.resolve().then(function () { return homeCoaches_get$1; });
-const _lazy_p79CqZ = () => Promise.resolve().then(function () { return logos_get$1; });
 const _lazy_ukKbUq = () => Promise.resolve().then(function () { return navigation_get$1; });
-const _lazy_57KfM1 = () => Promise.resolve().then(function () { return podcast_get$1; });
 const _lazy_LmuNs7 = () => Promise.resolve().then(function () { return testimonials_get$1; });
 const _lazy_jiaZgZ = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '', handler: _y4jxbn, lazy: false, middleware: true, method: undefined },
-  { route: '/api/contact', handler: _lazy_6r8yDm, lazy: true, middleware: false, method: "get" },
+  { route: '/api/clients', handler: _lazy_Zq77up, lazy: true, middleware: false, method: "get" },
   { route: '/api/contact', handler: _lazy_egoV1M, lazy: true, middleware: false, method: "post" },
   { route: '/api/courses', handler: _lazy_lkDsoW, lazy: true, middleware: false, method: "get" },
-  { route: '/api/dualcta', handler: _lazy_ZQLK2m, lazy: true, middleware: false, method: "get" },
-  { route: '/api/ebook', handler: _lazy_lqqtEz, lazy: true, middleware: false, method: "get" },
   { route: '/api/home-coaches', handler: _lazy_CWuX6W, lazy: true, middleware: false, method: "get" },
-  { route: '/api/logos', handler: _lazy_p79CqZ, lazy: true, middleware: false, method: "get" },
   { route: '/api/navigation', handler: _lazy_ukKbUq, lazy: true, middleware: false, method: "get" },
-  { route: '/api/podcast', handler: _lazy_57KfM1, lazy: true, middleware: false, method: "get" },
   { route: '/api/testimonials', handler: _lazy_LmuNs7, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
@@ -3000,36 +2992,163 @@ const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   default: styles
 }, Symbol.toStringTag, { value: 'Module' }));
 
-var heading$1 = "ติดต่อเรา";
-var description$3 = "สอบถามรายละเอียดหลักสูตร รูปแบบการเรียน แนบประเมินศักยภาพพนักงานฟรี\nหรือว่าขอเข้าเยี่ยมชม ๆ กับที่ปรึกษาการเรียนรู้ของเราได้เลย";
-var phone = "080-265-6266";
-var email = "info@innerpower.co.th";
-var address = {
-	company: "บริษัท อินเนอร์ เพาเวอร์ เทรนนิ่ง จำกัด",
-	building: "Raintree Office Garden",
-	floor: "อาคาร B2 ชั้น 2",
-	street: "เลขที่ 280 ซอยศูนย์วิจัย 4 (พระราม 9 ซอย 17)",
-	district: "บางกะปิ ห้วยขวาง กรุงเทพฯ 10310"
-};
-var mapImage = "/images/contact-map.png";
-var mapEmbedUrl = "https://www.google.com/maps?q=บริษัท+อินเนอร์+เพาเวอร์+เทรนนิ่ง+จำกัด,+Raintree+Office+Garden,+280+ซอยสุขุมวิจัย+4,+บางกะปิ,+กรุงเทพฯ+10310&output=embed";
-const contactDataRaw = {
-	heading: heading$1,
-	description: description$3,
-	phone: phone,
-	email: email,
-	address: address,
-	mapImage: mapImage,
-	mapEmbedUrl: mapEmbedUrl
+var clients = [
+	{
+		order: 1,
+		nameEn: "KING POWER",
+		nameTh: "บริษัท คิง เพาเวอร์ อินเตอร์เนชันแนล",
+		logo: "/images/clients/client-01.webp"
+	},
+	{
+		order: 2,
+		nameEn: "THAILIFE",
+		nameTh: "ไทยประกันชีวิต",
+		logo: "/images/clients/client-02.webp"
+	},
+	{
+		order: 3,
+		nameEn: "AIA",
+		nameTh: "เอไอเอ กรุ๊ป ลิมิเต็ด",
+		logo: "/images/clients/client-03.webp"
+	},
+	{
+		order: 4,
+		nameEn: "SULWHASOO",
+		nameTh: "บริษัท อมอร์แปซิฟิค (ไทยแลนด์) จำกัด",
+		logo: "/images/clients/client-04.webp"
+	},
+	{
+		order: 5,
+		nameEn: "LANCÔME",
+		nameTh: "บริษัท ลอรีอัล (ประเทศไทย) จำกัด",
+		logo: "/images/clients/client-05.webp"
+	},
+	{
+		order: 6,
+		nameEn: "LOUIS VUITTON",
+		nameTh: "หลุยส์ วิตตอง",
+		logo: "/images/clients/client-06.webp"
+	},
+	{
+		order: 7,
+		nameEn: "DIOR",
+		nameTh: "ดิออร์",
+		logo: "/images/clients/client-07.webp"
+	},
+	{
+		order: 8,
+		nameEn: "VOW GROUP",
+		nameTh: "บริษัท วาว กรุ๊ป โฮลดิ้ง จำกัด",
+		logo: "/images/clients/client-08.webp"
+	},
+	{
+		order: 9,
+		nameEn: "CPN",
+		nameTh: "บริษัท เซ็นทรัลพัฒนา จำกัด",
+		logo: "/images/clients/client-09.webp"
+	},
+	{
+		order: 10,
+		nameEn: "SINGHA",
+		nameTh: "บริษัท สิงห์ คอร์เปอเรชั่น จำกัด",
+		logo: "/images/clients/client-10.webp"
+	},
+	{
+		order: 11,
+		nameEn: "SCG",
+		nameTh: "ปูนซิเมนต์ไทย",
+		logo: "/images/clients/client-11.webp"
+	},
+	{
+		order: 12,
+		nameEn: "HÄFELE",
+		nameTh: "เฮเฟเล่ ดีไซน์ สตูดิโอ",
+		logo: "/images/clients/client-12.webp"
+	},
+	{
+		order: 13,
+		nameEn: "DUTCH MILL",
+		nameTh: "ดัชมิลล์",
+		logo: "/images/clients/client-13.webp"
+	},
+	{
+		order: 14,
+		nameEn: "TOYOTA",
+		nameTh: "บริษัท โตโยต้า มอเตอร์ ประเทศไทย จำกัด",
+		logo: "/images/clients/client-14.webp"
+	},
+	{
+		order: 15,
+		nameEn: "HONDA",
+		nameTh: "ฮอนด้า",
+		logo: "/images/clients/client-15.webp"
+	},
+	{
+		order: 16,
+		nameEn: "BMW",
+		nameTh: "บมจ. ยนตรกิจบาวาเรีย",
+		logo: "/images/clients/client-16.webp"
+	},
+	{
+		order: 17,
+		nameEn: "AIS",
+		nameTh: "เอไอเอส",
+		logo: "/images/clients/client-17.webp"
+	},
+	{
+		order: 18,
+		nameEn: "DTAC",
+		nameTh: "บริษัท โทเทิ่ล แอ็คเซ็ส คอมมูนิเคชั่น จำกัด",
+		logo: "/images/clients/client-18.webp"
+	},
+	{
+		order: 19,
+		nameEn: "KBANK",
+		nameTh: "ธนาคารกสิกรไทย จำกัด (มหาชน)",
+		logo: "/images/clients/client-19.webp"
+	},
+	{
+		order: 20,
+		nameEn: "SCB",
+		nameTh: "ไทยพาณิชย์",
+		logo: "/images/clients/client-20.webp"
+	},
+	{
+		order: 21,
+		nameEn: "TTB",
+		nameTh: "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
+		logo: "/images/clients/client-21.webp"
+	},
+	{
+		order: 22,
+		nameEn: "LAND & HOUSES",
+		nameTh: "แลนด์ แอนด์ เฮ้าส์",
+		logo: "/images/clients/client-22.webp"
+	},
+	{
+		order: 23,
+		nameEn: "BANGKOK HOSPITAL",
+		nameTh: "โรงพยาบาลกรุงเทพ",
+		logo: "/images/clients/client-23.webp"
+	},
+	{
+		order: 24,
+		nameEn: "BANPU",
+		nameTh: "บริษัท บ้านปู จำกัด",
+		logo: "/images/clients/client-24.webp"
+	}
+];
+const logosDataRaw = {
+	clients: clients
 };
 
-const contact_get = defineEventHandler(() => {
-  return contactDataRaw;
+const clients_get = defineEventHandler(() => {
+  return logosDataRaw.clients;
 });
 
-const contact_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const clients_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
-  default: contact_get
+  default: clients_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
 async function verifyTurnstile(token, secretKey) {
@@ -3275,13 +3394,14 @@ var classes = [
 	{
 		id: 1,
 		classId: "KM",
+		order: 8,
 		title: "Key Message: Clear Message",
 		nameTh: "สื่อสารข้อมูลชัดเจน ตรงประเด็น เพื่อให้ผู้ฟังเข้าใจทันที",
 		coachIds: [
 			"M",
 			"LK"
 		],
-		description: "ในโลกธุรกิจที่มีการแข่งขันสูงและเต็มไปด้วยข้อมูลมากมาย การสื่อสารอย่างตรงประเด็นได้กลายเป็นทักษะที่สำคัญอย่างยิ่งสำหรับความสำเร็จขององค์กร การสื่อสารที่ชัดเจน กระชับ และตรงเป้าหมายไม่เพียงแต่ช่วยประหยัดเวลาและทรัพยากร แต่ยังช่วยลดความเข้าใจผิด เพิ่มประสิทธิภาพในการทำงาน และสร้างความได้เปรียบในการแข่งขันให้กับองค์กร\n\nการลงทุนในการพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงไม่เพียงแต่ช่วยพัฒนาความสามารถของพนักงานเท่านั้น แต่ยังช่วยสร้างสภาพแวดล้อมการทำงานที่มีประสิทธิภาพมากขึ้น ลดความขัดแย้ง และนำไปสู่การตัดสินใจที่รวดเร็วและแม่นยำมากขึ้น ซึ่งทั้งหมดนี้ช่วยเสริมสร้างความสามารถในการแข่งขันให้กับองค์กรในระยะยาว\n\nด้วยเหตุนี้ การจัดหลักสูตรพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงเป็นสิ่งจำเป็นสำหรับองค์กรที่ต้องการเติบโตอย่างยั่งยืนในยุคปัจจุบัน",
+		description: "ในโลกธุรกิจที่มีการแข่งขันสูงและเต็มไปด้วยข้อมูลมากมาย การสื่อสารอย่างตรงประเด็นได้กลายเป็นทักษะที่สำคัญอย่างยิ่งสำหรับความสำเร็จขององค์กร การสื่อสารที่ชัดเจน กระชับ และตรงเป้าหมายไม่เพียงแต่ช่วยประหยัดเวลาและทรัพยากร แต่ยังช่วยลดความเข้าใจผิด เพิ่มประสิทธิภาพในการทำงาน และสร้างความได้เปรียบในการแข่งขันให้กับองค์กร\n\nการลงทุนในการพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงไม่เพียงแต่ช่วยพัฒนาความสามารถของพนักงานเท่านั้น แต่ยังช่วยสร้างสภาพแวดล้อมการทำงานที่มีประสิทธิภาพมากขึ้น ลดความขัดแย้ง และนำไปสู่การตัดสินใจที่รวดเร็วและแม่นยำมากขึ้น ซึ่งทั้งหมดนี้จะช่วยเสริมสร้างความสามารถในการแข่งขันให้กับองค์กรในระยะยาว\n\nด้วยเหตุนี้ การจัดหลักสูตรพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงเป็นสิ่งจำเป็นสำหรับองค์กรที่ต้องการเติบโตอย่างยั่งยืนในยุคปัจจุบัน\n\nKey Message: Clear Message\nศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน\n\nหลักสูตรนี้จะช่วยให้บุคลากรทุกระดับสามารถพัฒนาความสามารถในการสื่อสารที่ชัดเจน กระชับ และมีประสิทธิภาพ ซึ่งจะนำไปสู่การทำงานร่วมกันที่ดีขึ้น การแก้ปัญหาที่รวดเร็วขึ้น และการสร้างความสัมพันธ์ที่แน่นแฟ้นทั้งกับลูกค้าและพันธมิตรทางธุรกิจ ทำให้องค์กรสามารถรับมือกับความท้าทายในอนาคตได้อย่างมั่นใจและประสบความสำเร็จในระยะยาว\n\nทำไมต้องคลาสนี้? ทำไมต้องสื่อสารให้กระชับ:\n- เพื่อพัฒนาพนักงานให้มีทักษะการสื่อสารที่ดี มีประสิทธิภาพมากขึ้น ลดการทำงานซ้ำ (Rework) หรือการเข้าใจผิดในคำสั่งงาน\n- ให้พนักงานรู้จักการวิเคราะห์คู่สนทนาซึ่งสามารถนำไปปรับใช้ในหลายบริบทของการทำงาน เช่น การพูดคุยกับบุคคลทั้งภายในและภายนอกองค์กร\n- พนักงานสามารถให้ feedback ที่มีโครงสร้างเพื่อการปรับปรุงและพัฒนาองค์กรได้\n\nผลลัพธ์ในการลงทุนกับการเรียน ไม่ใช่แค่การฝึกพูดแต่คือ :\n- คุณจะกลายเป็นคนที่ \"น่าเชื่อถือ\" มากขึ้น (Professional Credibility)\n- ประหยัดเวลาในการทำงานจากการสื่อสารที่ชัดเจนมีประสิทธิภาพ (Time Saving)\n- เพิ่มโอกาสในการ \"ได้รับความไว้วางใจ\" (Higher Approval Rate)\n- เน้นการลงมือทำ (Workshop-based) 80% เพื่อให้มั่นใจว่าจบการอบรมแล้ว ทีมงานจะสามารถ \"ใช้งานได้ทันที\" พร้อมความเปลี่ยนแปลงที่เห็นชัดเจนตั้งแต่วันแรก\n\nหยุดความสับสน เพิ่มประสิทธิภาพให้องค์กรด้วยการสื่อสารที่ตรงเป้าหมาย ยกระดับทักษะการสกัด Key Message ของทีมงานให้ก้าวล้ำไปพร้อมกับโลกธุรกิจ\n\nสอบถามรายละเอียดหลักสูตร หรือนัดหมายปรึกษาเพื่อออกแบบเวิร์กชอปที่ใช่สำหรับองค์กรคุณ กับเราวันนี้",
 		shortDescription: "ศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน",
 		slug: "key-message-clear-message",
 		featured: true,
@@ -3308,21 +3428,12 @@ var classes = [
 			proposal: "/downloads/classes/Key Message Clear Message.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Key Message Clear Message.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 2,
 		classId: "EM",
+		order: 6,
 		title: "Emotional Mastery",
 		nameTh: "บริหารอารมณ์และการรับมือกับสถานการณ์ต่าง ๆ อย่างมืออาชีพ",
 		coachIds: [
@@ -3355,21 +3466,12 @@ var classes = [
 			proposal: "/downloads/classes/Emotional Mastery.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Emotional Mastery.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 3",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 4",
-				image: "/images/instructors/instructor-1.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 3,
 		classId: "QA",
+		order: 9,
 		title: "Coaching Leadership Through Powerful Questions",
 		nameTh: "การโค้ชด้วยคำถาม เพื่อกระตุ้นความคิดและพัฒนาศักยภาพให้กับทีมงาน",
 		coachIds: [
@@ -3403,21 +3505,12 @@ var classes = [
 			proposal: "/downloads/classes/Coaching Leadership Through Powerful Questions.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Coaching Leadership Through Powerful Questions.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 5",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 6",
-				image: "/images/instructors/instructor-1.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 4,
 		classId: "BH",
+		order: 4,
 		title: "Brain Hacker: Fundamental of Analytical Thinking and System Thinking",
 		nameTh: "พัฒนาทักษะการคิดอย่างเป็นระบบ จัดการงานได้อย่างมีประสิทธิภาพ",
 		coachIds: [
@@ -3463,21 +3556,12 @@ var classes = [
 			proposal: "/downloads/classes/Brain Hacker.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Brain Hacker.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 7",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 8",
-				image: "/images/instructors/instructor-1.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 5,
 		classId: "LI",
+		order: 7,
 		title: "Listening Intelligence",
 		nameTh: "ฟังให้ลึกซึ้งถึงความต้องการ และเจตนาของคู่สนทนาเพื่อความเข้าใจในองค์กร",
 		coachIds: [
@@ -3511,21 +3595,12 @@ var classes = [
 			proposal: "/downloads/classes/Listening Intelligence.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Listening Intelligence.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 6,
 		classId: "PPA",
+		order: 11,
 		title: "Personality Power: Awaken Your Potential",
 		nameTh: "ยกระดับบุคลิกภาพให้น่าเชื่อถือ และสร้างความประทับใจ",
 		coachIds: [
@@ -3559,21 +3634,12 @@ var classes = [
 			proposal: "/downloads/classes/Personality Power.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Personality Power.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 7,
 		classId: "SC",
+		order: 1,
 		title: "Self Transform To Team Collaboration",
 		nameTh: "พัฒนาการทำงานร่วมกันเป็นทีม",
 		coachIds: [
@@ -3604,21 +3670,12 @@ var classes = [
 			proposal: "/downloads/classes/Self-Transform to Team Collaboration.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Self-Transform to Team Collaboration.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 8,
 		classId: "TD",
+		order: 2,
 		title: "Transform Deep Belief: Unlock your potential",
 		nameTh: "ปลดล็อคศักยภาพจากภายในเพื่อประสิทธิภาพในการทำงาน",
 		coachIds: [
@@ -3650,21 +3707,12 @@ var classes = [
 			proposal: "/downloads/classes/Transform Deep Belief.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Transform Deep Belief.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 9,
 		classId: "GM",
+		order: 3,
 		title: "Goal Setting for Team Alignment",
 		nameTh: "ตั้งเป้าหมายชีวิตสอดคล้องกับองค์กร",
 		coachIds: [
@@ -3698,21 +3746,12 @@ var classes = [
 			proposal: "/downloads/classes/Goal Setting for Team Alignment.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Goal Setting for Team Alignment.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 10,
 		classId: "IPS",
+		order: 10,
 		title: "Influencing Presentation for Sale",
 		nameTh: "การนำเสนอที่ทรงพลังเพื่อปิดการขายด้วยคุณค่า",
 		coachIds: [
@@ -3746,21 +3785,12 @@ var classes = [
 			proposal: "/downloads/classes/Influencing Presentation for Sale.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/Influencing Presentation for Sale.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 11,
 		classId: "STR",
+		order: 12,
 		title: "The Magic of Influential Storytelling",
 		nameTh: "พัฒนาเทคนิคการเล่าเรื่องเพื่อสร้างแรงจูงใจ",
 		coachIds: [
@@ -3794,21 +3824,12 @@ var classes = [
 			proposal: "/downloads/classes/The Magic of Influential Storytelling.pdf"
 		},
 		ctaDocumentUrl: "/downloads/classes/The Magic of Influential Storytelling.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 12,
 		classId: "SBA",
+		order: 13,
 		title: "Strategic Business Analysis Toolkit: 6 Powerful Frameworks",
 		nameTh: "",
 		coachIds: [
@@ -3838,21 +3859,12 @@ var classes = [
 			proposal: ""
 		},
 		ctaDocumentUrl: "#",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	},
 	{
 		id: 13,
 		classId: "CRT",
+		order: 5,
 		title: "Critical Thinking",
 		nameTh: "พัฒนากระบวนการคิด ประเมินข้อมูลอย่างรอบด้าน",
 		coachIds: [
@@ -3883,17 +3895,7 @@ var classes = [
 			proposal: "/downloads/Critical Thinking.pdf"
 		},
 		ctaDocumentUrl: "/downloads/Critical Thinking.pdf",
-		ctaNextRoundUrl: "/#contact",
-		instructors: [
-			{
-				name: "Instructor 1",
-				image: "/images/instructors/instructor-1.svg"
-			},
-			{
-				name: "Instructor 2",
-				image: "/images/instructors/instructor-2.svg"
-			}
-		]
+		ctaNextRoundUrl: "/#contact"
 	}
 ];
 const classesData = {
@@ -3902,7 +3904,13 @@ const classesData = {
 };
 
 const courses_get = defineEventHandler(() => {
-  return classesData;
+  return {
+    ...classesData,
+    classes: [...classesData.classes].sort((a, b) => {
+      var _a, _b;
+      return ((_a = a.order) != null ? _a : 999) - ((_b = b.order) != null ? _b : 999);
+    })
+  };
 });
 
 const courses_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3910,77 +3918,18 @@ const courses_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePrope
   default: courses_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
-var heading = "รับแบบประเมินฟรี";
-var description$2 = "เพื่อประเมิน Soft-Skills หลากหลายมิติให้บุคลากรของท่าน";
-var descriptionLine2 = "( มูลค่า 5,000 บาท )";
-var backgroundImage$1 = "/images/hero/team-photo.jpg";
-var primaryButtonText = "ประเมินทักษะด้าน Soft-Skills ตอนนี้";
-var primaryButtonUrl = "https://assessment.innerpower.co.th/p/self-assessment";
-var secondaryButtonText = "ประเมินความฉลาดทางอารมณ์ ตอนนี้";
-var secondaryButtonUrl = "https://assessment.innerpower.co.th/p/self-assessment-ei";
-const dualCTAData = {
-	heading: heading,
-	description: description$2,
-	descriptionLine2: descriptionLine2,
-	backgroundImage: backgroundImage$1,
-	primaryButtonText: primaryButtonText,
-	primaryButtonUrl: primaryButtonUrl,
-	secondaryButtonText: secondaryButtonText,
-	secondaryButtonUrl: secondaryButtonUrl
-};
-
-const dualcta_get = defineEventHandler(() => {
-  return dualCTAData;
-});
-
-const dualcta_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: dualcta_get
-}, Symbol.toStringTag, { value: 'Module' }));
-
-var headingLine1 = "ปลดปล่อยศักยภาพ";
-var headingLine2Before = "ด้วย";
-var headingLine2Highlight = "ความรู้";
-var headingLine2After = " ไปด้วยกัน";
-var subheading = "เครื่องมืออัป Soft-Skills\nให้กับทั้งองค์กร\nที่ HR รุ่นใหม่ต้องมี";
-var description$1 = "Guidebook เพื่อยกระดับประสิทธิภาพการทำงานให้ชาวออฟฟิศ เรียบเรียงโดยเฉพาะสำหรับ HR ในการวัดระดับ 8 ทักษะการทำงานที่จำเป็นในยุคนี้ และ 5 เครื่องมือสำหรับติดตามพัฒนาการด้าน Soft-Skills ของบุคลากรที่ให้ผลลัพธ์เป็นข้อมูลที่จับต้องได้";
-var backgroundImage = "/images/ebook/ebook-bg.jpg";
-var image$1 = "/images/ebook/ebook.webp";
-var ctaText = "รับ Guidebook ฟรี";
-var ctaUrl = "/contact";
-const ebookDataRaw = {
-	headingLine1: headingLine1,
-	headingLine2Before: headingLine2Before,
-	headingLine2Highlight: headingLine2Highlight,
-	headingLine2After: headingLine2After,
-	subheading: subheading,
-	description: description$1,
-	backgroundImage: backgroundImage,
-	image: image$1,
-	ctaText: ctaText,
-	ctaUrl: ctaUrl
-};
-
-const ebook_get = defineEventHandler(() => {
-  return ebookDataRaw;
-});
-
-const ebook_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: ebook_get
-}, Symbol.toStringTag, { value: 'Module' }));
-
 var coaches = [
 	{
 		slug: "dr-ked",
+		id: "KD",
+		order: 1,
 		name: "ดร.เกด",
 		nameTh: "สุกฤตา ปรีชาว่อง",
 		career: "Co-Founder and Organization Coach",
-		photo: "/images/coaches/coach-1/m.webp",
-		image: "/images/coaches/coach-1/m.webp",
+		avatar: "/images/coaches/kd.webp",
 		gallery: [
-			"/images/coaches/coach-1/gallery/km-gallery-1.jpg",
-			"/images/coaches/coach-1/gallery/km-gallery-2.jpg"
+			"/images/coaches/kd/km-gallery-1.jpg",
+			"/images/coaches/kd/km-gallery-2.jpg"
 		],
 		bio: "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร ด้วยความเชี่ยวชาญด้านจิตวิทยาองค์กรและภาวะผู้นำ เธอได้ช่วยพัฒนาองค์กรชั้นนำในประเทศไทยมาแล้วมากมาย",
 		expertise: "Organization Coaching, Leadership Development, Soft Skills Training",
@@ -4020,18 +3969,20 @@ var coaches = [
 				channel: "tiktok",
 				link: "https://tiktok.com/@innerpower"
 			}
-		]
+		],
+		proposal: "/downloads/example.pdf"
 	},
 	{
 		slug: "kru-lookkaew",
+		id: "LK",
+		order: 2,
 		name: "ครูลูกแก้ว",
 		nameTh: "วริศรา บำรุงเวช",
 		career: "Communication and Presentation Coach",
-		photo: "/images/coaches/coach-2/m.webp",
-		image: "/images/coaches/coach-2/m.webp",
+		avatar: "/images/coaches/lk.webp",
 		gallery: [
-			"/images/coaches/coach-2/gallery/km-gallery-1.jpg",
-			"/images/coaches/coach-2/gallery/km-gallery-2.jpg"
+			"/images/coaches/lk/km-gallery-1.jpg",
+			"/images/coaches/lk/km-gallery-2.jpg"
 		],
 		bio: "ครูลูกแก้วเชี่ยวชาญด้านการสื่อสารและการนำเสนอ ช่วยพัฒนาทักษะการพูดและการสื่อสารให้กับผู้เรียนหลากหลายระดับ",
 		expertise: "เพิ่มประสิทธิภาพการสื่อสาร สร้างแรงบันดาลใจด้วยทัศนคติเชิงบวก",
@@ -4077,29 +4028,27 @@ var coaches = [
 		],
 		socialMedia: [
 			{
-				channel: "facebook",
-				link: "https://www.facebook.com/..."
-			},
-			{
 				channel: "instagram",
-				link: "https://www.instagram.com/..."
+				link: "https://www.instagram.com/lk_lukkaew/"
 			},
 			{
 				channel: "tiktok",
-				link: "https://www.tiktok.com/..."
+				link: "https://www.tiktok.com/@krulukkaew"
 			}
-		]
+		],
+		proposal: "/downloads/example.pdf"
 	},
 	{
 		slug: "kru-so",
+		id: "S",
+		order: 3,
 		name: "ครูซอ",
 		nameTh: "ดร.สทาคัย พงศ์หิรัญ",
 		career: "Communication and Presentation Coach",
-		photo: "/images/coaches/coach-3/m.webp",
-		image: "/images/coaches/coach-3/m.webp",
+		avatar: "/images/coaches/s.webp",
 		gallery: [
-			"/images/coaches/coach-3/gallery/km-gallery-1.jpg",
-			"/images/coaches/coach-3/gallery/km-gallery-2.jpg"
+			"/images/coaches/s/km-gallery-1.jpg",
+			"/images/coaches/s/km-gallery-2.jpg"
 		],
 		bio: "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร ด้วยประสบการณ์กว่า 15 ปี เขาได้ช่วยพัฒนาทักษะการสื่อสารให้กับผู้บริหารและบุคลากรในองค์กรชั้นนำ มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริงในชีวิตและการทำงาน",
 		expertise: "Communication Coaching, Presentation Skills, Corporate Training",
@@ -4135,18 +4084,20 @@ var coaches = [
 				channel: "instagram",
 				link: "https://instagram.com/innerpower"
 			}
-		]
+		],
+		proposal: "/downloads/example.pdf"
 	},
 	{
 		slug: "coach-kitti",
+		id: "KT",
+		order: 4,
 		name: "โค้ชกิตติ",
 		nameTh: "กิตติ ไตรรัตน์",
 		career: "Mindset, Passion and Satir Coach",
-		photo: "/images/coaches/coach-4/m.webp",
-		image: "/images/coaches/coach-4/m.webp",
+		avatar: "/images/coaches/kt.webp",
 		gallery: [
-			"/images/coaches/coach-4/gallery/km-gallery-1.jpg",
-			"/images/coaches/coach-4/gallery/km-gallery-2.jpg"
+			"/images/coaches/kt/km-gallery-1.jpg",
+			"/images/coaches/kt/km-gallery-2.jpg"
 		],
 		bio: "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir Model เพื่อเปลี่ยนแปลงชีวิตจากภายใน เขาช่วยให้ผู้คนค้นพบตัวเองและสร้างชีวิตที่มีความหมายผ่านกระบวนการโค้ชเชิงลึก",
 		expertise: "Mindset Coaching, Passion Discovery, Satir Model Coaching",
@@ -4187,18 +4138,20 @@ var coaches = [
 				channel: "tiktok",
 				link: "https://tiktok.com/@innerpower"
 			}
-		]
+		],
+		proposal: "/downloads/example.pdf"
 	},
 	{
 		slug: "coach-5",
+		id: "NF",
+		order: 5,
 		name: "โค้ชที่ 5",
 		nameTh: "ชื่อ นามสกุล",
 		career: "Leadership and Team Coach",
-		photo: "/images/coaches/coach-5/m.webp",
-		image: "/images/coaches/coach-5/m.webp",
+		avatar: "/images/coaches/nf.webp",
 		gallery: [
-			"/images/coaches/coach-5/gallery/km-gallery-1.jpg",
-			"/images/coaches/coach-5/gallery/km-gallery-2.jpg"
+			"/images/coaches/nf/km-gallery-1.jpg",
+			"/images/coaches/nf/km-gallery-2.jpg"
 		],
 		bio: "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ด้วยประสบการณ์ในการทำงานร่วมกับผู้บริหารระดับสูง เขาช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่งและพัฒนาภาวะผู้นำอย่างยั่งยืน",
 		expertise: "Leadership Coaching, Team Development, Organizational Change",
@@ -4237,18 +4190,20 @@ var coaches = [
 				channel: "linkedin",
 				link: "https://linkedin.com/in/innerpower"
 			}
-		]
+		],
+		proposal: "/downloads/example.pdf"
 	},
 	{
 		slug: "coach-6",
+		id: "NU",
+		order: 6,
 		name: "โค้ชที่ 6",
 		nameTh: "ชื่อ นามสกุล",
 		career: "NLP and Mindset Coach",
-		photo: "/images/coaches/coach-6/m.webp",
-		image: "/images/coaches/coach-6/m.webp",
+		avatar: "/images/coaches/nu.webp",
 		gallery: [
-			"/images/coaches/coach-6/gallery/km-gallery-1.jpg",
-			"/images/coaches/coach-6/gallery/km-gallery-2.jpg"
+			"/images/coaches/nu/km-gallery-1.jpg",
+			"/images/coaches/nu/km-gallery-2.jpg"
 		],
 		bio: "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ด้วยเครื่องมือและเทคนิคจาก Neuro-Linguistic Programming เขาช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัดเพื่อสร้างชีวิตและอาชีพที่ต้องการ",
 		expertise: "NLP Coaching, Mindset Transformation, Behavioral Change",
@@ -4286,18 +4241,20 @@ var coaches = [
 				channel: "linkedin",
 				link: "https://linkedin.com/in/innerpower"
 			}
-		]
+		],
+		proposal: "/downloads/example.pdf"
 	},
 	{
 		slug: "coach-7",
+		id: "M",
+		order: 7,
 		name: "โค้ชที่ 7",
 		nameTh: "ชื่อ นามสกุล",
 		career: "Performance and Wellness Coach",
-		photo: "/images/coaches/coach-7/m.webp",
-		image: "/images/coaches/coach-7/m.webp",
+		avatar: "/images/coaches/m.webp",
 		gallery: [
-			"/images/coaches/coach-7/gallery/km-gallery-1.jpg",
-			"/images/coaches/coach-7/gallery/km-gallery-2.jpg"
+			"/images/coaches/m/km-gallery-1.jpg",
+			"/images/coaches/m/km-gallery-2.jpg"
 		],
 		bio: "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ด้วยการผสมผสานศาสตร์การโค้ชและความรู้ด้านสุขภาพ เขาช่วยให้ผู้คนบรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงานอย่างสมดุล",
 		expertise: "Performance Coaching, Wellness Coaching, Work-Life Balance",
@@ -4337,7 +4294,8 @@ var coaches = [
 				channel: "linkedin",
 				link: "https://linkedin.com/in/innerpower"
 			}
-		]
+		],
+		proposal: "/downloads/example.pdf"
 	}
 ];
 const coachesData = {
@@ -4353,172 +4311,15 @@ const homeCoaches_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineP
   default: homeCoaches_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const logosDataRaw = [
-	{
-		order: 1,
-		nameEn: "KING POWER",
-		nameTh: "บริษัท คิง เพาเวอร์ อินเตอร์เนชันแนล",
-		logo: "/images/clients/client-01.webp"
-	},
-	{
-		order: 2,
-		nameEn: "THAILIFE",
-		nameTh: "ไทยประกันชีวิต",
-		logo: "/images/clients/client-02.webp"
-	},
-	{
-		order: 3,
-		nameEn: "AIA",
-		nameTh: "เอไอเอ กรุ๊ป ลิมิเต็ด",
-		logo: "/images/clients/client-03.webp"
-	},
-	{
-		order: 4,
-		nameEn: "SULWHASOO",
-		nameTh: "บริษัท อมอร์แปซิฟิค (ไทยแลนด์) จำกัด",
-		logo: "/images/clients/client-04.webp"
-	},
-	{
-		order: 5,
-		nameEn: "LANCÔME",
-		nameTh: "บริษัท ลอรีอัล (ประเทศไทย) จำกัด",
-		logo: "/images/clients/client-05.webp"
-	},
-	{
-		order: 6,
-		nameEn: "LOUIS VUITTON",
-		nameTh: "หลุยส์ วิตตอง",
-		logo: "/images/clients/client-06.webp"
-	},
-	{
-		order: 7,
-		nameEn: "DIOR",
-		nameTh: "ดิออร์",
-		logo: "/images/clients/client-07.webp"
-	},
-	{
-		order: 8,
-		nameEn: "VOW GROUP",
-		nameTh: "บริษัท วาว กรุ๊ป โฮลดิ้ง จำกัด",
-		logo: "/images/clients/client-08.webp"
-	},
-	{
-		order: 9,
-		nameEn: "CPN",
-		nameTh: "บริษัท เซ็นทรัลพัฒนา จำกัด",
-		logo: "/images/clients/client-09.webp"
-	},
-	{
-		order: 10,
-		nameEn: "SINGHA",
-		nameTh: "บริษัท สิงห์ คอร์เปอเรชั่น จำกัด",
-		logo: "/images/clients/client-10.webp"
-	},
-	{
-		order: 11,
-		nameEn: "SCG",
-		nameTh: "ปูนซิเมนต์ไทย",
-		logo: "/images/clients/client-11.webp"
-	},
-	{
-		order: 12,
-		nameEn: "HÄFELE",
-		nameTh: "เฮเฟเล่ ดีไซน์ สตูดิโอ",
-		logo: "/images/clients/client-12.webp"
-	},
-	{
-		order: 13,
-		nameEn: "DUTCH MILL",
-		nameTh: "ดัชมิลล์",
-		logo: "/images/clients/client-13.webp"
-	},
-	{
-		order: 14,
-		nameEn: "TOYOTA",
-		nameTh: "บริษัท โตโยต้า มอเตอร์ ประเทศไทย จำกัด",
-		logo: "/images/clients/client-14.webp"
-	},
-	{
-		order: 15,
-		nameEn: "HONDA",
-		nameTh: "ฮอนด้า",
-		logo: "/images/clients/client-15.webp"
-	},
-	{
-		order: 16,
-		nameEn: "BMW",
-		nameTh: "บมจ. ยนตรกิจบาวาเรีย",
-		logo: "/images/clients/client-16.webp"
-	},
-	{
-		order: 17,
-		nameEn: "AIS",
-		nameTh: "เอไอเอส",
-		logo: "/images/clients/client-17.webp"
-	},
-	{
-		order: 18,
-		nameEn: "DTAC",
-		nameTh: "บริษัท โทเทิ่ล แอ็คเซ็ส คอมมูนิเคชั่น จำกัด",
-		logo: "/images/clients/client-18.webp"
-	},
-	{
-		order: 19,
-		nameEn: "KBANK",
-		nameTh: "ธนาคารกสิกรไทย จำกัด (มหาชน)",
-		logo: "/images/clients/client-19.webp"
-	},
-	{
-		order: 20,
-		nameEn: "SCB",
-		nameTh: "ไทยพาณิชย์",
-		logo: "/images/clients/client-20.webp"
-	},
-	{
-		order: 21,
-		nameEn: "TTB",
-		nameTh: "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
-		logo: "/images/clients/client-21.webp"
-	},
-	{
-		order: 22,
-		nameEn: "LAND & HOUSES",
-		nameTh: "แลนด์ แอนด์ เฮ้าส์",
-		logo: "/images/clients/client-22.webp"
-	},
-	{
-		order: 23,
-		nameEn: "BANGKOK HOSPITAL",
-		nameTh: "โรงพยาบาลกรุงเทพ",
-		logo: "/images/clients/client-23.webp"
-	},
-	{
-		order: 24,
-		nameEn: "BANPU",
-		nameTh: "บริษัท บ้านปู จำกัด",
-		logo: "/images/clients/client-24.webp"
-	}
-];
-
-const logos_get = defineEventHandler(() => {
-  return logosDataRaw;
-});
-
-const logos_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: logos_get
-}, Symbol.toStringTag, { value: 'Module' }));
-
 var logo = {
 	textThai: "INNER POWER",
 	textEnglish: "ACADEMY",
 	href: "/",
 	imagePath: "/images/logo.png"
 };
-var cta = {
-	text: "รับแบบประเมิน",
-	subtext: "ศักยภาพฟรี",
-	url: "/#assessments",
+var btnActionNow = {
+	submit: "รับแบบประเมิน\nศักยภาพฟรี",
+	link: "/#assessments",
 	external: false
 };
 var menu = [
@@ -4548,7 +4349,7 @@ var menu = [
 		order: 5
 	},
 	{
-		title: "เกี่ยวกับ IPA",
+		title: "เกี่ยวกับ",
 		link: "/about",
 		order: 6
 	}
@@ -4585,7 +4386,7 @@ var socialLinks = [
 var copyright = "© 2026 Inner Academy. All rights reserved.";
 const navigationDataRaw = {
 	logo: logo,
-	cta: cta,
+	btnActionNow: btnActionNow,
 	menu: menu,
 	menuItems: menuItems,
 	socialLinks: socialLinks,
@@ -4601,98 +4402,50 @@ const navigation_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePr
   default: navigation_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
-var image = "/path/to/podcast-image.jpg";
-var titleLine1 = "เรื่องที่พนักงานอยากรู้";
-var titleLine2 = "แต่ “เสียดาย...เจ้านายไม่เคยบอก”";
-var description = "พอดแคสต์ ที่จะพาทุกคนมาเข้าใจมุมมองในการทำงาน แนวทางการพัฒนาทักษะสำคัญ และเทคนิคการสื่อสาร ที่น้อยคนเท่านั้นที่เคยรู้";
-var episodes = [
+var reviews = [
 	{
-		url: "https://www.youtube.com/@inneracademy",
-		title: "Episode 1"
+		order: 1,
+		classId: "",
+		cover: "/images/testimonials/testimonial.webp",
+		link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	},
+	{
+		order: 2,
+		classId: "",
+		cover: "/images/testimonials/testimonial.webp",
+		link: "https://www.youtube.com/watch?v=9bZkp7q19f0"
+	},
+	{
+		order: 3,
+		classId: "",
+		cover: "/images/testimonials/testimonial.webp",
+		link: "https://www.youtube.com/watch?v=L_jWHffIx5E"
+	},
+	{
+		order: 4,
+		classId: "",
+		cover: "/images/testimonials/testimonial.webp",
+		link: "https://www.youtube.com/watch?v=jNQXAC9IVRw"
+	},
+	{
+		order: 5,
+		classId: "",
+		cover: "/images/testimonials/testimonial.webp",
+		link: "https://www.youtube.com/watch?v=6stlCkUDG_s"
+	},
+	{
+		order: 6,
+		classId: "",
+		cover: "/images/testimonials/testimonial.webp",
+		link: "https://www.youtube.com/watch?v=oHg5SJYRHA0"
 	}
 ];
-const podcastDataRaw = {
-	image: image,
-	titleLine1: titleLine1,
-	titleLine2: titleLine2,
-	description: description,
-	episodes: episodes
+const testimonialsData = {
+	reviews: reviews
 };
 
-const podcast_get = defineEventHandler(() => {
-  return podcastDataRaw;
-});
-
-const podcast_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: podcast_get
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const testimonialsData = [
-	{
-		studentName: "คุณสนิตา จิตรมีศิลป์ (นิ)",
-		studentTitle: "รองกรรมการผู้จัดการ บริษัท น้อมจิตด์ อินคอร์เปอเรชั่น จำกัด(มหาชน)",
-		quoteIntro: "การได้เข้ามาเรียนในคลาสนี้ทำให้ได้เจอต้นตอ",
-		quoteMid: "ปัญหาการสื่อสารของตัวเอง",
-		quoteLarge: "เพราะแค่ 'ความกลัว'",
-		keyMessage: "Key Message: Clear Message",
-		youtubeId: "dQw4w9WgXcQ",
-		thumbnail: "/images/testimonials/testimonial.webp"
-	},
-	{
-		studentName: "คุณวิชัย ศรีสมบูรณ์",
-		studentTitle: "ผู้จัดการฝ่ายขาย บริษัท ไทยเบเวอเรจ จำกัด",
-		quoteIntro: "ก่อนมาเรียนผมไม่เคยรู้ว่า",
-		quoteMid: "ทักษะการพูดต่อหน้าสาธารณะ",
-		quoteLarge: "เปลี่ยนชีวิตได้จริง",
-		keyMessage: "Key Message: Confident Speaker",
-		youtubeId: "9bZkp7q19f0",
-		thumbnail: "/images/testimonials/testimonial.webp"
-	},
-	{
-		studentName: "คุณพิมพ์ชนก ลี",
-		studentTitle: "HR Director บริษัท ดิจิทัล โซลูชั่น จำกัด",
-		quoteIntro: "หลักสูตรนี้ทำให้ฉันเข้าใจว่า",
-		quoteMid: "ปัญหาในทีมแทบทุกอย่าง",
-		quoteLarge: "มาจาก 'การสื่อสาร'",
-		keyMessage: "Key Message: Team Communication",
-		youtubeId: "L_jWHffIx5E",
-		thumbnail: "/images/testimonials/testimonial.webp"
-	},
-	{
-		studentName: "คุณธนพล วงศ์สุวรรณ",
-		studentTitle: "ผู้อำนวยการฝ่ายการตลาด บริษัท เอเชียแปซิฟิค จำกัด",
-		quoteIntro: "ผมไม่เคยคิดว่าตัวเองจะ",
-		quoteMid: "พูดต่อหน้าพันคนได้",
-		quoteLarge: "แต่ตอนนี้ทำได้แล้ว",
-		keyMessage: "Key Message: Leadership Presence",
-		youtubeId: "jNQXAC9IVRw",
-		thumbnail: "/images/testimonials/testimonial.webp"
-	},
-	{
-		studentName: "คุณมณีรัตน์ สุทธิชัย",
-		studentTitle: "ผู้ก่อตั้ง บริษัท สตาร์ทอัพไทย จำกัด",
-		quoteIntro: "ก่อนมาเรียนฉันรู้สึกว่า",
-		quoteMid: "ความคิดที่ดีขายไม่ได้",
-		quoteLarge: "ถ้าพูดไม่เก่ง",
-		keyMessage: "Key Message: Pitch to Win",
-		youtubeId: "6stlCkUDG_s",
-		thumbnail: "/images/testimonials/testimonial.webp"
-	},
-	{
-		studentName: "คุณอภิชาต เจริญรัตน์",
-		studentTitle: "ผู้บริหารระดับสูง ธนาคารกรุงเทพ จำกัด",
-		quoteIntro: "ทักษะที่เรียนได้จากที่นี่",
-		quoteMid: "นำไปใช้ได้ทันทีในชีวิตจริง",
-		quoteLarge: "ผลลัพธ์เห็นชัดภายใน 30 วัน",
-		keyMessage: "Key Message: Instant Results",
-		youtubeId: "oHg5SJYRHA0",
-		thumbnail: "/images/testimonials/testimonial.webp"
-	}
-];
-
 const testimonials_get = defineEventHandler(() => {
-  return testimonialsData;
+  return testimonialsData.reviews;
 });
 
 const testimonials_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

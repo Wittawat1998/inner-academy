@@ -10,7 +10,7 @@
     <CoursesList />
 
     <!-- Section 4: Next Program promotional banner -->
-    <NextProgramPromo v-if="nextProgram" :program="nextProgram" />
+    <NextProgramPromo />
 
     <!-- Section 5: Coaches grid (ทีมโค้ช) -->
     <CoachesGrid />
@@ -36,22 +36,22 @@
 // Feature: 002-home-page
 // Homepage with 10 mandatory sections in dark+gold theme
 
-const { homeData, meta, hero, nextProgram } = useHomeContent()
+const { homeData } = useHomeContent()
 
 // SEO meta tags
 useHead({
-  title: meta.title,
+  title: homeData.title,
   meta: [
-    { name: 'description', content: meta.description },
-    { name: 'keywords', content: meta.keywords || '' },
-    { property: 'og:title', content: meta.title },
-    { property: 'og:description', content: meta.description },
-    { property: 'og:image', content: meta.ogImage || '/images/og-homepage.jpg' },
+    { name: 'description', content: homeData.description },
+    { name: 'keywords', content: homeData.keywords || '' },
+    { property: 'og:title', content: homeData.title },
+    { property: 'og:description', content: homeData.description },
+    { property: 'og:image', content: '/images/og-homepage.jpg' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: meta.title },
-    { name: 'twitter:description', content: meta.description },
-    { name: 'twitter:image', content: meta.ogImage || '/images/og-homepage.jpg' }
+    { name: 'twitter:title', content: homeData.title },
+    { name: 'twitter:description', content: homeData.description },
+    { name: 'twitter:image', content: '/images/og-homepage.jpg' }
   ]
 })
 </script>

@@ -10,7 +10,7 @@
       <h2
         class="text-4xl md:text-5xl lg:text-7xl font-semibold text-center mb-10 header-fade"
       >
-        ผลลัพธ์ผู้เรียน
+        {{ sections?.reviews?.title ?? 'ผลลัพธ์ผู้เรียน' }}
       </h2>
 
       <!-- Carousel Wrapper -->
@@ -37,12 +37,12 @@
           <div class="flex gap-6" style="min-width: 100%;">
             <div
               v-for="(t, i) in testimonials"
-              :key="t.youtubeId"
+              :key="t.order"
               class="snap-center flex-shrink-0 flex flex-col w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[360px]"
             >
               <!-- Card -->
               <a
-                :href="'https://www.youtube.com/watch?v=' + t.youtubeId"
+                :href="t.link"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="relative block rounded-2xl overflow-hidden border border-gray-700 group"
@@ -50,8 +50,8 @@
                 <!-- Portrait Image -->
                 <div class="aspect-[4/5] relative overflow-hidden">
                   <img
-                    :src="t.thumbnail || '/images/testimonials/testimonial-' + (i + 1) + '.webp'"
-                    :alt="t.studentName"
+                    :src="t.cover || '/images/testimonials/testimonial.webp'"
+                    :alt="'Review ' + t.order"
                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
@@ -61,13 +61,13 @@
               <!-- CTA Button below card -->
               <div class="mt-4 flex justify-center">
                 <a
-                  :href="'https://www.youtube.com/watch?v=' + t.youtubeId"
+                  :href="t.link"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn flex items-center gap-2 px-5 py-2 text-goldText border border-goldText rounded-full font-semibold text-sm transition-colors duration-200"
                 >
                   <span>&#9654;</span>
-                  <span>ดูคลิปเต็ม</span>
+                  <span>{{ sections?.reviews?.submit ?? 'ดูคลิปเต็ม' }}</span>
                 </a>
               </div>
             </div>
@@ -95,6 +95,7 @@
 <script setup lang="ts">
 import type { Testimonial } from '~/types/home'
 
+const { sections } = useHomeContent()
 const { data: testimonials } = await useFetch<Testimonial[]>('/api/testimonials')
 
 const track = ref<HTMLElement | null>(null)

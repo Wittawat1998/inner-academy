@@ -1,0 +1,128 @@
+<svg width="1400" height="800" viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gold gradient for text -->
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F4E4B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Person gradient (fade to transparent at bottom) -->
+    <linearGradient id="personFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- Center person highlight gradient -->
+    <linearGradient id="centerHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Main Title "INNER POWER ACADEMY" -->
+  <text x="700" y="150" text-anchor="middle" fill="url(#goldText)" font-size="90" font-weight="900" font-family="Montserrat, sans-serif" letter-spacing="8">
+    INNER POWER
+  </text>
+  <text x="700" y="240" text-anchor="middle" fill="url(#goldText)" font-size="90" font-weight="900" font-family="Montserrat, sans-serif" letter-spacing="8">
+    ACADEMY
+  </text>
+  
+  <!-- Team silhouettes (8 people in a row) -->
+  <g id="team">
+    <!-- Person 1 (Left) -->
+    <ellipse cx="140" cy="500" rx="45" ry="110" fill="url(#personFade)"/>
+    <circle cx="140" cy="410" r="32" fill="#2a2a2a"/>
+    
+    <!-- Person 2 -->
+    <ellipse cx="270" cy="505" rx="48" ry="115" fill="url(#personFade)"/>
+    <circle cx="270" cy="412" r="34" fill="#2a2a2a"/>
+    
+    <!-- Person 3 -->
+    <ellipse cx="405" cy="508" rx="46" ry="112" fill="url(#personFade)"/>
+    <circle cx="405" cy="416" r="33" fill="#2a2a2a"/>
+    
+    <!-- Person 4 (Left-center) -->
+    <ellipse cx="540" cy="505" rx="50" ry="118" fill="url(#personFade)"/>
+    <circle cx="540" cy="410" r="36" fill="#2a2a2a"/>
+    
+    <!-- Person 5 (Center - highlighted) -->
+    <ellipse cx="700" cy="500" rx="52" ry="120" fill="url(#centerHighlight)"/>
+    <circle cx="700" cy="405" r="38" fill="#2a4a6a"/>
+    <!-- Smile -->
+    <path d="M 685 415 Q 700 425 715 415" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6"/>
+    
+    <!-- Person 6 (Right-center) -->
+    <ellipse cx="860" cy="505" rx="50" ry="118" fill="url(#personFade)"/>
+    <circle cx="860" cy="410" r="36" fill="#2a2a2a"/>
+    
+    <!-- Person 7 -->
+    <ellipse cx="995" cy="508" rx="46" ry="112" fill="url(#personFade)"/>
+    <circle cx="995" cy="416" r="33" fill="#2a2a2a"/>
+    
+    <!-- Person 8 (Right) -->
+    <ellipse cx="1130" cy="505" rx="48" ry="115" fill="url(#personFade)"/>
+    <circle cx="1130" cy="412" r="34" fill="#2a2a2a"/>
+    
+    <!-- Person 9 (Far right) -->
+    <ellipse cx="1260" cy="500" rx="45" ry="110" fill="url(#personFade)"/>
+    <circle cx="1260" cy="410" r="32" fill="#2a2a2a"/>
+  </g>
+  
+  <!-- Bottom dark overlay for text readability -->
+  <defs>
+    <linearGradient id="bottomOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.95" />
+    </linearGradient>
+  </defs>
+  <rect y="600" width="1400" height="200" fill="url(#bottomOverlay)"/>
+  
+  <!-- Thai text "ปลดปล่อยศักยภาพให้กับคุณ" -->
+  <text x="700" y="670" text-anchor="middle" fill="#FFFFFF" font-size="38" font-weight="600" font-family="Prompt, sans-serif">
+    ปลดปล่อยศักยภาพให้กับคุณ
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="700" y="710" text-anchor="middle" fill="#CBD5E1" font-size="18" font-weight="400" font-family="Prompt, sans-serif">
+    ด้วยหลักสูตรลับสิทธิ์ รับรองคุณภาพโดย ครูเงาะ รสสุคนธ์ กองเทศ
+  </text>
+  
+  <!-- Certified badge -->
+  <g transform="translate(700, 750)">
+    <!-- Badge outer circle -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#goldText)" stroke-width="2"/>
+    <!-- Badge inner elements -->
+    <circle cx="0" cy="0" r="30" fill="url(#goldText)" opacity="0.1"/>
+    <!-- Checkmark -->
+    <path d="M -12 -2 L -4 6 L 12 -10" fill="none" stroke="url(#goldText)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Text -->
+    <text x="0" y="24" text-anchor="middle" fill="url(#goldText)" font-size="8" font-weight="700" font-family="Montserrat, sans-serif" letter-spacing="0.5">
+      CERTIFIED
+    </text>
+  </g>
+  
+  <!-- Decorative sparkles -->
+  <circle cx="200" cy="80" r="2" fill="url(#goldText)" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1200" cy="100" r="2" fill="url(#goldText)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="300" r="1.5" fill="url(#goldText)" opacity="0.4">
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1250" cy="320" r="1.5" fill="url(#goldText)" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

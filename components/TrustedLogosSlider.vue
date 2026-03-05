@@ -1,7 +1,7 @@
 <template>
   <section 
-    v-if="logos && logos.length > 0" 
-    class="trusted-logos-section bg-black py-8 px-4 md:py-12 md:px-8 lg:py-16 lg:px-16"
+    v-if="clients && clients.length > 0" 
+    class="trusted-clients-section bg-black py-8 px-4 md:py-12 md:px-8 lg:py-16 lg:px-16"
     role="region"
     aria-label="Partner organizations"
   >
@@ -9,15 +9,15 @@
       <!-- Header -->
       <div class="text-center mb-[50px]">
         <h2 class="text-3xl md:text-6xl lg:text-6xl xl:text-8xl font-semibold mb-[15px] md:mb-[30px]  header-fade">
-          มากกว่า 30 องค์กรชั้นนำ
+          {{ sections?.clients?.title ?? 'มากกว่า 30 องค์กรชั้นนำ' }}
         </h2>
         <p class="text-base md:text-xl text-white">
-          ที่ได้รวมเติบโตไปกับเรา
+          {{ sections?.clients?.subtitle ?? 'ที่ได้รวมเติบโตไปกับเรา' }}
         </p>
       </div>
 
-      <!-- White rounded container for logos -->
-      <div class="logos-container border border-goldText bg-white py-6  px-2 ">
+      <!-- White rounded container for clients -->
+      <div class="clients-container border border-goldText bg-white py-6  px-2 ">
         <!-- Hidden overflow wrapper -->
         <div 
           class="marquee-wrapper"
@@ -31,10 +31,10 @@
               animationPlayState: isPaused || prefersReducedMotion ? 'paused' : 'running'
             }"
           >
-            <!-- First set of logos -->
+            <!-- First set of clients -->
             <div class="marquee-group">
               <div
-                v-for="logo in logos"
+                v-for="logo in clients"
                 :key="`first-${logo.nameEn}`"
                 class="logo-item"
               >
@@ -59,7 +59,7 @@
             <!-- Duplicate set for seamless loop -->
             <div class="marquee-group">
               <div
-                v-for="logo in logos"
+                v-for="logo in clients"
                 :key="`second-${logo.nameEn}`"
                 class="logo-item"
               >
@@ -91,32 +91,16 @@
 import type { TrustedLogo } from '~/types/home'
 import { useMediaQuery } from '@vueuse/core'
 
-/**
- * TrustedLogosSlider Component
- * Feature: 002-home-page - User Story 1
- * 
- * Horizontal auto-scroll slider with hidden overflow wrapper
- * Theme: Dark background, auto-scroll with pause on hover
- * 
- * @requirements
- * - FR-006: Horizontal scrolling container with overflow-x: hidden wrapper
- * - FR-007: Auto-scroll continuously with manual hover override
- * - FR-008: Dark background (bgSecondary)
- */
-
-const { data: logos } = await useFetch<TrustedLogo[]>('/api/logos')
+const { sections } = useHomeContent()
+const { data: clients } = await useFetch<TrustedLogo[]>('/api/clients')
 
 const isPaused = ref(false)
 const prefersReducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
 </script>
 
 <style scoped>
-.text-gold {
-  color: #d4af37;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
 
-.logos-container {
+.clients-container {
   background: linear-gradient(to right, #ffffff 0%, #f8f9fa 50%, #ffffff 100%);
   border-radius: 60px;
   box-shadow: inset 0 6px 20px rgba(0, 0, 0, 0.25),

@@ -14,7 +14,7 @@
           aria-label="Inner Power Academy homepage"
         >
           <!-- Logo Image -->
-          <img src="/public/images/icon/appicon.png" alt="Inner Power Academy" class="h-24 w-auto" />
+          <img :src="'/images/icon/appicon.png'" alt="Inner Power Academy" class="h-24 w-auto" />
         </NuxtLink>
 
         <!-- Desktop Navigation (Center) -->
@@ -33,12 +33,12 @@
 
         <!-- Desktop CTA Button (Right) -->
         <a
-          :href="navigationData.cta.url"
+          :href="navigationData.btnActionNow.link"
           rel="noopener noreferrer"
           class="hidden lg:inline-flex flex-col items-center px-6 py-2 text-black font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-opacity-50 font-th text-[12px] bg-ctaGold leading-tight"
+          @click.prevent="handleCTAClick(navigationData.btnActionNow.link)"
         >
-          <span>{{ navigationData.cta.text }}</span>
-          <span>{{ navigationData.cta.subtext }}</span>
+          <span class="whitespace-pre-line text-center">{{ navigationData.btnActionNow.submit }}</span>
         </a>
 
         <!-- Mobile Menu Button -->
@@ -85,13 +85,12 @@
           <!-- Mobile CTA (First Item) -->
           <div class="px-4 pt-4 pb-2">
             <a
-              :href="navigationData.cta.url"
+              :href="navigationData.btnActionNow.link"
               rel="noopener noreferrer"
               class="block w-full text-center px-6 py-3 text-black bg-ctaGold font-bold rounded-full shadow-lg transition-all duration-300 font-th leading-tight"
-              @click="closeMenu"
+              @click.prevent="handleCTAClick(navigationData.btnActionNow.link); closeMenu()"
             >
-              <span class="block">{{ navigationData.cta.text }}</span>
-              <span class="block">{{ navigationData.cta.subtext }}</span>
+              <span class="block whitespace-pre-line">{{ navigationData.btnActionNow.submit }}</span>
             </a>
           </div>
 
@@ -152,6 +151,16 @@ const handleMenuClick = (link: string, event: Event) => {
     handleAnchorClick(link)
   }
   // Page links handled by NuxtLink automatically
+}
+
+// Handle CTA button click (supports /#hash and #hash formats)
+const handleCTAClick = (link: string) => {
+  const hash = link.startsWith('/#') ? link.slice(1) : link.startsWith('#') ? link : null
+  if (hash) {
+    handleAnchorClick(hash)
+  } else {
+    navigateTo(link)
+  }
 }
 
 // Auto-close menu on route change

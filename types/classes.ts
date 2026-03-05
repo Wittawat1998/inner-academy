@@ -48,6 +48,8 @@ export interface Class {
   originalPrice?: number
   /** Price note text */
   priceNote?: string
+  /** Coach IDs referencing coaches.json id field */
+  coachIds?: string[]
   /** Gallery images for the carousel */
   gallery?: string[]
   /** Download document URL */
@@ -58,8 +60,8 @@ export interface Class {
   level?: 'Beginner' | 'Intermediate' | 'Advanced'
   /** Single instructor name (legacy) */
   instructor?: string
-  /** Multiple instructors array */
-  instructors?: { name: string; image: string }[]
+  /** Sort order */
+  order?: number
   /** Whether class appears on homepage featured section */
   featured?: boolean
   /** Optional curriculum topics/modules */

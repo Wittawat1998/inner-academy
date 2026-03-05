@@ -12,7 +12,7 @@
         <!-- Section Heading -->
         <div class=" section-header">
           <h2 class="text-4xl md:text-5xl lg:text-7xl font-semibold pb-8 header-fade">
-            หลักสูตร
+            {{ sections?.classes?.title ?? 'หลักสูตร' }}
           </h2>
         </div>
 
@@ -36,15 +36,15 @@
               </p>
             </div>
 
-            <!-- Center: Instructors (hidden on mobile) -->
-            <div v-if="course.instructors && course.instructors.length > 0" class="hidden md:flex items-center gap-3 flex-shrink-0">
-              <span class="text-sm text-gray-400 group-hover:text-gray-700 transition-colors whitespace-nowrap">ถ่ายทอดโดย</span>
+            <!-- Center: Coaches (hidden on mobile) -->
+            <div v-if="course.coachIds && course.coachIds.length > 0" class="hidden md:flex items-center gap-3 flex-shrink-0">
+              <span class="text-sm text-gray-400 group-hover:text-gray-700 transition-colors whitespace-nowrap">{{ sections?.classes?.providedBy ?? 'ถ่ายทอดโดย' }}</span>
               <div class="flex gap-2">
                 <NuxtImg
-                  v-for="(instructor, idx) in course.instructors"
-                  :key="idx"
-                  :src="instructor.image"
-                  :alt="instructor.name"
+                  v-for="coach in getCoachesByIds(course.coachIds)"
+                  :key="coach.id ?? coach.slug"
+                  :src="coach.avatar || ''"
+                  :alt="coach.name ?? ''"
                   class="w-12 h-12 md:w-16 md:h-16 rounded-full border-3 border-white object-cover shadow-lg"
                   loading="lazy"
                   format="webp"
@@ -55,7 +55,7 @@
             <!-- Right: CTA -->
             <div class="flex-shrink-0">
               <span class="inline-flex items-center gap-2 text-goldText group-hover:text-white font-semibold text-sm transition-colors">
-                รายละเอียด
+                {{ sections?.classes?.learnMore ?? 'รายละเอียด' }}
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   class="h-6 w-6 transform group-hover:translate-x-1 transition-transform duration-200" 
@@ -78,24 +78,17 @@
 
 <script setup lang="ts">
 import type { ClassesData } from '~/types/classes'
+import type { Coach } from '~/types/coaches'
 
-/**
- * CoursesList Component
- * Feature: 002-home-page - User Story 2
- * 
- * Full-width course cards with dark theme and gold accents
- * Theme: Black background, gold highlights, featured card with gold gradient
- * 
- * @requirements
- * - FR-009: Full-width row layout (not grid)
- * - FR-010: Title, description, instructors on left; CTA on right
- * - FR-011: Thai "รายละเอียด →" link in gold with right arrow
- * - FR-012: Links to /courses/[id] route
- * - FR-013: Featured course with gold gradient background
- */
-
+const { sections } = useHomeContent()
 const { data: classesData } = await useFetch<ClassesData>('/api/courses')
+const { data: coachesAll } = await useFetch<Coach[]>('/api/home-coaches')
 const courses = computed(() => classesData.value?.classes ?? [])
+
+function getCoachesByIds(ids: string[]): Coach[] {
+  if (!ids?.length || !coachesAll.value) return []
+  return ids.map(id => coachesAll.value!.find(c => c.id === id)).filter(Boolean) as Coach[]
+}
 </script>
 
 <style scoped>

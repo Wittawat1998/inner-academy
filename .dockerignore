@@ -1,0 +1,12 @@
+node_modules
+.nuxt
+.nuxt-fresh
+.output
+dist
+.git
+*.log
+.env
+# public/images is bundled into the image (design assets: icon, bg, logo)
+# public/media is NOT bundled — mounted as volume for content that changes without rebuild
+public/media
+public/downloads

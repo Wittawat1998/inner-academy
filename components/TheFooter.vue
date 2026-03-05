@@ -4,27 +4,27 @@
       <div class="w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
         <!-- Center: Social Icons (top on mobile) -->
         <div class="order-1 md:order-2">
-          <SocialIconsList :links="navigationData.socialLinks.map(s => ({ icon: s.icon, url: s.url }))" />
+          <SocialIconsList :links="homeData.company.socialMedia.map(s => ({ icon: s.channel, url: s.link }))" />
         </div>
 
         <!-- Left: Copyright -->
         <div class="text-sm text-gray-400 order-2 md:order-1 text-center md:text-left">
-          <p>{{ navigationData.copyright }}</p>
+          <p>{{ homeData.copyright }}</p>
         </div>
 
         <!-- Right: Policy Links -->
         <div class="flex items-center gap-4 md:gap-6 text-sm order-3 flex-wrap justify-center">
           <NuxtLink 
-            to="/privacy" 
+            :to="homeData.privacyPolicies.link" 
             class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded"
           >
-            Privacy Policies
+            {{ homeData.privacyPolicies.title }}
           </NuxtLink>
           <NuxtLink 
-            to="/terms" 
+            :to="homeData.termsAndConditions.link" 
             class="text-gray-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded"
           >
-            Terms and Conditions
+            {{ homeData.termsAndConditions.title }}
           </NuxtLink>
         </div>
       </div>
@@ -33,16 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import type { NavigationData } from '~/types/navigation'
-import navigationDataRaw from '~/data/navigation.json'
-
-// Cast JSON import to typed structure
-const navigationData = navigationDataRaw as NavigationData
-
-// Helper function to detect internal vs external links
-const isInternalLink = (href: string): boolean => {
-  return href.startsWith('/')
-}
+const { homeData } = useHomeContent()
 </script>
 
 <style scoped>

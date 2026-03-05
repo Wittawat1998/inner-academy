@@ -29,6 +29,8 @@ export interface ExperienceEntry {
  */
 export interface Coach {
   slug: string
+  id?: string                     // Short coach ID used in coachIds (e.g. "LK", "KD")
+  order?: number                  // Display order (from /json/coaches.json)
   // New field names
   name?: string                   // Thai display name / nickname (e.g., ครูลูกแก้ว)
   nameTh?: string                 // Full Thai name
@@ -36,8 +38,7 @@ export interface Coach {
   // Legacy field names (kept for backward compatibility)
   nickname?: string               // Legacy: Thai display name
   title?: string                  // Legacy: Professional title
-  image?: string
-  photo?: string
+  avatar?: string
   bio: string
   expertise: string | string[]    // Can be a string (new) or array (legacy)
   education: string[]
@@ -46,6 +47,7 @@ export interface Coach {
   gallery?: string[]               // Gallery image paths
   socialMedia?: SocialMediaEntry[] // New: array format
   socialLinks?: SocialLinks        // Legacy: object format
+  proposal?: string                // Optional downloadable proposal PDF path
 }
 
 /**

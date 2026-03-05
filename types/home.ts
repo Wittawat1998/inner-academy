@@ -73,14 +73,10 @@ export interface Coach {
 
 // Student testimonial for 3-item carousel
 export interface Testimonial {
-  studentName: string
-  studentTitle?: string
-  quoteIntro?: string
-  quoteMid?: string
-  quoteLarge?: string
-  keyMessage?: string
-  youtubeId: string
-  thumbnail?: string
+  order: number
+  classId?: string
+  cover?: string
+  link: string
 }
 
 // Dual CTA section with two gold pill buttons
@@ -160,14 +156,78 @@ export interface AssessmentCTA {
   buttonUrl: string
 }
 
-// Root data structure - 10 mandatory sections
+// Company information
+export interface CompanyData {
+  nameEn: string
+  email: string
+  tel: string
+  address: string
+  addressStructured?: {
+    company: string
+    building: string
+    floor: string
+    street: string
+    district: string
+  }
+  mapEmbedUrl?: string
+  maps: Array<{ channel: string; link: string }>
+  socialMedia: Array<{ channel: string; link: string }>
+}
+
+// Section labels/text per section
+export interface SectionTexts {
+  hero?: { title: string; subtitle: string; description: string; bgHero?: string; badgeIcon?: string }
+  clients?: { title: string; subtitle: string }
+  classes?: { title: string; providedBy: string; learnMore: string }
+  classPrograms?: { title: string; subtitle: string; image: string; bg?: string }
+  coaches?: { title: string; proficiency?: string; education?: string; experience?: string; downloads?: string; nextClass?: string }
+  reviews?: { title: string; submit: string }
+  assessments?: {
+    title: string
+    subtitle: string
+    bg?: string
+    items: Array<{ submit: string; link: string }>
+  }
+  knowledge?: { title: string }
+  ebook?: {
+    headingLine1?: string
+    headingLine2Before?: string
+    headingLine2Highlight?: string
+    headingLine2After?: string
+    subheading?: string
+    description?: string
+    bg?: string
+    image: string
+    submit: string
+    link: string
+    title?: string
+    subtitle?: string
+  }
+  podcast?: { title?: string; titleLine1?: string; titleLine2?: string; description?: string; subtitle?: string; bg?: string; submit: string; link: string }
+  contact?: {
+    title: string
+    subtitle: string
+    bg?: string
+    form: Array<{ name: string; type: string; required?: boolean; label: string }>
+    submit: string
+    mailSubmitTo: string
+    mailSubject: string
+    mailSent: string
+    email: string
+    tel: string
+    callNow: string
+    address: string
+  }
+}
+
+// Root data structure
 export interface HomeData {
-  meta: MetaData
-  logos?: TrustedLogo[]  // Moved to /api/logos
-  courses?: Course[]
-  nextProgram: NextProgram
-  coaches?: Coach[]  // Moved to data/home-coaches.json + /api/home-coaches
-  testimonials?: Testimonial[]  // Moved to data/testimonials.json + /api/testimonials
-  dualCTA?: DualCTA  // Moved to data/dualCTA.json + /api/dualcta
-  contact?: Contact  // Moved to data/contact.json + /api/contact
+  title: string
+  description: string
+  keywords?: string
+  company: CompanyData
+  copyright: string
+  sections: SectionTexts
+  privacyPolicies: { title: string; link: string }
+  termsAndConditions: { title: string; link: string }
 }

@@ -4,7 +4,7 @@
     <NuxtLink :to="coach.slug ? '/coaches/' + coach.slug : '#coaches'">
       <div class="aspect-[3/4] overflow-hidden rounded-xl bg-gray-900 border border-gray-700">
         <NuxtImg
-          :src="coach.image || '/images/coaches/placeholder.webp'"
+          :src="coach.avatar"
           :alt="coach.nickname || coach.name"
           class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
           loading="lazy"

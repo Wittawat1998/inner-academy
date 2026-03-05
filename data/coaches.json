@@ -7,14 +7,15 @@
   "coaches": [
     {
       "slug": "dr-ked",
+      "id": "KD",
+      "order": 1,
       "name": "ดร.เกด",
       "nameTh": "สุกฤตา ปรีชาว่อง",
       "career": "Co-Founder and Organization Coach",
-      "photo": "/images/coaches/coach-1/m.webp",
-      "image": "/images/coaches/coach-1/m.webp",
+      "avatar": "/images/coaches/kd.webp",
       "gallery": [
-        "/images/coaches/coach-1/gallery/km-gallery-1.jpg",
-        "/images/coaches/coach-1/gallery/km-gallery-2.jpg"
+        "/images/coaches/kd/km-gallery-1.jpg",
+        "/images/coaches/kd/km-gallery-2.jpg"
       ],
       "bio": "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร ด้วยความเชี่ยวชาญด้านจิตวิทยาองค์กรและภาวะผู้นำ เธอได้ช่วยพัฒนาองค์กรชั้นนำในประเทศไทยมาแล้วมากมาย",
       "expertise": "Organization Coaching, Leadership Development, Soft Skills Training",
@@ -37,18 +38,20 @@
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "tiktok", "link": "https://tiktok.com/@innerpower" }
-      ]
+      ],
+      "proposal": "/downloads/example.pdf"
     },
     {
       "slug": "kru-lookkaew",
+      "id": "LK",
+      "order": 2,
       "name": "ครูลูกแก้ว",
       "nameTh": "วริศรา บำรุงเวช",
       "career": "Communication and Presentation Coach",
-      "photo": "/images/coaches/coach-2/m.webp",
-      "image": "/images/coaches/coach-2/m.webp",
+      "avatar": "/images/coaches/lk.webp",
       "gallery": [
-        "/images/coaches/coach-2/gallery/km-gallery-1.jpg",
-        "/images/coaches/coach-2/gallery/km-gallery-2.jpg"
+        "/images/coaches/lk/km-gallery-1.jpg",
+        "/images/coaches/lk/km-gallery-2.jpg"
       ],
       "bio": "ครูลูกแก้วเชี่ยวชาญด้านการสื่อสารและการนำเสนอ ช่วยพัฒนาทักษะการพูดและการสื่อสารให้กับผู้เรียนหลากหลายระดับ",
       "expertise": "เพิ่มประสิทธิภาพการสื่อสาร สร้างแรงบันดาลใจด้วยทัศนคติเชิงบวก",
@@ -75,21 +78,22 @@
         }
       ],
       "socialMedia": [
-        { "channel": "facebook", "link": "https://www.facebook.com/..." },
-        { "channel": "instagram", "link": "https://www.instagram.com/..." },
-        { "channel": "tiktok", "link": "https://www.tiktok.com/..." }
-      ]
+        { "channel": "instagram", "link": "https://www.instagram.com/lk_lukkaew/" },
+        { "channel": "tiktok", "link": "https://www.tiktok.com/@krulukkaew" }
+      ],
+      "proposal": "/downloads/example.pdf"
     },
     {
       "slug": "kru-so",
+      "id": "S",
+      "order": 3,
       "name": "ครูซอ",
       "nameTh": "ดร.สทาคัย พงศ์หิรัญ",
       "career": "Communication and Presentation Coach",
-      "photo": "/images/coaches/coach-3/m.webp",
-      "image": "/images/coaches/coach-3/m.webp",
+      "avatar": "/images/coaches/s.webp",
       "gallery": [
-        "/images/coaches/coach-3/gallery/km-gallery-1.jpg",
-        "/images/coaches/coach-3/gallery/km-gallery-2.jpg"
+        "/images/coaches/s/km-gallery-1.jpg",
+        "/images/coaches/s/km-gallery-2.jpg"
       ],
       "bio": "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร ด้วยประสบการณ์กว่า 15 ปี เขาได้ช่วยพัฒนาทักษะการสื่อสารให้กับผู้บริหารและบุคลากรในองค์กรชั้นนำ มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริงในชีวิตและการทำงาน",
       "expertise": "Communication Coaching, Presentation Skills, Corporate Training",
@@ -111,18 +115,20 @@
       "socialMedia": [
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
         { "channel": "instagram", "link": "https://instagram.com/innerpower" }
-      ]
+      ],
+      "proposal": "/downloads/example.pdf"
     },
     {
       "slug": "coach-kitti",
+      "id": "KT",
+      "order": 4,
       "name": "โค้ชกิตติ",
       "nameTh": "กิตติ ไตรรัตน์",
       "career": "Mindset, Passion and Satir Coach",
-      "photo": "/images/coaches/coach-4/m.webp",
-      "image": "/images/coaches/coach-4/m.webp",
+      "avatar": "/images/coaches/kt.webp",
       "gallery": [
-        "/images/coaches/coach-4/gallery/km-gallery-1.jpg",
-        "/images/coaches/coach-4/gallery/km-gallery-2.jpg"
+        "/images/coaches/kt/km-gallery-1.jpg",
+        "/images/coaches/kt/km-gallery-2.jpg"
       ],
       "bio": "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir Model เพื่อเปลี่ยนแปลงชีวิตจากภายใน เขาช่วยให้ผู้คนค้นพบตัวเองและสร้างชีวิตที่มีความหมายผ่านกระบวนการโค้ชเชิงลึก",
       "expertise": "Mindset Coaching, Passion Discovery, Satir Model Coaching",
@@ -146,18 +152,20 @@
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "tiktok", "link": "https://tiktok.com/@innerpower" }
-      ]
+      ],
+      "proposal": "/downloads/example.pdf"
     },
     {
       "slug": "coach-5",
+      "id": "NF",
+      "order": 5,
       "name": "โค้ชที่ 5",
       "nameTh": "ชื่อ นามสกุล",
       "career": "Leadership and Team Coach",
-      "photo": "/images/coaches/coach-5/m.webp",
-      "image": "/images/coaches/coach-5/m.webp",
+      "avatar": "/images/coaches/nf.webp",
       "gallery": [
-        "/images/coaches/coach-5/gallery/km-gallery-1.jpg",
-        "/images/coaches/coach-5/gallery/km-gallery-2.jpg"
+        "/images/coaches/nf/km-gallery-1.jpg",
+        "/images/coaches/nf/km-gallery-2.jpg"
       ],
       "bio": "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ด้วยประสบการณ์ในการทำงานร่วมกับผู้บริหารระดับสูง เขาช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่งและพัฒนาภาวะผู้นำอย่างยั่งยืน",
       "expertise": "Leadership Coaching, Team Development, Organizational Change",
@@ -180,18 +188,20 @@
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "linkedin", "link": "https://linkedin.com/in/innerpower" }
-      ]
+      ],
+      "proposal": "/downloads/example.pdf"
     },
     {
       "slug": "coach-6",
+      "id": "NU",
+      "order": 6,
       "name": "โค้ชที่ 6",
       "nameTh": "ชื่อ นามสกุล",
       "career": "NLP and Mindset Coach",
-      "photo": "/images/coaches/coach-6/m.webp",
-      "image": "/images/coaches/coach-6/m.webp",
+      "avatar": "/images/coaches/nu.webp",
       "gallery": [
-        "/images/coaches/coach-6/gallery/km-gallery-1.jpg",
-        "/images/coaches/coach-6/gallery/km-gallery-2.jpg"
+        "/images/coaches/nu/km-gallery-1.jpg",
+        "/images/coaches/nu/km-gallery-2.jpg"
       ],
       "bio": "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ด้วยเครื่องมือและเทคนิคจาก Neuro-Linguistic Programming เขาช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัดเพื่อสร้างชีวิตและอาชีพที่ต้องการ",
       "expertise": "NLP Coaching, Mindset Transformation, Behavioral Change",
@@ -214,18 +224,20 @@
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "linkedin", "link": "https://linkedin.com/in/innerpower" }
-      ]
+      ],
+      "proposal": "/downloads/example.pdf"
     },
     {
       "slug": "coach-7",
+      "id": "M",
+      "order": 7,
       "name": "โค้ชที่ 7",
       "nameTh": "ชื่อ นามสกุล",
       "career": "Performance and Wellness Coach",
-      "photo": "/images/coaches/coach-7/m.webp",
-      "image": "/images/coaches/coach-7/m.webp",
+      "avatar": "/images/coaches/m.webp",
       "gallery": [
-        "/images/coaches/coach-7/gallery/km-gallery-1.jpg",
-        "/images/coaches/coach-7/gallery/km-gallery-2.jpg"
+        "/images/coaches/m/km-gallery-1.jpg",
+        "/images/coaches/m/km-gallery-2.jpg"
       ],
       "bio": "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ด้วยการผสมผสานศาสตร์การโค้ชและความรู้ด้านสุขภาพ เขาช่วยให้ผู้คนบรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงานอย่างสมดุล",
       "expertise": "Performance Coaching, Wellness Coaching, Work-Life Balance",
@@ -248,7 +260,8 @@
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "linkedin", "link": "https://linkedin.com/in/innerpower" }
-      ]
+      ],
+      "proposal": "/downloads/example.pdf"
     }
   ]
 }

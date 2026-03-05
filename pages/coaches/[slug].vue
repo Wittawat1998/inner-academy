@@ -34,7 +34,7 @@
             <!-- gradient fade blending into background on the left -->
             <div class="absolute inset-y-0 left-0 w-32 z-10 bg-transparent pointer-events-none" />
             <img
-              :src="coach?.photo || coach?.image"
+              :src="coach?.avatar"
               :alt="coach?.name"
               class="w-full object-cover object-top"
             />
@@ -70,7 +70,7 @@
 
             <!-- ความเชี่ยวชาญ -->
             <div v-if="coach?.expertise">
-              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-3">ความเชี่ยวชาญ</h2>
+              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-3">{{ sections?.coaches?.proficiency ?? 'ความเชี่ยวชาญ' }}</h2>
               <p class="text-textPrimary text-lg leading-relaxed">
                 {{ Array.isArray(coach.expertise) ? coach.expertise.join(' · ') : coach.expertise }}
               </p>
@@ -78,7 +78,7 @@
 
             <!-- ประวัติการศึกษา -->
             <div v-if="coach?.education?.length">
-              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-4">ประวัติการศึกษา</h2>
+              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-4">{{ sections?.coaches?.education ?? 'ประวัติการศึกษา' }}</h2>
               <ul class="space-y-2">
                 <li
                   v-for="(edu, i) in coach.education"
@@ -93,7 +93,7 @@
 
             <!-- ประสบการณ์ -->
             <div v-if="coach?.experience?.length">
-              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-4">ประสบการณ์</h2>
+              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-4">{{ sections?.coaches?.experience ?? 'ประสบการณ์' }}</h2>
               <div class="space-y-4">
                 <template v-for="(exp, i) in coach.experience" :key="i">
                   <!-- New object format -->
@@ -128,16 +128,19 @@
     <section class="py-16">
       <div class="max-w-[680px] mx-auto px-8 flex flex-col gap-5">
         <a
-          href="#"
+          v-if="coach?.proposal"
+          :href="coach.proposal"
+          download
+          target="_blank"
           class="block w-full text-center text-4xl font-semibold py-6 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
         >
-          ดาวน์โหลดประวัติ
+          {{ sections?.coaches?.downloads ?? 'ดาวน์โหลดประวัติ' }}
         </a>
         <NuxtLink
           to="/#contact"
           class="block w-full text-center text-4xl font-semibold py-6 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
         >
-          คลาสรอบถัดไป
+          {{ sections?.coaches?.nextClass ?? 'คลาสรอบถัดไป' }}
         </NuxtLink>
       </div>
     </section>
@@ -149,6 +152,7 @@
 import type { Coach } from '~/types/coaches'
 import coachesData from '~/data/coaches.json'
 
+const { sections } = useHomeContent()
 const route = useRoute()
 const slug = route.params.slug as string
 
@@ -168,7 +172,7 @@ useHead({
     { name: 'description', content: coach.value?.bio?.substring(0, 155) ?? '' },
     { property: 'og:title', content: `${coach.value?.name || coach.value?.nickname} | Inner Academy` },
     { property: 'og:description', content: coach.value?.bio?.substring(0, 155) ?? '' },
-    { property: 'og:image', content: coach.value?.photo || coach.value?.image || '' },
+    { property: 'og:image', content: coach.value?.avatar || '' },
     { property: 'og:type', content: 'profile' }
   ]
 })
