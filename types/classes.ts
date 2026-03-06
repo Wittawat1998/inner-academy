@@ -20,6 +20,22 @@ export interface ClassesMeta {
 }
 
 /**
+ * A single section within a class description
+ */
+export interface ClassDescriptionSection {
+  /** Section heading (empty string = no heading) */
+  title: string
+  /** Heading color config — 'gold' uses goldText, default is textPrimary */
+  titleColor?: 'gold'
+  /** Render mode — 'text' (default) renders a paragraph, 'bullet' renders an item list */
+  type?: 'text' | 'bullet'
+  /** Body text for type 'text', or intro line for type 'bullet' */
+  description: string
+  /** Bullet items used when type is 'bullet' */
+  items?: string[]
+}
+
+/**
  * Individual class/course entity
  * EXTENDED for Feature 004 (Class Detail Pages)
  */
@@ -32,8 +48,8 @@ export interface Class {
   title: string
   /** Short description for list view */
   shortDescription?: string
-  /** Full description (supports \n for paragraphs) */
-  description: string
+  /** Description sections with optional title headers */
+  description: ClassDescriptionSection[]
   /** Hero banner image (right column) */
   image?: string
   /** Duration string e.g. "8 ชั่วโมง" */
@@ -52,8 +68,8 @@ export interface Class {
   coachIds?: string[]
   /** Gallery images for the carousel */
   gallery?: string[]
-  /** Download document URL */
-  ctaDocumentUrl?: string
+  /** Downloadable files */
+  downloads?: { proposal?: string }
   /** Next round / enroll URL */
   ctaNextRoundUrl?: string
   /** Difficulty level */

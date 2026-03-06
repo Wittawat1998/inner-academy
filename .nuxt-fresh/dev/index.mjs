@@ -2050,7 +2050,7 @@ const _3gjDLLpco8AktHw3v147Ss5rjaMUfihGDhBfQT3haE = (function(nitro) {
 
 const rootDir = "E:/work/inner/sourceCode/inner-academy";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Transform your inner power with expert-led courses"}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"}],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Inner Academy","htmlAttrs":{"lang":"th"}};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Transform your inner power with expert-led courses"}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"},{"rel":"icon","type":"image/png","href":"/images/icon/appicon.png"}],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Inner Academy","htmlAttrs":{"lang":"th"}};
 
 const appRootTag = "div";
 
@@ -2151,22 +2151,7 @@ const plugins = [
 __FqZsEfjjxjm5ttXhq7HwaGCOI1aOdzesmkR7dBKXHg
 ];
 
-const assets = {
-  "/index.mjs": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"2a213-ZbeqrDWIDUaMSenuZxXC/T0kfto\"",
-    "mtime": "2026-03-05T15:00:03.248Z",
-    "size": 172563,
-    "path": "index.mjs"
-  },
-  "/index.mjs.map": {
-    "type": "application/json",
-    "etag": "\"72faf-XeF8AJCclgsGJZfpyY9xkt9ciFU\"",
-    "mtime": "2026-03-05T15:00:03.248Z",
-    "size": 470959,
-    "path": "index.mjs.map"
-  }
-};
+const assets = {};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -3401,7 +3386,44 @@ var classes = [
 			"M",
 			"LK"
 		],
-		description: "ในโลกธุรกิจที่มีการแข่งขันสูงและเต็มไปด้วยข้อมูลมากมาย การสื่อสารอย่างตรงประเด็นได้กลายเป็นทักษะที่สำคัญอย่างยิ่งสำหรับความสำเร็จขององค์กร การสื่อสารที่ชัดเจน กระชับ และตรงเป้าหมายไม่เพียงแต่ช่วยประหยัดเวลาและทรัพยากร แต่ยังช่วยลดความเข้าใจผิด เพิ่มประสิทธิภาพในการทำงาน และสร้างความได้เปรียบในการแข่งขันให้กับองค์กร\n\nการลงทุนในการพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงไม่เพียงแต่ช่วยพัฒนาความสามารถของพนักงานเท่านั้น แต่ยังช่วยสร้างสภาพแวดล้อมการทำงานที่มีประสิทธิภาพมากขึ้น ลดความขัดแย้ง และนำไปสู่การตัดสินใจที่รวดเร็วและแม่นยำมากขึ้น ซึ่งทั้งหมดนี้จะช่วยเสริมสร้างความสามารถในการแข่งขันให้กับองค์กรในระยะยาว\n\nด้วยเหตุนี้ การจัดหลักสูตรพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงเป็นสิ่งจำเป็นสำหรับองค์กรที่ต้องการเติบโตอย่างยั่งยืนในยุคปัจจุบัน\n\nKey Message: Clear Message\nศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน\n\nหลักสูตรนี้จะช่วยให้บุคลากรทุกระดับสามารถพัฒนาความสามารถในการสื่อสารที่ชัดเจน กระชับ และมีประสิทธิภาพ ซึ่งจะนำไปสู่การทำงานร่วมกันที่ดีขึ้น การแก้ปัญหาที่รวดเร็วขึ้น และการสร้างความสัมพันธ์ที่แน่นแฟ้นทั้งกับลูกค้าและพันธมิตรทางธุรกิจ ทำให้องค์กรสามารถรับมือกับความท้าทายในอนาคตได้อย่างมั่นใจและประสบความสำเร็จในระยะยาว\n\nทำไมต้องคลาสนี้? ทำไมต้องสื่อสารให้กระชับ:\n- เพื่อพัฒนาพนักงานให้มีทักษะการสื่อสารที่ดี มีประสิทธิภาพมากขึ้น ลดการทำงานซ้ำ (Rework) หรือการเข้าใจผิดในคำสั่งงาน\n- ให้พนักงานรู้จักการวิเคราะห์คู่สนทนาซึ่งสามารถนำไปปรับใช้ในหลายบริบทของการทำงาน เช่น การพูดคุยกับบุคคลทั้งภายในและภายนอกองค์กร\n- พนักงานสามารถให้ feedback ที่มีโครงสร้างเพื่อการปรับปรุงและพัฒนาองค์กรได้\n\nผลลัพธ์ในการลงทุนกับการเรียน ไม่ใช่แค่การฝึกพูดแต่คือ :\n- คุณจะกลายเป็นคนที่ \"น่าเชื่อถือ\" มากขึ้น (Professional Credibility)\n- ประหยัดเวลาในการทำงานจากการสื่อสารที่ชัดเจนมีประสิทธิภาพ (Time Saving)\n- เพิ่มโอกาสในการ \"ได้รับความไว้วางใจ\" (Higher Approval Rate)\n- เน้นการลงมือทำ (Workshop-based) 80% เพื่อให้มั่นใจว่าจบการอบรมแล้ว ทีมงานจะสามารถ \"ใช้งานได้ทันที\" พร้อมความเปลี่ยนแปลงที่เห็นชัดเจนตั้งแต่วันแรก\n\nหยุดความสับสน เพิ่มประสิทธิภาพให้องค์กรด้วยการสื่อสารที่ตรงเป้าหมาย ยกระดับทักษะการสกัด Key Message ของทีมงานให้ก้าวล้ำไปพร้อมกับโลกธุรกิจ\n\nสอบถามรายละเอียดหลักสูตร หรือนัดหมายปรึกษาเพื่อออกแบบเวิร์กชอปที่ใช่สำหรับองค์กรคุณ กับเราวันนี้",
+		description: [
+			{
+				title: "",
+				description: "ในโลกธุรกิจที่มีการแข่งขันสูงและเต็มไปด้วยข้อมูลมากมาย การสื่อสารอย่างตรงประเด็นได้กลายเป็นทักษะที่สำคัญอย่างยิ่งสำหรับความสำเร็จขององค์กร การสื่อสารที่ชัดเจน กระชับ และตรงเป้าหมายไม่เพียงแต่ช่วยประหยัดเวลาและทรัพยากร แต่ยังช่วยลดความเข้าใจผิด เพิ่มประสิทธิภาพในการทำงาน และสร้างความได้เปรียบในการแข่งขันให้กับองค์กร\n\nการลงทุนในการพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงไม่เพียงแต่ช่วยพัฒนาความสามารถของพนักงานเท่านั้น แต่ยังช่วยสร้างสภาพแวดล้อมการทำงานที่มีประสิทธิภาพมากขึ้น ลดความขัดแย้ง และนำไปสู่การตัดสินใจที่รวดเร็วและแม่นยำมากขึ้น ซึ่งทั้งหมดนี้จะช่วยเสริมสร้างความสามารถในการแข่งขันให้กับองค์กรในระยะยาว\n\nด้วยเหตุนี้ การจัดหลักสูตรพัฒนาทักษะการสื่อสารอย่างตรงประเด็นจึงเป็นสิ่งจำเป็นสำหรับองค์กรที่ต้องการเติบโตอย่างยั่งยืนในยุคปัจจุบัน"
+			},
+			{
+				title: "Key Message: Clear Message\nศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน",
+				titleColor: "gold",
+				description: "หลักสูตรนี้จะช่วยให้บุคลากรทุกระดับสามารถพัฒนาความสามารถในการสื่อสารที่ชัดเจน กระชับ และมีประสิทธิภาพ ซึ่งจะนำไปสู่การทำงานร่วมกันที่ดีขึ้น การแก้ปัญหาที่รวดเร็วขึ้น และการสร้างความสัมพันธ์ที่แน่นแฟ้นทั้งกับลูกค้าและพันธมิตรทางธุรกิจ ทำให้องค์กรสามารถรับมือกับความท้าทายในอนาคตได้อย่างมั่นใจและประสบความสำเร็จในระยะยาว"
+			},
+			{
+				title: "ทำไมต้องคลาสนี้? ทำไมต้องสื่อสารให้กระชับ:",
+				titleColor: "gold",
+				type: "bullet",
+				description: "",
+				items: [
+					"เพื่อพัฒนาพนักงานให้มีทักษะการสื่อสารที่ดี มีประสิทธิภาพมากขึ้น ลดการทำงานซ้ำ (Rework) หรือการเข้าใจผิดในคำสั่งงาน",
+					"ให้พนักงานรู้จักการวิเคราะห์คู่สนทนาซึ่งสามารถนำไปปรับใช้ในหลายบริบทของการทำงาน เช่น การพูดคุยกับบุคคลทั้งภายในและภายนอกองค์กร",
+					"พนักงานสามารถให้ feedback ที่มีโครงสร้างเพื่อการปรับปรุงและพัฒนาองค์กรได้"
+				]
+			},
+			{
+				title: "ผลลัพธ์ในการลงทุนกับการเรียน ไม่ใช่แค่การฝึกพูดแต่คือ:",
+				titleColor: "gold",
+				type: "bullet",
+				description: "",
+				items: [
+					"คุณจะกลายเป็นคนที่ \"น่าเชื่อถือ\" มากขึ้น (Professional Credibility)",
+					"ประหยัดเวลาในการทำงานจากการสื่อสารที่ชัดเจนมีประสิทธิภาพ (Time Saving)",
+					"เพิ่มโอกาสในการ \"ได้รับความไว้วางใจ\" (Higher Approval Rate)",
+					"เน้นการลงมือทำ (Workshop-based) 80% เพื่อให้มั่นใจว่าจบการอบรมแล้ว ทีมงานจะสามารถ \"ใช้งานได้ทันที\" พร้อมความเปลี่ยนแปลงที่เห็นชัดเจนตั้งแต่วันแรก"
+				]
+			},
+			{
+				title: "",
+				description: "หยุดความสับสน เพิ่มประสิทธิภาพให้องค์กรด้วยการสื่อสารที่ตรงเป้าหมาย ยกระดับทักษะการสกัด Key Message ของทีมงานให้ก้าวล้ำไปพร้อมกับโลกธุรกิจ\n\nสอบถามรายละเอียดหลักสูตร หรือนัดหมายปรึกษาเพื่อออกแบบเวิร์กชอปที่ใช่สำหรับองค์กรคุณ กับเราวันนี้"
+			}
+		],
 		shortDescription: "ศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน",
 		slug: "key-message-clear-message",
 		featured: true,
@@ -3427,7 +3449,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Key Message Clear Message.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Key Message Clear Message.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3440,7 +3461,20 @@ var classes = [
 			"NF",
 			"KT"
 		],
-		description: "ในยุคที่การทำงานร่วมกับผู้คนหลากหลายและความกดดันในชีวิตประจำวันเพิ่มสูงขึ้น ความสามารถในการบริหารจัดการอารมณ์และความรู้สึกของตนเองได้อย่างชาญฉลาดจึงเป็นทักษะที่ขาดไม่ได้ Emotional Mastery ช่วยให้คุณเข้าใจกลไกของอารมณ์ในระดับลึก และเปลี่ยนอารมณ์จากอุปสรรคให้กลายเป็นพลังขับเคลื่อน\n\nหลักสูตรนี้ผสานศาสตร์ด้าน Neuroscience, Psychology และ Mindfulness เพื่อให้ผู้เรียนสามารถจัดการกับสถานการณ์ที่กดดัน ความขัดแย้ง และอารมณ์เชิงลบได้อย่างมีประสิทธิภาพ พร้อมทั้งพัฒนาทักษะการสื่อสารทางอารมณ์ที่ช่วยสร้างความสัมพันธ์ที่แข็งแกร่งทั้งในที่ทำงานและครอบครัว\n\nเมื่อคุณเชี่ยวชาญการควบคุมอารมณ์ คุณจะตัดสินใจได้ดีขึ้น นำทีมได้อย่างมีประสิทธิภาพ และใช้ชีวิตอย่างมีความสุขและสมดุลมากขึ้น",
+		description: [
+			{
+				title: "",
+				description: "ในยุคที่การทำงานร่วมกับผู้คนหลากหลายและความกดดันในชีวิตประจำวันเพิ่มสูงขึ้น ความสามารถในการบริหารจัดการอารมณ์และความรู้สึกของตนเองได้อย่างชาญฉลาดจึงเป็นทักษะที่ขาดไม่ได้ Emotional Mastery ช่วยให้คุณเข้าใจกลไกของอารมณ์ในระดับลึก และเปลี่ยนอารมณ์จากอุปสรรคให้กลายเป็นพลังขับเคลื่อน"
+			},
+			{
+				title: "เกี่ยวกับหลักสูตร",
+				description: "หลักสูตรนี้ผสานศาสตร์ด้าน Neuroscience, Psychology และ Mindfulness เพื่อให้ผู้เรียนสามารถจัดการกับสถานการณ์ที่กดดัน ความขัดแย้ง และอารมณ์เชิงลบได้อย่างมีประสิทธิภาพ พร้อมทั้งพัฒนาทักษะการสื่อสารทางอารมณ์ที่ช่วยสร้างความสัมพันธ์ที่แข็งแกร่งทั้งในที่ทำงานและครอบครัว"
+			},
+			{
+				title: "ผลลัพธ์ที่ได้",
+				description: "เมื่อคุณเชี่ยวชาญการควบคุมอารมณ์ คุณจะตัดสินใจได้ดีขึ้น นำทีมได้อย่างมีประสิทธิภาพ และใช้ชีวิตอย่างมีความสุขและสมดุลมากขึ้น"
+			}
+		],
 		shortDescription: "ศาสตร์เพื่อการสื่อสารอย่างฉลาด ในทุกสถานการณ์",
 		slug: "emotional-mastery",
 		featured: true,
@@ -3465,7 +3499,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Emotional Mastery.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Emotional Mastery.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3478,7 +3511,20 @@ var classes = [
 			"NU",
 			"KT"
 		],
-		description: "ผู้นำในยุคปัจจุบันไม่ได้ถูกวัดจากการสั่งการหรือการให้คำตอบเท่านั้น แต่วัดจากความสามารถในการตั้งคำถามที่กระตุ้นให้ทีมคิดหาทางออกด้วยตนเอง ภาวะผู้นำแบบโค้ชช่วยให้ผู้นำสร้างวัฒนธรรมองค์กรที่เปิดกว้าง กระตือรือร้น และพร้อมเติบโตอยู่เสมอ\n\nหลักสูตรนี้จะสอนให้คุณเข้าใจโครงสร้างของคำถามทรงพลัง เทคนิคการฟังอย่างลึกซึ้ง และการสร้างบทสนทนาที่ช่วยพัฒนาศักยภาพของสมาชิกในทีม นอกจากนี้ยังครอบคลุมการใช้ Coaching Model ในบริบทขององค์กรจริง ทั้งในการประชุม การ Feedback และการพัฒนาคนรายบุคคล\n\nเมื่อนำ Coaching Leadership ไปใช้ คุณจะเห็นการเปลี่ยนแปลงในทีม ทั้งในด้านความมุ่งมั่น ความคิดสร้างสรรค์ และประสิทธิภาพในการทำงานที่สูงขึ้นอย่างชัดเจน",
+		description: [
+			{
+				title: "",
+				description: "ผู้นำในยุคปัจจุบันไม่ได้ถูกวัดจากการสั่งการหรือการให้คำตอบเท่านั้น แต่วัดจากความสามารถในการตั้งคำถามที่กระตุ้นให้ทีมคิดหาทางออกด้วยตนเอง ภาวะผู้นำแบบโค้ชช่วยให้ผู้นำสร้างวัฒนธรรมองค์กรที่เปิดกว้าง กระตือรือร้น และพร้อมเติบโตอยู่เสมอ"
+			},
+			{
+				title: "เกี่ยวกับหลักสูตร",
+				description: "หลักสูตรนี้จะสอนให้คุณเข้าใจโครงสร้างของคำถามทรงพลัง เทคนิคการฟังอย่างลึกซึ้ง และการสร้างบทสนทนาที่ช่วยพัฒนาศักยภาพของสมาชิกในทีม นอกจากนี้ยังครอบคลุมการใช้ Coaching Model ในบริบทขององค์กรจริง ทั้งในการประชุม การ Feedback และการพัฒนาคนรายบุคคล"
+			},
+			{
+				title: "ผลลัพธ์ที่ได้",
+				description: "เมื่อนำ Coaching Leadership ไปใช้ คุณจะเห็นการเปลี่ยนแปลงในทีม ทั้งในด้านความมุ่งมั่น ความคิดสร้างสรรค์ และประสิทธิภาพในการทำงานที่สูงขึ้นอย่างชัดเจน"
+			}
+		],
 		shortDescription: "ภาวะผู้นำแบบโค้ช - นำให้ลึกด้วยคำถามทรงพลัง",
 		slug: "coaching-leadership-powerful-questions",
 		featured: true,
@@ -3504,7 +3550,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Coaching Leadership Through Powerful Questions.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Coaching Leadership Through Powerful Questions.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3516,7 +3561,20 @@ var classes = [
 		coachIds: [
 			"KD"
 		],
-		description: "ในโลกที่ข้อมูลซับซ้อนและสถานการณ์เปลี่ยนแปลงอย่างรวดเร็ว ทักษะการคิดวิเคราะห์และการมองภาพรวมอย่างเป็นระบบได้กลายเป็นสิ่งที่แยกผู้ประสบความสำเร็จออกจากคนอื่น Brain Hacker จะพาคุณปลดล็อกศักยภาพสมองที่ซ่อนอยู่ และนำมาใช้ในการแก้ปัญหาอย่างมีประสิทธิภาพ\n\nหลักสูตรนี้ผสมผสานหลักการของ Analytical Thinking, System Thinking และ Mental Models เพื่อช่วยให้คุณมองเห็นความเชื่อมโยงระหว่างสิ่งต่าง ๆ ได้ชัดขึ้น ตัดสินใจได้แม่นยำขึ้น และแก้ปัญหาที่ซับซ้อนได้อย่างเป็นขั้นตอนและมีระบบ\n\nเมื่อฝึกฝนจนช่ำชอง คุณจะกลายเป็นคนที่เพื่อนร่วมงานและองค์กรไว้วางใจให้จัดการความท้าทายที่ซับซ้อน และนำพาทีมไปสู่การตัดสินใจที่ดีกว่าเดิม",
+		description: [
+			{
+				title: "",
+				description: "ในโลกที่ข้อมูลซับซ้อนและสถานการณ์เปลี่ยนแปลงอย่างรวดเร็ว ทักษะการคิดวิเคราะห์และการมองภาพรวมอย่างเป็นระบบได้กลายเป็นสิ่งที่แยกผู้ประสบความสำเร็จออกจากคนอื่น Brain Hacker จะพาคุณปลดล็อกศักยภาพสมองที่ซ่อนอยู่ และนำมาใช้ในการแก้ปัญหาอย่างมีประสิทธิภาพ"
+			},
+			{
+				title: "เกี่ยวกับหลักสูตร",
+				description: "หลักสูตรนี้ผสมผสานหลักการของ Analytical Thinking, System Thinking และ Mental Models เพื่อช่วยให้คุณมองเห็นความเชื่อมโยงระหว่างสิ่งต่าง ๆ ได้ชัดขึ้น ตัดสินใจได้แม่นยำขึ้น และแก้ปัญหาที่ซับซ้อนได้อย่างเป็นขั้นตอนและมีระบบ"
+			},
+			{
+				title: "ผลลัพธ์ที่ได้",
+				description: "เมื่อฝึกฝนจนช่ำชอง คุณจะกลายเป็นคนที่เพื่อนร่วมงานและองค์กรไว้วางใจให้จัดการความท้าทายที่ซับซ้อน และนำพาทีมไปสู่การตัดสินใจที่ดีกว่าเดิม"
+			}
+		],
 		shortDescription: "ปลดล็อกศักยภาพสมอง ด้วยพลังแห่งการคิดวิเคราะห์และการคิดอย่างเป็นระบบ",
 		slug: "brain-hacker-analytical-system-thinking",
 		featured: true,
@@ -3555,7 +3613,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Brain Hacker.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Brain Hacker.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3568,7 +3625,8 @@ var classes = [
 			"LK",
 			"M"
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "ศาสตร์ที่จะทำให้คุณได้ยิน มากกว่าพูด",
 		slug: "listening-intelligence",
 		featured: false,
@@ -3594,7 +3652,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Listening Intelligence.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Listening Intelligence.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3607,7 +3664,8 @@ var classes = [
 			"S",
 			"M"
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "ปลุกพลังบุคลิกภาพเพื่อศักยภาพที่เติบโต",
 		slug: "personality-power-awaken-your-potential",
 		featured: false,
@@ -3633,7 +3691,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Personality Power.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Personality Power.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3646,7 +3703,8 @@ var classes = [
 			"LK",
 			"M"
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "เทคนิคการเปลี่ยนแปลงตัวเองสู่การทำงานเป็นทีม",
 		slug: "self-transform-to-team-collaboration",
 		featured: false,
@@ -3669,7 +3727,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Self-Transform to Team Collaboration.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Self-Transform to Team Collaboration.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3682,7 +3739,8 @@ var classes = [
 			"KT",
 			"NF"
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "ศาสตร์แห่งการก้าวข้ามขีดจำกัด สู่ศักยภาพสูงสุด",
 		slug: "transform-deep-belief-unlock-your-potential",
 		featured: false,
@@ -3706,7 +3764,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Transform Deep Belief.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Transform Deep Belief.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3719,7 +3776,8 @@ var classes = [
 			"KT",
 			"NU"
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "เทคนิคการตั้งเป้า เพื่อความสำเร็จร่วมในทีม",
 		slug: "goal-setting-for-team-alignment",
 		featured: false,
@@ -3745,7 +3803,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Goal Setting for Team Alignment.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Goal Setting for Team Alignment.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3758,7 +3815,8 @@ var classes = [
 			"S",
 			"LK"
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "ศาสตร์แห่งการนำเสนอและขาย ที่ชนะใจทุกเกม",
 		slug: "influencing-presentation-for-sale",
 		featured: false,
@@ -3784,7 +3842,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/Influencing Presentation for Sale.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/Influencing Presentation for Sale.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3798,7 +3855,8 @@ var classes = [
 			"M",
 			"S"
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "ขับเคลื่อนการเปลี่ยนแปลง ด้วยพลังเรื่องเล่า",
 		slug: "the-magic-of-influential-storytelling",
 		featured: false,
@@ -3823,7 +3881,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/classes/The Magic of Influential Storytelling.pdf"
 		},
-		ctaDocumentUrl: "/downloads/classes/The Magic of Influential Storytelling.pdf",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3834,7 +3891,8 @@ var classes = [
 		nameTh: "",
 		coachIds: [
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "6 เครื่องมือวิเคราะห์ธุรกิจที่ใช้ได้จริง",
 		slug: "strategic-business-analysis-toolkit-6-powerful-frameworks",
 		featured: false,
@@ -3858,7 +3916,6 @@ var classes = [
 		downloads: {
 			proposal: ""
 		},
-		ctaDocumentUrl: "#",
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
@@ -3870,7 +3927,8 @@ var classes = [
 		coachIds: [
 			"KD"
 		],
-		description: "",
+		description: [
+		],
 		shortDescription: "คิดอย่างลึกซึ้งเฉียบคม ตัดสินใจอย่างมีหลักการ",
 		slug: "critical-thinking",
 		featured: false,
@@ -3894,7 +3952,6 @@ var classes = [
 		downloads: {
 			proposal: "/downloads/Critical Thinking.pdf"
 		},
-		ctaDocumentUrl: "/downloads/Critical Thinking.pdf",
 		ctaNextRoundUrl: "/#contact"
 	}
 ];
@@ -3970,7 +4027,7 @@ var coaches = [
 				link: "https://tiktok.com/@innerpower"
 			}
 		],
-		proposal: "/downloads/example.pdf"
+		proposal: "/downloads/coached"
 	},
 	{
 		slug: "kru-lookkaew",
@@ -4036,7 +4093,7 @@ var coaches = [
 				link: "https://www.tiktok.com/@krulukkaew"
 			}
 		],
-		proposal: "/downloads/example.pdf"
+		proposal: "/downloads/coached/ครูลูกแก้ว วริศรา บำรุงเวช.pdf"
 	},
 	{
 		slug: "kru-so",
@@ -4085,7 +4142,7 @@ var coaches = [
 				link: "https://instagram.com/innerpower"
 			}
 		],
-		proposal: "/downloads/example.pdf"
+		proposal: "/downloads/coached/ครูซอ ดร.สทาศัย พงศ์หิรัญ.pdf"
 	},
 	{
 		slug: "coach-kitti",
@@ -4139,7 +4196,7 @@ var coaches = [
 				link: "https://tiktok.com/@innerpower"
 			}
 		],
-		proposal: "/downloads/example.pdf"
+		proposal: "/downloads/coached/โค้ชกิตติ ไตรรัตน์.pdf"
 	},
 	{
 		slug: "coach-5",
@@ -4191,7 +4248,7 @@ var coaches = [
 				link: "https://linkedin.com/in/innerpower"
 			}
 		],
-		proposal: "/downloads/example.pdf"
+		proposal: "/downloads/coached/โค้ชน้ำฝน ศุภรางศุ์ อินทนะ.pdf"
 	},
 	{
 		slug: "coach-6",
@@ -4242,7 +4299,7 @@ var coaches = [
 				link: "https://linkedin.com/in/innerpower"
 			}
 		],
-		proposal: "/downloads/example.pdf"
+		proposal: "/downloads/coached/โค้ชนุ้ย จรัณยา อิ่มธนาสาร.pdf"
 	},
 	{
 		slug: "coach-7",
@@ -4295,7 +4352,7 @@ var coaches = [
 				link: "https://linkedin.com/in/innerpower"
 			}
 		],
-		proposal: "/downloads/example.pdf"
+		proposal: "/downloads/coached/ครูหม่อน ณัฐชา คงณศิริ.pdf"
 	}
 ];
 const coachesData = {

@@ -12,7 +12,7 @@
               {{ classData.title }}
             </h1>
             <p class="text-xl md:text-2xl lg:text-4xl text-white mb-6 md:mb-10 leading-relaxed">
-              {{ classData.shortDescription || classData.description.split('\n')[0] }}
+              {{ classData.shortDescription }}
             </p>
 
             <!-- Coaches -->
@@ -99,10 +99,32 @@
           </aside>
 
           <!-- Right: description content -->
-          <article class="flex-1 min-w-0 space-y-5">
-            <template v-for="(para, i) in descriptionParagraphs" :key="i">
-              <p class="text-textSecondary leading-[1.85] text-[1.05rem]">{{ para }}</p>
-            </template>
+          <article class="flex-1 min-w-0 space-y-8">
+            <div v-for="(section, i) in classData.description" :key="i">
+              <h3
+                v-if="section.title"
+                class="text-xl font-semibold mb-3 whitespace-pre-line"
+                :class="section.titleColor === 'gold' ? 'text-goldText' : 'text-textPrimary'"
+              >{{ section.title }}</h3>
+
+              <!-- text (default) -->
+              <p v-if="!section.type || section.type === 'text'" class="text-textSecondary leading-[1.85] text-[1.05rem] whitespace-pre-line">{{ section.description }}</p>
+
+              <!-- bullet -->
+              <template v-else-if="section.type === 'bullet'">
+                <p v-if="section.description" class="text-textSecondary leading-[1.85] text-[1.05rem] mb-3">{{ section.description }}</p>
+                <ul class="space-y-2">
+                  <li
+                    v-for="(item, j) in section.items"
+                    :key="j"
+                    class="flex items-start gap-3 text-textPrimary"
+                  >
+                    <span class="mt-2 w-2.5 h-2.5 rounded-full bg-goldTextDark flex-shrink-0" />
+                    {{ item }}
+                  </li>
+                </ul>
+              </template>
+            </div>
           </article>
 
         </div>
@@ -158,8 +180,8 @@
       <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
         <div class="flex flex-col gap-4 max-w-xl mx-auto">
           <a
-            v-if="classData.ctaDocumentUrl"
-            :href="classData.ctaDocumentUrl"
+            v-if="classData.downloads?.proposal"
+            :href="classData.downloads.proposal"
             download
             target="_blank"
             class="block w-full text-center text-xl md:text-3xl lg:text-4xl font-semibold py-4 md:py-5 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
@@ -227,16 +249,14 @@ onMounted(() => {
   updateGalleryScroll()
 })
 
-const descriptionParagraphs = computed(() =>
-  (classData.description || '').split('\n').filter(Boolean)
-)
+const descriptionText = classData.description.map(s => s.description).join(' ')
 
 useHead({
   title: `${classData.title} - Inner Academy`,
   meta: [
-    { name: 'description', content: classData.shortDescription || classData.description },
+    { name: 'description', content: classData.shortDescription || descriptionText },
     { property: 'og:title', content: `${classData.title} - Inner Academy` },
-    { property: 'og:description', content: classData.shortDescription || classData.description },
+    { property: 'og:description', content: classData.shortDescription || descriptionText },
     { property: 'og:image', content: `https://inneracademy.com${classData.image || ''}` },
     { property: 'og:url', content: `https://inneracademy.com/courses/${classData.slug}` }
   ]

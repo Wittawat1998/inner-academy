@@ -39,7 +39,7 @@
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "tiktok", "link": "https://tiktok.com/@innerpower" }
       ],
-      "proposal": "/downloads/example.pdf"
+      "proposal": "/downloads/coached"
     },
     {
       "slug": "kru-lookkaew",
@@ -81,7 +81,7 @@
         { "channel": "instagram", "link": "https://www.instagram.com/lk_lukkaew/" },
         { "channel": "tiktok", "link": "https://www.tiktok.com/@krulukkaew" }
       ],
-      "proposal": "/downloads/example.pdf"
+      "proposal": "/downloads/coached/ครูลูกแก้ว วริศรา บำรุงเวช.pdf"
     },
     {
       "slug": "kru-so",
@@ -116,7 +116,7 @@
         { "channel": "facebook", "link": "https://facebook.com/innerpower" },
         { "channel": "instagram", "link": "https://instagram.com/innerpower" }
       ],
-      "proposal": "/downloads/example.pdf"
+      "proposal": "/downloads/coached/ครูซอ ดร.สทาศัย พงศ์หิรัญ.pdf"
     },
     {
       "slug": "coach-kitti",
@@ -153,7 +153,7 @@
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "tiktok", "link": "https://tiktok.com/@innerpower" }
       ],
-      "proposal": "/downloads/example.pdf"
+      "proposal": "/downloads/coached/โค้ชกิตติ ไตรรัตน์.pdf"
     },
     {
       "slug": "coach-5",
@@ -189,7 +189,7 @@
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "linkedin", "link": "https://linkedin.com/in/innerpower" }
       ],
-      "proposal": "/downloads/example.pdf"
+      "proposal": "/downloads/coached/โค้ชน้ำฝน ศุภรางศุ์ อินทนะ.pdf"
     },
     {
       "slug": "coach-6",
@@ -225,7 +225,7 @@
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "linkedin", "link": "https://linkedin.com/in/innerpower" }
       ],
-      "proposal": "/downloads/example.pdf"
+      "proposal": "/downloads/coached/โค้ชนุ้ย จรัณยา อิ่มธนาสาร.pdf"
     },
     {
       "slug": "coach-7",
@@ -261,7 +261,7 @@
         { "channel": "instagram", "link": "https://instagram.com/innerpower" },
         { "channel": "linkedin", "link": "https://linkedin.com/in/innerpower" }
       ],
-      "proposal": "/downloads/example.pdf"
+      "proposal": "/downloads/coached/ครูหม่อน ณัฐชา คงณศิริ.pdf"
     }
   ]
 }
