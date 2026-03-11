@@ -23,7 +23,7 @@
             class="course-row"
           >
           <NuxtLink 
-            :to="`/courses/${course.slug}`"
+            :to="`/courses/${course.id}`"
             class="course-link flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 py-4 sm:py-6 px-4 md:px-10 lg:px-[80px] group"
           >
             <!-- Left: Title + Description -->
@@ -32,7 +32,7 @@
                 {{ course.title }}
               </h3>
               <p class="text-sm text-gray-400 group-hover:text-gray-700 transition-colors">
-                {{ course.shortDescription }}
+                {{ course.nameTh }}
               </p>
             </div>
 

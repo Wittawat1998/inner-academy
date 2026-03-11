@@ -2151,7 +2151,22 @@ const plugins = [
 __FqZsEfjjxjm5ttXhq7HwaGCOI1aOdzesmkR7dBKXHg
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"2d3e6-xdI261X5x97TlsPKKuXq1zBDaxo\"",
+    "mtime": "2026-03-11T14:48:44.667Z",
+    "size": 185318,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"73069-gV1jQ6OnloMTNkogE/RMXyFB1XY\"",
+    "mtime": "2026-03-11T14:48:44.676Z",
+    "size": 471145,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -3377,7 +3392,320 @@ var meta = {
 };
 var classes = [
 	{
-		id: 1,
+		id: "SC",
+		classId: "SC",
+		order: 1,
+		title: "Self Transform To Team Collaboration",
+		nameTh: "พัฒนาการทำงานร่วมกันเป็นทีม",
+		coachIds: [
+			"LK",
+			"M"
+		],
+		description: [
+			{
+				title: "",
+				description: "รายละเอียดคลาส"
+			}
+		],
+		slug: "self-transform-to-team-collaboration",
+		featured: false,
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "selfDevelopment",
+		duration: "8 ชั่วโมง",
+		audience: [
+			"หัวหน้างาน",
+			"พนักงานทั่วไป"
+		],
+		price: 8900,
+		originalPrice: 11900,
+		currency: "บาท",
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
+		],
+		downloads: {
+			proposal: "/downloads/classes/Self-Transform to Team Collaboration.pdf"
+		},
+		ctaNextRoundUrl: "/#contact"
+	},
+	{
+		id: "TD",
+		classId: "TD",
+		order: 2,
+		title: "Transform Deep Belief: Unlock your potential",
+		nameTh: "ปลดล็อคศักยภาพจากภายในเพื่อประสิทธิภาพในการทำงาน",
+		coachIds: [
+			"KT",
+			"NF"
+		],
+		description: [
+			{
+				title: "",
+				description: "รายละเอียดคลาส"
+			}
+		],
+		slug: "transform-deep-belief-unlock-your-potential",
+		featured: false,
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "selfDevelopment",
+		duration: "8 ชั่วโมง",
+		audience: [
+			"เจ้าของกิจการ",
+			"พนักงานองค์กร",
+			"ทุกคนที่ต้องการปลดล็อกความเชื่อที่ขัดขวางศักยภาพในตัวเอง"
+		],
+		price: 8900,
+		originalPrice: 11900,
+		currency: "บาท",
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
+		],
+		downloads: {
+			proposal: "/downloads/classes/Transform Deep Belief.pdf"
+		},
+		ctaNextRoundUrl: "/#contact"
+	},
+	{
+		id: "GM",
+		classId: "GM",
+		order: 3,
+		title: "Goal Setting for Team Alignment",
+		nameTh: "ตั้งเป้าหมายชีวิตสอดคล้องกับองค์กร",
+		coachIds: [
+			"KT",
+			"NU"
+		],
+		description: [
+			{
+				title: "",
+				description: "รายละเอียดคลาส"
+			}
+		],
+		slug: "goal-setting-for-team-alignment",
+		featured: false,
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "selfDevelopment",
+		duration: "8 ชั่วโมง",
+		audience: [
+			"เจ้าของกิจการ",
+			"ผู้บริหาร",
+			"หัวหน้างาน",
+			"พนักงานทั่วไป",
+			"ทุกคนที่ต้องการค้นหาเป้าหมายที่แท้จริงของชีวิต"
+		],
+		price: 8900,
+		originalPrice: 11900,
+		currency: "บาท",
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
+		],
+		downloads: {
+			proposal: "/downloads/classes/Goal Setting for Team Alignment.pdf"
+		},
+		ctaNextRoundUrl: "/#contact"
+	},
+	{
+		id: "BH",
+		classId: "BH",
+		order: 4,
+		title: "Brain Hacker: Fundamental of Analytical Thinking and System Thinking",
+		nameTh: "พัฒนาทักษะการคิดอย่างเป็นระบบ จัดการงานได้อย่างมีประสิทธิภาพ",
+		coachIds: [
+			"KD"
+		],
+		description: [
+			{
+				title: "",
+				description: "ในโลกที่ข้อมูลซับซ้อนและสถานการณ์เปลี่ยนแปลงอย่างรวดเร็ว ทักษะการคิดวิเคราะห์และการมองภาพรวมอย่างเป็นระบบได้กลายเป็นสิ่งที่แยกผู้ประสบความสำเร็จออกจากคนอื่น Brain Hacker จะพาคุณปลดล็อกศักยภาพสมองที่ซ่อนอยู่ และนำมาใช้ในการแก้ปัญหาอย่างมีประสิทธิภาพ"
+			},
+			{
+				title: "เกี่ยวกับหลักสูตร",
+				description: "หลักสูตรนี้ผสมผสานหลักการของ Analytical Thinking, System Thinking และ Mental Models เพื่อช่วยให้คุณมองเห็นความเชื่อมโยงระหว่างสิ่งต่าง ๆ ได้ชัดขึ้น ตัดสินใจได้แม่นยำขึ้น และแก้ปัญหาที่ซับซ้อนได้อย่างเป็นขั้นตอนและมีระบบ"
+			},
+			{
+				title: "ผลลัพธ์ที่ได้",
+				description: "เมื่อฝึกฝนจนช่ำชอง คุณจะกลายเป็นคนที่เพื่อนร่วมงานและองค์กรไว้วางใจให้จัดการความท้าทายที่ซับซ้อน และนำพาทีมไปสู่การตัดสินใจที่ดีกว่าเดิม"
+			}
+		],
+		slug: "brain-hacker-analytical-system-thinking",
+		featured: true,
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "selfDevelopment",
+		duration: "4 ชั่วโมง",
+		audience: [
+			"พนักงานองค์กร",
+			"หัวหน้างาน",
+			"HR",
+			"ทุกคนที่ต้องการพัฒนาทักษะการคิดเพื่อทำงานอย่างมีประสิทธิภาพ"
+		],
+		price: 3900,
+		originalPrice: 9900,
+		currency: "บาท",
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		prices: [
+			{
+				enrollmentType: "onSite",
+				price: 3900,
+				originalPrice: 9900,
+				currency: "บาท"
+			},
+			{
+				enrollmentType: "online",
+				price: 2900,
+				originalPrice: 8900,
+				currency: "บาท"
+			}
+		],
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
+		],
+		downloads: {
+			proposal: "/downloads/classes/Brain Hacker.pdf"
+		},
+		ctaNextRoundUrl: "/#contact"
+	},
+	{
+		id: "CRT",
+		classId: "CRT",
+		order: 5,
+		title: "Critical Thinking",
+		nameTh: "พัฒนากระบวนการคิด ประเมินข้อมูลอย่างรอบด้าน",
+		coachIds: [
+			"KD"
+		],
+		description: [
+			{
+				title: "",
+				description: "รายละเอียดคลาส"
+			}
+		],
+		slug: "critical-thinking",
+		featured: false,
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "selfDevelopment",
+		duration: "8 ชั่วโมง",
+		audience: [
+			"พนักงานทั่วไป",
+			"ผู้จัดการ",
+			"ผู้บริหาร"
+		],
+		price: 8900,
+		originalPrice: 11900,
+		currency: "บาท",
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
+		],
+		downloads: {
+			proposal: "/downloads/Critical Thinking.pdf"
+		},
+		ctaNextRoundUrl: "/#contact"
+	},
+	{
+		id: "EM",
+		classId: "EM",
+		order: 6,
+		title: "Emotional Mastery",
+		nameTh: "บริหารอารมณ์และการรับมือกับสถานการณ์ต่าง ๆ อย่างมืออาชีพ",
+		coachIds: [
+			"NF",
+			"KT"
+		],
+		description: [
+			{
+				title: "",
+				description: "ในยุคที่การทำงานร่วมกับผู้คนหลากหลายและความกดดันในชีวิตประจำวันเพิ่มสูงขึ้น ความสามารถในการบริหารจัดการอารมณ์และความรู้สึกของตนเองได้อย่างชาญฉลาดจึงเป็นทักษะที่ขาดไม่ได้ Emotional Mastery ช่วยให้คุณเข้าใจกลไกของอารมณ์ในระดับลึก และเปลี่ยนอารมณ์จากอุปสรรคให้กลายเป็นพลังขับเคลื่อน"
+			},
+			{
+				title: "เกี่ยวกับหลักสูตร",
+				description: "หลักสูตรนี้ผสานศาสตร์ด้าน Neuroscience, Psychology และ Mindfulness เพื่อให้ผู้เรียนสามารถจัดการกับสถานการณ์ที่กดดัน ความขัดแย้ง และอารมณ์เชิงลบได้อย่างมีประสิทธิภาพ พร้อมทั้งพัฒนาทักษะการสื่อสารทางอารมณ์ที่ช่วยสร้างความสัมพันธ์ที่แข็งแกร่งทั้งในที่ทำงานและครอบครัว"
+			},
+			{
+				title: "ผลลัพธ์ที่ได้",
+				description: "เมื่อคุณเชี่ยวชาญการควบคุมอารมณ์ คุณจะตัดสินใจได้ดีขึ้น นำทีมได้อย่างมีประสิทธิภาพ และใช้ชีวิตอย่างมีความสุขและสมดุลมากขึ้น"
+			}
+		],
+		slug: "emotional-mastery",
+		featured: true,
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "communication",
+		duration: "8 ชั่วโมง",
+		audience: [
+			"พนักงานองค์กร",
+			"หัวหน้างาน",
+			"HR",
+			"ทุกคนที่ต้องการพัฒนาทักษะการบริหารจัดการอารมณ์เพื่อทำงานอย่างมีประสิทธิภาพ"
+		],
+		price: 8900,
+		originalPrice: 11900,
+		currency: "บาท",
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
+		],
+		downloads: {
+			proposal: "/downloads/classes/Emotional Mastery.pdf"
+		},
+		ctaNextRoundUrl: "/#contact"
+	},
+	{
+		id: "LI",
+		classId: "LI",
+		order: 7,
+		title: "Listening Intelligence",
+		nameTh: "ฟังให้ลึกซึ้งถึงความต้องการ และเจตนาของคู่สนทนาเพื่อความเข้าใจในองค์กร",
+		coachIds: [
+			"LK",
+			"M"
+		],
+		description: [
+			{
+				title: "",
+				description: "รายละเอียดคลาส"
+			}
+		],
+		slug: "listening-intelligence",
+		featured: false,
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "communication",
+		duration: "8 ชั่วโมง",
+		audience: [
+			"เจ้าของกิจการ",
+			"ผู้บริหาร",
+			"หัวหน้างาน",
+			"พนักงานทั่วไป",
+			"ทุกคนที่ต้องการเสริมสร้างทักษะการฟังเพื่อการทำงาน"
+		],
+		price: 8900,
+		originalPrice: 11900,
+		currency: "บาท",
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
+		],
+		downloads: {
+			proposal: "/downloads/classes/Listening Intelligence.pdf"
+		},
+		ctaNextRoundUrl: "/#contact"
+	},
+	{
+		id: "KM",
 		classId: "KM",
 		order: 8,
 		title: "Key Message: Clear Message",
@@ -3424,13 +3752,12 @@ var classes = [
 				description: "หยุดความสับสน เพิ่มประสิทธิภาพให้องค์กรด้วยการสื่อสารที่ตรงเป้าหมาย ยกระดับทักษะการสกัด Key Message ของทีมงานให้ก้าวล้ำไปพร้อมกับโลกธุรกิจ\n\nสอบถามรายละเอียดหลักสูตร หรือนัดหมายปรึกษาเพื่อออกแบบเวิร์กชอปที่ใช่สำหรับองค์กรคุณ กับเราวันนี้"
 			}
 		],
-		shortDescription: "ศาสตร์แห่งการสื่อสารอย่างตรงประเด็นและชัดเจน",
 		slug: "key-message-clear-message",
 		featured: true,
-		image: "/images/classes/class-1/km.jpg",
-		category: "การสื่อสาร",
+		logo: "/images/classes/class-1/km.jpg",
+		category: "communication",
 		duration: "8 ชั่วโมง",
-		targetAudience: [
+		audience: [
 			"เจ้าของกิจการ",
 			"ผู้บริหาร",
 			"หัวหน้างาน",
@@ -3441,7 +3768,7 @@ var classes = [
 		originalPrice: 11900,
 		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
+		images: [
 			"/images/classes/class-1/silde-image/km-agenda.jpg",
 			"/images/classes/class-1/silde-image/km-gallery-1.jpg",
 			"/images/classes/class-1/silde-image/km-gallery-2.jpg"
@@ -3452,57 +3779,7 @@ var classes = [
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
-		id: 2,
-		classId: "EM",
-		order: 6,
-		title: "Emotional Mastery",
-		nameTh: "บริหารอารมณ์และการรับมือกับสถานการณ์ต่าง ๆ อย่างมืออาชีพ",
-		coachIds: [
-			"NF",
-			"KT"
-		],
-		description: [
-			{
-				title: "",
-				description: "ในยุคที่การทำงานร่วมกับผู้คนหลากหลายและความกดดันในชีวิตประจำวันเพิ่มสูงขึ้น ความสามารถในการบริหารจัดการอารมณ์และความรู้สึกของตนเองได้อย่างชาญฉลาดจึงเป็นทักษะที่ขาดไม่ได้ Emotional Mastery ช่วยให้คุณเข้าใจกลไกของอารมณ์ในระดับลึก และเปลี่ยนอารมณ์จากอุปสรรคให้กลายเป็นพลังขับเคลื่อน"
-			},
-			{
-				title: "เกี่ยวกับหลักสูตร",
-				description: "หลักสูตรนี้ผสานศาสตร์ด้าน Neuroscience, Psychology และ Mindfulness เพื่อให้ผู้เรียนสามารถจัดการกับสถานการณ์ที่กดดัน ความขัดแย้ง และอารมณ์เชิงลบได้อย่างมีประสิทธิภาพ พร้อมทั้งพัฒนาทักษะการสื่อสารทางอารมณ์ที่ช่วยสร้างความสัมพันธ์ที่แข็งแกร่งทั้งในที่ทำงานและครอบครัว"
-			},
-			{
-				title: "ผลลัพธ์ที่ได้",
-				description: "เมื่อคุณเชี่ยวชาญการควบคุมอารมณ์ คุณจะตัดสินใจได้ดีขึ้น นำทีมได้อย่างมีประสิทธิภาพ และใช้ชีวิตอย่างมีความสุขและสมดุลมากขึ้น"
-			}
-		],
-		shortDescription: "ศาสตร์เพื่อการสื่อสารอย่างฉลาด ในทุกสถานการณ์",
-		slug: "emotional-mastery",
-		featured: true,
-		image: "/images/classes/class-2/km.jpg",
-		category: "อารมณ์และการสื่อสาร",
-		duration: "8 ชั่วโมง",
-		targetAudience: [
-			"พนักงานองค์กร",
-			"หัวหน้างาน",
-			"HR",
-			"ทุกคนที่ต้องการพัฒนาทักษะการบริหารจัดการอารมณ์เพื่อทำงานอย่างมีประสิทธิภาพ"
-		],
-		price: 8900,
-		originalPrice: 11900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-2/silde-image/km-agenda.jpg",
-			"/images/classes/class-2/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-2/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: "/downloads/classes/Emotional Mastery.pdf"
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 3,
+		id: "QA",
 		classId: "QA",
 		order: 9,
 		title: "Coaching Leadership Through Powerful Questions",
@@ -3525,13 +3802,12 @@ var classes = [
 				description: "เมื่อนำ Coaching Leadership ไปใช้ คุณจะเห็นการเปลี่ยนแปลงในทีม ทั้งในด้านความมุ่งมั่น ความคิดสร้างสรรค์ และประสิทธิภาพในการทำงานที่สูงขึ้นอย่างชัดเจน"
 			}
 		],
-		shortDescription: "ภาวะผู้นำแบบโค้ช - นำให้ลึกด้วยคำถามทรงพลัง",
 		slug: "coaching-leadership-powerful-questions",
 		featured: true,
-		image: "/images/classes/class-3/km.jpg",
-		category: "ภาวะผู้นำ",
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "communication",
 		duration: "8 ชั่วโมง",
-		targetAudience: [
+		audience: [
 			"เจ้าของกิจการ",
 			"ผู้บริหาร",
 			"หัวหน้างาน",
@@ -3542,10 +3818,10 @@ var classes = [
 		originalPrice: 11900,
 		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-3/silde-image/km-agenda.jpg",
-			"/images/classes/class-3/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-3/silde-image/km-gallery-2.jpg"
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
 		],
 		downloads: {
 			proposal: "/downloads/classes/Coaching Leadership Through Powerful Questions.pdf"
@@ -3553,260 +3829,7 @@ var classes = [
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
-		id: 4,
-		classId: "BH",
-		order: 4,
-		title: "Brain Hacker: Fundamental of Analytical Thinking and System Thinking",
-		nameTh: "พัฒนาทักษะการคิดอย่างเป็นระบบ จัดการงานได้อย่างมีประสิทธิภาพ",
-		coachIds: [
-			"KD"
-		],
-		description: [
-			{
-				title: "",
-				description: "ในโลกที่ข้อมูลซับซ้อนและสถานการณ์เปลี่ยนแปลงอย่างรวดเร็ว ทักษะการคิดวิเคราะห์และการมองภาพรวมอย่างเป็นระบบได้กลายเป็นสิ่งที่แยกผู้ประสบความสำเร็จออกจากคนอื่น Brain Hacker จะพาคุณปลดล็อกศักยภาพสมองที่ซ่อนอยู่ และนำมาใช้ในการแก้ปัญหาอย่างมีประสิทธิภาพ"
-			},
-			{
-				title: "เกี่ยวกับหลักสูตร",
-				description: "หลักสูตรนี้ผสมผสานหลักการของ Analytical Thinking, System Thinking และ Mental Models เพื่อช่วยให้คุณมองเห็นความเชื่อมโยงระหว่างสิ่งต่าง ๆ ได้ชัดขึ้น ตัดสินใจได้แม่นยำขึ้น และแก้ปัญหาที่ซับซ้อนได้อย่างเป็นขั้นตอนและมีระบบ"
-			},
-			{
-				title: "ผลลัพธ์ที่ได้",
-				description: "เมื่อฝึกฝนจนช่ำชอง คุณจะกลายเป็นคนที่เพื่อนร่วมงานและองค์กรไว้วางใจให้จัดการความท้าทายที่ซับซ้อน และนำพาทีมไปสู่การตัดสินใจที่ดีกว่าเดิม"
-			}
-		],
-		shortDescription: "ปลดล็อกศักยภาพสมอง ด้วยพลังแห่งการคิดวิเคราะห์และการคิดอย่างเป็นระบบ",
-		slug: "brain-hacker-analytical-system-thinking",
-		featured: true,
-		image: "/images/classes/class-4/km.jpg",
-		category: "การคิดเชิงวิเคราะห์",
-		duration: "4 ชั่วโมง",
-		targetAudience: [
-			"พนักงานองค์กร",
-			"หัวหน้างาน",
-			"HR",
-			"ทุกคนที่ต้องการพัฒนาทักษะการคิดเพื่อทำงานอย่างมีประสิทธิภาพ"
-		],
-		price: 3900,
-		originalPrice: 9900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		prices: [
-			{
-				enrollmentType: "onSite",
-				price: 3900,
-				originalPrice: 9900,
-				currency: "บาท"
-			},
-			{
-				enrollmentType: "online",
-				price: 2900,
-				originalPrice: 8900,
-				currency: "บาท"
-			}
-		],
-		gallery: [
-			"/images/classes/class-4/silde-image/km-agenda.jpg",
-			"/images/classes/class-4/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-4/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: "/downloads/classes/Brain Hacker.pdf"
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 5,
-		classId: "LI",
-		order: 7,
-		title: "Listening Intelligence",
-		nameTh: "ฟังให้ลึกซึ้งถึงความต้องการ และเจตนาของคู่สนทนาเพื่อความเข้าใจในองค์กร",
-		coachIds: [
-			"LK",
-			"M"
-		],
-		description: [
-		],
-		shortDescription: "ศาสตร์ที่จะทำให้คุณได้ยิน มากกว่าพูด",
-		slug: "listening-intelligence",
-		featured: false,
-		image: "/images/classes/class-5/km.jpg",
-		category: "การสื่อสาร",
-		duration: "8 ชั่วโมง",
-		targetAudience: [
-			"เจ้าของกิจการ",
-			"ผู้บริหาร",
-			"หัวหน้างาน",
-			"พนักงานทั่วไป",
-			"ทุกคนที่ต้องการเสริมสร้างทักษะการฟังเพื่อการทำงาน"
-		],
-		price: 8900,
-		originalPrice: 11900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-5/silde-image/km-agenda.jpg",
-			"/images/classes/class-5/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-5/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: "/downloads/classes/Listening Intelligence.pdf"
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 6,
-		classId: "PPA",
-		order: 11,
-		title: "Personality Power: Awaken Your Potential",
-		nameTh: "ยกระดับบุคลิกภาพให้น่าเชื่อถือ และสร้างความประทับใจ",
-		coachIds: [
-			"S",
-			"M"
-		],
-		description: [
-		],
-		shortDescription: "ปลุกพลังบุคลิกภาพเพื่อศักยภาพที่เติบโต",
-		slug: "personality-power-awaken-your-potential",
-		featured: false,
-		image: "/images/classes/class-6/km.jpg",
-		category: "การพัฒนาตนเอง",
-		duration: "8 ชั่วโมง",
-		targetAudience: [
-			"ผู้บริหาร",
-			"หัวหน้างาน",
-			"พนักงานองค์กร",
-			"นักขาย",
-			"และทุกคนที่ต้องการพัฒนาบุคลิกภาพให้เป็นมืออาชีพ"
-		],
-		price: 8900,
-		originalPrice: 11900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-6/silde-image/km-agenda.jpg",
-			"/images/classes/class-6/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-6/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: "/downloads/classes/Personality Power.pdf"
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 7,
-		classId: "SC",
-		order: 1,
-		title: "Self Transform To Team Collaboration",
-		nameTh: "พัฒนาการทำงานร่วมกันเป็นทีม",
-		coachIds: [
-			"LK",
-			"M"
-		],
-		description: [
-		],
-		shortDescription: "เทคนิคการเปลี่ยนแปลงตัวเองสู่การทำงานเป็นทีม",
-		slug: "self-transform-to-team-collaboration",
-		featured: false,
-		image: "/images/classes/class-7/km.jpg",
-		category: "การทำงานเป็นทีม",
-		duration: "8 ชั่วโมง",
-		targetAudience: [
-			"หัวหน้างาน",
-			"พนักงานทั่วไป"
-		],
-		price: 8900,
-		originalPrice: 11900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-7/silde-image/km-agenda.jpg",
-			"/images/classes/class-7/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-7/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: "/downloads/classes/Self-Transform to Team Collaboration.pdf"
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 8,
-		classId: "TD",
-		order: 2,
-		title: "Transform Deep Belief: Unlock your potential",
-		nameTh: "ปลดล็อคศักยภาพจากภายในเพื่อประสิทธิภาพในการทำงาน",
-		coachIds: [
-			"KT",
-			"NF"
-		],
-		description: [
-		],
-		shortDescription: "ศาสตร์แห่งการก้าวข้ามขีดจำกัด สู่ศักยภาพสูงสุด",
-		slug: "transform-deep-belief-unlock-your-potential",
-		featured: false,
-		image: "/images/classes/class-8/km.jpg",
-		category: "การพัฒนาตนเอง",
-		duration: "8 ชั่วโมง",
-		targetAudience: [
-			"เจ้าของกิจการ",
-			"พนักงานองค์กร",
-			"ทุกคนที่ต้องการปลดล็อกความเชื่อที่ขัดขวางศักยภาพในตัวเอง"
-		],
-		price: 8900,
-		originalPrice: 11900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-8/silde-image/km-agenda.jpg",
-			"/images/classes/class-8/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-8/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: "/downloads/classes/Transform Deep Belief.pdf"
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 9,
-		classId: "GM",
-		order: 3,
-		title: "Goal Setting for Team Alignment",
-		nameTh: "ตั้งเป้าหมายชีวิตสอดคล้องกับองค์กร",
-		coachIds: [
-			"KT",
-			"NU"
-		],
-		description: [
-		],
-		shortDescription: "เทคนิคการตั้งเป้า เพื่อความสำเร็จร่วมในทีม",
-		slug: "goal-setting-for-team-alignment",
-		featured: false,
-		image: "/images/classes/class-9/km.jpg",
-		category: "ภาวะผู้นำ",
-		duration: "8 ชั่วโมง",
-		targetAudience: [
-			"เจ้าของกิจการ",
-			"ผู้บริหาร",
-			"หัวหน้างาน",
-			"พนักงานทั่วไป",
-			"ทุกคนที่ต้องการค้นหาเป้าหมายที่แท้จริงของชีวิต"
-		],
-		price: 8900,
-		originalPrice: 11900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-9/silde-image/km-agenda.jpg",
-			"/images/classes/class-9/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-9/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: "/downloads/classes/Goal Setting for Team Alignment.pdf"
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 10,
+		id: "IPS",
 		classId: "IPS",
 		order: 10,
 		title: "Influencing Presentation for Sale",
@@ -3816,14 +3839,17 @@ var classes = [
 			"LK"
 		],
 		description: [
+			{
+				title: "",
+				description: "รายละเอียดคลาส"
+			}
 		],
-		shortDescription: "ศาสตร์แห่งการนำเสนอและขาย ที่ชนะใจทุกเกม",
 		slug: "influencing-presentation-for-sale",
 		featured: false,
-		image: "/images/classes/class-10/km.jpg",
-		category: "การนำเสนอ",
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "presentation",
 		duration: "8 ชั่วโมง",
-		targetAudience: [
+		audience: [
 			"เจ้าของกิจการ",
 			"นักขาย",
 			"AE",
@@ -3834,10 +3860,10 @@ var classes = [
 		originalPrice: 11900,
 		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-10/silde-image/km-agenda.jpg",
-			"/images/classes/class-10/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-10/silde-image/km-gallery-2.jpg"
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
 		],
 		downloads: {
 			proposal: "/downloads/classes/Influencing Presentation for Sale.pdf"
@@ -3845,7 +3871,49 @@ var classes = [
 		ctaNextRoundUrl: "/#contact"
 	},
 	{
-		id: 11,
+		id: "PPA",
+		classId: "PPA",
+		order: 11,
+		title: "Personality Power: Awaken Your Potential",
+		nameTh: "ยกระดับบุคลิกภาพให้น่าเชื่อถือ และสร้างความประทับใจ",
+		coachIds: [
+			"S",
+			"M"
+		],
+		description: [
+			{
+				title: "",
+				description: "รายละเอียดคลาส"
+			}
+		],
+		slug: "personality-power-awaken-your-potential",
+		featured: false,
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "presentation",
+		duration: "8 ชั่วโมง",
+		audience: [
+			"ผู้บริหาร",
+			"หัวหน้างาน",
+			"พนักงานองค์กร",
+			"นักขาย",
+			"และทุกคนที่ต้องการพัฒนาบุคลิกภาพให้เป็นมืออาชีพ"
+		],
+		price: 8900,
+		originalPrice: 11900,
+		currency: "บาท",
+		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
+		],
+		downloads: {
+			proposal: "/downloads/classes/Personality Power.pdf"
+		},
+		ctaNextRoundUrl: "/#contact"
+	},
+	{
+		id: "STR",
 		classId: "STR",
 		order: 12,
 		title: "The Magic of Influential Storytelling",
@@ -3856,14 +3924,17 @@ var classes = [
 			"S"
 		],
 		description: [
+			{
+				title: "",
+				description: "รายละเอียดคลาส"
+			}
 		],
-		shortDescription: "ขับเคลื่อนการเปลี่ยนแปลง ด้วยพลังเรื่องเล่า",
 		slug: "the-magic-of-influential-storytelling",
 		featured: false,
-		image: "/images/classes/class-11/km.jpg",
-		category: "การสื่อสาร",
+		logo: "https://placehold.co/480x480?text=Class",
+		category: "presentation",
 		duration: "8 ชั่วโมง",
-		targetAudience: [
+		audience: [
 			"พนักงานองค์กร",
 			"หัวหน้างาน",
 			"นักสร้างแบรนด์",
@@ -3873,84 +3944,13 @@ var classes = [
 		originalPrice: 11900,
 		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-11/silde-image/km-agenda.jpg",
-			"/images/classes/class-11/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-11/silde-image/km-gallery-2.jpg"
+		images: [
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image",
+			"https://placehold.co/480x224?text=Image"
 		],
 		downloads: {
 			proposal: "/downloads/classes/The Magic of Influential Storytelling.pdf"
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 12,
-		classId: "SBA",
-		order: 13,
-		title: "Strategic Business Analysis Toolkit: 6 Powerful Frameworks",
-		nameTh: "",
-		coachIds: [
-		],
-		description: [
-		],
-		shortDescription: "6 เครื่องมือวิเคราะห์ธุรกิจที่ใช้ได้จริง",
-		slug: "strategic-business-analysis-toolkit-6-powerful-frameworks",
-		featured: false,
-		image: "/images/classes/class-12/km.jpg",
-		category: "การคิดเชิงวิเคราะห์",
-		duration: "8 ชั่วโมง",
-		targetAudience: [
-			"ผู้จัดการ",
-			"ผู้บริหาร",
-			"นักวิเคราะห์"
-		],
-		price: 8900,
-		originalPrice: 11900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-12/silde-image/km-agenda.jpg",
-			"/images/classes/class-12/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-12/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: ""
-		},
-		ctaNextRoundUrl: "/#contact"
-	},
-	{
-		id: 13,
-		classId: "CRT",
-		order: 5,
-		title: "Critical Thinking",
-		nameTh: "พัฒนากระบวนการคิด ประเมินข้อมูลอย่างรอบด้าน",
-		coachIds: [
-			"KD"
-		],
-		description: [
-		],
-		shortDescription: "คิดอย่างลึกซึ้งเฉียบคม ตัดสินใจอย่างมีหลักการ",
-		slug: "critical-thinking",
-		featured: false,
-		image: "/images/classes/class-13/km.jpg",
-		category: "การคิดเชิงวิเคราะห์",
-		duration: "8 ชั่วโมง",
-		targetAudience: [
-			"พนักงานทั่วไป",
-			"ผู้จัดการ",
-			"ผู้บริหาร"
-		],
-		price: 8900,
-		originalPrice: 11900,
-		currency: "บาท",
-		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
-		gallery: [
-			"/images/classes/class-13/silde-image/km-agenda.jpg",
-			"/images/classes/class-13/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-13/silde-image/km-gallery-2.jpg"
-		],
-		downloads: {
-			proposal: "/downloads/Critical Thinking.pdf"
 		},
 		ctaNextRoundUrl: "/#contact"
 	}
@@ -3981,80 +3981,172 @@ var coaches = [
 		id: "KD",
 		order: 1,
 		name: "ดร.เกด",
-		nameTh: "สุกฤตา ปรีชาว่อง",
-		career: "Co-Founder and Organization Coach",
+		nameTh: "ดร.สุกฤตา ปรีชาว่อง",
+		nameEn: "Dr. Sukritta Preechawong",
+		career: "People Development Consultant and Learning Innovator",
 		avatar: "/images/coaches/kd.webp",
-		gallery: [
-			"/images/coaches/kd/km-gallery-1.jpg",
-			"/images/coaches/kd/km-gallery-2.jpg"
+		images: [
+			"https://placehold.co/380x254?text=Image",
+			"https://placehold.co/380x254?text=Image"
 		],
 		bio: "ดร.สุกฤตา เป็นผู้ร่วมก่อตั้ง Inner Academy และมีประสบการณ์ยาวนานในด้าน Organization Coaching และการพัฒนาองค์กร ด้วยความเชี่ยวชาญด้านจิตวิทยาองค์กรและภาวะผู้นำ เธอได้ช่วยพัฒนาองค์กรชั้นนำในประเทศไทยมาแล้วมากมาย",
-		expertise: "Organization Coaching, Leadership Development, Soft Skills Training",
+		expertise: "ที่ปรึกษาองค์กรและวิทยากร ผู้เชี่ยวชาญด้านการพัฒนาบุคลากรให้กับองค์กรชั้นนำระดับประเทศ",
 		education: [
-			"ปริญญาเอก สาขาจิตวิทยาองค์กร",
-			"ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
-			"ประกาศนียบัตรหลักสูตร Organization and Systems Coaching"
+			"ปริญญาเอก สาขานวัตกรรมการเรียนรู้และเทคโนโลยี KMUTT",
+			"ปริญญาโท สาขาการจัดการสำหรับผู้ประกอบการ KMUTT",
+			"ปริญญาตรี คณะมนุษยศาสตร์ Bangkok University",
+			"Global Leadership Program, University of Missouri, USA",
+			"หลักสูตร ACSTH จากสมาพันธ์โค้ชนานาชาติ (ICF)",
+			"หลักสูตรเทคนิคการจัดพฤติกรรมของสมองและจิตใต้สำนึก จาก American Board of NLP",
+			"หลักสูตรการโค้ชสำหรับประสิทธิภาพการทำงานสถาบัน DDI",
+			"หลักสูตรกระบวนกร จิตตปัญญาศึกษา จากมหาวิทยาลัยมหิดล",
+			"หลักสูตรกระบวรกรนพลักษณ์",
+			"หลักสูตรสะกดจิตบำบัดและย้อนเวลาบำบัด"
 		],
 		experience: [
 			{
-				title: "Co-Founder และ Organization Coach ที่ Inner Academy",
-				items: [
-					"ออกแบบและพัฒนาหลักสูตรโค้ชองค์กร",
-					"วิทยากรและโค้ชให้กับองค์กรชั้นนำในประเทศไทย"
-				]
+				title: "Corporate Management Coach ให้องค์กรชั้นนำ"
 			},
 			{
-				title: "ที่ปรึกษาและโค้ชองค์กรอิสระ",
+				title: "ประสบการณ์เป็นวิทยากรให้องค์กรชั้นนำ อาทิ",
 				items: [
-					"PTT",
-					"SCG",
-					"กระทรวงสาธารณสุข",
-					"และองค์กรชั้นนำอื่นๆ"
+					"ประสบการณ์ 10 ปี ในสายงานขายและให้คำปรึกษาจากองค์กรมหาชน",
+					"ประสบการณ์ 3 ปี ด้านงานพัฒนาบุคลากร Sales coaching",
+					"ประสบการณ์ 6 ปี ด้านการโค้ช วิทยากรอิสระ ผู้ให้คำปรึกษาด้านธุรกิจและผู้จัดกระบวนการเรียนรู้",
+					"ปัจจุบัน CEO and Co-Founder บริษัท สกิลเชป จำกัด"
 				]
 			}
 		],
 		socialMedia: [
 			{
-				channel: "facebook",
-				link: "https://facebook.com/innerpower"
-			},
-			{
 				channel: "instagram",
-				link: "https://instagram.com/innerpower"
+				link: "https://www.instagram.com/mazaokate"
 			},
 			{
 				channel: "tiktok",
-				link: "https://tiktok.com/@innerpower"
+				link: "https://www.tiktok.com/@kate_sukritta"
 			}
 		],
-		proposal: "/downloads/coached"
+		proposal: "/downloads/coaches/ดร.เกด สุกฤตา ปรีชาว่อง.pdf"
+	},
+	{
+		slug: "kru-so",
+		id: "S",
+		order: 2,
+		name: "ครูซอ",
+		nameTh: "ดร.สทาศัย พงศ์หิรัญ",
+		nameEn: "Dr. Sathasai Ponghirun",
+		career: "Personality and Speech Coach",
+		avatar: "/images/coaches/s.webp",
+		images: [
+			"https://placehold.co/380x254?text=Image",
+			"https://placehold.co/380x254?text=Image"
+		],
+		bio: "ดร.สทาศัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร ด้วยประสบการณ์กว่า 15 ปี เขาได้ช่วยพัฒนาทักษะการสื่อสารให้กับผู้บริหารและบุคลากรในองค์กรชั้นนำ มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริงในชีวิตและการทำงาน",
+		expertise: "ปลดล็อคศักยภาพภายในให้มั่นใจ พร้อมสื่อสารในที่สาธารณะ ยกระดับการนำเสนอให้น่าสนใจ ทั้งภายในและภายนอกองค์กร",
+		education: [
+			"ปริญญาเอกศิลปกรรมศาสตรดุษฎีบัณฑิต (ศป.ด.) คณะศิลปกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
+			"ปริญญาโทศิลปศาสตรมหาบัณฑิต (ศศ.ม.) สาขาบริหารงานวัฒนธรรม หมวดอุตสาหกรรมบันเทิง",
+			"ปริญญาตรีศิลปกรรมศาสตรบัณฑิต (ศป.บ.) สาขาศิลปะการแสดง เอกการแสดงและกำกับการแสดง คณะศิลปกรรมศาสตร์ มหาวิทยาลัยศรีนครินทรวิโรฒ",
+			"NIDA Technique by National Institute of Dramatic Art (Sydney)",
+			"Shakespeare Immersive Residency by School of theatre and dance illinois state university (ILLINOIS)",
+			"Solo performance by HB Studio (New York)"
+		],
+		experience: [
+			{
+				title: "ผู้เชี่ยวชาญด้านการพัฒนาการสื่อสารและบุคลิกภาพที่มีประสบการณ์มามากกว่า 15 ปี ฝึกอบรมการพูดในที่สาธารณะ ให้กับพิธีกร นางงาม และนักแสดงแถวหน้าในวงการของประเทศไทย"
+			},
+			{
+				title: "ประสบการณ์เป็นวิทยากรให้องค์กรชั้นนำ อาทิ",
+				items: [
+					"SCB",
+					"TMB",
+					"MUT",
+					"NBT",
+					"CPN",
+					"TOYOTA",
+					"SET",
+					"MCOT",
+					"ETDA",
+					"กสทช.",
+					"กระทรวงวัฒนธรรม",
+					"กรมประชาสัมพันธ์",
+					"การท่องเที่ยวแห่งประเทศไทย"
+				]
+			},
+			{
+				title: "ประสบการณ์เป็นวิทยากรให้มหาวิทยาลัยและสถานศึกษาชั้นนำ อาทิ",
+				items: [
+					"หัวหน้าสาขาวิชาศิลปะการแสดง คณะศิลปกรรมศาสตร์ มหาวิทยาลัยศรีนครินทรวิโรฒ",
+					"อาจารย์พิเศษและผู้ทรงคุณวุฒิในด้านการแสดง ให้กับมหาวิทยาลัยชั้นนำของประเทศ"
+				]
+			},
+			{
+				title: "ประสบการณ์สอนการแสดง ให้พูดและแสดงออกอย่างมั่นใจในสื่อสาธารณะ อาทิ",
+				items: [
+					"ใหม่ ดาวิกา",
+					"ใบเฟิร์น พิมพ์ชนก",
+					"อแมนด้า ชาลิสา",
+					"น้ำตาล ชลิตา",
+					"Miss Teen",
+					"ONE31",
+					"Kantana",
+					"Polyplus Entertainment",
+					"What the Duck",
+					"Motive Village",
+					"Broadcast Thai Television",
+					"True Academy Fantasia",
+					"Comedy Line Co., Ltd."
+				]
+			},
+			{
+				title: "ครูสอนการแสดงในหลักสูตร The Drama Academy by ครูเงาะ รสสุคนธ์ กองเกตุ"
+			}
+		],
+		socialMedia: [
+			{
+				channel: "instagram",
+				link: "https://www.instagram.com/drama_saw"
+			}
+		],
+		proposal: "/downloads/coaches/ครูซอ ดร.สทาศัย พงศ์หิรัญ.pdf"
 	},
 	{
 		slug: "kru-lookkaew",
 		id: "LK",
-		order: 2,
+		order: 3,
 		name: "ครูลูกแก้ว",
 		nameTh: "วริศรา บำรุงเวช",
+		nameEn: "Warissara Bumrungwach",
 		career: "Communication and Presentation Coach",
 		avatar: "/images/coaches/lk.webp",
-		gallery: [
-			"/images/coaches/lk/km-gallery-1.jpg",
-			"/images/coaches/lk/km-gallery-2.jpg"
+		images: [
+			"https://placehold.co/380x254?text=Image",
+			"https://placehold.co/380x254?text=Image"
 		],
 		bio: "ครูลูกแก้วเชี่ยวชาญด้านการสื่อสารและการนำเสนอ ช่วยพัฒนาทักษะการพูดและการสื่อสารให้กับผู้เรียนหลากหลายระดับ",
-		expertise: "เพิ่มประสิทธิภาพการสื่อสาร สร้างแรงบันดาลใจด้วยทัศนคติเชิงบวก",
+		expertise: "เพิ่มประสิทธิภาพการสื่อสารอย่างตรงประเด็น ชัดเจน สร้างแรงบันดาลใจด้วยทัศนคติเชิงบวกพัฒนาความมั่นใจจากภายในสู่ภายนอกอย่างสง่างาม",
 		education: [
-			"ปริญญาตรี คณะนิเทศศาสตร์ จุฬาลงกรณมหาวิทยาลัย",
-			"ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
-			"ประกาศนียบัตรหลักสูตร License Practitioner Neuro-Linguistic Programming",
-			"ประกาศนียบัตรหลักสูตร Enneagram Coaching และ Subtype of Enneagram",
-			"ผ่านการอบรมหลักสูตร Self Mastery Workshop โดย Larry Gilman",
-			"ผ่านการอบรมหลักสูตร Unleash The Power Within โดย Tony Robbins",
-			"ผ่านการอบรมหลักสูตรการแสดงระดับโลกมากมาย"
+			"ปริญญาตรีสื่อสารการแสดง (เกียรตินิยมอันดับ 2) นิเทศศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
+			"Associate Certified Coach (ACC) for International Coaching Federation (ICF)",
+			"License Practitioner Neuro-Linguistic Programming and Languishing Programming",
+			"Point of You L.2",
+			"Technique of Viewpoint, Chekhov Acting Workshop",
+			"Intensive Musical Theatre for American Academy of Dramatic Arts, New York",
+			"Enneagram Coaching",
+			"Subtype of Enneagram",
+			"Embrace the Power Within by Tony Robbins",
+			"Viewpoint Technique Workshop by Stephen Webber",
+			"Self Mastery Workshop by Larry Gilman",
+			"Musicality and Dynamics: The Body as a Hidden Landscape of the Performer's Inner Life by Ana Almagro",
+			"Lucid Body and Raksah by Kennedy Brown"
 		],
 		experience: [
 			{
-				title: "ประสบการณ์เป็นวิทยากรให้มหาวิทยาลัยและองค์กรชั้นนำ อาทิ",
+				title: "นักพัฒนาศักยภาพมนุษย์ ผู้เชี่ยวชาญด้าน Soft Skill การสื่อสาร และการนำเสนอตัวตนอย่างมั่นใจให้ทรงพลัง ให้กับองค์กรชั้นนำระดับประเทศ ที่มีผู้ติดตามมากกว่า 3 แสนคน"
+			},
+			{
+				title: "ประสบการณ์เป็นวิทยากรให้องค์กรชั้นนำ อาทิ",
 				items: [
 					"AIA",
 					"AIS",
@@ -4066,293 +4158,330 @@ var coaches = [
 					"ไทยประกันชีวิต",
 					"เซ็นทรัลพัฒนา",
 					"Toyota",
-					"ETDA",
-					"และอีกมากมาย"
+					"ETDA"
 				]
 			},
 			{
-				title: "ประสบการณ์สอนการแสดงให้นักแสดงแถวหน้าในวงการ และกองประกวดนางงาม ให้พูดและแสดงออกอย่างมั่นใจในสื่อสาธารณะ อาทิ",
+				title: "ประสบการณ์เป็นวิทยากรให้มหาวิทยาลัยและสถานศึกษาชั้นนำ อาทิ",
 				items: [
-					"เวียร์ ศุกลวัฒน์",
-					"มิว นิษฐา",
-					"อาเล็ก ธีรเดช",
-					"และอีกมากมาย"
+					"คณะนิเทศศาสตร์ จุฬาฯ",
+					"คณะนวัตกรรมสื่อสารสังคม มศว.",
+					"คณะดิจิตอลมีเดียฯ ม.กรุงเทพฯ",
+					"คณะศิลปกรรมศาสตร์ ม.มหาสารคาม",
+					"วิทยาลัยนานาชาติ ปรีดี พรมยงค์ มหาวิทยาลัยธรรมศาสตร์",
+					"คณะแพทยศาสาตร์ จุฬาฯ",
+					"ม.ราชภัฏสวนดุสิต"
 				]
 			},
 			{
-				title: "ประสบการณ์สอนการแสดง ในหลักสูตร The Drama Academy by ครูเงาะ รสสุคนธ์ กองเกตุ"
+				title: "ประสบการณ์สอนการแสดง ให้พูดและแสดงออกอย่างมั่นใจในสื่อสาธารณะ อาทิ",
+				items: [
+					"ช่อง 3",
+					"GMMTV",
+					"Workpoint",
+					"GDH",
+					"WeTV",
+					"Fivestar",
+					"Mono",
+					"True AF 11",
+					"True Barista Thailand",
+					"Mister International Thailand 2022 - 2023",
+					"นางสาวไทย 2014",
+					"ภาพยนตร์ บ้านเช่าบูชายัญ",
+					"ภาพยนตร์ เพื่อนที่ระลึก",
+					"ภาพยนตร์ พี่นาค 4",
+					"ภาพยนตร์ พยนต์",
+					"ภาพยนตร์ รักของเรา",
+					"ภาพยนตร์ Fathers",
+					"ซีรีส์ เคว้ง(Netfilx)",
+					"ซีรีส์ แฟนผมเป็นประธานนักเรียน(GMMTV)",
+					"ซีรีส์ องศาสูญ(iQiyi)",
+					"ซีรีส์ เซียนสับราง(WeTV)",
+					"ซีรีส์ return man(Viu)",
+					"ซีรีส์ กลรักรุ่นพี่(WeTV)"
+				]
+			},
+			{
+				title: "ครูสอนการแสดงในหลักสูตร The Drama Academy by ครูเงาะ รสสุคนธ์ กองเกตุ"
 			}
 		],
 		socialMedia: [
 			{
 				channel: "instagram",
-				link: "https://www.instagram.com/lk_lukkaew/"
+				link: "https://www.instagram.com/lk_lukkaew"
 			},
 			{
 				channel: "tiktok",
 				link: "https://www.tiktok.com/@krulukkaew"
 			}
 		],
-		proposal: "/downloads/coached/ครูลูกแก้ว วริศรา บำรุงเวช.pdf"
+		proposal: "/downloads/coaches/ครูลูกแก้ว วริศรา บำรุงเวช.pdf"
 	},
 	{
-		slug: "kru-so",
-		id: "S",
-		order: 3,
-		name: "ครูซอ",
-		nameTh: "ดร.สทาคัย พงศ์หิรัญ",
-		career: "Communication and Presentation Coach",
-		avatar: "/images/coaches/s.webp",
-		gallery: [
-			"/images/coaches/s/km-gallery-1.jpg",
-			"/images/coaches/s/km-gallery-2.jpg"
+		slug: "kru-mon",
+		id: "M",
+		order: 4,
+		name: "ครูหม่อน",
+		nameTh: "ณัฐชา คงณศิริ",
+		nameEn: "Natcha Kongnasiri",
+		career: "Mindset and Personality Coach",
+		avatar: "/images/coaches/m.webp",
+		images: [
+			"/images/coaches/m/km-gallery-1.jpg",
+			"/images/coaches/m/km-gallery-2.jpg"
 		],
-		bio: "ดร.สทาคัย มีความเชี่ยวชาญด้านการสื่อสารและการนำเสนอในระดับองค์กร ด้วยประสบการณ์กว่า 15 ปี เขาได้ช่วยพัฒนาทักษะการสื่อสารให้กับผู้บริหารและบุคลากรในองค์กรชั้นนำ มุ่งเน้นการพัฒนาทักษะที่นำไปใช้ได้จริงในชีวิตและการทำงาน",
-		expertise: "Communication Coaching, Presentation Skills, Corporate Training",
+		bio: "ครูหม่อนเชี่ยวชาญด้าน Mindset และการพัฒนาบุคลิกภาพ ช่วยปลุกพลังความเชื่อมั่นในศักยภาพของตนเอง และส่งเสริมการสื่อสารในการทำงานให้มีประสิทธิภาพสูงสุดอย่างมืออาชีพ",
+		expertise: "ปลุกพลังความเชื่อมั่นใน ศักยภาพและ คุณค่าของตนเอง ส่งเสริมการสื่อสารในการทำงานให้มีประสิทธิภาพสูงสุดอย่างมืออาชีพ",
 		education: [
-			"ปริญญาเอก สาขาการสื่อสาร",
-			"ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
-			"ประกาศนียบัตรหลักสูตร License Practitioner Neuro-Linguistic Programming"
+			"ปริญญาตรีอาหารและโภชนาการ มหาวิทยาลัยเกษตรศาสตร์บางเขน",
+			"Associate Certified Coach (ACC), International Coaching Federation (ICF)",
+			"Unleash The Power Within by Tony Robbins",
+			"Certified Coach หลักสูตร Train The Trainer by ครูเงาะ รสสุคนธ์ กองเกตุ"
 		],
 		experience: [
 			{
-				title: "Communication and Presentation Coach ที่ Inner Academy",
+				title: "ครูผู้เชี่ยวชาญด้านการพัฒนาจิตใจและ Mindset ที่ได้รับความไว้วางใจจากองค์กรมากกว่า 50 แห่งทั่วประเทศ การันตีด้วยสถาบันคุณภาพ International Coaching Federation (ICF)"
+			},
+			{
+				title: "ประสบการณ์เป็นวิทยากรให้องค์กรชั้นนำ อาทิ",
 				items: [
-					"ออกแบบหลักสูตรพัฒนาทักษะการสื่อสารสำหรับองค์กร",
-					"วิทยากรฝึกอบรมการนำเสนอระดับองค์กร"
 				]
 			},
 			{
-				title: "วิทยากรให้มหาวิทยาลัยและองค์กรชั้นนำ อาทิ",
+				title: "ประสบการณ์เป็นวิทยากรให้มหาวิทยาลัยและสถานศึกษาชั้นนำ อาทิ",
 				items: [
-					"SCG",
-					"PTT",
-					"กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม",
-					"และองค์กรชั้นนำอื่นๆ"
+					"Satitpattana School",
+					"Kasetsart University",
+					"Lycee French International School",
+					"Naresuan University"
 				]
+			},
+			{
+				title: "ประสบการณ์สอนการแสดง ให้พูดและแสดงออกอย่างมั่นใจในสื่อสาธารณะ อาทิ",
+				items: [
+					"Samsung Thailand",
+					"Dtac D-surance (ผู้บริหารระดับสูง Dtac และผู้บริหารบริษัทประกันชีวิตชั้นนำของประเทศ)",
+					"Thailand Privilege Card",
+					"THAI-Amadeus Southeast Asia",
+					"Netflix Original : Tomorrow and I",
+					"ช่อง 3",
+					"งานโมเดลลิ่งเอเจนซี่ บริษัท Stellartists",
+					"Casting อีเว้นท์ Boyy",
+					"Casting อีเว้นท์ Hermes",
+					"TVC Dtac กลัฟ คณาวุฒิ",
+					"TVC Lotus",
+					"TVC 7-delivery",
+					"ซีรีส์ ราชาวิหค WeTV",
+					"ซีรีส์ ตรวณธรณี ช่อง 3",
+					"ซีรีส์ The Promise",
+					"Search Entertainment x Muzik Move",
+					"สอนศิลปินค่าย E29 Music Identities",
+					"Tia51",
+					"Insight Entertainment"
+				]
+			},
+			{
+				title: "ครูสอนการแสดงในหลักสูตร The Drama Academy by ครูเงาะ รสสุคนธ์ กองเกตุ"
 			}
 		],
 		socialMedia: [
 			{
-				channel: "facebook",
-				link: "https://facebook.com/innerpower"
+				channel: "instagram",
+				link: "https://www.instagram.com/mhon.natchak"
 			},
 			{
-				channel: "instagram",
-				link: "https://instagram.com/innerpower"
+				channel: "tiktok",
+				link: "https://www.tiktok.com/@krumon.acting"
 			}
 		],
-		proposal: "/downloads/coached/ครูซอ ดร.สทาศัย พงศ์หิรัญ.pdf"
+		proposal: "/downloads/coaches/ครูหม่อน ณัฐชา คงณศิริ.pdf"
 	},
 	{
 		slug: "coach-kitti",
 		id: "KT",
-		order: 4,
+		order: 5,
 		name: "โค้ชกิตติ",
 		nameTh: "กิตติ ไตรรัตน์",
-		career: "Mindset, Passion and Satir Coach",
+		nameEn: "Kitti Trirat",
+		career: "Satir Coaching and Mentoring Specialist",
 		avatar: "/images/coaches/kt.webp",
-		gallery: [
-			"/images/coaches/kt/km-gallery-1.jpg",
-			"/images/coaches/kt/km-gallery-2.jpg"
+		images: [
+			"https://placehold.co/380x254?text=Image",
+			"https://placehold.co/380x254?text=Image"
 		],
 		bio: "โค้ชกิตติเชี่ยวชาญด้านการปรับ Mindset การค้นพบ Passion และการโค้ชแบบ Satir Model เพื่อเปลี่ยนแปลงชีวิตจากภายใน เขาช่วยให้ผู้คนค้นพบตัวเองและสร้างชีวิตที่มีความหมายผ่านกระบวนการโค้ชเชิงลึก",
-		expertise: "Mindset Coaching, Passion Discovery, Satir Model Coaching",
+		expertise: "จุดพลัง เพิ่มศักยภาพให้ทีมงาน สร้างความร่วมมือ พร้อมเสริมแรงบันดาลใจให้มีพลังอย่างต่อเนื่อง",
 		education: [
-			"ปริญญาโท สาขาจิตวิทยา",
-			"Certified Satir Coach โดย Virginia Satir Network",
-			"ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
-			"ผ่านการอบรมหลักสูตร Unleash The Power Within โดย Tony Robbins"
+			"ปริญญาตรีรัฐศาสตร์การบริหารรัฐกิจ มหาวิทยาลัยรามคำแหง",
+			"Satir Coaching and Mentoring Specialist โดย Satir Global Network",
+			"Satir Transformational Systemic Therapy โดย Dr. Somrak Choovanichvong",
+			"Passion Test Certification and The Passion Test Master Trainer โดย Enlightened Alliance",
+			"The Power of Neuroscience in Leadership and Change Management โดย Aran Dadswell and Tom Yates from NeuroLeadership Group",
+			"Professional Coach Certification Program by Thailand Coaching Institute & Towards Mastery",
+			"Train the Trainer, การเป็นวิทยากร กระบวนการ, การสื่อสารและให้คำปรึกษา ของมูลนิธิรักษ์ไทย",
+			"วิถีกระบวนกร โดยเสมสิกขาลัย",
+			"Past Life Regression Therapy Certificate Of Training โดยนายแพทย์ธวัชชัย Anam Cara Center for Wisdom-Compassion-Peace",
+			"Maximize Your Potential โดย Mark Haylay & Alessandro Mora, Licensed Master Trainer of Neuro Linguistic Programming (NLP) จาก Dr. Richard Bandler (Co-creator of NLP)"
 		],
 		experience: [
 			{
-				title: "Mindset, Passion and Satir Coach ที่ Inner Academy",
+				title: "ไกด์โค้ช ผู้ฟังที่เข้าใจ และที่ปรึกษาด้านการพัฒนาศักยภาพมนุษย์ ประสบการณ์กว่า 20 ปี การันตีด้วย การรับรอง Satir Global Network"
+			},
+			{
+				title: "ประสบการณ์เป็นวิทยากรให้องค์กรชั้นนำ อาทิ",
 				items: [
-					"ออกแบบและดำเนินหลักสูตร Mindset Transformation",
-					"โค้ชส่วนตัวและกลุ่มด้านการค้นพบตัวเองและ Passion"
+					"National Director of The Passion Test Thailand ว่าที่ Master Trainer คนแรกของประเทศไทย",
+					"Trainer หลักสูตร The Amazing Leader ให้บริษัท Tanya Collection",
+					"Workshop เรื่องความเป็นผู้นำ การทำงานเป็นทีมและความรักองค์กร ให้เทศบาลตำบลบ้านเหล่า จังหวัดเชียงราย",
+					"วิทยากรกระบวนการ ด้านทักษะชีวิต โค้ช และที่ปรึกษาด้านการเยียวยาจิตใจ ยกระดับใจและพัฒนาตนเอง",
+					"วิทยากรกระบวนการ ในโครงการร่วมระหว่าง มูลนิธิรักษ์ไทย และอาสาสมัครหน่วยสันติภาพสหรัฐอเมริกา",
+					"วิทยากร Train the Trainer การทำงานทักษะชีวิตกับเยาวชนให้หน่วยสันติภาพสหรัฐอเมริกา (Peace Corps Thailand)",
+					"วิทยากรหลักสูตร International Field Epidemiology Training Program: Training for Trainer (ภาคภาษาอังกฤษ) ของสำนักระบาดวิทยา กรมควบคุมโรค",
+					"วิทยากรกระบวนการ ให้องค์การสุรา กรมสรรพสามิต จังหวัดฉะเชิงเทรา"
 				]
 			},
 			{
-				title: "วิทยากรและโค้ชอิสระให้องค์กรและบุคคล อาทิ",
+				title: "ประสบการณ์เป็นวิทยากรให้มหาวิทยาลัยและสถานศึกษาชั้นนำ อาทิ",
 				items: [
-					"ธนาคารกสิกรไทย",
-					"บริษัทเอกชนชั้นนำ",
-					"สถาบันการศึกษา",
-					"และองค์กรอื่นๆ"
+					"บรรยาย เคล็ดลับความสำเร็จในการทำธุรกิจ ของเครือข่ายหน่วยบ่มเพาะวิสาหกิจ ในสถาบันอุดมศึกษา ภาคตะวันออก (หน่วยงานบ่มเพาะวิสาหกิจ มหาวิทยาลัยบูรพา)"
 				]
 			}
 		],
 		socialMedia: [
 			{
-				channel: "facebook",
-				link: "https://facebook.com/innerpower"
-			},
-			{
 				channel: "instagram",
-				link: "https://instagram.com/innerpower"
+				link: "https://www.instagram.com/kittitrirat"
 			},
 			{
 				channel: "tiktok",
-				link: "https://tiktok.com/@innerpower"
+				link: "https://www.tiktok.com/@kittitrirat"
 			}
 		],
-		proposal: "/downloads/coached/โค้ชกิตติ ไตรรัตน์.pdf"
+		proposal: "/downloads/coaches/โค้ชกิตติ ไตรรัตน์.pdf"
 	},
 	{
-		slug: "coach-5",
+		slug: "coach-namfon",
 		id: "NF",
-		order: 5,
-		name: "โค้ชที่ 5",
-		nameTh: "ชื่อ นามสกุล",
-		career: "Leadership and Team Coach",
-		avatar: "/images/coaches/nf.webp",
-		gallery: [
-			"/images/coaches/nf/km-gallery-1.jpg",
-			"/images/coaches/nf/km-gallery-2.jpg"
-		],
-		bio: "โค้ชผู้เชี่ยวชาญด้านภาวะผู้นำและการพัฒนาทีม ด้วยประสบการณ์ในการทำงานร่วมกับผู้บริหารระดับสูง เขาช่วยให้องค์กรและบุคคลสร้างทีมที่แข็งแกร่งและพัฒนาภาวะผู้นำอย่างยั่งยืน",
-		expertise: "Leadership Coaching, Team Development, Organizational Change",
-		education: [
-			"ปริญญาโท สาขาบริหารธุรกิจ",
-			"ประกาศนียบัตรหลักสูตร Professional Certified Coach (PCC) โดย International Coaching Federation",
-			"ประกาศนียบัตรหลักสูตร Team Coaching"
-		],
-		experience: [
-			{
-				title: "Leadership and Team Coach ที่ Inner Academy",
-				items: [
-					"ออกแบบหลักสูตรพัฒนาภาวะผู้นำสำหรับองค์กร",
-					"โค้ชทีมผู้บริหารระดับสูง"
-				]
-			},
-			{
-				title: "วิทยากรและโค้ชองค์กรให้บริษัทชั้นนำ อาทิ",
-				items: [
-					"ธนาคารไทยพาณิชย์",
-					"เซ็นทรัล กรุ๊ป",
-					"และองค์กรอื่นๆ"
-				]
-			}
-		],
-		socialMedia: [
-			{
-				channel: "facebook",
-				link: "https://facebook.com/innerpower"
-			},
-			{
-				channel: "instagram",
-				link: "https://instagram.com/innerpower"
-			},
-			{
-				channel: "linkedin",
-				link: "https://linkedin.com/in/innerpower"
-			}
-		],
-		proposal: "/downloads/coached/โค้ชน้ำฝน ศุภรางศุ์ อินทนะ.pdf"
-	},
-	{
-		slug: "coach-6",
-		id: "NU",
 		order: 6,
-		name: "โค้ชที่ 6",
-		nameTh: "ชื่อ นามสกุล",
-		career: "NLP and Mindset Coach",
-		avatar: "/images/coaches/nu.webp",
-		gallery: [
-			"/images/coaches/nu/km-gallery-1.jpg",
-			"/images/coaches/nu/km-gallery-2.jpg"
+		name: "โค้ชน้ำฝน",
+		nameTh: "ศุภรางศุ์ อินทนะ",
+		nameEn: "Suparang Intana",
+		career: "Inspirational and Team Building Coach",
+		avatar: "/images/coaches/nf.webp",
+		images: [
+			"https://placehold.co/380x254?text=Image",
+			"https://placehold.co/380x254?text=Image"
 		],
-		bio: "โค้ชผู้เชี่ยวชาญด้าน NLP และการปรับ Mindset ด้วยเครื่องมือและเทคนิคจาก Neuro-Linguistic Programming เขาช่วยให้ผู้เรียนเข้าใจและเปลี่ยนแปลงรูปแบบความคิดที่จำกัดเพื่อสร้างชีวิตและอาชีพที่ต้องการ",
-		expertise: "NLP Coaching, Mindset Transformation, Behavioral Change",
+		bio: "โค้ชน้ำฝนเชี่ยวชาญด้าน Emotional Intelligence และการพัฒนาบุคลากรด้าน Soft-Skill ในองค์กรชั้นนำ มีประสบการณ์กว่า 30 ปี ในด้านงานฝึกอบรมและสัมมนา",
+		expertise: "ดึงพลังบวก ที่สร้างสรรค์เปลี่ยนความเชื่อไปสู่ความสำเร็จ เชื่อมโยงความสัมพันธ์ในองค์กรให้แข็งแกร่ง",
 		education: [
-			"Certified NLP Practitioner and Master Practitioner",
-			"ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
-			"ประกาศนียบัตรหลักสูตร Enneagram Coaching"
+			"ปริญญาโท เทคโนโลยีทางการศึกษา มหาวิทยาลัยเกษตรศาสตร์",
+			"ปริญญาตรี สาขาพลศึกษาและนันทนาการ วิทยาลัยครูพระนคร",
+			"ปริญญาตรี สาขาการจัดการทั่วไป มหาวิทยาลัยราชภัฏพระนคร",
+			"Associate Certified Coach (ACC), International Coaching Federation (ICF)",
+			"Certified Trainer จาก Train The Real Trainer by ครูเงาะ รสสุคนธ์",
+			"Certified Coach of Neuro-Linguistic Programming",
+			"Certified Practitioner of Neuro-Linguistic Programming",
+			"Middle Management Leadership Program 2006 จาก Nanyang University, Singapore",
+			"หลักสูตรประกาศนียบัตรนักโปรแกรมจิตใต้สำนึกมืออาชีพ ระดับอัลฟ่า",
+			"Certified Practitioner of White Road The Coach Practitioner Program",
+			"Powerful Sales Presentation and Master Facilitator Programs : Blair Singer Training Academy"
 		],
 		experience: [
 			{
-				title: "NLP and Mindset Coach ที่ Inner Academy",
+				title: "ผู้เชี่ยวชาญด้าน Emotional Intelligence และพัฒนาบุคลากรด้าน Soft-Skill ในองค์กรชั้นนำมีประสบการณ์กว่า 30 ปี ในด้านงานฝึกอบรมและสัมมนา"
+			},
+			{
+				title: "ประสบการณ์เป็นวิทยากรให้องค์กรชั้นนำ อาทิ",
 				items: [
-					"ออกแบบหลักสูตร NLP สำหรับการพัฒนาตนเองและองค์กร",
-					"โค้ชรายบุคคลด้านการปรับ Mindset"
+					"สำนักงานปลัด สำนักนายกรัฐมนตรี",
+					"กรมทรัพยากรธรณี",
+					"สถาบันการประชาสัมพันธ์",
+					"กระทรวงสาธารณสุข",
+					"กรมการแพทย์",
+					"โรงพยาบาลศิริราช",
+					"โรงพยาบาลราชวิถี",
+					"กรมสรรพากร",
+					"ซินเน็ค (ประเทศไทย)",
+					"สำนักงานการปฏิรูปที่ดินเพื่อเกษตรกรรม",
+					"สำนักงานปลัดกระทรวงเกษตรและสหกรณ์",
+					"โรงพยาบาลสงฆ์"
 				]
 			},
 			{
-				title: "Certified NLP Trainer และวิทยากรอิสระ",
+				title: "ประสบการณ์เป็นวิทยากรให้มหาวิทยาลัยและสถานศึกษาชั้นนำ อาทิ",
 				items: [
-					"ฝึกอบรม NLP ให้กับบุคคลทั่วไปและองค์กร",
-					"วิทยากรในงานสัมมนาพัฒนาตนเองชั้นนำ"
+					"วิทยาลัยพยาบาลบรมราชชนนี"
 				]
+			},
+			{
+				title: "Event Committee ICF Bangkok Charter Chapter Thailand"
 			}
 		],
 		socialMedia: [
-			{
-				channel: "facebook",
-				link: "https://facebook.com/innerpower"
-			},
-			{
-				channel: "instagram",
-				link: "https://instagram.com/innerpower"
-			},
-			{
-				channel: "linkedin",
-				link: "https://linkedin.com/in/innerpower"
-			}
 		],
-		proposal: "/downloads/coached/โค้ชนุ้ย จรัณยา อิ่มธนาสาร.pdf"
+		proposal: "/downloads/coaches/โค้ชน้ำฝน ศุภรางศุ์ อินทนะ.pdf"
 	},
 	{
-		slug: "coach-7",
-		id: "M",
+		slug: "coach-nui",
+		id: "NU",
 		order: 7,
-		name: "โค้ชที่ 7",
-		nameTh: "ชื่อ นามสกุล",
-		career: "Performance and Wellness Coach",
-		avatar: "/images/coaches/m.webp",
-		gallery: [
-			"/images/coaches/m/km-gallery-1.jpg",
-			"/images/coaches/m/km-gallery-2.jpg"
+		name: "โค้ชนุ้ย",
+		nameTh: "จรัณยา อิ่มธนาสาร",
+		nameEn: "Jarunya Imtanasan",
+		career: "Executive Coach and Trainer",
+		avatar: "/images/coaches/nu.webp",
+		images: [
+			"https://placehold.co/380x254?text=Image",
+			"https://placehold.co/380x254?text=Image"
 		],
-		bio: "โค้ชผู้เชี่ยวชาญด้าน Performance และ Wellness ด้วยการผสมผสานศาสตร์การโค้ชและความรู้ด้านสุขภาพ เขาช่วยให้ผู้คนบรรลุเป้าหมายทั้งด้านสุขภาพและประสิทธิภาพการทำงานอย่างสมดุล",
-		expertise: "Performance Coaching, Wellness Coaching, Work-Life Balance",
+		bio: "โค้ชนุ้ยเชี่ยวชาญด้าน Executive Coaching ประสบการณ์ทางด้านโค้ชมากกว่า 2,000 ชั่วโมง การันตีด้วย Certified โค้ชระดับนานาชาติ (ICF) ในระดับ PCC",
+		expertise: "ยกระดับความเป็นผู้นำองค์กรด้วยศาสตร์การโค้ช พาทีมก้าวข้ามขีดจำกัด เพื่อขับเคลื่อนองค์กรไปสู่เป้าหมายที่ยิ่งใหญ่",
 		education: [
-			"Certified Performance and Wellness Coach",
-			"ประกาศนียบัตรหลักสูตร Associate Certified Coach (ACC) โดย International Coaching Federation",
-			"ประกาศนียบัตรหลักสูตร Positive Psychology Coaching"
+			"Bachelor Degree, Assumption University (ABAC)",
+			"Post Graduate Degree, Diploma Human Development University of Northumbria at Newcastle, UK",
+			"Professional Certified Coach (PCC), International Coaching Federation (ICF)",
+			"Strengths Finder by Gallup Strengths Coach",
+			"Certified Trainer จาก Train The Real Trainer by ครูเงาะ รสสุคนธ์",
+			"Certified the Eureka of Life Coaching, Thailand Coaching Academy by Jimi the Coach",
+			"The Coaching Game Point of You Academy CCE ICF",
+			"Who Am I, Explore My Inner World by PRH",
+			"Enneagram สมาคมนพลักษณ์ไทย",
+			"Satir สมาคมพัฒนาศักยภาพมนุษย์",
+			"Group Coaching and Facilitator, Courage to Coach"
 		],
 		experience: [
 			{
-				title: "Performance and Wellness Coach ที่ Inner Academy",
+				title: "Executive Coach And Trainer ประสบการณ์ทางด้านโค้ชมากกว่า 2,000 ชั่วโมง การันตีด้วย Certified โค้ชระดับนานาชาติ (ICF) ในระดับ PCC"
+			},
+			{
+				title: "ประสบการณ์เป็นวิทยากรให้องค์กรชั้นนำ อาทิ",
 				items: [
-					"ออกแบบหลักสูตร Work-Life Balance และ Stress Management",
-					"โค้ชรายบุคคลด้านสุขภาพและประสิทธิภาพการทำงาน"
+					"ทีมโค้ชองค์กร โรงพยาบาลศิริราช",
+					"ทีมโค้ชองค์กร โรงพยาบาลจุฬาลงกรณ์สภากาชาดไทย",
+					"ทีมโค้ชองค์กร สมาคมแม่บ้านตำรวจ",
+					"ทีมโค้ชองค์กร ตลาดหลักทรัพย์แห่งประเทศไทย (SET)",
+					"ทีมโค้ชองค์กร ดับบลิวเอชเอ คอร์ปอเรชั่น (WHA)",
+					"ทีมโค้ชองค์กร เงินติดล้อ",
+					"ทีมโค้ชองค์กร Thai Union",
+					"ทีมโค้ชองค์กร Dextra",
+					"ทีมโค้ชองค์กร กระทรวงการต่างประเทศ",
+					"ทีมโค้ชจิตอาสา โครงการพระสงฆ์และศึกษานิเทศก์"
 				]
 			},
 			{
-				title: "วิทยากรและโค้ชด้าน Wellness ให้กับองค์กรชั้นนำ อาทิ",
+				title: "ประสบการณ์เป็นวิทยากรให้มหาวิทยาลัยและสถานศึกษาชั้นนำ อาทิ",
 				items: [
-					"โรงพยาบาลชั้นนำ",
-					"บริษัทเทคโนโลยี",
-					"สถาบันการเงิน",
-					"และองค์กรอื่นๆ"
+					"ทีมโค้ชองค์กร วชิราวุธวิทยาลัย"
 				]
+			},
+			{
+				title: "สอนหลักสูตร G.R.O.W Your Passion เพื่อพาผู้คนเข้าใจโลกภายใน"
 			}
 		],
 		socialMedia: [
-			{
-				channel: "facebook",
-				link: "https://facebook.com/innerpower"
-			},
-			{
-				channel: "instagram",
-				link: "https://instagram.com/innerpower"
-			},
-			{
-				channel: "linkedin",
-				link: "https://linkedin.com/in/innerpower"
-			}
 		],
-		proposal: "/downloads/coached/ครูหม่อน ณัฐชา คงณศิริ.pdf"
+		proposal: "/downloads/coaches/โค้ชนุ้ย จรัณยา อิ่มธนาสาร.pdf"
 	}
 ];
 const coachesData = {
@@ -4406,7 +4535,7 @@ var menu = [
 		order: 5
 	},
 	{
-		title: "เกี่ยวกับ",
+		title: "เกี่ยวกับ IPA",
 		link: "/about",
 		order: 6
 	}
@@ -4463,38 +4592,38 @@ var reviews = [
 	{
 		order: 1,
 		classId: "",
-		cover: "/images/testimonials/testimonial.webp",
-		link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+		cover: "https://placehold.co/358x448?text=Review",
+		link: "https://www.google.com"
 	},
 	{
 		order: 2,
 		classId: "",
-		cover: "/images/testimonials/testimonial.webp",
-		link: "https://www.youtube.com/watch?v=9bZkp7q19f0"
+		cover: "https://placehold.co/358x448?text=Review",
+		link: "https://www.google.com"
 	},
 	{
 		order: 3,
 		classId: "",
-		cover: "/images/testimonials/testimonial.webp",
-		link: "https://www.youtube.com/watch?v=L_jWHffIx5E"
+		cover: "https://placehold.co/358x448?text=Review",
+		link: "https://www.google.com"
 	},
 	{
 		order: 4,
 		classId: "",
-		cover: "/images/testimonials/testimonial.webp",
-		link: "https://www.youtube.com/watch?v=jNQXAC9IVRw"
+		cover: "https://placehold.co/358x448?text=Review",
+		link: "https://www.google.com"
 	},
 	{
 		order: 5,
 		classId: "",
-		cover: "/images/testimonials/testimonial.webp",
-		link: "https://www.youtube.com/watch?v=6stlCkUDG_s"
+		cover: "https://placehold.co/358x448?text=Review",
+		link: "https://www.google.com"
 	},
 	{
 		order: 6,
 		classId: "",
-		cover: "/images/testimonials/testimonial.webp",
-		link: "https://www.youtube.com/watch?v=oHg5SJYRHA0"
+		cover: "https://placehold.co/358x448?text=Review",
+		link: "https://www.google.com"
 	}
 ];
 const testimonialsData = {

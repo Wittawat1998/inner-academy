@@ -1,7 +1,7 @@
-<template>
+﻿<template>
   <main v-if="classData" class="class-detail-page bg-gradient-header min-h-screen" style="background-image: url('/images/bg/hero-bg.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;">
 
-    <!-- ─── Hero ────────────────────────────────────────────────────── -->
+    <!-- ΓöÇΓöÇΓöÇ Hero ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ -->
     <section class="relative pt-20 md:pt-24 overflow-hidden">
       <div class="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-16">
         <div class="max-w-[1024px] flex flex-col lg:flex-row items-center gap-8 md:gap-12">
@@ -12,17 +12,17 @@
               {{ classData.title }}
             </h1>
             <p class="text-xl md:text-2xl lg:text-4xl text-white mb-6 md:mb-10 leading-relaxed">
-              {{ classData.shortDescription }}
+              {{ classData.nameTh }}
             </p>
 
             <!-- Coaches -->
             <div v-if="classCoaches.length">
-              <p class="text-sm text-textSecondary mb-3 tracking-widest uppercase">{{ sections?.classes?.providedBy ?? 'ถ่ายทอดโดย' }}</p>
+              <p class="text-sm text-textSecondary mb-3 tracking-widest uppercase">{{ sections?.classes?.providedBy ?? 'α╕ûα╣êα╕▓α╕óα╕ùα╕¡α╕öα╣éα╕öα╕ó' }}</p>
               <div class="flex gap-4">
                 <NuxtLink
                   v-for="coach in classCoaches"
                   :key="coach.id ?? coach.slug"
-                  :to="`/coaches/${coach.slug}`"
+                  :to="`/coaches/${coach.id}`"
                   class="flex flex-col items-center gap-2 group"
                 >
                   <img
@@ -39,7 +39,7 @@
           <!-- Right: hero image -->
           <div class="flex-shrink-0 w-full lg:w-[480px]">
             <img
-              :src="classData.image || '/images/classes/placeholder.webp'"
+              :src="classData.logo || '/images/classes/placeholder.webp'"
               :alt="classData.title"
               class="w-full rounded-2xl shadow-2xl object-cover"
             />
@@ -49,7 +49,7 @@
       </div>
     </section>
 
-    <!-- ─── Details ────────────────────────────────────────────────── -->
+    <!-- ΓöÇΓöÇΓöÇ Details ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ -->
     <section class="py-16">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
         <div class="max-w-[1024px] flex flex-col lg:flex-row gap-10">
@@ -131,8 +131,8 @@
       </div>
     </section>
 
-    <!-- ─── Gallery ────────────────────────────────────────────────── -->
-    <section v-if="classData.gallery?.length" class="py-8">
+    <!-- ΓöÇΓöÇΓöÇ Gallery ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ -->
+    <section v-if="classData.images?.length" class="py-8">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
         <div class="relative px-14">
           <!-- Left arrow -->
@@ -151,7 +151,7 @@
           <!-- Scroll track -->
           <div ref="galleryRef" class="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory hide-scrollbar" @scroll="updateGalleryScroll">
             <div
-              v-for="(img, i) in classData.gallery"
+              v-for="(img, i) in classData.images"
               :key="i"
               class="snap-center flex-shrink-0 w-[420px] rounded-xl overflow-hidden"
             >
@@ -175,7 +175,7 @@
       </div>
     </section>
 
-    <!-- ─── CTA Buttons ──────────────────────────────────────────── -->
+    <!-- ΓöÇΓöÇΓöÇ CTA Buttons ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ -->
     <section class="py-14">
       <div class="max-w-[1280px] mx-auto px-6 lg:px-16">
         <div class="flex flex-col gap-4 max-w-xl mx-auto">
@@ -210,12 +210,10 @@ import classLabels from '~/data/json/class.json'
 
 const { sections } = useHomeContent()
 const route = useRoute()
-const id = Number(route.params.slug)
+const id = route.params.id as string
 
 const classesData = classesDataRaw as ClassesData
-const classData = isNaN(id)
-  ? classesData.classes.find(c => c.slug === String(route.params.slug))
-  : classesData.classes.find(c => c.id === id)
+const classData = classesData.classes.find(c => c.id === id)
 
 if (!classData) {
   throw showError({ statusCode: 404, message: 'Class not found.' })
@@ -254,11 +252,11 @@ const descriptionText = classData.description.map(s => s.description).join(' ')
 useHead({
   title: `${classData.title} - Inner Academy`,
   meta: [
-    { name: 'description', content: classData.shortDescription || descriptionText },
+    { name: 'description', content: classData.nameTh || descriptionText },
     { property: 'og:title', content: `${classData.title} - Inner Academy` },
-    { property: 'og:description', content: classData.shortDescription || descriptionText },
-    { property: 'og:image', content: `https://inneracademy.com${classData.image || ''}` },
-    { property: 'og:url', content: `https://inneracademy.com/courses/${classData.slug}` }
+    { property: 'og:description', content: classData.nameTh || descriptionText },
+    { property: 'og:image', content: `https://inneracademy.com${classData.logo || ''}` },
+    { property: 'og:url', content: `https://inneracademy.com/courses/${classData.id}` }
   ]
 })
 </script>

@@ -44,7 +44,7 @@ export interface Coach {
   education: string[]
   experience: (string | ExperienceEntry)[]  // Can be string array (legacy) or object array (new)
   philosophy?: string
-  gallery?: string[]               // Gallery image paths
+  images?: string[]                // Gallery image paths
   socialMedia?: SocialMediaEntry[] // New: array format
   socialLinks?: SocialLinks        // Legacy: object format
   proposal?: string                // Optional downloadable proposal PDF path

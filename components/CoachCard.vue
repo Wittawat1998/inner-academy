@@ -1,7 +1,7 @@
 <template>
   <div class="coach-card">
     <!-- Portrait Photo -->
-    <NuxtLink :to="coach.slug ? '/coaches/' + coach.slug : '#coaches'">
+    <NuxtLink :to="coach.id ? '/coaches/' + coach.id : '#coaches'">
       <div class="aspect-[3/4] overflow-hidden rounded-xl bg-gray-900 border border-gray-700">
         <NuxtImg
           :src="coach.avatar"
@@ -34,38 +34,8 @@
         {{ coach.career || coach.title }}
       </p>
 
-      <!-- Social Media Badges (new array format) -->
-      <div v-if="coach.socialMedia?.length" class="flex gap-2 flex-wrap">
-        <a
-          v-for="social in coach.socialMedia"
-          :key="social.channel"
-          :href="social.link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200"
-          :aria-label="social.channel"
-        >
-          <span class="font-bold text-sm leading-none" style="color: #1E293B;">
-            {{ social.channel === 'facebook' ? 'f' : social.channel === 'instagram' ? 'ig' : social.channel === 'tiktok' ? 'd' : 'in' }}
-          </span>
-        </a>
-      </div>
-
-      <!-- Social Media Badges (legacy object format) -->
-      <div v-else-if="coach.socialLinks" class="flex gap-2 flex-wrap">
-        <a v-if="coach.socialLinks.facebook" :href="coach.socialLinks.facebook" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200" aria-label="Facebook">
-          <span class="font-bold text-sm leading-none" style="color: #1E293B;">f</span>
-        </a>
-        <a v-if="coach.socialLinks.instagram" :href="coach.socialLinks.instagram" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200" aria-label="Instagram">
-          <span class="font-bold text-xs leading-none" style="color: #1E293B;">ig</span>
-        </a>
-        <a v-if="coach.socialLinks.tiktok" :href="coach.socialLinks.tiktok" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200" aria-label="TikTok">
-          <span class="font-bold text-sm leading-none" style="color: #1E293B;">d</span>
-        </a>
-        <a v-if="coach.socialLinks.linkedin" :href="coach.socialLinks.linkedin" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-9 h-9 rounded-full bg-white hover:bg-gray-100 transition-colors duration-200" aria-label="LinkedIn">
-          <span class="font-bold text-xs leading-none" style="color: #1E293B;">in</span>
-        </a>
-      </div>
+      <!-- Social Media Icons -->
+      <SocialIconsList :links="socialLinks" />
     </div>
   </div>
 </template>
@@ -81,9 +51,21 @@ import type { Coach } from '~/types/coaches'
  * Per spec: social links Facebook, Instagram, TikTok, LinkedIn (all optional)
  */
 
-defineProps<{
+const props = defineProps<{
   coach: Coach
 }>()
+
+const socialLinks = computed(() => {
+  if (props.coach.socialMedia?.length) {
+    return props.coach.socialMedia.map(s => ({ icon: s.channel, url: s.link }))
+  }
+  if (props.coach.socialLinks) {
+    return Object.entries(props.coach.socialLinks)
+      .filter(([, url]) => !!url)
+      .map(([icon, url]) => ({ icon, url: url as string }))
+  }
+  return []
+})
 </script>
 
 <style scoped>

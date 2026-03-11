@@ -29,6 +29,7 @@ export const TheFooter: typeof import("../components/TheFooter.vue")['default']
 export const TheHeader: typeof import("../components/TheHeader.vue")['default']
 export const TrustedLogosSlider: typeof import("../components/TrustedLogosSlider.vue")['default']
 export const TurnstileWidget: typeof import("../components/TurnstileWidget.vue")['default']
+export const IconsIconLine: typeof import("../components/icons/IconLine.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -67,6 +68,7 @@ export const LazyTheFooter: LazyComponent<typeof import("../components/TheFooter
 export const LazyTheHeader: LazyComponent<typeof import("../components/TheHeader.vue")['default']>
 export const LazyTrustedLogosSlider: LazyComponent<typeof import("../components/TrustedLogosSlider.vue")['default']>
 export const LazyTurnstileWidget: LazyComponent<typeof import("../components/TurnstileWidget.vue")['default']>
+export const LazyIconsIconLine: LazyComponent<typeof import("../components/icons/IconLine.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

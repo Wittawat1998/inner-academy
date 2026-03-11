@@ -1,7 +1,7 @@
 <template>
   <section 
     v-if="clients && clients.length > 0" 
-    class="trusted-clients-section bg-black py-8 px-4 md:py-12 md:px-8 lg:py-16 lg:px-16"
+    class="trusted-clients-section py-8 px-4 md:py-12 md:px-8 lg:py-16 lg:px-16"
     role="region"
     aria-label="Partner organizations"
   >

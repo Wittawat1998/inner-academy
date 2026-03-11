@@ -40,18 +40,18 @@ export interface ClassDescriptionSection {
  * EXTENDED for Feature 004 (Class Detail Pages)
  */
 export interface Class {
-  /** Numeric ID */
-  id?: number
+  /** Class ID (e.g. "KM", "EM", "BH") */
+  id?: string
   /** URL-safe identifier (kebab-case) */
   slug: string
   /** Display name */
   title: string
   /** Short description for list view */
-  shortDescription?: string
+  nameTh?: string
   /** Description sections with optional title headers */
   description: ClassDescriptionSection[]
   /** Hero banner image (right column) */
-  image?: string
+  logo?: string
   /** Duration string e.g. "8 ชั่วโมง" */
   duration?: string
   /** Category e.g. "การสื่อสาร" */
@@ -67,7 +67,7 @@ export interface Class {
   /** Coach IDs referencing coaches.json id field */
   coachIds?: string[]
   /** Gallery images for the carousel */
-  gallery?: string[]
+  images?: string[]
   /** Downloadable files */
   downloads?: { proposal?: string }
   /** Next round / enroll URL */

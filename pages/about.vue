@@ -4,7 +4,7 @@
     <section class="relative flex items-center"
       style="min-height: min(56.25vw, 1080px); background-image: url('/images/about/about-hero-bg.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;">
       <div class="relative z-10 flex flex-col justify-center h-full w-full">
-        <div class="container max-w-screen-lg mx-auto px-4">
+        <div class="container absolute left-[20%] bottom-[-390px] max-w-screen-lg mx-auto px-4">
           <h1
             class="text-left text-4xl md:text-6xl lg:text-8xl font-semibold mb-4 md:mb-8 header-fade drop-shadow-lg">
             {{ data.title }}
@@ -21,7 +21,7 @@
     <section class="relative flex items-center justify-center py-16 md:py-24 lg:py-32"
       style="min-height: min(56.25vw, 1080px); background-image: url('/images/about/about-quote-bg.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;">
       <div class="relative z-10 flex flex-col justify-center w-full">
-        <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="mt-[300px]  max-w-4xl mx-auto px-6 text-center">
           <div class="mb-8">
             <span class="inline-block text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-snug">
               <span class="text-goldTextDark align-middle text-6xl mr-2">“</span>

@@ -1,7 +1,7 @@
-<template>
+﻿<template>
   <main class="coach-detail-page bg-gradient-header min-h-screen" style="background-image: url('/images/bg/hero-bg.webp'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;">
 
-    <!-- ─── Hero ────────────────────────────────────────────────────── -->
+    <!-- ΓöÇΓöÇΓöÇ Hero ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ -->
     <section class="relative overflow-hidden">
       <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-16 pt-20 md:pt-24 lg:pt-28 items-center flex flex-col">
         <div class="max-w-[960px] flex flex-col md:flex-row items-center gap-0">
@@ -49,7 +49,7 @@
       </div>
     </section>
 
-    <!-- ─── Details ─────────────────────────────────────────────────── -->
+    <!-- ΓöÇΓöÇΓöÇ Details ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ -->
     <section class="py-16">
       <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-16">
         <div class="max-w-[1024px] flex flex-col lg:flex-row gap-12 lg:gap-20">
@@ -57,7 +57,7 @@
           <!-- Left: gallery images -->
           <div class="flex-shrink-0 w-full lg:w-[380px] flex flex-col gap-6">
             <img
-              v-for="(img, i) in coach?.gallery"
+              v-for="(img, i) in coach?.images"
               :key="i"
               :src="img"
               :alt="`${coach?.name} gallery ${i + 1}`"
@@ -68,17 +68,17 @@
           <!-- Right: expertise, education, experience -->
           <div class="flex-1 space-y-10">
 
-            <!-- ความเชี่ยวชาญ -->
+            <!-- α╕äα╕ºα╕▓α╕íα╣Çα╕èα╕╡α╣êα╕óα╕ºα╕èα╕▓α╕ì -->
             <div v-if="coach?.expertise">
-              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-3">{{ sections?.coaches?.proficiency ?? 'ความเชี่ยวชาญ' }}</h2>
+              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-3">{{ sections?.coaches?.proficiency ?? 'α╕äα╕ºα╕▓α╕íα╣Çα╕èα╕╡α╣êα╕óα╕ºα╕èα╕▓α╕ì' }}</h2>
               <p class="text-textPrimary text-lg leading-relaxed">
-                {{ Array.isArray(coach.expertise) ? coach.expertise.join(' · ') : coach.expertise }}
+                {{ Array.isArray(coach.expertise) ? coach.expertise.join(' ┬╖ ') : coach.expertise }}
               </p>
             </div>
 
-            <!-- ประวัติการศึกษา -->
+            <!-- α╕¢α╕úα╕░α╕ºα╕▒α╕òα╕┤α╕üα╕▓α╕úα╕¿α╕╢α╕üα╕⌐α╕▓ -->
             <div v-if="coach?.education?.length">
-              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-4">{{ sections?.coaches?.education ?? 'ประวัติการศึกษา' }}</h2>
+              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-4">{{ sections?.coaches?.education ?? 'α╕¢α╕úα╕░α╕ºα╕▒α╕òα╕┤α╕üα╕▓α╕úα╕¿α╕╢α╕üα╕⌐α╕▓' }}</h2>
               <ul class="space-y-2">
                 <li
                   v-for="(edu, i) in coach.education"
@@ -91,9 +91,9 @@
               </ul>
             </div>
 
-            <!-- ประสบการณ์ -->
+            <!-- α╕¢α╕úα╕░α╕¬α╕Üα╕üα╕▓α╕úα╕ôα╣î -->
             <div v-if="coach?.experience?.length">
-              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-4">{{ sections?.coaches?.experience ?? 'ประสบการณ์' }}</h2>
+              <h2 class="text-[clamp(1.8rem,3vw,2.8rem)] font-medium text-goldText mb-4">{{ sections?.coaches?.experience ?? 'α╕¢α╕úα╕░α╕¬α╕Üα╕üα╕▓α╕úα╕ôα╣î' }}</h2>
               <div class="space-y-4">
                 <template v-for="(exp, i) in coach.experience" :key="i">
                   <!-- New object format -->
@@ -124,7 +124,7 @@
       </div>
     </section>
 
-    <!-- ─── CTA Buttons ──────────────────────────────────────────────── -->
+    <!-- ΓöÇΓöÇΓöÇ CTA Buttons ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ -->
     <section class="py-16">
       <div class="max-w-[680px] mx-auto px-8 flex flex-col gap-5">
         <a
@@ -134,13 +134,13 @@
           target="_blank"
           class="block w-full text-center text-4xl font-semibold py-6 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
         >
-          {{ sections?.coaches?.downloads ?? 'ดาวน์โหลดประวัติ' }}
+          {{ sections?.coaches?.downloads ?? 'α╕öα╕▓α╕ºα╕Öα╣îα╣éα╕½α╕Ñα╕öα╕¢α╕úα╕░α╕ºα╕▒α╕òα╕┤' }}
         </a>
         <NuxtLink
           to="/#contact"
           class="block w-full text-center text-4xl font-semibold py-6 rounded-full bg-fade text-bgPrimary hover:brightness-110 transition"
         >
-          {{ sections?.coaches?.nextClass ?? 'คลาสรอบถัดไป' }}
+          {{ sections?.coaches?.nextClass ?? 'α╕äα╕Ñα╕▓α╕¬α╕úα╕¡α╕Üα╕ûα╕▒α╕öα╣äα╕¢' }}
         </NuxtLink>
       </div>
     </section>
@@ -154,10 +154,10 @@ import coachesData from '~/data/coaches.json'
 
 const { sections } = useHomeContent()
 const route = useRoute()
-const slug = route.params.slug as string
+const id = route.params.id as string
 
 const coach = computed<Coach | undefined>(() =>
-  coachesData.coaches.find((c: any) => c.slug === slug)
+  coachesData.coaches.find((c: any) => c.id === id)
 )
 
 if (!coach.value) {

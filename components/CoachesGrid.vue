@@ -20,7 +20,7 @@
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         <CoachCard
           v-for="coach in coaches"
-          :key="coach.slug || coach.name"
+          :key="coach.id || coach.name"
           :coach="coach"
         />
       </div>
