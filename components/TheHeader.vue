@@ -14,7 +14,7 @@
           aria-label="Inner Power Academy homepage"
         >
           <!-- Logo Image -->
-          <img :src="'/images/icon/appicon.png'" alt="Inner Power Academy" class="h-24 w-auto" />
+          <img :src="'/images/icon/appicon.png'" alt="Inner Power Academy" class="h-24 w-auto" width="96" height="96" />
         </NuxtLink>
 
         <!-- Desktop Navigation (Center) -->

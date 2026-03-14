@@ -17,7 +17,15 @@
         </div>
         <!-- Right: Program vertical card (mock) -->
         <div class="flex-1 w-full max-w-xs md:max-w-lg">
-          <img :src="sections?.classPrograms?.image ?? '/images/next-program/next-program.webp'" alt="Next Program Card" class="w-full rounded-3xl shadow-2xl" />
+          <NuxtImg
+            :src="sections?.classPrograms?.image ?? '/images/next-program/next-program.webp'"
+            alt="Next Program Card"
+            class="w-full rounded-3xl shadow-2xl"
+            loading="lazy"
+            sizes="(min-width: 1024px) 512px, (min-width: 768px) 400px, 320px"
+            width="512"
+            height="640"
+          />
         </div>
         </div>
       </div>

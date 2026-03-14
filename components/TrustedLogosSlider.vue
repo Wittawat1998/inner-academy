@@ -44,6 +44,8 @@
                   :title="logo.nameEn"
                   class="h-24 w-auto object-contain hover:scale-110 transition-transform duration-300"
                   loading="lazy"
+                  width="96"
+                  height="96"
                 />
                 <div class="logo-label mt-2 text-center">
                   <p class="text-sm font-semibold text-gray-800 leading-tight">
@@ -69,6 +71,8 @@
                   :title="logo.nameEn"
                   class="h-24 w-auto object-contain hover:scale-110 transition-transform duration-300"
                   loading="lazy"
+                  width="96"
+                  height="96"
                 />
                 <div class="logo-label mt-2 text-center">
                   <p class="text-sm font-semibold text-gray-800 leading-tight">

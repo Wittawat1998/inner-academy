@@ -8,7 +8,7 @@
       <div class="relative z-10
         px-4 pb-4
         md:px-8 md:pb-8
-        lg:absolute lg:left-[20%] lg:bottom-[-390px] lg:max-w-3xl lg:px-0 lg:pb-0
+        lg:absolute lg:left-[20%] lg:bottom-[-30px] lg:max-w-3xl lg:px-0 lg:pb-0
         xl:max-w-4xl">
         <h1
           class="text-left text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-semibold mb-4 md:mb-6 header-fade drop-shadow-lg">

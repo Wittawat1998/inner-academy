@@ -637,6 +637,67 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
+      "/": {
+        "swr": 3600,
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/about": {
+        "swr": 3600,
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/courses": {
+        "swr": 3600,
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/courses/**": {
+        "swr": 3600,
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/coaches": {
+        "swr": 3600,
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/coaches/**": {
+        "swr": 3600,
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/privacy-policies": {
+        "swr": 86400,
+        "cache": {
+          "swr": true,
+          "maxAge": 86400
+        }
+      },
+      "/terms-and-conditions": {
+        "swr": 86400,
+        "cache": {
+          "swr": true,
+          "maxAge": 86400
+        }
+      },
+      "/_nuxt/**": {
+        "headers": {
+          "cache-control": "public, max-age=31536000, immutable"
+        }
+      },
       "/_nuxt/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
@@ -645,6 +706,42 @@ const _inlineRuntimeConfig = {
       "/_nuxt/builds/**": {
         "headers": {
           "cache-control": "public, max-age=1, immutable"
+        }
+      },
+      "//_payload.json": {
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/about/_payload.json": {
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/courses/_payload.json": {
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/coaches/_payload.json": {
+        "cache": {
+          "swr": true,
+          "maxAge": 3600
+        }
+      },
+      "/privacy-policies/_payload.json": {
+        "cache": {
+          "swr": true,
+          "maxAge": 86400
+        }
+      },
+      "/terms-and-conditions/_payload.json": {
+        "cache": {
+          "swr": true,
+          "maxAge": 86400
         }
       }
     }
@@ -2050,7 +2147,7 @@ const _3gjDLLpco8AktHw3v147Ss5rjaMUfihGDhBfQT3haE = (function(nitro) {
 
 const rootDir = "E:/work/inner/sourceCode/inner-academy";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Transform your inner power with expert-led courses"}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"},{"rel":"icon","type":"image/png","href":"/images/icon/appicon.png"}],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Inner Academy","htmlAttrs":{"lang":"th"}};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Transform your inner power with expert-led courses"}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"preload","as":"style","href":"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap","onload":"this.onload=null;this.rel='stylesheet'"},{"rel":"icon","type":"image/png","href":"/images/icon/appicon.png"}],"style":[],"script":[],"noscript":[{"innerHTML":"<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap\">"}],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Inner Academy","htmlAttrs":{"lang":"th"}};
 
 const appRootTag = "div";
 
@@ -2261,8 +2358,6 @@ function vueInstall(head) {
 function resolveUnrefHeadInput(input) {
   return walkResolver(input, VueResolver);
 }
-
-const NUXT_RUNTIME_PAYLOAD_EXTRACTION = false;
 
 // @__NO_SIDE_EFFECTS__
 function createHead(options = {}) {
@@ -2713,6 +2808,20 @@ const handlers = [
   { route: '/__nuxt_error', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
   { route: '/_ipx/**', handler: _Sv3nRo, lazy: false, middleware: false, method: undefined },
+  { route: '/', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/about', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/courses', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/courses/_payload.json', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/courses/**', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/coaches', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/coaches/_payload.json', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/coaches/**', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/privacy-policies', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/terms-and-conditions', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '//_payload.json', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/about/_payload.json', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/privacy-policies/_payload.json', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
+  { route: '/terms-and-conditions/_payload.json', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_jiaZgZ, lazy: true, middleware: false, method: undefined }
 ];
 
@@ -4705,7 +4814,7 @@ const renderer = defineRenderHandler(async (event) => {
 	// Get route options (for `ssr: false`, `isr`, `cache` and `noScripts`)
 	const routeOptions = getRouteRules(event);
 	// Whether we are prerendering route or using ISR/SWR caching
-	const _PAYLOAD_EXTRACTION = !ssrContext.noSSR && (NUXT_RUNTIME_PAYLOAD_EXTRACTION);
+	const _PAYLOAD_EXTRACTION = !ssrContext.noSSR && ((routeOptions.isr || routeOptions.cache));
 	const isRenderingPayload = (_PAYLOAD_EXTRACTION || routeOptions.prerender) && PAYLOAD_URL_RE.test(ssrContext.url);
 	if (isRenderingPayload) {
 		const url = ssrContext.url.substring(0, ssrContext.url.lastIndexOf("/")) || "/";

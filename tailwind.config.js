@@ -5,8 +5,11 @@ export default {
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
+    "./composables/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    // Include data files so dynamic class names (e.g. from JSON) are not purged
+    "./data/**/*.json",
   ],
   safelist: [
     'text-goldText',

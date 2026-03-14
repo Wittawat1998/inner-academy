@@ -1,18 +1,24 @@
 <template>
   <section class="hero-section">
     <div class="w-full">
-      <!-- Hero Banner: mobile (portrait) -->
+      <!-- Hero Banner: mobile (portrait) — LCP element, no lazy -->
       <img
         :src="sections?.hero?.bgHeroMobile ?? (sections?.hero?.bgHero?.replace('.webp', '-mobile.webp'))"
         alt="Inner Power Academy"
         class="block md:hidden w-full object-cover object-top"
         style="height: 900px;"
+        fetchpriority="high"
+        width="600"
+        height="900"
       />
-      <!-- Hero Banner: desktop (landscape) -->
+      <!-- Hero Banner: desktop — hidden on mobile so lazy is safe -->
       <img
         :src="sections?.hero?.bgHero"
         alt="Inner Power Academy"
         class="hidden md:block w-full h-auto object-contain object-top"
+        loading="lazy"
+        width="1920"
+        height="1080"
       />
     </div>
 
@@ -28,7 +34,7 @@
       </p>
 
       <!-- Certification Badge -->
-      <img :src="sections?.hero?.badgeIcon" alt="Certified Badge" class="w-auto h-16 md:h-22 lg:h-28 xl:h-48" />
+      <img :src="sections?.hero?.badgeIcon" alt="Certified Badge" class="w-auto h-16 md:h-22 lg:h-28 xl:h-48" loading="lazy" width="192" height="192" />
     </div>
   </section>
 </template>
