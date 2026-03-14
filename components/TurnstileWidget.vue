@@ -99,7 +99,7 @@ defineExpose({
 <style scoped>
 .turnstile-widget {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 1rem 0;
 }
 </style>

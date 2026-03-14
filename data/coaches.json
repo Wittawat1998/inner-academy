@@ -13,7 +13,7 @@
       "nameTh": "ดร.สุกฤตา ปรีชาว่อง",
       "nameEn": "Dr. Sukritta Preechawong",
       "career": "People Development Consultant and Learning Innovator",
-      "avatar": "/images/coaches/kd.webp",
+      "avatar": "/media/coaches/kd.webp",
       "images": [
         "https://placehold.co/380x254?text=Image",
         "https://placehold.co/380x254?text=Image"
@@ -63,7 +63,7 @@
       "nameTh": "ดร.สทาศัย พงศ์หิรัญ",
       "nameEn": "Dr. Sathasai Ponghirun",
       "career": "Personality and Speech Coach",
-      "avatar": "/images/coaches/s.webp",
+      "avatar": "/media/coaches/s.webp",
       "images": [
         "https://placehold.co/380x254?text=Image",
         "https://placehold.co/380x254?text=Image"
@@ -145,7 +145,7 @@
       "nameTh": "วริศรา บำรุงเวช",
       "nameEn": "Warissara Bumrungwach",
       "career": "Communication and Presentation Coach",
-      "avatar": "/images/coaches/lk.webp",
+      "avatar": "/media/coaches/lk.webp",
       "images": [
         "https://placehold.co/380x254?text=Image",
         "https://placehold.co/380x254?text=Image"
@@ -248,10 +248,10 @@
       "nameTh": "ณัฐชา คงณศิริ",
       "nameEn": "Natcha Kongnasiri",
       "career": "Mindset and Personality Coach",
-      "avatar": "/images/coaches/m.webp",
+      "avatar": "/media/coaches/m.webp",
       "images": [
-        "/images/coaches/m/km-gallery-1.jpg",
-        "/images/coaches/m/km-gallery-2.jpg"
+        "/media/coaches/m/km-gallery-1.jpg",
+        "/media/coaches/m/km-gallery-2.jpg"
       ],
       "bio": "ครูหม่อนเชี่ยวชาญด้าน Mindset และการพัฒนาบุคลิกภาพ ช่วยปลุกพลังความเชื่อมั่นในศักยภาพของตนเอง และส่งเสริมการสื่อสารในการทำงานให้มีประสิทธิภาพสูงสุดอย่างมืออาชีพ",
       "expertise": "ปลุกพลังความเชื่อมั่นใน ศักยภาพและ คุณค่าของตนเอง ส่งเสริมการสื่อสารในการทำงานให้มีประสิทธิภาพสูงสุดอย่างมืออาชีพ",
@@ -323,7 +323,7 @@
       "nameTh": "กิตติ ไตรรัตน์",
       "nameEn": "Kitti Trirat",
       "career": "Satir Coaching and Mentoring Specialist",
-      "avatar": "/images/coaches/kt.webp",
+      "avatar": "/media/coaches/kt.webp",
       "images": [
         "https://placehold.co/380x254?text=Image",
         "https://placehold.co/380x254?text=Image"
@@ -383,7 +383,7 @@
       "nameTh": "ศุภรางศุ์ อินทนะ",
       "nameEn": "Suparang Intana",
       "career": "Inspirational and Team Building Coach",
-      "avatar": "/images/coaches/nf.webp",
+      "avatar": "/media/coaches/nf.webp",
       "images": [
         "https://placehold.co/380x254?text=Image",
         "https://placehold.co/380x254?text=Image"
@@ -443,7 +443,7 @@
       "nameTh": "จรัณยา อิ่มธนาสาร",
       "nameEn": "Jarunya Imtanasan",
       "career": "Executive Coach and Trainer",
-      "avatar": "/images/coaches/nu.webp",
+      "avatar": "/media/coaches/nu.webp",
       "images": [
         "https://placehold.co/380x254?text=Image",
         "https://placehold.co/380x254?text=Image"

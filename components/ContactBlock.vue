@@ -14,7 +14,7 @@
           <h2 class="text-4xl md:text-5xl lg:text-7xl font-semibold mb-2 header-fade" >
             {{ sections?.contact?.title }}
           </h2>
-          <p class="text-lg text-gray-300 whitespace-pre-line">
+          <p class="text-lg text-gray-300 whitespace-pre-line leading-relaxed">
             {{ sections?.contact?.subtitle }}
           </p>
         </div>

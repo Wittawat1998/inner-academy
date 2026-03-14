@@ -2151,22 +2151,7 @@ const plugins = [
 __FqZsEfjjxjm5ttXhq7HwaGCOI1aOdzesmkR7dBKXHg
 ];
 
-const assets = {
-  "/index.mjs": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"2d3e6-xdI261X5x97TlsPKKuXq1zBDaxo\"",
-    "mtime": "2026-03-11T14:48:44.667Z",
-    "size": 185318,
-    "path": "index.mjs"
-  },
-  "/index.mjs.map": {
-    "type": "application/json",
-    "etag": "\"73069-gV1jQ6OnloMTNkogE/RMXyFB1XY\"",
-    "mtime": "2026-03-11T14:48:44.676Z",
-    "size": 471145,
-    "path": "index.mjs.map"
-  }
-};
+const assets = {};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -2997,145 +2982,145 @@ var clients = [
 		order: 1,
 		nameEn: "KING POWER",
 		nameTh: "บริษัท คิง เพาเวอร์ อินเตอร์เนชันแนล",
-		logo: "/images/clients/client-01.webp"
+		logo: "/media/clients/client-01.webp"
 	},
 	{
 		order: 2,
 		nameEn: "THAILIFE",
 		nameTh: "ไทยประกันชีวิต",
-		logo: "/images/clients/client-02.webp"
+		logo: "/media/clients/client-02.webp"
 	},
 	{
 		order: 3,
 		nameEn: "AIA",
 		nameTh: "เอไอเอ กรุ๊ป ลิมิเต็ด",
-		logo: "/images/clients/client-03.webp"
+		logo: "/media/clients/client-03.webp"
 	},
 	{
 		order: 4,
 		nameEn: "SULWHASOO",
 		nameTh: "บริษัท อมอร์แปซิฟิค (ไทยแลนด์) จำกัด",
-		logo: "/images/clients/client-04.webp"
+		logo: "/media/clients/client-04.webp"
 	},
 	{
 		order: 5,
 		nameEn: "LANCÔME",
 		nameTh: "บริษัท ลอรีอัล (ประเทศไทย) จำกัด",
-		logo: "/images/clients/client-05.webp"
+		logo: "/media/clients/client-05.webp"
 	},
 	{
 		order: 6,
 		nameEn: "LOUIS VUITTON",
 		nameTh: "หลุยส์ วิตตอง",
-		logo: "/images/clients/client-06.webp"
+		logo: "/media/clients/client-06.webp"
 	},
 	{
 		order: 7,
 		nameEn: "DIOR",
 		nameTh: "ดิออร์",
-		logo: "/images/clients/client-07.webp"
+		logo: "/media/clients/client-07.webp"
 	},
 	{
 		order: 8,
 		nameEn: "VOW GROUP",
 		nameTh: "บริษัท วาว กรุ๊ป โฮลดิ้ง จำกัด",
-		logo: "/images/clients/client-08.webp"
+		logo: "/media/clients/client-08.webp"
 	},
 	{
 		order: 9,
 		nameEn: "CPN",
 		nameTh: "บริษัท เซ็นทรัลพัฒนา จำกัด",
-		logo: "/images/clients/client-09.webp"
+		logo: "/media/clients/client-09.webp"
 	},
 	{
 		order: 10,
 		nameEn: "SINGHA",
 		nameTh: "บริษัท สิงห์ คอร์เปอเรชั่น จำกัด",
-		logo: "/images/clients/client-10.webp"
+		logo: "/media/clients/client-10.webp"
 	},
 	{
 		order: 11,
 		nameEn: "SCG",
 		nameTh: "ปูนซิเมนต์ไทย",
-		logo: "/images/clients/client-11.webp"
+		logo: "/media/clients/client-11.webp"
 	},
 	{
 		order: 12,
 		nameEn: "HÄFELE",
 		nameTh: "เฮเฟเล่ ดีไซน์ สตูดิโอ",
-		logo: "/images/clients/client-12.webp"
+		logo: "/media/clients/client-12.webp"
 	},
 	{
 		order: 13,
 		nameEn: "DUTCH MILL",
 		nameTh: "ดัชมิลล์",
-		logo: "/images/clients/client-13.webp"
+		logo: "/media/clients/client-13.webp"
 	},
 	{
 		order: 14,
 		nameEn: "TOYOTA",
 		nameTh: "บริษัท โตโยต้า มอเตอร์ ประเทศไทย จำกัด",
-		logo: "/images/clients/client-14.webp"
+		logo: "/media/clients/client-14.webp"
 	},
 	{
 		order: 15,
 		nameEn: "HONDA",
 		nameTh: "ฮอนด้า",
-		logo: "/images/clients/client-15.webp"
+		logo: "/media/clients/client-15.webp"
 	},
 	{
 		order: 16,
 		nameEn: "BMW",
 		nameTh: "บมจ. ยนตรกิจบาวาเรีย",
-		logo: "/images/clients/client-16.webp"
+		logo: "/media/clients/client-16.webp"
 	},
 	{
 		order: 17,
 		nameEn: "AIS",
 		nameTh: "เอไอเอส",
-		logo: "/images/clients/client-17.webp"
+		logo: "/media/clients/client-17.webp"
 	},
 	{
 		order: 18,
 		nameEn: "DTAC",
 		nameTh: "บริษัท โทเทิ่ล แอ็คเซ็ส คอมมูนิเคชั่น จำกัด",
-		logo: "/images/clients/client-18.webp"
+		logo: "/media/clients/client-18.webp"
 	},
 	{
 		order: 19,
 		nameEn: "KBANK",
 		nameTh: "ธนาคารกสิกรไทย จำกัด (มหาชน)",
-		logo: "/images/clients/client-19.webp"
+		logo: "/media/clients/client-19.webp"
 	},
 	{
 		order: 20,
 		nameEn: "SCB",
 		nameTh: "ไทยพาณิชย์",
-		logo: "/images/clients/client-20.webp"
+		logo: "/media/clients/client-20.webp"
 	},
 	{
 		order: 21,
 		nameEn: "TTB",
 		nameTh: "ธนาคารทหารไทยธนชาต จำกัด (มหาชน)",
-		logo: "/images/clients/client-21.webp"
+		logo: "/media/clients/client-21.webp"
 	},
 	{
 		order: 22,
 		nameEn: "LAND & HOUSES",
 		nameTh: "แลนด์ แอนด์ เฮ้าส์",
-		logo: "/images/clients/client-22.webp"
+		logo: "/media/clients/client-22.webp"
 	},
 	{
 		order: 23,
 		nameEn: "BANGKOK HOSPITAL",
 		nameTh: "โรงพยาบาลกรุงเทพ",
-		logo: "/images/clients/client-23.webp"
+		logo: "/media/clients/client-23.webp"
 	},
 	{
 		order: 24,
 		nameEn: "BANPU",
 		nameTh: "บริษัท บ้านปู จำกัด",
-		logo: "/images/clients/client-24.webp"
+		logo: "/media/clients/client-24.webp"
 	}
 ];
 const logosDataRaw = {
@@ -3754,7 +3739,7 @@ var classes = [
 		],
 		slug: "key-message-clear-message",
 		featured: true,
-		logo: "/images/classes/class-1/km.jpg",
+		logo: "/media/classes/class-1/km.jpg",
 		category: "communication",
 		duration: "8 ชั่วโมง",
 		audience: [
@@ -3769,9 +3754,9 @@ var classes = [
 		currency: "บาท",
 		priceNote: "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
 		images: [
-			"/images/classes/class-1/silde-image/km-agenda.jpg",
-			"/images/classes/class-1/silde-image/km-gallery-1.jpg",
-			"/images/classes/class-1/silde-image/km-gallery-2.jpg"
+			"/media/classes/class-1/silde-image/km-agenda.jpg",
+			"/media/classes/class-1/silde-image/km-gallery-1.jpg",
+			"/media/classes/class-1/silde-image/km-gallery-2.jpg"
 		],
 		downloads: {
 			proposal: "/downloads/classes/Key Message Clear Message.pdf"
@@ -3984,7 +3969,7 @@ var coaches = [
 		nameTh: "ดร.สุกฤตา ปรีชาว่อง",
 		nameEn: "Dr. Sukritta Preechawong",
 		career: "People Development Consultant and Learning Innovator",
-		avatar: "/images/coaches/kd.webp",
+		avatar: "/media/coaches/kd.webp",
 		images: [
 			"https://placehold.co/380x254?text=Image",
 			"https://placehold.co/380x254?text=Image"
@@ -4037,7 +4022,7 @@ var coaches = [
 		nameTh: "ดร.สทาศัย พงศ์หิรัญ",
 		nameEn: "Dr. Sathasai Ponghirun",
 		career: "Personality and Speech Coach",
-		avatar: "/images/coaches/s.webp",
+		avatar: "/media/coaches/s.webp",
 		images: [
 			"https://placehold.co/380x254?text=Image",
 			"https://placehold.co/380x254?text=Image"
@@ -4119,7 +4104,7 @@ var coaches = [
 		nameTh: "วริศรา บำรุงเวช",
 		nameEn: "Warissara Bumrungwach",
 		career: "Communication and Presentation Coach",
-		avatar: "/images/coaches/lk.webp",
+		avatar: "/media/coaches/lk.webp",
 		images: [
 			"https://placehold.co/380x254?text=Image",
 			"https://placehold.co/380x254?text=Image"
@@ -4225,10 +4210,10 @@ var coaches = [
 		nameTh: "ณัฐชา คงณศิริ",
 		nameEn: "Natcha Kongnasiri",
 		career: "Mindset and Personality Coach",
-		avatar: "/images/coaches/m.webp",
+		avatar: "/media/coaches/m.webp",
 		images: [
-			"/images/coaches/m/km-gallery-1.jpg",
-			"/images/coaches/m/km-gallery-2.jpg"
+			"/media/coaches/m/km-gallery-1.jpg",
+			"/media/coaches/m/km-gallery-2.jpg"
 		],
 		bio: "ครูหม่อนเชี่ยวชาญด้าน Mindset และการพัฒนาบุคลิกภาพ ช่วยปลุกพลังความเชื่อมั่นในศักยภาพของตนเอง และส่งเสริมการสื่อสารในการทำงานให้มีประสิทธิภาพสูงสุดอย่างมืออาชีพ",
 		expertise: "ปลุกพลังความเชื่อมั่นใน ศักยภาพและ คุณค่าของตนเอง ส่งเสริมการสื่อสารในการทำงานให้มีประสิทธิภาพสูงสุดอย่างมืออาชีพ",
@@ -4304,7 +4289,7 @@ var coaches = [
 		nameTh: "กิตติ ไตรรัตน์",
 		nameEn: "Kitti Trirat",
 		career: "Satir Coaching and Mentoring Specialist",
-		avatar: "/images/coaches/kt.webp",
+		avatar: "/media/coaches/kt.webp",
 		images: [
 			"https://placehold.co/380x254?text=Image",
 			"https://placehold.co/380x254?text=Image"
@@ -4367,7 +4352,7 @@ var coaches = [
 		nameTh: "ศุภรางศุ์ อินทนะ",
 		nameEn: "Suparang Intana",
 		career: "Inspirational and Team Building Coach",
-		avatar: "/images/coaches/nf.webp",
+		avatar: "/media/coaches/nf.webp",
 		images: [
 			"https://placehold.co/380x254?text=Image",
 			"https://placehold.co/380x254?text=Image"
@@ -4430,7 +4415,7 @@ var coaches = [
 		nameTh: "จรัณยา อิ่มธนาสาร",
 		nameEn: "Jarunya Imtanasan",
 		career: "Executive Coach and Trainer",
-		avatar: "/images/coaches/nu.webp",
+		avatar: "/media/coaches/nu.webp",
 		images: [
 			"https://placehold.co/380x254?text=Image",
 			"https://placehold.co/380x254?text=Image"

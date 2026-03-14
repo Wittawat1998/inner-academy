@@ -16,25 +16,25 @@
    */
 
   body {
-    font-family: 'Prompt', 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+    font-family: 'Prompt', 'Montserrat', ui-sans-serif, system-ui;
     font-weight: 400;
   }
 
   /* Headings: Montserrat Bold (EN) + Prompt Bold (TH fallback) */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', 'Prompt', sans-serif;
+    font-family: 'Montserrat', 'Prompt';
     font-weight: 700;
   }
 
   /* Explicit Thai heading class: Prompt Medium */
   .heading-th {
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Prompt';
     font-weight: 500;
   }
 
   /* Explicit English heading class: Montserrat Bold */
   .heading-en {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-weight: 700;
   }
 

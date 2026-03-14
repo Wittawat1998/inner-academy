@@ -128,16 +128,16 @@ export default {
       // ============================================================================
       fontFamily: {
         // English: Montserrat (headings + bold)
-        en: ['Montserrat', 'sans-serif'],
+        en: ['Montserrat'],
         
         // Thai: Prompt (headings + medium)
-        th: ['Prompt', 'sans-serif'],
+        th: ['Prompt'],
         
         // Body font: Prompt-first (Thai-primary site), Montserrat covers Latin chars
-        sans: ['Prompt', 'Montserrat', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Prompt', 'Montserrat', 'ui-sans-serif', 'system-ui', '-apple-system'],
         
         // Heading font: Montserrat-first Bold (EN), Prompt covers Thai glyphs
-        heading: ['Montserrat', 'Prompt', 'sans-serif'],
+        heading: ['Montserrat', 'Prompt'],
       },
 
       // Max screen width cap: 1920px

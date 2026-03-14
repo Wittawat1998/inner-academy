@@ -14,7 +14,7 @@
     <div class="relative z-10 max-w-[1280px] mx-auto px-4">
       <div class="max-w-[1280px] mx-auto text-center">
         <!-- Heading -->
-        <h2 class="text-3xl  text-[clamp(6rem,6vw,70px)] font-semibold text-textPrimary mb-5 leading-tight">
+        <h2 class="text-[clamp(1.8rem,7vw,70px)] font-semibold text-textPrimary mb-5 leading-tight">
           {{ sections.assessments.title }}
         </h2>
 
@@ -30,7 +30,7 @@
             :href="sections.assessments.items?.[0]?.link"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-10 py-6 text-black font-semibold text-5xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full  text-center bg-fade"
+            class="px-6 py-4 md:px-10 md:py-6 text-black font-semibold text-xl md:text-3xl lg:text-5xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full text-center bg-fade"
           >
             {{ sections.assessments.items?.[0]?.submit }}
           </a>
@@ -40,7 +40,7 @@
             :href="sections.assessments.items?.[1]?.link"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-10 py-6 text-black font-semibold text-5xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full  text-center bg-fade"
+            class="px-6 py-4 md:px-10 md:py-6 text-black font-semibold text-xl md:text-3xl lg:text-5xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl w-full text-center bg-fade"
           >
             {{ sections.assessments.items?.[1]?.submit }}
           </a>

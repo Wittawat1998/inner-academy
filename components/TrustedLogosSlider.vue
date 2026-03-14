@@ -11,7 +11,7 @@
         <h2 class="text-3xl md:text-6xl lg:text-6xl xl:text-8xl font-semibold mb-[15px] md:mb-[30px]  header-fade">
           {{ sections?.clients?.title ?? 'มากกว่า 30 องค์กรชั้นนำ' }}
         </h2>
-        <p class="text-base md:text-xl text-white">
+        <p class="text-base md:text-xl text-white leading-relaxed">
           {{ sections?.clients?.subtitle ?? 'ที่ได้รวมเติบโตไปกับเรา' }}
         </p>
       </div>

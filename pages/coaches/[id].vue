@@ -4,10 +4,10 @@
     <!-- ΓöÇΓöÇΓöÇ Hero ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ -->
     <section class="relative overflow-hidden">
       <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-16 pt-20 md:pt-24 lg:pt-28 items-center flex flex-col">
-        <div class="max-w-[960px] flex flex-col md:flex-row items-center gap-0">
+        <div class="max-w-[960px] flex flex-col md:flex-row items-start md:items-center gap-0">
 
           <!-- Left: name, title, social -->
-          <div class="flex-1 min-w-0 z-10 pb-10 lg:pb-0">
+          <div class="flex-1 min-w-0 z-10 pb-10 sm:pb-5 lg:pb-0 order-3 md:order-1">
             <h1 class="text-[clamp(3.5rem,8vw,7rem)] font-semibold leading-[1.05] text-goldText mb-3">
               {{ coach?.name || coach?.nickname }}
             </h1>
@@ -30,7 +30,7 @@
           </div>
 
           <!-- Right: coach photo with left-fade gradient -->
-          <div class="relative flex-shrink-0 w-full md:w-[360px] lg:w-[480px]">
+          <div class="relative flex-shrink-0 w-full md:w-[360px] lg:w-[480px] order-1 md:order-2">
             <!-- gradient fade blending into background on the left -->
             <div class="absolute inset-y-0 left-0 w-32 z-10 bg-transparent pointer-events-none" />
             <img
@@ -40,11 +40,14 @@
             />
           </div>
 
+          <!-- Gold divider (mobile only, between image and text) -->
+          <div class="w-full order-2 md:hidden" style="height: 2px; background: linear-gradient(90deg, rgba(247,198,109,0) 0%, rgba(247,198,109,0.2) 10%, rgba(247,198,109,0.4) 30%, rgba(247,198,109,0.5) 50%, rgba(247,198,109,0.4) 70%, rgba(247,198,109,0.2) 90%, rgba(247,198,109,0) 100%);" />
+
         </div>
       </div>
 
-      <!-- Divider line -->
-      <div class="mx-4 md:mx-20 px-4 md:px-10 lg:px-16 xl:px-40" style="height: 2px; background: linear-gradient(90deg, rgba(247,198,109,0) 0%, rgba(247,198,109,0.2) 10%, rgba(247,198,109,0.4) 30%, rgba(247,198,109,0.5) 50%, rgba(247,198,109,0.4) 70%, rgba(247,198,109,0.2) 90%, rgba(247,198,109,0) 100%);">
+      <!-- Divider line (desktop/tablet) -->
+      <div class="hidden md:block mx-4 md:mx-20 px-4 md:px-10 lg:px-16 xl:px-40" style="height: 2px; background: linear-gradient(90deg, rgba(247,198,109,0) 0%, rgba(247,198,109,0.2) 10%, rgba(247,198,109,0.4) 30%, rgba(247,198,109,0.5) 50%, rgba(247,198,109,0.4) 70%, rgba(247,198,109,0.2) 90%, rgba(247,198,109,0) 100%);">
         <div style="height: 2px; background: linear-gradient(90deg, rgba(247,198,109,0) 0%, rgba(247,198,109,0.2) 10%, rgba(247,198,109,0.4) 30%, rgba(247,198,109,0.5) 50%, rgba(247,198,109,0.4) 70%, rgba(247,198,109,0.2) 90%, rgba(247,198,109,0) 100%);"></div>
       </div>
     </section>

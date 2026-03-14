@@ -8,6 +8,10 @@ services:
       - .env
     expose:
       - "3000"
+    volumes:
+      # IPX (Nuxt Image) reads source files from here to optimise them
+      - ./public/media:/app/output/public/media:ro
+      - ./public/downloads:/app/output/public/downloads:ro
 
   nginx:
     image: nginx:alpine

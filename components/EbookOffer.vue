@@ -7,7 +7,7 @@
     <div class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8 lg:px-14 py-10 md:py-16 lg:py-20">
 
       <!-- Heading: full-width centered on top -->
-      <div class="text-center mb-3 text-[clamp(6rem,6vw,70px)] font-semibold leading-[1.15]">
+      <div class="text-center mb-3 text-[clamp(1.8rem,7vw,70px)] font-semibold leading-[1.15]">
         <p class=" text-white  ">
           {{ sections.ebook.headingLine1 }}
         </p>
@@ -21,7 +21,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
 
         <!-- Left: Book cover -->
-        <div class="flex justify-center">
+        <div class="flex justify-start md:justify-center ">
           <img :src="sections.ebook.image" :alt="sections.ebook.headingLine1 || 'Guidebook'"
             class="w-[240px] sm:w-[300px] md:w-[400px] h-auto drop-shadow-2xl" loading="lazy" />
         </div>
@@ -29,7 +29,7 @@
         <!-- Right: subheading + description + CTA -->
         <div class="flex flex-col items-start gap-5 pt-[30px]">
           <h3 v-if="sections.ebook.subheading"
-            class="font-medium text-white leading-[1.4] whitespace-pre-line text-[clamp(1.35rem,2.5vw,1.9rem)]">
+            class="font-medium text-white leading-relaxed whitespace-pre-line text-[clamp(1.35rem,2.5vw,1.9rem)]">
             {{ sections.ebook.subheading }}
           </h3>
 
@@ -38,7 +38,7 @@
           </p>
 
           <a :href="sections.ebook.link" target="_blank" rel="noopener noreferrer"
-            class="inline-flex items-center gap-3 px-8 py-4 text-black font-semibold text-2xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl mt-2 bg-ctaGold">
+            class="inline-flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 text-black font-semibold text-base md:text-2xl rounded-full transition-all duration-200 shadow-lg hover:shadow-xl mt-2 bg-ctaGold">
             <span>⬇</span>
             <span>{{ sections.ebook.submit }}</span>
           </a>

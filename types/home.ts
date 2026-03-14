@@ -17,6 +17,7 @@ export interface HeroContent {
   description: string
   badgeIcon?: string
   bgHero?: string
+  bgHeroMobile?: string
 }
 
 // Trusted partner logos for horizontal slider
@@ -176,7 +177,7 @@ export interface CompanyData {
 
 // Section labels/text per section
 export interface SectionTexts {
-  hero?: { title: string; subtitle: string; description: string; bgHero?: string; badgeIcon?: string }
+  hero?: { title: string; subtitle: string; description: string; bgHero?: string; bgHeroMobile?: string; badgeIcon?: string }
   clients?: { title: string; subtitle: string }
   classes?: { title: string; providedBy: string; learnMore: string }
   classPrograms?: { title: string; subtitle: string; image: string; bg?: string }

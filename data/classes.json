@@ -339,7 +339,7 @@
       ],
       "slug": "key-message-clear-message",
       "featured": true,
-      "logo": "/images/classes/class-1/km.jpg",
+      "logo": "/media/classes/class-1/km.jpg",
       "category": "communication",
       "duration": "8 ชั่วโมง",
       "audience": [
@@ -354,9 +354,9 @@
       "currency": "บาท",
       "priceNote": "ราคาพิเศษเมื่อลงทะเบียนวันนี้",
       "images": [
-        "/images/classes/class-1/silde-image/km-agenda.jpg",
-        "/images/classes/class-1/silde-image/km-gallery-1.jpg",
-        "/images/classes/class-1/silde-image/km-gallery-2.jpg"
+        "/media/classes/class-1/silde-image/km-agenda.jpg",
+        "/media/classes/class-1/silde-image/km-gallery-1.jpg",
+        "/media/classes/class-1/silde-image/km-gallery-2.jpg"
       ],
       "downloads": {
         "proposal": "/downloads/classes/Key Message Clear Message.pdf"

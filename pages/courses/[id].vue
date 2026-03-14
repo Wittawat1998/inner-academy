@@ -7,7 +7,7 @@
         <div class="max-w-[1024px] flex flex-col lg:flex-row items-center gap-8 md:gap-12">
 
           <!-- Left: title, description, instructors -->
-          <div class="flex-1 min-w-0">
+          <div class="flex-1 min-w-0 order-2 lg:order-1">
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] header-fade mb-4">
               {{ classData.title }}
             </h1>
@@ -37,7 +37,7 @@
           </div>
 
           <!-- Right: hero image -->
-          <div class="flex-shrink-0 w-full lg:w-[480px]">
+          <div class="flex-shrink-0 w-full lg:w-[480px] order-1 lg:order-2">
             <img
               :src="classData.logo || '/images/classes/placeholder.webp'"
               :alt="classData.title"
@@ -60,7 +60,7 @@
 
               <div v-if="classData.category">
                 <p class="text-xs text-textSecondary tracking-widest uppercase mb-1">{{ classLabels.category }}</p>
-                <p class="text-lg font-semibold text-textPrimary">{{ classData.category }}</p>
+                <p class="text-lg font-semibold text-textPrimary">{{ classData.category ? (classCategories as Record<string, string>)[classData.category] : '' }}</p>
               </div>
 
               <div v-if="classData.duration">
@@ -206,7 +206,8 @@ import type { ClassesData } from '~/types/classes'
 import type { Coach } from '~/types/coaches'
 import classesDataRaw from '~/data/classes.json'
 import coachesDataRaw from '~/data/coaches.json'
-import classLabels from '~/data/json/class.json'
+import classLabels from '~/data/class.json'
+import classCategories from '~/data/classCategories.json'
 
 const { sections } = useHomeContent()
 const route = useRoute()

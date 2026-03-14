@@ -1,13 +1,24 @@
 <template>
   <section class="hero-section">
     <div class="w-full">
-      <!-- Hero Banner -->
-      <img :src="sections?.hero?.bgHero" alt="Inner Power Academy" class="w-full h-auto object-contain object-top" />
+      <!-- Hero Banner: mobile (portrait) -->
+      <img
+        :src="sections?.hero?.bgHeroMobile ?? (sections?.hero?.bgHero?.replace('.webp', '-mobile.webp'))"
+        alt="Inner Power Academy"
+        class="block md:hidden w-full object-cover object-top"
+        style="height: 900px;"
+      />
+      <!-- Hero Banner: desktop (landscape) -->
+      <img
+        :src="sections?.hero?.bgHero"
+        alt="Inner Power Academy"
+        class="hidden md:block w-full h-auto object-contain object-top"
+      />
     </div>
 
     <!-- Text block: pulls up slightly over the bottom of the image -->
-    <div class="-mt-6 sm:-mt-10 md:-mt-14 lg:-mt-20 flex flex-col items-center justify-center px-4 w-full max-w-[1280px] mx-auto pb-6 md:pb-10">
-      <h2 class="hero-subtitle text-white text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-medium mb-2 md:mb-4 text-center">
+    <div class="-mt-10 sm:-mt-10 md:-mt-14 lg:-mt-20 flex flex-col items-center justify-center px-4 w-full max-w-[1280px] mx-auto pb-6 md:pb-10">
+      <h2 class="hero-subtitle text-white text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-medium mb-2 md:mb-4 text-center">
         {{ sections?.hero?.subtitle }}
       </h2>
 

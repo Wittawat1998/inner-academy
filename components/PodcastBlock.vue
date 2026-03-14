@@ -7,12 +7,12 @@
     role="region"
     aria-label="Podcast highlight"
   >
-    <div class="mt-auto container mx-auto px-4 pb-24 md:pb-36 lg:pb-48">
+    <div class="mt-auto container mx-auto px-4 pb-10 sm:pb-16 md:pb-12 lg:pb-20 xl:pb-48">
       <div class="max-w-[1280px] mx-auto relative">
 
         <!-- Content: Bottom Left in container -->
         <div class="relative z-10 flex flex-col items-start">
-          <div class="text-[clamp(1.5rem,4vw,70px)] font-semibold text-white leading-[1.15]">
+          <div class="text-[clamp(1.2rem,4vw,70px)] font-semibold text-white leading-[1.15]">
             <h2 class=" mb-2 ">
               {{ sections.podcast.titleLine1 }}
             </h2>
@@ -20,7 +20,7 @@
               {{ sections.podcast.titleLine2 }}
             </h2>
           </div>
-          <p class="text-sm md:text-base xl:text-2xl lg:text-3xl font-light text-white mb-6 md:mb-8 leading-[1.4] max-w-[90%] md:max-w-[800px]">
+          <p class="text-sm md:text-base xl:text-2xl lg:text-3xl font-light text-white mb-6 md:mb-8 leading-relaxed max-w-[90%] md:max-w-[800px]">
             {{ sections.podcast.description }}
           </p>
           <a
@@ -45,5 +45,9 @@ const { sections } = useHomeContent()
 </script>
 
 <style scoped>
-/* No custom styles needed - using Tailwind utilities */
+@media (max-width: 767px) {
+  section {
+    min-height: 420px !important;
+  }
+}
 </style>

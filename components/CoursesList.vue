@@ -36,16 +36,16 @@
               </p>
             </div>
 
-            <!-- Center: Coaches (hidden on mobile) -->
-            <div v-if="course.coachIds && course.coachIds.length > 0" class="hidden md:flex items-center gap-3 flex-shrink-0">
-              <span class="text-sm text-gray-400 group-hover:text-gray-700 transition-colors whitespace-nowrap">{{ sections?.classes?.providedBy ?? 'ถ่ายทอดโดย' }}</span>
-              <div class="flex gap-2">
+            <!-- Center: Coaches -->
+            <div v-if="course.coachIds && course.coachIds.length > 0" class="flex items-center gap-2 md:gap-3 flex-shrink-0">
+              <span class="hidden md:inline text-sm text-gray-400 group-hover:text-gray-700 transition-colors whitespace-nowrap">{{ sections?.classes?.providedBy ?? 'ถ่ายทอดโดย' }}</span>
+              <div class="flex gap-1.5 md:gap-2">
                 <NuxtImg
                   v-for="coach in getCoachesByIds(course.coachIds)"
                   :key="coach.id ?? coach.slug"
                   :src="coach.avatar || ''"
                   :alt="coach.name ?? ''"
-                  class="w-12 h-12 md:w-16 md:h-16 rounded-full border-3 border-white object-cover shadow-lg"
+                  class="w-8 h-8 md:w-16 md:h-16 rounded-full object-cover shadow-lg"
                   loading="lazy"
                   format="webp"
                 />
